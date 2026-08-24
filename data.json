@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T22:01:20.449Z",
+  "generatedAt": "2026-08-24T22:18:07.915Z",
   "managers": [
     {
       "name": "Ben",
@@ -336,5 +336,22 @@
   ],
   "preseasonSummary": "Kyle is two-for-two as champion and has fully transitioned from 'guy who drafts well' to 'guy the group chat quietly hates,' which, respectfully, is earned. Ben was a two-time champion back when Biden had a full head of steam and has since face-planted into last place twice — the '2400 Pins' and cold plunge weren't hazing, Ben, they were a pattern. Caleb remains the league's longest-running mystery: zero championships in five years, yet somehow avoids the basement often enough to keep talking like a contender at the draft table. Mason's the quiet menace — one ring, zero last-place finishes, but one can only imagine he is due like Russel Gage for a seat at the bottom. New this year: last place doesn't get off easy with a crawl or a book report anymore. It's eighteen holes of frisbee golf, a spin of the wheel on every tee box, and however many hot dogs that wheel demands — eaten, not admired. Draft smart. And Don't Get Dogged.\"",
   "currentWeekLabel": "Draft Review",
-  "weeklyRoasts": []
+  "weeklyRoasts": [
+    {
+      "manager": "Ben",
+      "roast": "B : Getting a locked-in, high-upside RB1 like Chase Brown at pick 20 is objectively great market value, but burning your only keeper slot on him is an incredibly lazy, low-imagination strategy. Instead of building a massive structural advantage with multiple discount players like everyone else, Ben did the bare minimum, settled for a modest discount, and called it a day."
+    },
+    {
+      "manager": "Caleb",
+      "roast": "A+ : Keeping Jaxon Smith-Njigba at pick 18 is an absolute felony given that he is a consensus top-6 pick coming off a monster season. Pairing that robbery with a premium top-tier tight end like Tyler Warren in the 9th round [2] gives Caleb the most dangerous structural head start in the entire league."
+    },
+    {
+      "manager": "Kyle",
+      "roast": "B- : Chris Olave in the 6th is still fantastic value, but the rest of this strategy is a complete mess. Taking Cam Skattebo in the 9th round is a deeply unserious, chaotic gamble on an unproven role player, especially when guys like Caleb are walking away with elite tight end anchors in the exact same round."
+    },
+    {
+      "manager": "Mason",
+      "roast": "B+ : This is a perfectly fine, textbook keeper strategy. Getting an elite, explosive back like Kenneth Walker in the 3rd and a high-volume target hog like Rashee Rice in the 5th gives you great depth. However, it completely lacks the league-winning, explosive upside that Caleb just manifested out of thin air."
+    }
+  ]
 }
