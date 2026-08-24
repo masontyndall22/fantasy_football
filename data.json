@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:50:27.936Z",
+  "generatedAt": "2026-08-24T23:52:23.095Z",
   "managers": [
     {
       "name": "Ben",
@@ -286,7 +286,7 @@
     },
     {
       "manager": "Mason",
-      "mvp": "",
+      "mvp": "Josh Allen",
       "picks": {
         "afcEast": "Dolphins",
         "afcNorth": "Steelers",
@@ -300,7 +300,21 @@
         "afcWc2": "Chiefs",
         "afcWc3": "Chargers",
         "nfcWc1": "49ers",
-        "nfcWc2": "Seahawks"
+        "nfcWc2": "Seahawks",
+        "nfcWc3": "Packers",
+        "wcGame1": "Chiefs",
+        "wcGame2": "Rams",
+        "wcGame3": "Seahawks",
+        "wcGame4": "Chargers",
+        "wcGame5": "49ers",
+        "wcGame6": "Saints",
+        "divisionalGame1": "Rams",
+        "divisionalGame2": "Saints",
+        "divisionalGame3": "Chiefs",
+        "divisionalGame4": "Bills",
+        "afcChampionship": "Saints",
+        "nfcChampionship": "Bills",
+        "superBowlWinner": "Bills"
       }
     }
   ],
