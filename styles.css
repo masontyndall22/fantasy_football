@@ -250,8 +250,64 @@ main { padding: 4px 20px 24px; }
 .standings-row__name { flex: 1; font-size: 14px; font-weight: 500; color: var(--text); }
 .standings-row__pts { font-weight: 600; font-size: 16px; color: var(--text); }
 
+/* ---------- Preseason Summary (collapsible) ---------- */
+.preseason-toggle {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 16px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.preseason-toggle__chevron {
+  width: 16px; height: 16px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+  flex: none;
+}
+.preseason-toggle__chevron.is-collapsed { transform: rotate(-90deg); }
+
+.preseason-body {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(233, 233, 237, 0.85);
+  margin-bottom: 22px;
+}
+
+/* ---------- Weekly Update (Home) ---------- */
+.weekly-update-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.weekly-update-card {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--edge);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.weekly-update-card__avatar {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--accent-dark);
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+}
+.weekly-update-card__name { font-weight: 500; font-size: 13px; color: var(--text); }
+.weekly-update-card__roast { font-size: 12.5px; line-height: 1.5; color: rgba(233, 233, 237, 0.75); margin-top: 2px; }
+
 /* ---------- Bios ---------- */
 .bio-card {
+  position: relative;
   padding: 16px;
   border-radius: 14px;
   background: var(--card);
@@ -260,7 +316,30 @@ main { padding: 4px 20px 24px; }
   flex-direction: column;
   gap: 10px;
 }
+.bio-card.is-champion {
+  background: #262a3f;
+  box-shadow: 0 0 0 1.5px var(--accent), 0 0 24px rgba(145, 132, 217, 0.35);
+  margin-top: 6px;
+}
 .bio-card + .bio-card { margin-top: 10px; }
+
+.bio-card__champion-badge {
+  position: absolute;
+  top: -9px; left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 100px;
+  background: var(--bg);
+  box-shadow: 0 0 0 1px var(--accent);
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bio-card__champion-badge svg { width: 11px; height: 11px; }
 
 .bio-card__head { display: flex; align-items: center; gap: 12px; }
 .bio-card__avatar {
@@ -275,6 +354,8 @@ main { padding: 4px 20px 24px; }
 }
 .bio-card__name { font-weight: 500; font-size: 18px; letter-spacing: -0.015em; color: var(--text); }
 .bio-card__team { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-muted); margin-top: 1px; }
+.bio-card__trophies { display: flex; gap: 3px; flex: none; }
+.bio-card__trophies svg { width: 14px; height: 14px; fill: #e0b24a; }
 
 .bio-card__stats {
   display: flex;
