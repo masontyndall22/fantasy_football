@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>The League</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#161826">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The League">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="app-header__row">
+    <div class="app-header__brand">
+      <img class="app-header__mark" src="assets/mark.png" alt="">
+      <h1 class="app-header__title">The League</h1>
+    </div>
+    <button class="refresh-btn" id="refreshBtn" aria-label="Refresh data">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12a8 8 0 0 1 13.8-5.6L20 9"></path><path d="M20 4.5V9h-4.5"></path>
+        <path d="M20 12a8 8 0 0 1-13.8 5.6L4 15"></path><path d="M4 19.5V15h4.5"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="last-updated" id="lastUpdated">Loading…</div>
+</header>
+
+<main>
+
+  <!-- ============ HOME ============ -->
+  <section class="screen is-active" id="screen-home">
+    <div class="section-label">In First Place</div>
+    <div class="leader-card" id="leaderCard"></div>
+    <div id="onNoticeSlot"></div>
+    <div class="section-label">Overall Standings</div>
+    <div class="standings-list" id="homeStandingsList"></div>
+  </section>
+
+  <!-- ============ BIOS ============ -->
+  <section class="screen" id="screen-bios">
+    <div class="section-label">The Roster</div>
+    <div id="bioList"></div>
+  </section>
+
+  <!-- ============ SCORING ============ -->
+  <section class="screen" id="screen-scoring">
+    <div class="section-label">Full Leaderboard</div>
+    <div class="standings-list" id="scoringStandingsList" style="margin-bottom:24px"></div>
+
+    <div class="section-label" style="margin-top:0">By Category</div>
+    <div class="pillar-tabs" id="pillarTabs"></div>
+    <div id="subTabsSlot"></div>
+    <div class="table-card">
+      <table class="data-table" id="categoryTable"></table>
+    </div>
+
+    <div class="section-label">Full Breakdown</div>
+    <div class="table-card">
+      <table class="breakdown-table" id="breakdownTable"></table>
+    </div>
+  </section>
+
+  <!-- ============ PLAYOFFS ============ -->
+  <section class="screen" id="screen-playoffs">
+    <div class="playoffs-head">
+      <div class="section-label" style="margin:0">Playoff Picks</div>
+      <div class="playoffs-head__score" id="playoffScoreLabel"></div>
+    </div>
+    <div class="pillar-tabs" id="playoffManagerTabs"></div>
+    <div id="playoffContent"></div>
+    <div class="legend">
+      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#9184d9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg>Correct</span>
+      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#75798c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>Incorrect</span>
+      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#595d6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path></svg>Pending</span>
+    </div>
+  </section>
+
+  <!-- ============ HISTORY ============ -->
+  <section class="screen" id="screen-history">
+    <div class="section-label">League History &amp; Punishment</div>
+    <div class="timeline" id="historyTimeline"></div>
+  </section>
+
+</main>
+
+<nav class="bottom-nav" id="bottomNav">
+  <button class="nav-btn is-active" data-screen="home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6 10v9a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1v-9"></path></svg>
+    Home
+  </button>
+  <button class="nav-btn" data-screen="bios">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg>
+    Bios
+  </button>
+  <button class="nav-btn" data-screen="scoring">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13"></path><path d="M11 20V6"></path><path d="M18 20v-9"></path></svg>
+    Scoring
+  </button>
+  <button class="nav-btn" data-screen="playoffs">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z"></path><path d="M9 15.5h6V19H9z"></path><path d="M8 19.5h8"></path><path d="M7 5H4.5a2 2 0 0 0 0 4H7"></path><path d="M17 5h2.5a2 2 0 0 1 0 4H17"></path></svg>
+    Playoffs
+  </button>
+  <button class="nav-btn" data-screen="history">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>
+    History
+  </button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
