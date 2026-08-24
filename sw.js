@@ -1,4 +1,4 @@
-const CACHE_NAME = "the-league-shell-v2";
+const CACHE_NAME = "the-league-shell-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -26,26 +26,17 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+// Network-first for everything, with cache as an offline fallback only.
+// This means code/style/data changes show up on next load automatically —
+// no need to remember to bump CACHE_NAME every time you edit a file.
 self.addEventListener("fetch", (event) => {
-  const url = new URL(event.request.url);
-
-  // data.json: always go to the network first so scores are fresh;
-  // fall back to cache only if the network is unavailable (offline).
-  if (url.pathname.endsWith("data.json")) {
-    event.respondWith(
-      fetch(event.request)
-        .then((res) => {
-          const clone = res.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-          return res;
-        })
-        .catch(() => caches.match(event.request))
-    );
-    return;
-  }
-
-  // App shell: cache-first, since these files rarely change.
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    fetch(event.request)
+      .then((res) => {
+        const clone = res.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        return res;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
