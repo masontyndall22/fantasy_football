@@ -13,8 +13,8 @@
  */
 
 // ==== CONFIG ====
-const GITHUB_OWNER = 'YOUR_GITHUB_USERNAME';
-const GITHUB_REPO = 'YOUR_REPO_NAME';
+const GITHUB_OWNER = 'masontyndall22';
+const GITHUB_REPO = 'fantasy_football';
 const DATA_FILE_PATH = 'data.json';
 const GITHUB_BRANCH = 'main';
 
