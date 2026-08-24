@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T18:44:37.732Z",
+  "generatedAt": "2026-08-24T18:45:56.305Z",
   "managers": [
     {
       "name": "Ben",
@@ -57,7 +57,7 @@
   "bios": [
     {
       "manager": "Ben",
-      "favoriteTeam": "Colts??",
+      "favoriteTeam": "Colts?",
       "cumulativeScore": 75,
       "leagueWins": 2,
       "leagueLosses": 2,
