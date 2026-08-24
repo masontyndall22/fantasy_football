@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-08-24T18:43:48.376Z",
+  "managers": [
+    {
+      "name": "Ben",
+      "totalStandingsPoints": 20,
+      "sleeperPprSeasonPoints": 0,
+      "sleeperFinalPlacement": 0,
+      "pickemTotalCorrect": 0,
+      "fdWins": 0,
+      "fdTop5Total": 0,
+      "fdTop10Total": 0,
+      "fdSeasonTotal": 0,
+      "playoffBracketScore": 0,
+      "overallLeagueRank": 1
+    },
+    {
+      "name": "Caleb",
+      "totalStandingsPoints": 20,
+      "sleeperPprSeasonPoints": 0,
+      "sleeperFinalPlacement": 0,
+      "pickemTotalCorrect": 0,
+      "fdWins": 0,
+      "fdTop5Total": 0,
+      "fdTop10Total": 0,
+      "fdSeasonTotal": 0,
+      "playoffBracketScore": 0,
+      "overallLeagueRank": 1
+    },
+    {
+      "name": "Kyle",
+      "totalStandingsPoints": 20,
+      "sleeperPprSeasonPoints": 0,
+      "sleeperFinalPlacement": 0,
+      "pickemTotalCorrect": 0,
+      "fdWins": 0,
+      "fdTop5Total": 0,
+      "fdTop10Total": 0,
+      "fdSeasonTotal": 0,
+      "playoffBracketScore": 0,
+      "overallLeagueRank": 1
+    },
+    {
+      "name": "Mason",
+      "totalStandingsPoints": 20,
+      "sleeperPprSeasonPoints": 0,
+      "sleeperFinalPlacement": 0,
+      "pickemTotalCorrect": 0,
+      "fdWins": 0,
+      "fdTop5Total": 0,
+      "fdTop10Total": 0,
+      "fdSeasonTotal": 0,
+      "playoffBracketScore": 0,
+      "overallLeagueRank": 1
+    }
+  ],
+  "bios": [
+    {
+      "manager": "Ben",
+      "favoriteTeam": "Colts??",
+      "cumulativeScore": 75,
+      "leagueWins": 2,
+      "leagueLosses": 2,
+      "averagePlace": 2.6,
+      "strength": "Fantasy Luck",
+      "weakness": "Caleb",
+      "punishmentsDone": "2400 Pins, Ice Bath",
+      "punishmentIdeas": "T-Shirt"
+    },
+    {
+      "manager": "Caleb",
+      "favoriteTeam": "Steelers",
+      "cumulativeScore": 66,
+      "leagueWins": 0,
+      "leagueLosses": 1,
+      "averagePlace": 3,
+      "strength": "Lake House Owner",
+      "weakness": "Being Screwed",
+      "punishmentsDone": "1/2 Crawl, Smut Presentation",
+      "punishmentIdeas": ""
+    },
+    {
+      "manager": "Kyle",
+      "favoriteTeam": "Saints",
+      "cumulativeScore": 82,
+      "leagueWins": 2,
+      "leagueLosses": 2,
+      "averagePlace": 2.4,
+      "strength": "The Outdoors",
+      "weakness": "The Regular Season",
+      "punishmentsDone": "Full Crawl, T-Shirt",
+      "punishmentIdeas": "Ice Bath"
+    },
+    {
+      "manager": "Mason",
+      "favoriteTeam": "Chiefs",
+      "cumulativeScore": 87,
+      "leagueWins": 1,
+      "leagueLosses": 0,
+      "averagePlace": 2,
+      "strength": "Tall",
+      "weakness": "Toll Booths",
+      "punishmentsDone": "1/3 Crawl",
+      "punishmentIdeas": "Smut Presentation, 2400 Pins"
+    }
+  ],
+  "playoffCategories": [
+    {
+      "key": "afcEast",
+      "label": "AFC East",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcNorth",
+      "label": "AFC North",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcSouth",
+      "label": "AFC South",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcWest",
+      "label": "AFC West",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcEast",
+      "label": "NFC East",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcNorth",
+      "label": "NFC North",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcSouth",
+      "label": "NFC South",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcWest",
+      "label": "NFC West",
+      "weight": 2,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcWc1",
+      "label": "AFC WC1",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcWc2",
+      "label": "AFC WC2",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "afcWc3",
+      "label": "AFC WC3",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcWc1",
+      "label": "NFC WC1",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcWc2",
+      "label": "NFC WC2",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "nfcWc3",
+      "label": "NFC WC3",
+      "weight": 1,
+      "group": "Make the Playoffs"
+    },
+    {
+      "key": "wcGame1",
+      "label": "WC Game 1",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "wcGame2",
+      "label": "WC Game 2",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "wcGame3",
+      "label": "WC Game 3",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "wcGame4",
+      "label": "WC Game 4",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "wcGame5",
+      "label": "WC Game 5",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "wcGame6",
+      "label": "WC Game 6",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "divisionalGame1",
+      "label": "Divisional Game 1",
+      "weight": 1.5,
+      "group": "Divisional Round"
+    },
+    {
+      "key": "divisionalGame2",
+      "label": "Divisional Game 2",
+      "weight": 1.5,
+      "group": "Divisional Round"
+    },
+    {
+      "key": "divisionalGame3",
+      "label": "Divisional Game 3",
+      "weight": 1.5,
+      "group": "Divisional Round"
+    },
+    {
+      "key": "divisionalGame4",
+      "label": "Divisional Game 4",
+      "weight": 1.5,
+      "group": "Divisional Round"
+    },
+    {
+      "key": "afcChampionship",
+      "label": "AFC Championship",
+      "weight": 1.75,
+      "group": "Conference Championship"
+    },
+    {
+      "key": "nfcChampionship",
+      "label": "NFC Championship",
+      "weight": 1.75,
+      "group": "Conference Championship"
+    },
+    {
+      "key": "superBowlWinner",
+      "label": "Super Bowl Winner",
+      "weight": 2,
+      "group": "Super Bowl"
+    }
+  ],
+  "playoffPicks": [
+    {
+      "manager": "Ben",
+      "mvp": "",
+      "picks": {}
+    },
+    {
+      "manager": "Caleb",
+      "mvp": "",
+      "picks": {}
+    },
+    {
+      "manager": "Kyle",
+      "mvp": "",
+      "picks": {}
+    },
+    {
+      "manager": "Mason",
+      "mvp": "",
+      "picks": {}
+    }
+  ],
+  "playoffActual": {},
+  "actualMvp": "",
+  "leagueHistory": [
+    {
+      "season": "2025/26",
+      "champion": "Kyle",
+      "championScore": 31,
+      "lastPlace": "Ben",
+      "lastPlaceScore": 12.5,
+      "punishment": "Cold plunge 1 minute every day for 2 weeks."
+    },
+    {
+      "season": "2024/25",
+      "champion": "Kyle",
+      "championScore": 26,
+      "lastPlace": "Caleb",
+      "lastPlaceScore": 14,
+      "punishment": "Spin the wheel ---> Read a book and present to the league."
+    },
+    {
+      "season": "2023/24",
+      "champion": "Mason",
+      "championScore": 26,
+      "lastPlace": "Ben",
+      "lastPlaceScore": 11.5,
+      "punishment": "Loser bowls the winner's total score in Fanduel. (2400 pins)"
+    },
+    {
+      "season": "2022/23",
+      "champion": "Ben",
+      "championScore": 16,
+      "lastPlace": "Kyle",
+      "lastPlaceScore": 4,
+      "punishment": "Wear a custom T-shirt every time we hang out."
+    },
+    {
+      "season": "2021/22",
+      "champion": "Ben",
+      "championScore": 16,
+      "lastPlace": "Kyle",
+      "lastPlaceScore": 4,
+      "punishment": "Crawl from Nixa Jr. High To Nixa Community Center."
+    }
+  ]
+}
