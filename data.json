@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T21:49:10.529Z",
+  "generatedAt": "2026-08-24T21:49:18.884Z",
   "managers": [
     {
       "name": "Ben",
@@ -334,7 +334,7 @@
       "punishment": "Crawl from Nixa Jr. High To Nixa Community Center."
     }
   ],
-  "preseasonSummary": "",
-  "currentWeekLabel": "",
+  "preseasonSummary": "Write your preseason summary here — this shows on the Home screen above the standings.",
+  "currentWeekLabel": "Draft Review",
   "weeklyRoasts": []
 }
