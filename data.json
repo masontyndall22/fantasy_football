@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:42:55.733Z",
+  "generatedAt": "2026-08-24T23:50:27.936Z",
   "managers": [
     {
       "name": "Ben",
@@ -287,7 +287,21 @@
     {
       "manager": "Mason",
       "mvp": "",
-      "picks": {}
+      "picks": {
+        "afcEast": "Dolphins",
+        "afcNorth": "Steelers",
+        "afcSouth": "Colts",
+        "afcWest": "Raiders",
+        "nfcEast": "Cowboys",
+        "nfcNorth": "Vikings",
+        "nfcSouth": "Saints",
+        "nfcWest": "Rams",
+        "afcWc1": "Bengals",
+        "afcWc2": "Chiefs",
+        "afcWc3": "Chargers",
+        "nfcWc1": "49ers",
+        "nfcWc2": "Seahawks"
+      }
     }
   ],
   "playoffActual": {},
