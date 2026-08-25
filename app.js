@@ -296,6 +296,24 @@
   }
 
   // ---------------- render: playoffs ----------------
+  function conferenceOf_(label) {
+    const m = label.match(/^(AFC|NFC)\b/);
+    return m ? m[1] : null;
+  }
+
+  // Sorts AFC picks together, then NFC picks together, by game number within
+  // each — e.g. AFC WC Game 1, AFC WC Game 2, AFC WC Game 3, NFC WC Game 1...
+  // Anything without an AFC/NFC prefix in its label keeps its original order.
+  function conferenceThenNumberSort_(a, b) {
+    const parse = c => {
+      const m = c.label.match(/^(AFC|NFC)\b.*?(\d+)?$/);
+      return { conf: m ? m[1] : "", num: m && m[2] ? Number(m[2]) : 0 };
+    };
+    const pa = parse(a), pb = parse(b);
+    if (pa.conf !== pb.conf) return pa.conf.localeCompare(pb.conf); // "AFC" < "NFC"
+    return pa.num - pb.num;
+  }
+
   function pickIcon(state3) {
     if (state3 === "correct") return `<div class="pick-row__icon is-correct"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg></div>`;
     if (state3 === "wrong") return `<div class="pick-row__icon is-wrong"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></div>`;
@@ -344,12 +362,42 @@
         </div>
       </div>`;
 
+    // Categories where the specific game/slot number doesn't matter — matching
+    // is done against the whole conference's actual set instead of same-slot.
+    // Division winners (2.0), Conference Championship (1.75, already only one
+    // game per conference), and Super Bowl (2.0, no conference pairing) stay
+    // exact-slot since there's nothing ambiguous about their numbering.
+    const SET_MATCH_WEIGHTS = [1, 1.25, 1.5]; // WC qualifiers, WC Round winners, Divisional winners
+
     const groupsHtml = GROUP_ORDER.map(group => {
-      const groupCats = cats.filter(c => c.group === group);
+      const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
+
+      const setCatsByConf = { AFC: [], NFC: [] };
+      groupCats.forEach(c => {
+        if (SET_MATCH_WEIGHTS.includes(c.weight)) {
+          const conf = conferenceOf_(c.label);
+          if (conf) setCatsByConf[conf].push(c);
+        }
+      });
+      const setActualByConf = {}, setCompleteByConf = {};
+      ["AFC", "NFC"].forEach(conf => {
+        const actuals = setCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
+        setActualByConf[conf] = actuals;
+        setCompleteByConf[conf] = setCatsByConf[conf].length > 0 && actuals.length === setCatsByConf[conf].length;
+      });
+
       const rowsHtml = groupCats.map(c => {
         const pickVal = current.picks[c.key];
         const actualVal = actual[c.key];
-        const rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
+        let rowState;
+        if (SET_MATCH_WEIGHTS.includes(c.weight)) {
+          const conf = conferenceOf_(c.label);
+          const complete = conf && setCompleteByConf[conf];
+          const actualSet = conf ? setActualByConf[conf] : [];
+          rowState = !pickVal || !complete ? "pending" : actualSet.includes(pickVal) ? "correct" : "wrong";
+        } else {
+          rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
+        }
         if (rowState === "correct") score += c.weight || 0;
         return `
           <div class="pick-row">
