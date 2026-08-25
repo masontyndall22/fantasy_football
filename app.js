@@ -427,7 +427,7 @@
 
         score += pts || 0;
         const ptsBadge = rowState === "partial" ? `<span class="pick-row__pts-badge">+${fmt(pts)}</span>`
-          : rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1 Bonus</span>`
+          : rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>`
           : "";
         return `
           <div class="pick-row">
