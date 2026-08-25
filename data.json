@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-25T01:46:22.257Z",
+  "generatedAt": "2026-08-25T02:08:26.702Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -12,11 +12,11 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
-      "overallLeagueRank": 1
+      "overallLeagueRank": 2
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -25,11 +25,11 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
-      "overallLeagueRank": 1
+      "overallLeagueRank": 2
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -38,11 +38,11 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
-      "overallLeagueRank": 1
+      "overallLeagueRank": 2
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 21.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -50,7 +50,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
+      "playoffBracketScore": 30.5,
       "overallLeagueRank": 1
     }
   ],
@@ -318,8 +318,36 @@
       }
     }
   ],
-  "playoffActual": {},
-  "actualMvp": "",
+  "playoffActual": {
+    "afcEast": "Dolphins",
+    "afcNorth": "Steelers",
+    "afcSouth": "Bengals",
+    "afcWest": "Raiders",
+    "nfcEast": "Cowboys",
+    "nfcNorth": "Vikings",
+    "nfcSouth": "Saints",
+    "nfcWest": "Rams",
+    "afcWc1": "Colts",
+    "afcWc2": "Chiefs",
+    "afcWc3": "Chargers",
+    "nfcWc1": "49ers",
+    "nfcWc2": "Seahawks",
+    "nfcWc3": "Packers",
+    "afcWcGame1": "Chiefs",
+    "afcWcGame2": "Rams",
+    "afcWcGame3": "Seahawks",
+    "nfcWcGame4": "Chargers",
+    "nfcWcGame2": "49ers",
+    "nfcWcGame3": "Saints",
+    "afcDivisionalGame1": "49ers",
+    "afcDivisionalGame2": "Saints",
+    "nfcDivisionalGame1": "Chiefs",
+    "nfcDivisionalGame4": "Bengals",
+    "afcChampionship": "Falcons",
+    "nfcChampionship": "Bengals",
+    "superBowlWinner": "Falcons"
+  },
+  "actualMvp": "Tua",
   "leagueHistory": [
     {
       "season": "2025/26",
