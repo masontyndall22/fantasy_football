@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T00:03:01.894Z",
+  "generatedAt": "2026-08-25T00:07:17.258Z",
   "managers": [
     {
       "name": "Ben",
@@ -190,62 +190,62 @@
       "group": "Make the Playoffs"
     },
     {
-      "key": "WC Game 1",
-      "label": "WC Game 1",
+      "key": "afcWcGame1",
+      "label": "AFC WC Game 1",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "WC Game 2",
-      "label": "WC Game 2",
+      "key": "afcWcGame2",
+      "label": "AFC WC Game 2",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "WC Game 3",
-      "label": "WC Game 3",
+      "key": "afcWcGame3",
+      "label": "AFC WC Game 3",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "WC Game 4",
-      "label": "WC Game 4",
+      "key": "nfcWcGame4",
+      "label": "NFC WC Game 1",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "WC Game 5",
-      "label": "WC Game 5",
+      "key": "nfcWcGame2",
+      "label": "NFC WC Game 2",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "WC Game 6",
-      "label": "WC Game 6",
+      "key": "nfcWcGame3",
+      "label": "NFC WC Game 3",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "Divisional Game 1",
-      "label": "Divisional Game 1",
+      "key": "afcDivisionalGame1",
+      "label": "AFC Divisional Game 1",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "Divisional Game 2",
-      "label": "Divisional Game 2",
+      "key": "afcDivisionalGame2",
+      "label": "AFC Divisional Game 2",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "Divisional Game 3",
-      "label": "Divisional Game 3",
+      "key": "nfcDivisionalGame1",
+      "label": "NFC Divisional Game 1",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "Divisional Game 4",
-      "label": "Divisional Game 4",
+      "key": "nfcDivisionalGame4",
+      "label": "NFC Divisional Game 2",
       "weight": 1.5,
       "group": "Divisional Round"
     },
@@ -333,16 +333,16 @@
     "nfcWc1": "49ers",
     "nfcWc2": "Seahawks",
     "nfcWc3": "Packers",
-    "WC Game 1": "Chiefs",
-    "WC Game 2": "Rams",
-    "WC Game 3": "Seahawks",
-    "WC Game 4": "Chargers",
-    "WC Game 5": "49ers",
-    "WC Game 6": "Saints",
-    "Divisional Game 1": "Rams",
-    "Divisional Game 2": "Saints",
-    "Divisional Game 3": "Chiefs",
-    "Divisional Game 4": "Bills",
+    "afcWcGame1": "Chiefs",
+    "afcWcGame2": "Rams",
+    "afcWcGame3": "Seahawks",
+    "nfcWcGame4": "Chargers",
+    "nfcWcGame2": "49ers",
+    "nfcWcGame3": "Saints",
+    "afcDivisionalGame1": "Rams",
+    "afcDivisionalGame2": "Saints",
+    "nfcDivisionalGame1": "Chiefs",
+    "nfcDivisionalGame4": "Bills",
     "afcChampionship": "Saints",
     "nfcChampionship": "Bills",
     "superBowlWinner": "Bills"
