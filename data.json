@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T00:07:17.258Z",
+  "generatedAt": "2026-08-25T00:08:31.692Z",
   "managers": [
     {
       "name": "Ben",
@@ -50,7 +50,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 41,
+      "playoffBracketScore": 32.5,
       "overallLeagueRank": 1
     }
   ],
@@ -339,15 +339,15 @@
     "nfcWcGame4": "Chargers",
     "nfcWcGame2": "49ers",
     "nfcWcGame3": "Saints",
-    "afcDivisionalGame1": "Rams",
+    "afcDivisionalGame1": "49ers",
     "afcDivisionalGame2": "Saints",
     "nfcDivisionalGame1": "Chiefs",
-    "nfcDivisionalGame4": "Bills",
-    "afcChampionship": "Saints",
-    "nfcChampionship": "Bills",
-    "superBowlWinner": "Bills"
+    "nfcDivisionalGame4": "Bengals",
+    "afcChampionship": "Falcons",
+    "nfcChampionship": "Bengals",
+    "superBowlWinner": "Falcons"
   },
-  "actualMvp": "Josh Allen",
+  "actualMvp": "Tua",
   "leagueHistory": [
     {
       "season": "2025/26",
