@@ -19,20 +19,20 @@ const DATA_FILE_PATH = 'data.json';
 const GITHUB_BRANCH = 'main';
 
 const MANAGER_ORDER = ['Ben', 'Caleb', 'Kyle', 'Mason'];
-
+ 
 function publishToGithub() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const payload = buildDashboardJson_(ss);
   commitFileToGithub_(JSON.stringify(payload, null, 2));
 }
-
+ 
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('The League')
     .addItem('Publish Now', 'publishToGithub')
     .addToUi();
 }
-
+ 
 // ============================================================
 // Build the JSON payload directly from the live sheet
 // ============================================================
@@ -52,15 +52,16 @@ function buildDashboardJson_(ss) {
     weeklyRoasts: homeContent.weeklyRoasts,
   };
 }
-
+ 
 // Combines App_Dashboard (totals/ranks), Standings (Sleeper Placing raw),
 // and FanDuel_Data's season summary (the 4 real FanDuel metrics) into the
 // single flat `managers` shape the app expects.
 function readManagers_(ss) {
   const dash = ss.getSheetByName('App_Dashboard').getRange(2, 1, 4, 10).getValues();
   const standingsPlacing = ss.getSheetByName('Standings').getRange(2, 14, 4, 1).getValues(); // col N
+  const standingsMvpBonus = ss.getSheetByName('Standings').getRange(2, 18, 4, 1).getValues(); // col R
   const fdSummary = ss.getSheetByName('FanDuel_Data').getRange(24, 1, 4, 5).getValues(); // A:E
-
+ 
   return dash.map((row, i) => ({
     name: row[0],
     totalStandingsPoints: row[1],
@@ -72,10 +73,11 @@ function readManagers_(ss) {
     fdTop10Total: fdSummary[i][3],
     fdSeasonTotal: fdSummary[i][1],
     playoffBracketScore: row[8],
+    mvpBonus: standingsMvpBonus[i][0] || 0,
     overallLeagueRank: row[9],
   }));
 }
-
+ 
 function readStats_(ss) {
   const sheet = ss.getSheetByName('Stats');
   const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 10).getValues();
@@ -92,7 +94,7 @@ function readStats_(ss) {
     punishmentIdeas: r[9],
   }));
 }
-
+ 
 // Column-key map matches Playoff_Picks / Playoff_Actual headers exactly.
 // If you ever rename a playoff column header, update the matching key here too.
 const PLAYOFF_KEY_MAP = {
@@ -100,14 +102,14 @@ const PLAYOFF_KEY_MAP = {
   'NFC East': 'nfcEast', 'NFC North': 'nfcNorth', 'NFC South': 'nfcSouth', 'NFC West': 'nfcWest',
   'AFC WC1': 'afcWc1', 'AFC WC2': 'afcWc2', 'AFC WC3': 'afcWc3',
   'NFC WC1': 'nfcWc1', 'NFC WC2': 'nfcWc2', 'NFC WC3': 'nfcWc3',
-  'AFC WC Game 1': 'afcWcGame1', 'AFC WC Game 2': 'afcWcGame2', 'AFC WC Game 3': 'afcWcGame3',
-  'NFC WC Game 1': 'nfcWcGame4', 'NFC WC Game 2': 'nfcWcGame2', 'NFC WC Game 3': 'nfcWcGame3',
-  'AFC Divisional Game 1': 'afcDivisionalGame1', 'AFC Divisional Game 2': 'afcDivisionalGame2',
-  'NFC Divisional Game 1': 'nfcDivisionalGame1', 'NFC Divisional Game 2': 'nfcDivisionalGame4',
+  'WC Game 1': 'wcGame1', 'WC Game 2': 'wcGame2', 'WC Game 3': 'wcGame3',
+  'WC Game 4': 'wcGame4', 'WC Game 5': 'wcGame5', 'WC Game 6': 'wcGame6',
+  'Divisional Game 1': 'divisionalGame1', 'Divisional Game 2': 'divisionalGame2',
+  'Divisional Game 3': 'divisionalGame3', 'Divisional Game 4': 'divisionalGame4',
   'AFC Championship': 'afcChampionship', 'NFC Championship': 'nfcChampionship',
   'Super Bowl Winner': 'superBowlWinner',
 };
-
+ 
 // Maps each real pick's point-weight tier to the 5 playoff-screen group labels.
 function groupForWeight_(weight) {
   if (weight === 2 || weight === 1) return 'Make the Playoffs'; // division winners (2.0) + wild-card qualifiers (1.0)
@@ -116,7 +118,7 @@ function groupForWeight_(weight) {
   if (weight === 1.75) return 'Conference Championship';
   return 'Super Bowl'; // 2.0 on the Super Bowl Winner pick specifically
 }
-
+ 
 function readPlayoffCategories_(ss) {
   const sheet = ss.getSheetByName('Playoff_Actual');
   const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB — the 27 real scored picks (MVP excluded)
@@ -128,7 +130,7 @@ function readPlayoffCategories_(ss) {
     group: i === headers.length - 1 ? 'Super Bowl' : groupForWeight_(weights[i]),
   }));
 }
-
+ 
 function readPlayoffPicks_(ss) {
   const sheet = ss.getSheetByName('Playoff_Picks');
   const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
@@ -143,7 +145,7 @@ function readPlayoffPicks_(ss) {
     return { manager: r[0], mvp: r[mvpCol - 1] || '', picks: picks };
   });
 }
-
+ 
 function readPlayoffActual_(ss) {
   const sheet = ss.getSheetByName('Playoff_Actual');
   const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
@@ -155,12 +157,12 @@ function readPlayoffActual_(ss) {
   });
   return actual;
 }
-
+ 
 function readActualMvp_(ss) {
   const sheet = ss.getSheetByName('Playoff_Actual');
   return sheet.getRange(3, 29).getValue() || ''; // AC3
 }
-
+ 
 function readHomeContent_(ss) {
   const sheet = ss.getSheetByName('Home_Content');
   const preseasonSummary = sheet.getRange('A2').getValue() || '';
@@ -171,7 +173,7 @@ function readHomeContent_(ss) {
     .map(r => ({ manager: r[0], roast: r[1] }));
   return { preseasonSummary, currentWeekLabel, weeklyRoasts };
 }
-
+ 
 function readLeagueHistory_(ss) {
   const sheet = ss.getSheetByName('League_History_Summary');
   const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
@@ -184,42 +186,42 @@ function readLeagueHistory_(ss) {
     punishment: r[5],
   }));
 }
-
+ 
 // ============================================================
 // GitHub commit — creates or updates data.json via the Contents API
 // ============================================================
 function commitFileToGithub_(jsonString) {
   const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
   if (!token) throw new Error('GITHUB_TOKEN not set — add it in Project Settings > Script Properties.');
-
+ 
   const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${DATA_FILE_PATH}`;
   const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github+json' };
-
+ 
   let sha = null;
   const getResp = UrlFetchApp.fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers: headers, muteHttpExceptions: true });
   if (getResp.getResponseCode() === 200) {
     sha = JSON.parse(getResp.getContentText()).sha;
   }
-
+ 
   const body = {
     message: `Update data.json — ${new Date().toISOString()}`,
     content: Utilities.base64Encode(jsonString, Utilities.Charset.UTF_8),
     branch: GITHUB_BRANCH,
   };
   if (sha) body.sha = sha;
-
+ 
   const putResp = UrlFetchApp.fetch(apiUrl, {
     method: 'put', headers: headers, contentType: 'application/json',
     payload: JSON.stringify(body), muteHttpExceptions: true,
   });
-
+ 
   const code = putResp.getResponseCode();
   if (code !== 200 && code !== 201) {
     throw new Error(`GitHub publish failed (${code}): ${putResp.getContentText()}`);
   }
   Logger.log('Published data.json to GitHub successfully.');
 }
-
+ 
 // ============================================================
 // Optional: schedule this on its own, OR (simpler) call publishToGithub()
 // at the end of your existing syncPprData() in sleeper_sync.gs so one
