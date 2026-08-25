@@ -63,11 +63,22 @@ function renderBreakdownTable(managers) {
     const pts = pointsFor(managers, cat);
     return `<tr><td>${escapeHtml(cat.label)}</td>${names.map(n => `<td>${fmt(pts[n])}</td>`).join("")}</tr>`;
   }).join("");
-  const totals = names.map(n => ALL_CATEGORIES.reduce((s, cat) => s + pointsFor(managers, cat)[n], 0));
+
+  // MVP Bonus isn't a tie-split ranked category — it's a flat manual bonus
+  // per manager (0 or a small whole number), so it's shown using the raw
+  // value directly rather than going through pointsFor().
+  const mvpByName = {};
+  managers.forEach(m => { mvpByName[m.name] = Number(m.mvpBonus) || 0; });
+  const mvpRowHtml = `<tr><td>MVP Bonus</td>${names.map(n => `<td>${fmt(mvpByName[n])}</td>`).join("")}</tr>`;
+
+  const totals = names.map(n =>
+    ALL_CATEGORIES.reduce((s, cat) => s + pointsFor(managers, cat)[n], 0) + mvpByName[n]
+  );
   $("#breakdownTable").innerHTML = `
     <thead><tr><th>Category</th>${names.map(n => `<th>${escapeHtml(n)}</th>`).join("")}</tr></thead>
     <tbody>
       ${rowsHtml}
+      ${mvpRowHtml}
       <tr class="total-row"><td>Total</td>${totals.map(t => `<td>${fmt(t)}</td>`).join("")}</tr>
     </tbody>
   `;
