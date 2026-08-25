@@ -16,13 +16,13 @@ export const PILLARS = [
   ] },
   { key: "sleeper", label: "Sleeper", categories: [
     { key: "sleeperPts", label: "Points", unit: "Pts", valueFn: m => m.sleeperPprSeasonPoints },
-    { key: "sleeperPlacement", label: "Final Placement", unit: "Place", valueFn: m => m.sleeperFinalPlacement, higherBetter: false },
+    { key: "sleeperPlacement", label: "Sleeper Placement", unit: "Place", valueFn: m => m.sleeperFinalPlacement, higherBetter: false },
   ] },
   { key: "pickem", label: "Pick'em", categories: [
-    { key: "pickem", label: "Correct", unit: "Correct", valueFn: m => m.pickemTotalCorrect },
+    { key: "pickem", label: "Pickem", unit: "Correct", valueFn: m => m.pickemTotalCorrect },
   ] },
   { key: "playoffs", label: "Playoff Pool", categories: [
-    { key: "playoffs", label: "Score", unit: "Score", valueFn: m => m.playoffBracketScore },
+    { key: "playoffs", label: "Playoffs", unit: "Score", valueFn: m => m.playoffBracketScore },
   ] },
 ];
 export const ALL_CATEGORIES = PILLARS.flatMap(p => p.categories.map(c => ({ ...c, pillar: p.label })));
