@@ -510,9 +510,11 @@ table.breakdown-table tr.total-row td:first-child {
 .pick-row__label { font-size: 12px; color: var(--text-muted); letter-spacing: 0.02em; flex-shrink: 0; width: 46%; }
 .pick-row__right { display: flex; align-items: center; gap: 8px; flex: 1; justify-content: flex-end; }
 .pick-row__value { font-size: 14px; font-weight: 500; color: var(--text); text-align: right; }
+.pick-row__pts-badge { font-size: 10px; font-weight: 600; color: var(--accent-muted); letter-spacing: 0.02em; }
 .pick-row__icon { display: flex; align-items: center; justify-content: center; width: 16px; flex: none; }
 .pick-row__icon svg { width: 13px; height: 13px; }
 .pick-row__icon.is-correct svg { stroke: var(--success); }
+.pick-row__icon.is-partial svg { stroke: var(--accent-muted); }
 .pick-row__icon.is-wrong svg { stroke: var(--wrong); width: 11px; height: 11px; }
 .pick-row__icon.is-pending svg { stroke: var(--pending); width: 11px; height: 11px; }
 
