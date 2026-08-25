@@ -426,7 +426,7 @@
         }
 
         score += pts || 0;
-        const rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>`
+        const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>`
           : "";
         return `
           <div class="pick-row">
