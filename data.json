@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-25T02:08:26.702Z",
+  "generatedAt": "2026-08-25T02:39:21.351Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 19.5,
+      "totalStandingsPoints": 20.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -25,7 +25,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
-      "overallLeagueRank": 2
+      "overallLeagueRank": 3
     },
     {
       "name": "Kyle",
@@ -38,7 +38,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
-      "overallLeagueRank": 2
+      "overallLeagueRank": 3
     },
     {
       "name": "Mason",
@@ -271,7 +271,7 @@
   "playoffPicks": [
     {
       "manager": "Ben",
-      "mvp": "",
+      "mvp": "Tua",
       "picks": {}
     },
     {
