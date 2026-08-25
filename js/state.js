@@ -19,7 +19,7 @@ export const PILLARS = [
     { key: "sleeperPlacement", label: "Sleeper Placement", unit: "Place", valueFn: m => m.sleeperFinalPlacement, higherBetter: false },
   ] },
   { key: "pickem", label: "Pick'em", categories: [
-    { key: "pickem", label: "Pickem", unit: "Correct", valueFn: m => m.pickemTotalCorrect },
+    { key: "pickem", label: "Pick'em", unit: "Correct", valueFn: m => m.pickemTotalCorrect },
   ] },
   { key: "playoffs", label: "Playoff Pool", categories: [
     { key: "playoffs", label: "Playoffs", unit: "Score", valueFn: m => m.playoffBracketScore },
