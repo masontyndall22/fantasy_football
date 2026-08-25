@@ -26,6 +26,7 @@
   --gold-text: #2a1e05;
   --gold-glow: 0 0 0 1px #7a6321, 0 0 20px rgba(212, 175, 55, 0.12);
 
+  --gold: #e0b24a;
   --success: #08e827; /* correct pick uses the accent, per Nocturne mono scheme */
   --wrong: #e8084a;
   --pending: #595d6c;
@@ -514,6 +515,7 @@ table.breakdown-table tr.total-row td:first-child {
 .pick-row__icon { display: flex; align-items: center; justify-content: center; width: 16px; flex: none; }
 .pick-row__icon svg { width: 13px; height: 13px; }
 .pick-row__icon.is-correct svg { stroke: var(--success); }
+.pick-row__icon.is-correct-division svg { stroke: var(--gold); }
 .pick-row__icon.is-partial svg { stroke: var(--accent-muted); }
 .pick-row__icon.is-wrong svg { stroke: var(--wrong); width: 11px; height: 11px; }
 .pick-row__icon.is-pending svg { stroke: var(--pending); width: 11px; height: 11px; }
