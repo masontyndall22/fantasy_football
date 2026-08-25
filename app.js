@@ -29,7 +29,19 @@ async function boot() {
     $("#lastUpdated").textContent = "Couldn't load data — check your connection and try refreshing.";
   }
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    navigator.serviceWorker.register("sw.js")
+      .then(reg => reg.update()) // force an immediate check for a newer sw.js on every open,
+      .catch(() => {});          // rather than waiting for the browser's own periodic check
+
+    // The moment a newer service worker actually takes over, reload once so
+    // the fresh version shows up automatically — nobody has to notice a
+    // change happened, let alone reinstall or rebookmark.
+    let reloadedOnce = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (reloadedOnce) return;
+      reloadedOnce = true;
+      window.location.reload();
+    });
   }
 }
 
