@@ -316,6 +316,7 @@
 
   function pickIcon(state3) {
     if (state3 === "correct") return `<div class="pick-row__icon is-correct"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg></div>`;
+    if (state3 === "correct-division") return `<div class="pick-row__icon is-correct-division"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg></div>`;
     if (state3 === "partial") return `<div class="pick-row__icon is-partial"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg></div>`;
     if (state3 === "wrong") return `<div class="pick-row__icon is-wrong"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></div>`;
     return `<div class="pick-row__icon is-pending"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path></svg></div>`;
@@ -413,7 +414,7 @@
           if (!pickVal || (!complete && pickVal !== actualVal)) {
             rowState = "pending";
           } else if (pickVal === actualVal) {
-            rowState = "correct"; pts = c.weight;
+            rowState = "correct-division"; pts = c.weight;
           } else if (fullFieldActualByConf[conf].includes(pickVal)) {
             rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
           } else {
