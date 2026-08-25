@@ -1,128 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-<title>The League</title>
+/**
+ * PUBLISH TO GITHUB
+ * Reads live data straight from this spreadsheet (no Sheety involved) and
+ * commits it as data.json to your GitHub Pages repo.
+ *
+ * SETUP (one time):
+ * 1. Go to github.com/settings/tokens > Generate new token (classic)
+ *    - Scope needed: just "repo" (or "public_repo" if your repo is public)
+ * 2. In this Apps Script project: Project Settings (gear icon) > Script Properties
+ *    - Add property: GITHUB_TOKEN = <the token you just copied>
+ * 3. Fill in GITHUB_OWNER, GITHUB_REPO, and DATA_FILE_PATH below.
+ * 4. Run publishToGithub() once manually to test.
+ */
 
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#161826">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="The League">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="icon" href="icons/icon-192.png">
+// ==== CONFIG ====
+const GITHUB_OWNER = 'YOUR_GITHUB_USERNAME';
+const GITHUB_REPO = 'YOUR_REPO_NAME';
+const DATA_FILE_PATH = 'data.json';
+const GITHUB_BRANCH = 'main';
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+const MANAGER_ORDER = ['Ben', 'Caleb', 'Kyle', 'Mason'];
 
-<header class="app-header">
-  <div class="app-header__row">
-    <div class="app-header__brand">
-      <img class="app-header__mark" src="assets/mark.png" alt="">
-      <h1 class="app-header__title">The League</h1>
-    </div>
-    <button class="refresh-btn" id="refreshBtn" aria-label="Refresh data">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 12a8 8 0 0 1 13.8-5.6L20 9"></path><path d="M20 4.5V9h-4.5"></path>
-        <path d="M20 12a8 8 0 0 1-13.8 5.6L4 15"></path><path d="M4 19.5V15h4.5"></path>
-      </svg>
-    </button>
-  </div>
-  <div class="last-updated" id="lastUpdated">Loading…</div>
-</header>
+function publishToGithub() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const payload = buildDashboardJson_(ss);
+  commitFileToGithub_(JSON.stringify(payload, null, 2));
+}
 
-<main>
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('The League')
+    .addItem('Publish Now', 'publishToGithub')
+    .addToUi();
+}
 
-  <!-- ============ HOME ============ -->
-  <section class="screen is-active" id="screen-home">
-    <div id="preseasonSlot"></div>
+// ============================================================
+// Build the JSON payload directly from the live sheet
+// ============================================================
+function buildDashboardJson_(ss) {
+  const homeContent = readHomeContent_(ss);
+  return {
+    generatedAt: new Date().toISOString(),
+    managers: readManagers_(ss),
+    bios: readStats_(ss),
+    playoffCategories: readPlayoffCategories_(ss),
+    playoffPicks: readPlayoffPicks_(ss),
+    playoffActual: readPlayoffActual_(ss),
+    actualMvp: readActualMvp_(ss),
+    leagueHistory: readLeagueHistory_(ss),
+    historicalSeasons: readHistoricalSeasons_(ss),
+    weeklyFanDuel: readWeeklyMatrix_(ss, 'FanDuel_Data', 3, 20),
+    sleeperScoreRecords: readScoreRecords_(ss, 'Sleeper_Score_Records'),
+    fanDuelScoreRecords: readScoreRecords_(ss, 'FanDuel_Score_Records'),
+    headToHead: readHeadToHead_(ss),
+    matchups: readHeadToHead_(ss),
+    memberHistory: readMemberHistory_(ss),
+    preseasonSummary: homeContent.preseasonSummary,
+    currentWeekLabel: homeContent.currentWeekLabel,
+    weeklyRoasts: homeContent.weeklyRoasts,
+  };
+}
 
-    <div class="section-label">In First Place</div>
-    <div class="leader-card" id="leaderCard"></div>
-    <div id="onNoticeSlot"></div>
-    <div class="section-label">Overall Standings</div>
-    <div class="standings-list" id="homeStandingsList"></div>
+// Per completed season, each manager's final standings Place (1-4) and Total
+// points — pulled from League_History_Detail's "Total" and "Place" rows.
+// Used for the Rivalry view and all-time season records. Deliberately does
+// NOT include the in-progress current season, since comparing an unfinished
+// season's running total against final historical totals wouldn't be fair.
+function readHistoricalSeasons_(ss) {
+  const sheet = ss.getSheetByName('League_History_Detail');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  const managerCols = ['Ben', 'Caleb', 'Kyle', 'Mason'];
+  const bySeason = {};
+  rows.forEach(r => {
+    const season = r[0], category = r[1];
+    if (!season || (category !== 'Total' && category !== 'Place')) return;
+    if (!bySeason[season]) bySeason[season] = { season: season, totals: {}, places: {} };
+    managerCols.forEach((m, i) => {
+      const val = r[2 + i];
+      if (category === 'Total') bySeason[season].totals[m] = val;
+      if (category === 'Place') bySeason[season].places[m] = val;
+    });
+  });
+  return Object.values(bySeason);
+}
 
-    <div class="section-label" id="weeklyUpdateLabel">Weekly Update</div>
-    <div class="weekly-update-list" id="weeklyUpdateList"></div>
-  </section>
+// Generic reader for a "Week | Ben | Caleb | Kyle | Mason" weekly matrix tab
+// (FanDuel_Data or Sleeper_PPR_Weekly_Log share this exact shape). Returns
+// one array per manager; blank/not-yet-played weeks come back as 0.
+function readWeeklyMatrix_(ss, sheetName, startRow, endRow) {
+  const sheet = ss.getSheetByName(sheetName);
+  if (!sheet) return { Ben: [], Caleb: [], Kyle: [], Mason: [] };
+  const managerCols = ['Ben', 'Caleb', 'Kyle', 'Mason'];
+  const out = { Ben: [], Caleb: [], Kyle: [], Mason: [] };
+  const rows = sheet.getRange(startRow, 1, endRow - startRow + 1, 5).getValues();
+  rows.forEach(r => {
+    managerCols.forEach((m, i) => {
+      out[m].push(Number(r[1 + i]) || 0);
+    });
+  });
+  return out;
+}
 
-  <!-- ============ BIOS ============ -->
-  <section class="screen" id="screen-bios">
-    <div class="section-label">The Roster</div>
-    <div id="bioList"></div>
-  </section>
+// Reads the all-time Sleeper score records (highest/lowest single week ever,
+// per manager) — a simple 4-row table rather than a full weekly log, since
+// only the two extremes ever matter for this.
+// Shared reader for any "highest/lowest score ever" tab — Sleeper_Score_Records
+// and FanDuel_Score_Records both use this exact same 7-column shape.
+function readScoreRecords_(ss, sheetName) {
+  const sheet = ss.getSheetByName(sheetName);
+  if (!sheet) return {};
+  const rows = sheet.getRange(3, 1, 4, 7).getValues();
+  const out = {};
+  rows.forEach(r => {
+    if (!r[0]) return;
+    out[r[0]] = {
+      highest: { value: r[1], season: r[2], week: r[3] },
+      lowest: { value: r[4], season: r[5], week: r[6] },
+    };
+  });
+  return out;
+}
 
-  <!-- ============ SCORING ============ -->
-  <section class="screen" id="screen-scoring">
-    <div class="section-label">Full Leaderboard</div>
-    <div class="standings-list" id="scoringStandingsList" style="margin-bottom:24px"></div>
+// Reads the real head-to-head matchup log (populated by sleeper_sync.gs —
+// a separate script from this one). Returns one flat row per matchup;
+// nothing to compute here, the app does the win/loss tallying client-side.
+function readHeadToHead_(ss) {
+  const sheet = ss.getSheetByName('Sleeper_Head2Head_Log');
+  if (!sheet || sheet.getLastRow() < 3) return [];
+  const rows = sheet.getRange(3, 1, sheet.getLastRow() - 2, 7).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    season: r[0], week: r[1],
+    managerA: r[2], scoreA: r[3],
+    managerB: r[4], scoreB: r[5],
+    winner: r[6],
+  }));
+}
 
-    <div class="section-label" style="margin-top:0">By Category</div>
-    <div class="pillar-tabs" id="pillarTabs"></div>
-    <div id="subTabsSlot"></div>
-    <div class="table-card">
-      <table class="data-table" id="categoryTable"></table>
-    </div>
+// Reads the manually-maintained League_History tab — one row per manager
+// per season, with their team name and W/L/place that year. No UI consumes
+// this yet; it's published as-is so the next screen can be built against
+// real data from day one.
+function readMemberHistory_(ss) {
+  const sheet = ss.getSheetByName('League_History');
+  if (!sheet || sheet.getLastRow() < 2) return [];
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    manager: r[0],
+    year: r[1],
+    teamName: r[2],
+    wins: r[3],
+    losses: r[4],
+    place: r[5],
+  }));
+}
 
-    <div class="section-label">Full Breakdown</div>
-    <div class="table-card">
-      <table class="breakdown-table" id="breakdownTable"></table>
-    </div>
-  </section>
+// Combines App_Dashboard (totals/ranks), Standings (Sleeper Placing raw),
+// and FanDuel_Data's season summary (the 4 real FanDuel metrics) into the
+// single flat `managers` shape the app expects.
+function readManagers_(ss) {
+  const dash = ss.getSheetByName('App_Dashboard').getRange(2, 1, 4, 10).getValues();
+  const standingsPlacing = ss.getSheetByName('Standings').getRange(2, 14, 4, 1).getValues(); // col N
+  const standingsMvpBonus = ss.getSheetByName('Standings').getRange(2, 18, 4, 1).getValues(); // col R
+  const fdSummary = ss.getSheetByName('FanDuel_Data').getRange(24, 1, 4, 5).getValues(); // A:E
 
-  <!-- ============ PLAYOFFS ============ -->
-  <section class="screen" id="screen-playoffs">
-    <div class="playoffs-head">
-      <div class="section-label" style="margin:0">Playoff Picks</div>
-      <div class="playoffs-head__score" id="playoffScoreLabel"></div>
-    </div>
-    <div class="pillar-tabs" id="playoffManagerTabs"></div>
-    <div id="playoffContent"></div>
-    <div class="legend">
-      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#e0b24a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg>Division Winner</span>
-      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg>Correct</span>
-      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#75798c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>Incorrect</span>
-      <span class="legend__item"><svg viewBox="0 0 24 24" fill="none" stroke="#595d6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path></svg>Pending</span>
-    </div>
-  </section>
+  return dash.map((row, i) => ({
+    name: row[0],
+    totalStandingsPoints: row[1],
+    sleeperPprSeasonPoints: row[3],
+    sleeperFinalPlacement: standingsPlacing[i][0],
+    pickemTotalCorrect: row[4],
+    fdWins: fdSummary[i][4],
+    fdTop5Total: fdSummary[i][2],
+    fdTop10Total: fdSummary[i][3],
+    fdSeasonTotal: fdSummary[i][1],
+    playoffBracketScore: row[8],
+    mvpBonus: standingsMvpBonus[i][0] || 0,
+    overallLeagueRank: row[9],
+  }));
+}
 
-  <!-- ============ HISTORY ============ -->
-  <section class="screen" id="screen-history">
-    <div class="section-label">League History &amp; Punishment</div>
-    <div class="timeline" id="historyTimeline"></div>
-  </section>
+function readStats_(ss) {
+  const sheet = ss.getSheetByName('Stats');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 10).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    manager: r[0],
+    favoriteTeam: r[1],
+    cumulativeScore: r[2],
+    leagueWins: r[3],
+    leagueLosses: r[4],
+    averagePlace: r[5],
+    strength: r[6],
+    weakness: r[7],
+    punishmentsDone: r[8],
+    punishmentIdeas: r[9],
+  }));
+}
 
-</main>
+// Column-key map matches Playoff_Picks / Playoff_Actual headers exactly.
+// If you ever rename a playoff column header, update the matching key here too.
+const PLAYOFF_KEY_MAP = {
+  'AFC East': 'afcEast', 'AFC North': 'afcNorth', 'AFC South': 'afcSouth', 'AFC West': 'afcWest',
+  'NFC East': 'nfcEast', 'NFC North': 'nfcNorth', 'NFC South': 'nfcSouth', 'NFC West': 'nfcWest',
+  'AFC WC1': 'afcWc1', 'AFC WC2': 'afcWc2', 'AFC WC3': 'afcWc3',
+  'NFC WC1': 'nfcWc1', 'NFC WC2': 'nfcWc2', 'NFC WC3': 'nfcWc3',
+  'WC Game 1': 'wcGame1', 'WC Game 2': 'wcGame2', 'WC Game 3': 'wcGame3',
+  'WC Game 4': 'wcGame4', 'WC Game 5': 'wcGame5', 'WC Game 6': 'wcGame6',
+  'Divisional Game 1': 'divisionalGame1', 'Divisional Game 2': 'divisionalGame2',
+  'Divisional Game 3': 'divisionalGame3', 'Divisional Game 4': 'divisionalGame4',
+  'AFC Championship': 'afcChampionship', 'NFC Championship': 'nfcChampionship',
+  'Super Bowl Winner': 'superBowlWinner',
+};
 
-<nav class="bottom-nav" id="bottomNav">
-  <button class="nav-btn is-active" data-screen="home">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6 10v9a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1v-9"></path></svg>
-    Home
-  </button>
-  <button class="nav-btn" data-screen="bios">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg>
-    Bios
-  </button>
-  <button class="nav-btn" data-screen="scoring">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13"></path><path d="M11 20V6"></path><path d="M18 20v-9"></path></svg>
-    Scoring
-  </button>
-  <button class="nav-btn" data-screen="playoffs">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z"></path><path d="M9 15.5h6V19H9z"></path><path d="M8 19.5h8"></path><path d="M7 5H4.5a2 2 0 0 0 0 4H7"></path><path d="M17 5h2.5a2 2 0 0 1 0 4H17"></path></svg>
-    Playoffs
-  </button>
-  <button class="nav-btn" data-screen="history">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>
-    History
-  </button>
-</nav>
+// Maps each real pick's point-weight tier to the 5 playoff-screen group labels.
+function groupForWeight_(weight) {
+  if (weight === 2 || weight === 1) return 'Make the Playoffs'; // division winners (2.0) + wild-card qualifiers (1.0)
+  if (weight === 1.25) return 'Wild Card Round';
+  if (weight === 1.5) return 'Divisional Round';
+  if (weight === 1.75) return 'Conference Championship';
+  return 'Super Bowl'; // 2.0 on the Super Bowl Winner pick specifically
+}
 
-<script type="module" src="app.js"></script>
-</body>
-</html>
+function readPlayoffCategories_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB — the 27 real scored picks (MVP excluded)
+  const weights = sheet.getRange(2, 2, 1, 27).getValues()[0];
+  return headers.map((h, i) => ({
+    key: PLAYOFF_KEY_MAP[h] || h,
+    label: h,
+    weight: weights[i] || 0,
+    group: i === headers.length - 1 ? 'Super Bowl' : groupForWeight_(weights[i]),
+  }));
+}
+
+function readPlayoffPicks_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Picks');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
+  const mvpCol = 29; // AC
+  const rows = sheet.getRange(2, 1, 4, 29).getValues();
+  return rows.filter(r => r[0]).map(r => {
+    const picks = {};
+    headers.forEach((h, i) => {
+      const key = PLAYOFF_KEY_MAP[h] || h;
+      if (r[i + 1]) picks[key] = r[i + 1];
+    });
+    return { manager: r[0], mvp: r[mvpCol - 1] || '', picks: picks };
+  });
+}
+
+function readPlayoffActual_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
+  const actualRow = sheet.getRange(3, 2, 1, 27).getValues()[0];
+  const actual = {};
+  headers.forEach((h, i) => {
+    const key = PLAYOFF_KEY_MAP[h] || h;
+    if (actualRow[i]) actual[key] = actualRow[i];
+  });
+  return actual;
+}
+
+function readActualMvp_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  return sheet.getRange(3, 29).getValue() || ''; // AC3
+}
+
+function readHomeContent_(ss) {
+  const sheet = ss.getSheetByName('Home_Content');
+  const preseasonSummary = sheet.getRange('A2').getValue() || '';
+  const currentWeekLabel = sheet.getRange('A5').getValue() || '';
+  const roastRows = sheet.getRange(9, 1, 4, 2).getValues();
+  const weeklyRoasts = roastRows
+    .filter(r => r[0] && r[1])
+    .map(r => ({ manager: r[0], roast: r[1] }));
+  return { preseasonSummary, currentWeekLabel, weeklyRoasts };
+}
+
+function readLeagueHistory_(ss) {
+  const sheet = ss.getSheetByName('League_History_Summary');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    season: r[0],
+    champion: r[1],
+    championScore: r[2],
+    lastPlace: r[3],
+    lastPlaceScore: r[4],
+    punishment: r[5],
+  }));
+}
+
+// ============================================================
+// GitHub commit — creates or updates data.json via the Contents API
+// ============================================================
+function commitFileToGithub_(jsonString) {
+  const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
+  if (!token) throw new Error('GITHUB_TOKEN not set — add it in Project Settings > Script Properties.');
+
+  const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${DATA_FILE_PATH}`;
+  const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github+json' };
+
+  let sha = null;
+  const getResp = UrlFetchApp.fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers: headers, muteHttpExceptions: true });
+  if (getResp.getResponseCode() === 200) {
+    sha = JSON.parse(getResp.getContentText()).sha;
+  }
+
+  const body = {
+    message: `Update data.json — ${new Date().toISOString()}`,
+    content: Utilities.base64Encode(jsonString, Utilities.Charset.UTF_8),
+    branch: GITHUB_BRANCH,
+  };
+  if (sha) body.sha = sha;
+
+  const putResp = UrlFetchApp.fetch(apiUrl, {
+    method: 'put', headers: headers, contentType: 'application/json',
+    payload: JSON.stringify(body), muteHttpExceptions: true,
+  });
+
+  const code = putResp.getResponseCode();
+  if (code !== 200 && code !== 201) {
+    throw new Error(`GitHub publish failed (${code}): ${putResp.getContentText()}`);
+  }
+  Logger.log('Published data.json to GitHub successfully.');
+}
+
+// ============================================================
+// Optional: schedule this on its own, OR (simpler) call publishToGithub()
+// at the end of your existing syncPprData() in sleeper_sync.gs so one
+// trigger does both jobs on the same hourly cadence.
+// ============================================================
+function installPublishTrigger() {
+  ScriptApp.getProjectTriggers().forEach(t => {
+    if (t.getHandlerFunction() === 'publishToGithub') ScriptApp.deleteTrigger(t);
+  });
+  ScriptApp.newTrigger('publishToGithub').timeBased().everyHours(1).create();
+}

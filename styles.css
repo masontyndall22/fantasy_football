@@ -306,7 +306,32 @@ main { padding: 4px 20px 24px; }
 .weekly-update-card__name { font-weight: 500; font-size: 13px; color: var(--text); }
 .weekly-update-card__roast { font-size: 12.5px; line-height: 1.5; color: rgba(233, 233, 237, 0.75); margin-top: 2px; }
 
-/* ---------- Bios ---------- */
+/* ---------- Bios (flip cards) ---------- */
+.bio-flip-wrapper {
+  perspective: 1200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.bio-flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.bio-flip-inner.is-flipped { transform: rotateY(180deg); }
+
+.bio-flip-inner .bio-card {
+  backface-visibility: hidden;
+}
+.bio-flip-inner .bio-card:nth-child(2) {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  background: #20223a;
+}
+
 .bio-card {
   position: relative;
   padding: 16px;
@@ -320,9 +345,39 @@ main { padding: 4px 20px 24px; }
 .bio-card.is-champion {
   background: #262a3f;
   box-shadow: 0 0 0 1.5px var(--accent), 0 0 24px rgba(145, 132, 217, 0.35);
-  margin-top: 6px;
 }
-.bio-card + .bio-card { margin-top: 10px; }
+.bio-flip-inner .bio-card:nth-child(2).is-champion { background: #20223a; }
+
+.bio-card__flip-hint {
+  font-size: 11px;
+  color: var(--text-meta);
+  text-align: center;
+  margin-top: 2px;
+}
+.bio-card__back-title {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+  font-weight: 500;
+}
+.career-stat-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+}
+.career-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid var(--hairline-soft);
+}
+.career-stat-row:first-child { border-top: none; }
+.career-stat-row__label { font-size: 13px; color: var(--text-muted); display: flex; flex-direction: column; }
+.career-stat-row__sub { font-size: 10.5px; color: var(--text-meta); margin-top: 1px; }
+.career-stat-row__value { font-size: 15px; font-weight: 600; color: var(--accent-light); }
 
 .bio-card__champion-badge {
   position: absolute;
@@ -571,6 +626,85 @@ table.breakdown-table tr.total-row td:first-child {
   background: #1c1e2a;
   color: rgba(233, 233, 237, 0.85);
 }
+
+/* ---------- Rivals ---------- */
+.rival-card {
+  padding: 14px 16px 16px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--edge);
+  margin-bottom: 10px;
+}
+.rival-card__head { display: flex; align-items: baseline; justify-content: space-between; }
+.rival-card__name { font-size: 16px; font-weight: 500; color: var(--text); }
+.rival-card__record { font-size: 18px; font-weight: 700; color: var(--accent-light); }
+
+.rival-card__opponents {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rival-opponent-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: rgba(233, 233, 237, 0.75);
+}
+.rival-opponent-row span:last-child { color: var(--text); font-weight: 500; }
+
+.rival-card__toggle {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--accent-muted);
+  cursor: pointer;
+}
+.rival-card__chevron { width: 14px; height: 14px; transition: transform 0.2s; }
+.rival-card__chevron.is-collapsed { transform: rotate(-90deg); }
+
+.matchup-list {
+  margin-top: 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--hairline-soft);
+  display: flex;
+  flex-direction: column;
+}
+.matchup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--hairline-soft);
+}
+.matchup-row:first-child { border-top: none; }
+.matchup-row__meta { font-size: 11px; color: var(--text-meta); flex: none; width: 60px; }
+.matchup-row__season { font-size: 9.5px; margin-top: 1px; }
+.matchup-row__scores { display: flex; align-items: center; gap: 8px; font-size: 14px; flex: 1; justify-content: flex-end; }
+.matchup-row__vs { font-size: 11px; color: var(--text-muted); }
+.matchup-row__scores .is-winner { font-weight: 700; color: var(--accent-light); }
+.matchup-row__scores .is-loser { color: rgba(233, 233, 237, 0.4); }
+
+/* ---------- All-Time Records ---------- */
+.records-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.record-card {
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--edge);
+}
+.record-card__label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.record-card__value { font-size: 22px; font-weight: 700; color: var(--gold); margin-top: 4px; }
+.record-card__sub { font-size: 12px; color: rgba(233, 233, 237, 0.7); margin-top: 2px; }
 
 /* ---------- Bottom nav ---------- */
 .bottom-nav {
