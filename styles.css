@@ -516,7 +516,7 @@ table.breakdown-table tr.total-row td:first-child {
 .pick-row__icon svg { width: 13px; height: 13px; }
 .pick-row__icon.is-correct svg { stroke: var(--success); }
 .pick-row__icon.is-correct-division svg { stroke: var(--gold); }
-.pick-row__icon.is-partial svg { stroke: var(--accent-muted); }
+.pick-row__icon.is-partial svg { stroke: var(--success); }
 .pick-row__icon.is-wrong svg { stroke: var(--wrong); width: 11px; height: 11px; }
 .pick-row__icon.is-pending svg { stroke: var(--pending); width: 11px; height: 11px; }
 
