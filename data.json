@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T23:42:55.725Z",
+  "generatedAt": "2026-08-25T23:45:33.655Z",
   "managers": [
     {
       "name": "Ben",
@@ -603,6 +603,56 @@
       }
     }
   },
+  "fanDuelScoreRecords": {
+    "Ben": {
+      "highest": {
+        "value": 203.66,
+        "season": 2024,
+        "week": 17
+      },
+      "lowest": {
+        "value": 68.1,
+        "season": 2025,
+        "week": 18
+      }
+    },
+    "Caleb": {
+      "highest": {
+        "value": 162.34,
+        "season": 2023,
+        "week": 6
+      },
+      "lowest": {
+        "value": 70.64,
+        "season": 2025,
+        "week": 1
+      }
+    },
+    "Kyle": {
+      "highest": {
+        "value": 209.94,
+        "season": 2025,
+        "week": 12
+      },
+      "lowest": {
+        "value": 63.74,
+        "season": 2025,
+        "week": 11
+      }
+    },
+    "Mason": {
+      "highest": {
+        "value": 203.38,
+        "season": 2024,
+        "week": 14
+      },
+      "lowest": {
+        "value": 74.34,
+        "season": 2025,
+        "week": 8
+      }
+    }
+  },
   "headToHead": [
     {
       "season": 2012,
@@ -875,111 +925,102 @@
       "winner": "Caleb"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 1,
-      "managerA": "Ben",
-      "scoreA": 96.28,
-      "managerB": "Mason",
-      "scoreB": 92.22,
+      "managerA": "Kyle",
+      "scoreA": 109.94,
+      "managerB": "Ben",
+      "scoreB": 112.96,
       "winner": "Ben"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 3,
-      "managerA": "Kyle",
-      "scoreA": 148.62,
-      "managerB": "Caleb",
-      "scoreB": 78.46,
-      "winner": "Kyle"
+      "managerA": "Caleb",
+      "scoreA": 154.16,
+      "managerB": "Mason",
+      "scoreB": 149.96,
+      "winner": "Caleb"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 4,
       "managerA": "Kyle",
-      "scoreA": 116.78,
+      "scoreA": 103.3,
       "managerB": "Mason",
-      "scoreB": 138.56,
+      "scoreB": 112.52,
       "winner": "Mason"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 5,
-      "managerA": "Kyle",
-      "scoreA": 167.12,
-      "managerB": "Ben",
-      "scoreB": 102.5,
-      "winner": "Kyle"
+      "managerA": "Ben",
+      "scoreA": 141.32,
+      "managerB": "Mason",
+      "scoreB": 155.66,
+      "winner": "Mason"
     },
     {
-      "season": 2025,
-      "week": 8,
+      "season": 2023,
+      "week": 6,
       "managerA": "Caleb",
-      "scoreA": 120.96,
+      "scoreA": 161.58,
       "managerB": "Ben",
-      "scoreB": 113.86,
+      "scoreB": 93.28,
       "winner": "Caleb"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 9,
-      "managerA": "Caleb",
-      "scoreA": 113.6,
-      "managerB": "Mason",
-      "scoreB": 116.4,
-      "winner": "Mason"
+      "managerA": "Kyle",
+      "scoreA": 106.74,
+      "managerB": "Caleb",
+      "scoreB": 114.12,
+      "winner": "Caleb"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 10,
-      "managerA": "Ben",
-      "scoreA": 143.52,
-      "managerB": "Mason",
-      "scoreB": 92.92,
+      "managerA": "Kyle",
+      "scoreA": 83.36,
+      "managerB": "Ben",
+      "scoreB": 113.02,
       "winner": "Ben"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 12,
-      "managerA": "Kyle",
-      "scoreA": 108.36,
-      "managerB": "Caleb",
-      "scoreB": 153.78,
-      "winner": "Caleb"
+      "managerA": "Caleb",
+      "scoreA": 99.62,
+      "managerB": "Mason",
+      "scoreB": 163.24,
+      "winner": "Mason"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 13,
       "managerA": "Kyle",
-      "scoreA": 125.36,
+      "scoreA": 145.38,
       "managerB": "Mason",
-      "scoreB": 137.6,
+      "scoreB": 151.16,
       "winner": "Mason"
     },
     {
-      "season": 2025,
+      "season": 2023,
       "week": 14,
-      "managerA": "Kyle",
-      "scoreA": 108.56,
-      "managerB": "Ben",
-      "scoreB": 108.8,
-      "winner": "Ben"
-    },
-    {
-      "season": 2025,
-      "week": 15,
-      "managerA": "Kyle",
-      "scoreA": 147.74,
+      "managerA": "Ben",
+      "scoreA": 82.14,
       "managerB": "Mason",
-      "scoreB": 119.86,
-      "winner": "Kyle"
+      "scoreB": 104.84,
+      "winner": "Mason"
     },
     {
-      "season": 2025,
-      "week": 16,
-      "managerA": "Caleb",
-      "scoreA": 103.02,
-      "managerB": "Ben",
-      "scoreB": 146.5,
+      "season": 2023,
+      "week": 15,
+      "managerA": "Ben",
+      "scoreA": 119.62,
+      "managerB": "Mason",
+      "scoreB": 102.86,
       "winner": "Ben"
     },
     {
@@ -1100,6 +1141,386 @@
       "winner": "Ben"
     },
     {
+      "season": 2025,
+      "week": 1,
+      "managerA": "Ben",
+      "scoreA": 96.28,
+      "managerB": "Mason",
+      "scoreB": 92.22,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 3,
+      "managerA": "Kyle",
+      "scoreA": 148.62,
+      "managerB": "Caleb",
+      "scoreB": 78.46,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 4,
+      "managerA": "Kyle",
+      "scoreA": 116.78,
+      "managerB": "Mason",
+      "scoreB": 138.56,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 5,
+      "managerA": "Kyle",
+      "scoreA": 167.12,
+      "managerB": "Ben",
+      "scoreB": 102.5,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 8,
+      "managerA": "Caleb",
+      "scoreA": 120.96,
+      "managerB": "Ben",
+      "scoreB": 113.86,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2025,
+      "week": 9,
+      "managerA": "Caleb",
+      "scoreA": 113.6,
+      "managerB": "Mason",
+      "scoreB": 116.4,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 10,
+      "managerA": "Ben",
+      "scoreA": 143.52,
+      "managerB": "Mason",
+      "scoreB": 92.92,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 12,
+      "managerA": "Kyle",
+      "scoreA": 108.36,
+      "managerB": "Caleb",
+      "scoreB": 153.78,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2025,
+      "week": 13,
+      "managerA": "Kyle",
+      "scoreA": 125.36,
+      "managerB": "Mason",
+      "scoreB": 137.6,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 14,
+      "managerA": "Kyle",
+      "scoreA": 108.56,
+      "managerB": "Ben",
+      "scoreB": 108.8,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "managerA": "Kyle",
+      "scoreA": 147.74,
+      "managerB": "Mason",
+      "scoreB": 119.86,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 16,
+      "managerA": "Caleb",
+      "scoreA": 103.02,
+      "managerB": "Ben",
+      "scoreB": 146.5,
+      "winner": "Ben"
+    }
+  ],
+  "matchups": [
+    {
+      "season": 2012,
+      "week": 1,
+      "managerA": "Caleb",
+      "scoreA": 123.16,
+      "managerB": "Ben",
+      "scoreB": 77.6,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2012,
+      "week": 2,
+      "managerA": "Caleb",
+      "scoreA": 110.11,
+      "managerB": "Kyle",
+      "scoreB": 77.74,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2012,
+      "week": 3,
+      "managerA": "Ben",
+      "scoreA": 72.07,
+      "managerB": "Kyle",
+      "scoreB": 103.23,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2012,
+      "week": 3,
+      "managerA": "Mason",
+      "scoreA": 80.65,
+      "managerB": "Caleb",
+      "scoreB": 80.75,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2012,
+      "week": 4,
+      "managerA": "Mason",
+      "scoreA": 129.75,
+      "managerB": "Ben",
+      "scoreB": 109.06,
+      "winner": "Mason"
+    },
+    {
+      "season": 2012,
+      "week": 5,
+      "managerA": "Mason",
+      "scoreA": 100.12,
+      "managerB": "Kyle",
+      "scoreB": 97.49,
+      "winner": "Mason"
+    },
+    {
+      "season": 2012,
+      "week": 1,
+      "managerA": "Caleb",
+      "scoreA": 96.29,
+      "managerB": "Ben",
+      "scoreB": 80.36,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2012,
+      "week": 2,
+      "managerA": "Caleb",
+      "scoreA": 49.59,
+      "managerB": "Kyle",
+      "scoreB": 87.13,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2012,
+      "week": 12,
+      "managerA": "Ben",
+      "scoreA": 111.29,
+      "managerB": "Kyle",
+      "scoreB": 110.04,
+      "winner": "Ben"
+    },
+    {
+      "season": 2012,
+      "week": 12,
+      "managerA": "Mason",
+      "scoreA": 109.12,
+      "managerB": "Caleb",
+      "scoreB": 99.82,
+      "winner": "Mason"
+    },
+    {
+      "season": 2012,
+      "week": 13,
+      "managerA": "Mason",
+      "scoreA": 110.52,
+      "managerB": "Ben",
+      "scoreB": 97.67,
+      "winner": "Mason"
+    },
+    {
+      "season": 2012,
+      "week": 15,
+      "managerA": "Mason",
+      "scoreA": 115.83,
+      "managerB": "Caleb",
+      "scoreB": 95.61,
+      "winner": "Mason"
+    },
+    {
+      "season": 2013,
+      "week": 2,
+      "managerA": "Mason",
+      "scoreA": 100.75,
+      "managerB": "Ben",
+      "scoreB": 98.35,
+      "winner": "Mason"
+    },
+    {
+      "season": 2013,
+      "week": 3,
+      "managerA": "Mason",
+      "scoreA": 163.51,
+      "managerB": "Kyle",
+      "scoreB": 125.3,
+      "winner": "Mason"
+    },
+    {
+      "season": 2013,
+      "week": 5,
+      "managerA": "Mason",
+      "scoreA": 144.42,
+      "managerB": "Caleb",
+      "scoreB": 142.38,
+      "winner": "Mason"
+    },
+    {
+      "season": 2013,
+      "week": 6,
+      "managerA": "Ben",
+      "scoreA": 106.3,
+      "managerB": "Kyle",
+      "scoreB": 74.78,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2013,
+      "week": 8,
+      "managerA": "Mason",
+      "scoreA": 102.97,
+      "managerB": "Kyle",
+      "scoreB": 140.6,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2013,
+      "week": 9,
+      "managerA": "Caleb",
+      "scoreA": 151.31,
+      "managerB": "Kyle",
+      "scoreB": 157.95,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2013,
+      "week": 11,
+      "managerA": "Mason",
+      "scoreA": 97.5,
+      "managerB": "Ben",
+      "scoreB": 143.3,
+      "winner": "Ben"
+    },
+    {
+      "season": 2013,
+      "week": 12,
+      "managerA": "Ben",
+      "scoreA": 148.35,
+      "managerB": "Caleb",
+      "scoreB": 138.51,
+      "winner": "Ben"
+    },
+    {
+      "season": 2013,
+      "week": 14,
+      "managerA": "Mason",
+      "scoreA": 115.98,
+      "managerB": "Caleb",
+      "scoreB": 178.61,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2013,
+      "week": 15,
+      "managerA": "Mason",
+      "scoreA": 140.15,
+      "managerB": "Kyle",
+      "scoreB": 164.04,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2014,
+      "week": 3,
+      "managerA": "Ben",
+      "scoreA": 62.4,
+      "managerB": "Kyle",
+      "scoreB": 150.06,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2014,
+      "week": 4,
+      "managerA": "Mason",
+      "scoreA": 105.4,
+      "managerB": "Ben",
+      "scoreB": 124.78,
+      "winner": "Ben"
+    },
+    {
+      "season": 2014,
+      "week": 5,
+      "managerA": "Caleb",
+      "scoreA": 121.24,
+      "managerB": "Kyle",
+      "scoreB": 116.78,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2014,
+      "week": 6,
+      "managerA": "Mason",
+      "scoreA": 76.44,
+      "managerB": "Caleb",
+      "scoreB": 102.64,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2014,
+      "week": 10,
+      "managerA": "Mason",
+      "scoreA": 92.76,
+      "managerB": "Kyle",
+      "scoreB": 84.32,
+      "winner": "Mason"
+    },
+    {
+      "season": 2014,
+      "week": 10,
+      "managerA": "Ben",
+      "scoreA": 117.24,
+      "managerB": "Caleb",
+      "scoreB": 136.08,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2014,
+      "week": 15,
+      "managerA": "Mason",
+      "scoreA": 121.5,
+      "managerB": "Caleb",
+      "scoreB": 142.6,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2014,
+      "week": 16,
+      "managerA": "Caleb",
+      "scoreA": 150,
+      "managerB": "Kyle",
+      "scoreB": 89.78,
+      "winner": "Caleb"
+    },
+    {
       "season": 2023,
       "week": 1,
       "managerA": "Kyle",
@@ -1197,6 +1618,425 @@
       "managerB": "Mason",
       "scoreB": 102.86,
       "winner": "Ben"
+    },
+    {
+      "season": 2024,
+      "week": 1,
+      "managerA": "Caleb",
+      "scoreA": 86.46,
+      "managerB": "Mason",
+      "scoreB": 155.72,
+      "winner": "Mason"
+    },
+    {
+      "season": 2024,
+      "week": 2,
+      "managerA": "Ben",
+      "scoreA": 125.84,
+      "managerB": "Mason",
+      "scoreB": 126.62,
+      "winner": "Mason"
+    },
+    {
+      "season": 2024,
+      "week": 2,
+      "managerA": "Kyle",
+      "scoreA": 156.64,
+      "managerB": "Caleb",
+      "scoreB": 154.02,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2024,
+      "week": 3,
+      "managerA": "Kyle",
+      "scoreA": 100.06,
+      "managerB": "Ben",
+      "scoreB": 127.08,
+      "winner": "Ben"
+    },
+    {
+      "season": 2024,
+      "week": 7,
+      "managerA": "Caleb",
+      "scoreA": 116.24,
+      "managerB": "Ben",
+      "scoreB": 108.08,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2024,
+      "week": 9,
+      "managerA": "Kyle",
+      "scoreA": 139.36,
+      "managerB": "Mason",
+      "scoreB": 157.3,
+      "winner": "Mason"
+    },
+    {
+      "season": 2024,
+      "week": 10,
+      "managerA": "Caleb",
+      "scoreA": 127.92,
+      "managerB": "Mason",
+      "scoreB": 153.78,
+      "winner": "Mason"
+    },
+    {
+      "season": 2024,
+      "week": 11,
+      "managerA": "Ben",
+      "scoreA": 115.6,
+      "managerB": "Mason",
+      "scoreB": 102.24,
+      "winner": "Ben"
+    },
+    {
+      "season": 2024,
+      "week": 11,
+      "managerA": "Kyle",
+      "scoreA": 136.94,
+      "managerB": "Caleb",
+      "scoreB": 114.34,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2024,
+      "week": 12,
+      "managerA": "Kyle",
+      "scoreA": 135.3,
+      "managerB": "Ben",
+      "scoreB": 167.72,
+      "winner": "Ben"
+    },
+    {
+      "season": 2024,
+      "week": 15,
+      "managerA": "Kyle",
+      "scoreA": 143.04,
+      "managerB": "Caleb",
+      "scoreB": 113.84,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2024,
+      "week": 16,
+      "managerA": "Kyle",
+      "scoreA": 134.82,
+      "managerB": "Ben",
+      "scoreB": 132.2,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2024,
+      "week": 17,
+      "managerA": "Ben",
+      "scoreA": 185.16,
+      "managerB": "Mason",
+      "scoreB": 133.88,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 1,
+      "managerA": "Ben",
+      "scoreA": 96.28,
+      "managerB": "Mason",
+      "scoreB": 92.22,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 3,
+      "managerA": "Kyle",
+      "scoreA": 148.62,
+      "managerB": "Caleb",
+      "scoreB": 78.46,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 4,
+      "managerA": "Kyle",
+      "scoreA": 116.78,
+      "managerB": "Mason",
+      "scoreB": 138.56,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 5,
+      "managerA": "Kyle",
+      "scoreA": 167.12,
+      "managerB": "Ben",
+      "scoreB": 102.5,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 8,
+      "managerA": "Caleb",
+      "scoreA": 120.96,
+      "managerB": "Ben",
+      "scoreB": 113.86,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2025,
+      "week": 9,
+      "managerA": "Caleb",
+      "scoreA": 113.6,
+      "managerB": "Mason",
+      "scoreB": 116.4,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 10,
+      "managerA": "Ben",
+      "scoreA": 143.52,
+      "managerB": "Mason",
+      "scoreB": 92.92,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 12,
+      "managerA": "Kyle",
+      "scoreA": 108.36,
+      "managerB": "Caleb",
+      "scoreB": 153.78,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2025,
+      "week": 13,
+      "managerA": "Kyle",
+      "scoreA": 125.36,
+      "managerB": "Mason",
+      "scoreB": 137.6,
+      "winner": "Mason"
+    },
+    {
+      "season": 2025,
+      "week": 14,
+      "managerA": "Kyle",
+      "scoreA": 108.56,
+      "managerB": "Ben",
+      "scoreB": 108.8,
+      "winner": "Ben"
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "managerA": "Kyle",
+      "scoreA": 147.74,
+      "managerB": "Mason",
+      "scoreB": 119.86,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2025,
+      "week": 16,
+      "managerA": "Caleb",
+      "scoreA": 103.02,
+      "managerB": "Ben",
+      "scoreB": 146.5,
+      "winner": "Ben"
+    }
+  ],
+  "memberHistory": [
+    {
+      "manager": "Ben",
+      "year": 2012,
+      "teamName": "Cody Uber's Demise",
+      "wins": 7,
+      "losses": 6,
+      "place": 6
+    },
+    {
+      "manager": "Caleb",
+      "year": 2012,
+      "teamName": "The Flash",
+      "wins": 9,
+      "losses": 4,
+      "place": 2
+    },
+    {
+      "manager": "Kyle",
+      "year": 2012,
+      "teamName": "Intimidation Station",
+      "wins": 7,
+      "losses": 6,
+      "place": 10
+    },
+    {
+      "manager": "Mason",
+      "year": 2012,
+      "teamName": "Defenders Of Gotham",
+      "wins": 10,
+      "losses": 3,
+      "place": 1
+    },
+    {
+      "manager": "Ben",
+      "year": 2013,
+      "teamName": "Nixa's Only Gunslinger",
+      "wins": 4,
+      "losses": 10,
+      "place": 10
+    },
+    {
+      "manager": "Caleb",
+      "year": 2013,
+      "teamName": "Czech Warriors",
+      "wins": 6,
+      "losses": 8,
+      "place": 5
+    },
+    {
+      "manager": "Kyle",
+      "year": 2013,
+      "teamName": "Multiple Scoregasms",
+      "wins": 8,
+      "losses": 6,
+      "place": 2
+    },
+    {
+      "manager": "Mason",
+      "year": 2013,
+      "teamName": "Dingers And Stingers",
+      "wins": 10,
+      "losses": 4,
+      "place": 4
+    },
+    {
+      "manager": "Ben",
+      "year": 2014,
+      "teamName": "3rd & Kyle's Short",
+      "wins": 3,
+      "losses": 10,
+      "place": 9
+    },
+    {
+      "manager": "Caleb",
+      "year": 2014,
+      "teamName": "Real Men Punt",
+      "wins": 8,
+      "losses": 5,
+      "place": 1
+    },
+    {
+      "manager": "Kyle",
+      "year": 2014,
+      "teamName": "Kyle's Team",
+      "wins": 9,
+      "losses": 4,
+      "place": 4
+    },
+    {
+      "manager": "Mason",
+      "year": 2014,
+      "teamName": "69ers",
+      "wins": 8,
+      "losses": 5,
+      "place": 5
+    },
+    {
+      "manager": "Ben",
+      "year": 2023,
+      "teamName": "Upset Alert",
+      "wins": 7,
+      "losses": 7,
+      "place": 3
+    },
+    {
+      "manager": "Caleb",
+      "year": 2023,
+      "teamName": "Punt Team Captain",
+      "wins": 8,
+      "losses": 6,
+      "place": 2
+    },
+    {
+      "manager": "Kyle",
+      "year": 2023,
+      "teamName": "Its All over",
+      "wins": 4,
+      "losses": 10,
+      "place": 8
+    },
+    {
+      "manager": "Mason",
+      "year": 2023,
+      "teamName": "Rowdy Phipsters",
+      "wins": 9,
+      "losses": 5,
+      "place": 5
+    },
+    {
+      "manager": "Ben",
+      "year": 2024,
+      "teamName": "Lucy's Dad",
+      "wins": 9,
+      "losses": 5,
+      "place": 4
+    },
+    {
+      "manager": "Caleb",
+      "year": 2024,
+      "teamName": "Punt Team Captain",
+      "wins": 8,
+      "losses": 6,
+      "place": 6
+    },
+    {
+      "manager": "Kyle",
+      "year": 2024,
+      "teamName": "New Year New me",
+      "wins": 7,
+      "losses": 7,
+      "place": 1
+    },
+    {
+      "manager": "Mason",
+      "year": 2024,
+      "teamName": "Rowdy Phipsters",
+      "wins": 8,
+      "losses": 6,
+      "place": 3
+    },
+    {
+      "manager": "Ben",
+      "year": 2025,
+      "teamName": "Overachievers",
+      "wins": 8,
+      "losses": 6,
+      "place": 5
+    },
+    {
+      "manager": "Caleb",
+      "year": 2025,
+      "teamName": "Punt Team Captain",
+      "wins": 8,
+      "losses": 6,
+      "place": 6
+    },
+    {
+      "manager": "Kyle",
+      "year": 2025,
+      "teamName": "My Season Is Over",
+      "wins": 8,
+      "losses": 6,
+      "place": 1
+    },
+    {
+      "manager": "Mason",
+      "year": 2025,
+      "teamName": "Rowdy Phipsters",
+      "wins": 11,
+      "losses": 3,
+      "place": 3
     }
   ],
   "preseasonSummary": "Kyle is two-for-two as champion and has fully transitioned from 'guy who drafts well' to 'guy the group chat quietly hates,' which, respectfully, is earned. Ben was a two-time champion back when Biden had a full head of steam and has since face-planted into last place twice — the '2400 Pins' and cold plunge weren't hazing, Ben, they were a pattern. Caleb remains the league's longest-running mystery: zero championships in five years, yet somehow avoids the basement often enough to keep talking like a contender at the draft table. Mason's the quiet menace — one ring, zero last-place finishes, but one can only imagine he is due like Russel Gage for a seat at the bottom. New this year: last place doesn't get off easy with a crawl or a book report anymore. It's eighteen holes of frisbee golf, a spin of the wheel on every tee box, and however many hot dogs that wheel demands — eaten, not admired. Draft smart. And Don't Get Dogged.\"",
