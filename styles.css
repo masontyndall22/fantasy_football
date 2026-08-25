@@ -26,8 +26,8 @@
   --gold-text: #2a1e05;
   --gold-glow: 0 0 0 1px #7a6321, 0 0 20px rgba(212, 175, 55, 0.12);
 
-  --success: #9184d9; /* correct pick uses the accent, per Nocturne mono scheme */
-  --wrong: #75798c;
+  --success: #08e827; /* correct pick uses the accent, per Nocturne mono scheme */
+  --wrong: #e8084a;
   --pending: #595d6c;
 
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
