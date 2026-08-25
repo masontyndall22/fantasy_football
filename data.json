@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T02:42:55.384Z",
+  "generatedAt": "2026-08-25T02:46:43.041Z",
   "managers": [
     {
       "name": "Ben",
@@ -12,6 +12,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
+      "mvpBonus": 1,
       "overallLeagueRank": 2
     },
     {
@@ -25,6 +26,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
+      "mvpBonus": 0,
       "overallLeagueRank": 3
     },
     {
@@ -38,6 +40,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
+      "mvpBonus": 0,
       "overallLeagueRank": 3
     },
     {
@@ -51,6 +54,7 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 30.5,
+      "mvpBonus": 1,
       "overallLeagueRank": 1
     }
   ],
@@ -190,61 +194,61 @@
       "group": "Make the Playoffs"
     },
     {
-      "key": "afcWcGame1",
+      "key": "AFC WC Game 1",
       "label": "AFC WC Game 1",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "afcWcGame2",
+      "key": "AFC WC Game 2",
       "label": "AFC WC Game 2",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "afcWcGame3",
+      "key": "AFC WC Game 3",
       "label": "AFC WC Game 3",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "nfcWcGame4",
+      "key": "NFC WC Game 1",
       "label": "NFC WC Game 1",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "nfcWcGame2",
+      "key": "NFC WC Game 2",
       "label": "NFC WC Game 2",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "nfcWcGame3",
+      "key": "NFC WC Game 3",
       "label": "NFC WC Game 3",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
     {
-      "key": "afcDivisionalGame1",
+      "key": "AFC Divisional Game 1",
       "label": "AFC Divisional Game 1",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "afcDivisionalGame2",
+      "key": "AFC Divisional Game 2",
       "label": "AFC Divisional Game 2",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "nfcDivisionalGame1",
+      "key": "NFC Divisional Game 1",
       "label": "NFC Divisional Game 1",
       "weight": 1.5,
       "group": "Divisional Round"
     },
     {
-      "key": "nfcDivisionalGame4",
+      "key": "NFC Divisional Game 2",
       "label": "NFC Divisional Game 2",
       "weight": 1.5,
       "group": "Divisional Round"
@@ -302,16 +306,16 @@
         "nfcWc1": "49ers",
         "nfcWc2": "Seahawks",
         "nfcWc3": "Packers",
-        "afcWcGame1": "Chiefs",
-        "afcWcGame2": "Rams",
-        "afcWcGame3": "Seahawks",
-        "nfcWcGame4": "Chargers",
-        "nfcWcGame2": "49ers",
-        "nfcWcGame3": "Saints",
-        "afcDivisionalGame1": "Rams",
-        "afcDivisionalGame2": "Saints",
-        "nfcDivisionalGame1": "Chiefs",
-        "nfcDivisionalGame4": "Bills",
+        "AFC WC Game 1": "Chiefs",
+        "AFC WC Game 2": "Rams",
+        "AFC WC Game 3": "Seahawks",
+        "NFC WC Game 1": "Chargers",
+        "NFC WC Game 2": "49ers",
+        "NFC WC Game 3": "Saints",
+        "AFC Divisional Game 1": "Rams",
+        "AFC Divisional Game 2": "Saints",
+        "NFC Divisional Game 1": "Chiefs",
+        "NFC Divisional Game 2": "Bills",
         "afcChampionship": "Saints",
         "nfcChampionship": "Bills",
         "superBowlWinner": "Bills"
@@ -333,16 +337,16 @@
     "nfcWc1": "49ers",
     "nfcWc2": "Seahawks",
     "nfcWc3": "Packers",
-    "afcWcGame1": "Chiefs",
-    "afcWcGame2": "Rams",
-    "afcWcGame3": "Seahawks",
-    "nfcWcGame4": "Chargers",
-    "nfcWcGame2": "49ers",
-    "nfcWcGame3": "Saints",
-    "afcDivisionalGame1": "49ers",
-    "afcDivisionalGame2": "Saints",
-    "nfcDivisionalGame1": "Chiefs",
-    "nfcDivisionalGame4": "Bengals",
+    "AFC WC Game 1": "Chiefs",
+    "AFC WC Game 2": "Rams",
+    "AFC WC Game 3": "Seahawks",
+    "NFC WC Game 1": "Chargers",
+    "NFC WC Game 2": "49ers",
+    "NFC WC Game 3": "Saints",
+    "AFC Divisional Game 1": "49ers",
+    "AFC Divisional Game 2": "Saints",
+    "NFC Divisional Game 1": "Chiefs",
+    "NFC Divisional Game 2": "Bengals",
     "afcChampionship": "Falcons",
     "nfcChampionship": "Bengals",
     "superBowlWinner": "Falcons"
