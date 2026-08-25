@@ -1,361 +1,335 @@
 /**
- * SLEEPER API SYNC SCRIPT — PPR league only
+ * PUBLISH TO GITHUB
+ * Reads live data straight from this spreadsheet (no Sheety involved) and
+ * commits it as data.json to your GitHub Pages repo.
  *
- * NOTE: Sleeper's public API only covers standard draft-based fantasy leagues
- * (rosters, matchups, drafts, brackets — all keyed by league_id). Pick'em &
- * Survivor Pools are a separate Sleeper product with no public API and no
- * league_id you can point this script at. Sleeper_Pickems_Data in the workbook
- * is manual entry by design — type each week'ss correct-picks count in by hand;
- * everything below that (season totals, weekly wins, rank) is still automatic.
- *
- * Paste into: Extensions > Apps Script
+ * SETUP (one time):
+ * 1. Go to github.com/settings/tokens > Generate new token (classic)
+ *    - Scope needed: just "repo" (or "public_repo" if your repo is public)
+ * 2. In this Apps Script project: Project Settings (gear icon) > Script Properties
+ *    - Add property: GITHUB_TOKEN = <the token you just copied>
+ * 3. Fill in GITHUB_OWNER, GITHUB_REPO, and DATA_FILE_PATH below.
+ * 4. Run publishToGithub() once manually to test.
  */
 
 // ==== CONFIG ====
-const SLEEPER_PPR_LEAGUE_ID = '1385345660395483136';
-const SLEEPER_PPR_SHEET_NAME = 'Sleeper_PPR_Data';
-const SLEEPER_PPR_WEEK_CELL = 'B1'; // week number lives in Sleeper_PPR_Data!B1
-const HEAD2HEAD_SHEET_NAME = 'Sleeper_Head2Head_Log';
-const HEAD2HEAD_LOOKBACK_SEASONS = 2; // how many PAST seasons to pull in the one-time backfill
-const SCORE_RECORDS_SHEET_NAME = 'Sleeper_Score_Records';
+const GITHUB_OWNER = 'YOUR_GITHUB_USERNAME';
+const GITHUB_REPO = 'YOUR_REPO_NAME';
+const DATA_FILE_PATH = 'data.json';
+const GITHUB_BRANCH = 'main';
 
-// Map each person's Sleeper USERNAME (their account handle, not their team name —
-// team names get renamed for fun all the time, usernames essentially never do)
-// to the manager name used everywhere else in this workbook. Get each username from
-// their Sleeper profile (Settings > tap their name at the top) or by asking them —
-// it's NOT the same as the display "team name" shown on the league standings page.
-const SLEEPER_USERNAME_TO_MANAGER = {
-  'bmelto14': 'Ben',
-  'cgarde11': 'Caleb',
-  'kylerobi3': 'Kyle',
-  'masontyndall': 'Mason',
-};
+const MANAGER_ORDER = ['Ben', 'Caleb', 'Kyle', 'Mason'];
 
-// Row each manager is locked to on Sleeper_PPR_Data, so the sheet always lines up
-// with Standings / FanDuel_Data / Playoff_Picks regardless of what order Sleeper's
-// API happens to return teams in.
-const SLEEPER_MANAGER_ROW = { 'Ben': 3, 'Caleb': 4, 'Kyle': 5, 'Mason': 6 };
+function publishToGithub() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const payload = buildDashboardJson_(ss);
+  commitFileToGithub_(JSON.stringify(payload, null, 2));
+}
+
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('The League')
+    .addItem('Publish Now', 'publishToGithub')
+    .addToUi();
+}
 
 // ============================================================
-function syncPprData() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
-  const sheet = ss.getSheetByName(SLEEPER_PPR_SHEET_NAME);
-  if (!sheet) throw new Error(`Sheet "${SLEEPER_PPR_SHEET_NAME}" not found`);
+// Build the JSON payload directly from the live sheet
+// ============================================================
+function buildDashboardJson_(ss) {
+  const homeContent = readHomeContent_(ss);
+  return {
+    generatedAt: new Date().toISOString(),
+    managers: readManagers_(ss),
+    bios: readStats_(ss),
+    playoffCategories: readPlayoffCategories_(ss),
+    playoffPicks: readPlayoffPicks_(ss),
+    playoffActual: readPlayoffActual_(ss),
+    actualMvp: readActualMvp_(ss),
+    leagueHistory: readLeagueHistory_(ss),
+    historicalSeasons: readHistoricalSeasons_(ss),
+    weeklyFanDuel: readWeeklyMatrix_(ss, 'FanDuel_Data', 3, 20),
+    sleeperScoreRecords: readScoreRecords_(ss, 'Sleeper_Score_Records'),
+    fanDuelScoreRecords: readScoreRecords_(ss, 'FanDuel_Score_Records'),
+    headToHead: readHeadToHead_(ss),
+    matchups: readHeadToHead_(ss),
+    memberHistory: readMemberHistory_(ss),
+    preseasonSummary: homeContent.preseasonSummary,
+    currentWeekLabel: homeContent.currentWeekLabel,
+    weeklyRoasts: homeContent.weeklyRoasts,
+  };
+}
 
-  const week = sheet.getRange(SLEEPER_PPR_WEEK_CELL).getValue() || getCurrentNflWeek_();
-
-  const league = fetchJson_(`https://api.sleeper.app/v1/league/${SLEEPER_PPR_LEAGUE_ID}`);
-  const users = fetchJson_(`https://api.sleeper.app/v1/league/${SLEEPER_PPR_LEAGUE_ID}/users`);
-  const rosters = fetchJson_(`https://api.sleeper.app/v1/league/${SLEEPER_PPR_LEAGUE_ID}/rosters`);
-  const matchups = fetchJson_(`https://api.sleeper.app/v1/league/${SLEEPER_PPR_LEAGUE_ID}/matchups/${week}`);
-
-  // roster_id -> manager name, resolved through Sleeper USERNAME (not team_name/display_name)
-  const rosterIdToManager = {};
-  const unmatched = [];
-  Logger.log(rosters.length)
-  rosters.forEach(r => {
-    const userDetails = fetchJson_(`https://api.sleeper.app/v1/user/${r.owner_id}`)
-    const manager = userDetails ? SLEEPER_USERNAME_TO_MANAGER[userDetails.username] : undefined;
-    Logger.log(manager)
-    if (manager) {
-      rosterIdToManager[r.roster_id] = manager;
-    } else {
-      unmatched.push(userDetails ? userDetails.username : `roster ${r.roster_id}`);
-    }
+// Per completed season, each manager's final standings Place (1-4) and Total
+// points — pulled from League_History_Detail's "Total" and "Place" rows.
+// Used for the Rivalry view and all-time season records. Deliberately does
+// NOT include the in-progress current season, since comparing an unfinished
+// season's running total against final historical totals wouldn't be fair.
+function readHistoricalSeasons_(ss) {
+  const sheet = ss.getSheetByName('League_History_Detail');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  const managerCols = ['Ben', 'Caleb', 'Kyle', 'Mason'];
+  const bySeason = {};
+  rows.forEach(r => {
+    const season = r[0], category = r[1];
+    if (!season || (category !== 'Total' && category !== 'Place')) return;
+    if (!bySeason[season]) bySeason[season] = { season: season, totals: {}, places: {} };
+    managerCols.forEach((m, i) => {
+      const val = r[2 + i];
+      if (category === 'Total') bySeason[season].totals[m] = val;
+      if (category === 'Place') bySeason[season].places[m] = val;
+    });
   });
-  if (unmatched.length > 0) {
-    Logger.log('WARNING: no manager mapping found for Sleeper username(s): ' + unmatched.join(', ') +
-      '. Check SLEEPER_USERNAME_TO_MANAGER at the top of the script — these rows were skipped.');
-  }
+  return Object.values(bySeason);
+}
 
-  const seasonTotals = {};
-  rosters.forEach(r => {
-    seasonTotals[r.roster_id] = {
-      wins: r.settings.wins,
-      losses: r.settings.losses,
-      fpts: r.settings.fpts + (r.settings.fpts_decimal || 0) / 100,
-      fpts_against: r.settings.fpts_against + (r.settings.fpts_against_decimal || 0) / 100
+// Generic reader for a "Week | Ben | Caleb | Kyle | Mason" weekly matrix tab
+// (FanDuel_Data or Sleeper_PPR_Weekly_Log share this exact shape). Returns
+// one array per manager; blank/not-yet-played weeks come back as 0.
+function readWeeklyMatrix_(ss, sheetName, startRow, endRow) {
+  const sheet = ss.getSheetByName(sheetName);
+  if (!sheet) return { Ben: [], Caleb: [], Kyle: [], Mason: [] };
+  const managerCols = ['Ben', 'Caleb', 'Kyle', 'Mason'];
+  const out = { Ben: [], Caleb: [], Kyle: [], Mason: [] };
+  const rows = sheet.getRange(startRow, 1, endRow - startRow + 1, 5).getValues();
+  rows.forEach(r => {
+    managerCols.forEach((m, i) => {
+      out[m].push(Number(r[1 + i]) || 0);
+    });
+  });
+  return out;
+}
+
+// Reads the all-time Sleeper score records (highest/lowest single week ever,
+// per manager) — a simple 4-row table rather than a full weekly log, since
+// only the two extremes ever matter for this.
+// Shared reader for any "highest/lowest score ever" tab — Sleeper_Score_Records
+// and FanDuel_Score_Records both use this exact same 7-column shape.
+function readScoreRecords_(ss, sheetName) {
+  const sheet = ss.getSheetByName(sheetName);
+  if (!sheet) return {};
+  const rows = sheet.getRange(3, 1, 4, 7).getValues();
+  const out = {};
+  rows.forEach(r => {
+    if (!r[0]) return;
+    out[r[0]] = {
+      highest: { value: r[1], season: r[2], week: r[3] },
+      lowest: { value: r[4], season: r[5], week: r[6] },
     };
   });
-
-  // Header row (row 2) — left as-is; only the 4 fixed manager rows (3-6) get overwritten
-  sheet.getRange(2, 1, 1, 8).setValues([[
-    'Manager', 'Matchup ID', 'Week Points', 'Opponent Points',
-    'Season Wins', 'Season Losses', 'Season Points For', 'Season Points Against'
-  ]]);
-
-  matchups.forEach(m => {
-    const manager = rosterIdToManager[m.roster_id];
-    if (!manager) return; // unmatched roster — skipped, see log
-    const targetRow = SLEEPER_MANAGER_ROW[manager];
-    if (!targetRow) return;
-
-    const opponent = matchups.find(o => o.matchup_id === m.matchup_id && o.roster_id !== m.roster_id);
-    const totals = seasonTotals[m.roster_id] || {};
-
-    sheet.getRange(targetRow, 1, 1, 8).setValues([[
-      manager,
-      m.matchup_id,
-      m.points || 0,
-      opponent ? (opponent.points || 0) : 0,
-      totals.wins || 0,
-      totals.losses || 0,
-      totals.fpts || 0,
-      totals.fpts_against || 0
-    ]]);
-  });
-
-  sheet.getRange('J1').setValue('Last synced:');
-  sheet.getRange('K1').setValue(new Date());
-
-  logHeadToHeadMatchups_(ss, league.season, week, matchups, rosterIdToManager);
-  updateScoreRecords_(ss, league.season, week, matchups, rosterIdToManager);
+  return out;
 }
 
-function getOrCreateScoreRecordsSheet_(ss) {
-  let sheet = ss.getSheetByName(SCORE_RECORDS_SHEET_NAME);
-  if (sheet) return sheet;
-  sheet = ss.insertSheet(SCORE_RECORDS_SHEET_NAME);
-  sheet.getRange(1, 1).setValue(
-    'ALL-TIME SLEEPER SCORE RECORDS — highest and lowest single-week score ever, per manager. ' +
-    'Seeded by backfillHeadToHead() (which already sees every historical week while walking past ' +
-    'seasons), then kept current by a simple beat-the-record check each regular sync — no need to ' +
-    'log every single week.'
-  );
-  sheet.getRange(2, 1, 1, 7).setValues([[
-    'Manager', 'Highest Score', 'Highest Season', 'Highest Week', 'Lowest Score', 'Lowest Season', 'Lowest Week'
-  ]]);
-  Object.keys(SLEEPER_MANAGER_ROW).forEach(manager => {
-    sheet.getRange(SLEEPER_MANAGER_ROW[manager], 1).setValue(manager);
-  });
-  return sheet;
+// Reads the real head-to-head matchup log (populated by sleeper_sync.gs —
+// a separate script from this one). Returns one flat row per matchup;
+// nothing to compute here, the app does the win/loss tallying client-side.
+function readHeadToHead_(ss) {
+  const sheet = ss.getSheetByName('Sleeper_Head2Head_Log');
+  if (!sheet || sheet.getLastRow() < 3) return [];
+  const rows = sheet.getRange(3, 1, sheet.getLastRow() - 2, 7).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    season: r[0], week: r[1],
+    managerA: r[2], scoreA: r[3],
+    managerB: r[4], scoreB: r[5],
+    winner: r[6],
+  }));
 }
 
-// Called from syncPprData() every regular sync. Just compares this week's
-// real score against whatever's already stored and replaces it if it's a
-// new high or new low — no full weekly history kept, just the 2 extremes.
-function updateScoreRecords_(ss, season, week, matchups, rosterIdToManager) {
-  const sheet = getOrCreateScoreRecordsSheet_(ss);
-
-  matchups.forEach(m => {
-    const manager = rosterIdToManager[m.roster_id];
-    if (!manager || !SLEEPER_MANAGER_ROW[manager]) return;
-    const score = m.points || 0;
-    if (!score) return; // week hasn't happened yet — nothing to compare
-
-    const row = SLEEPER_MANAGER_ROW[manager];
-    const existingHigh = sheet.getRange(row, 2).getValue();
-    const existingLow = sheet.getRange(row, 5).getValue();
-
-    if (existingHigh === '' || existingHigh == null || score > existingHigh) {
-      sheet.getRange(row, 2, 1, 3).setValues([[score, season, week]]);
-    }
-    if (existingLow === '' || existingLow == null || score < existingLow) {
-      sheet.getRange(row, 5, 1, 3).setValues([[score, season, week]]);
-    }
-  });
+// Reads the manually-maintained League_History tab — one row per manager
+// per season, with their team name and W/L/place that year. No UI consumes
+// this yet; it's published as-is so the next screen can be built against
+// real data from day one.
+function readMemberHistory_(ss) {
+  const sheet = ss.getSheetByName('League_History');
+  if (!sheet || sheet.getLastRow() < 2) return [];
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    manager: r[0],
+    year: r[1],
+    teamName: r[2],
+    wins: r[3],
+    losses: r[4],
+    place: r[5],
+  }));
 }
 
-// Appends (or updates, if re-run mid-week) this week's real head-to-head
-// results into Sleeper_Head2Head_Log. Each Sleeper "matchup_id" pairs exactly
-// 2 rosters together — this turns that into one readable row per matchup.
-function logHeadToHeadMatchups_(ss, season, week, matchups, rosterIdToManager) {
-  let sheet = ss.getSheetByName(HEAD2HEAD_SHEET_NAME);
-  if (!sheet) {
-    sheet = ss.insertSheet(HEAD2HEAD_SHEET_NAME);
-    writeHead2HeadHeaders_(sheet);
-  }
+// Combines App_Dashboard (totals/ranks), Standings (Sleeper Placing raw),
+// and FanDuel_Data's season summary (the 4 real FanDuel metrics) into the
+// single flat `managers` shape the app expects.
+function readManagers_(ss) {
+  const dash = ss.getSheetByName('App_Dashboard').getRange(2, 1, 4, 10).getValues();
+  const standingsPlacing = ss.getSheetByName('Standings').getRange(2, 14, 4, 1).getValues(); // col N
+  const standingsMvpBonus = ss.getSheetByName('Standings').getRange(2, 18, 4, 1).getValues(); // col R
+  const fdSummary = ss.getSheetByName('FanDuel_Data').getRange(24, 1, 4, 5).getValues(); // A:E
 
-  // Remove any existing rows for this exact season+week first, so re-running
-  // mid-week (scores still updating) replaces rather than duplicates them.
-  const existing = sheet.getDataRange().getValues();
-  for (let r = existing.length - 1; r >= 2; r--) {
-    if (String(existing[r][0]) === String(season) && Number(existing[r][1]) === Number(week)) {
-      sheet.deleteRow(r + 1);
-    }
-  }
-
-  const byMatchupId = {};
-  matchups.forEach(m => {
-    if (!byMatchupId[m.matchup_id]) byMatchupId[m.matchup_id] = [];
-    byMatchupId[m.matchup_id].push(m);
-  });
-
-  const rows = [];
-  Object.values(byMatchupId).forEach(pair => {
-    if (pair.length !== 2) return; // bye week or malformed pairing — skip
-    const [m1, m2] = pair;
-    const mgr1 = rosterIdToManager[m1.roster_id];
-    const mgr2 = rosterIdToManager[m2.roster_id];
-    if (!mgr1 || !mgr2) return;
-    const score1 = m1.points || 0, score2 = m2.points || 0;
-    const winner = score1 === score2 ? 'Tie' : (score1 > score2 ? mgr1 : mgr2);
-    rows.push([season, week, mgr1, score1, mgr2, score2, winner]);
-  });
-
-  if (rows.length) {
-    const lastRow = sheet.getLastRow();
-    sheet.getRange(lastRow + 1, 1, rows.length, 7).setValues(rows);
-  }
+  return dash.map((row, i) => ({
+    name: row[0],
+    totalStandingsPoints: row[1],
+    sleeperPprSeasonPoints: row[3],
+    sleeperFinalPlacement: standingsPlacing[i][0],
+    pickemTotalCorrect: row[4],
+    fdWins: fdSummary[i][4],
+    fdTop5Total: fdSummary[i][2],
+    fdTop10Total: fdSummary[i][3],
+    fdSeasonTotal: fdSummary[i][1],
+    playoffBracketScore: row[8],
+    mvpBonus: standingsMvpBonus[i][0] || 0,
+    overallLeagueRank: row[9],
+  }));
 }
 
-/**
- * ONE-TIME (or re-run anytime): rebuilds the ENTIRE head-to-head log from
- * scratch — this season's matchups so far, plus up to HEAD2HEAD_LOOKBACK_SEASONS
- * previous seasons, walked backward through Sleeper's previous_league_id chain.
- *
- * Only works as far back as your Sleeper league was actually renewed year to
- * year (not recreated fresh) — if there's no previous_league_id, the chain
- * just stops there and you get however many seasons ARE linked. Safe to
- * re-run; it clears and rebuilds rather than appending duplicates.
- */
-function backfillHeadToHead() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
-  let sheet = ss.getSheetByName(HEAD2HEAD_SHEET_NAME);
-  if (!sheet) {
-    sheet = ss.insertSheet(HEAD2HEAD_SHEET_NAME);
-    writeHead2HeadHeaders_(sheet);
-  }
+function readStats_(ss) {
+  const sheet = ss.getSheetByName('Stats');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 10).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    manager: r[0],
+    favoriteTeam: r[1],
+    cumulativeScore: r[2],
+    leagueWins: r[3],
+    leagueLosses: r[4],
+    averagePlace: r[5],
+    strength: r[6],
+    weakness: r[7],
+    punishmentsDone: r[8],
+    punishmentIdeas: r[9],
+  }));
+}
 
-  const seasonChain = [];
-  let leagueId = SLEEPER_PPR_LEAGUE_ID;
-  for (let i = 0; i <= HEAD2HEAD_LOOKBACK_SEASONS && leagueId; i++) {
-    const league = fetchJson_(`https://api.sleeper.app/v1/league/${leagueId}`);
-    seasonChain.push({ leagueId: leagueId, season: league.season });
-    leagueId = league.previous_league_id || null;
-  }
-  Logger.log(`Found ${seasonChain.length} linked season(s): ` +
-    seasonChain.map(s => s.season).join(', '));
+// Column-key map matches Playoff_Picks / Playoff_Actual headers exactly.
+// If you ever rename a playoff column header, update the matching key here too.
+const PLAYOFF_KEY_MAP = {
+  'AFC East': 'afcEast', 'AFC North': 'afcNorth', 'AFC South': 'afcSouth', 'AFC West': 'afcWest',
+  'NFC East': 'nfcEast', 'NFC North': 'nfcNorth', 'NFC South': 'nfcSouth', 'NFC West': 'nfcWest',
+  'AFC WC1': 'afcWc1', 'AFC WC2': 'afcWc2', 'AFC WC3': 'afcWc3',
+  'NFC WC1': 'nfcWc1', 'NFC WC2': 'nfcWc2', 'NFC WC3': 'nfcWc3',
+  'WC Game 1': 'wcGame1', 'WC Game 2': 'wcGame2', 'WC Game 3': 'wcGame3',
+  'WC Game 4': 'wcGame4', 'WC Game 5': 'wcGame5', 'WC Game 6': 'wcGame6',
+  'Divisional Game 1': 'divisionalGame1', 'Divisional Game 2': 'divisionalGame2',
+  'Divisional Game 3': 'divisionalGame3', 'Divisional Game 4': 'divisionalGame4',
+  'AFC Championship': 'afcChampionship', 'NFC Championship': 'nfcChampionship',
+  'Super Bowl Winner': 'superBowlWinner',
+};
 
-  // Only clear out rows for the seasons Sleeper is actually going to
-  // re-provide below. Rows for any other season (e.g. pre-Sleeper league
-  // history you've entered by hand in this same tab) are left completely
-  // untouched, so this is safe to re-run without wiping manual entries.
-  const sleeperSeasons = new Set(seasonChain.map(s => String(s.season)));
-  const existingRows = sheet.getLastRow() > 2
-    ? sheet.getRange(3, 1, sheet.getLastRow() - 2, 7).getValues()
-    : [];
-  for (let r = existingRows.length - 1; r >= 0; r--) {
-    if (sleeperSeasons.has(String(existingRows[r][0]))) sheet.deleteRow(r + 3);
-  }
+// Maps each real pick's point-weight tier to the 5 playoff-screen group labels.
+function groupForWeight_(weight) {
+  if (weight === 2 || weight === 1) return 'Make the Playoffs'; // division winners (2.0) + wild-card qualifiers (1.0)
+  if (weight === 1.25) return 'Wild Card Round';
+  if (weight === 1.5) return 'Divisional Round';
+  if (weight === 1.75) return 'Conference Championship';
+  return 'Super Bowl'; // 2.0 on the Super Bowl Winner pick specifically
+}
 
-  // Tracks each manager's best/worst single-week score seen anywhere across
-  // every season in the chain — since we're already reading every historical
-  // week's real scores here, this gets us TRUE all-time records for free,
-  // rather than only being able to track "from now on."
-  const scoreRecords = {};
-  function trackScore(manager, value, season, week) {
-    if (!value) return; // 0 = didn't play that week, not a real record
-    if (!scoreRecords[manager]) {
-      scoreRecords[manager] = { highest: { value, season, week }, lowest: { value, season, week } };
-      return;
-    }
-    if (value > scoreRecords[manager].highest.value) scoreRecords[manager].highest = { value, season, week };
-    if (value < scoreRecords[manager].lowest.value) scoreRecords[manager].lowest = { value, season, week };
-  }
+function readPlayoffCategories_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB — the 27 real scored picks (MVP excluded)
+  const weights = sheet.getRange(2, 2, 1, 27).getValues()[0];
+  return headers.map((h, i) => ({
+    key: PLAYOFF_KEY_MAP[h] || h,
+    label: h,
+    weight: weights[i] || 0,
+    group: i === headers.length - 1 ? 'Super Bowl' : groupForWeight_(weights[i]),
+  }));
+}
 
-  // Appends after whatever's already in the sheet (manual rows included)
-  // rather than assuming the sheet starts empty at row 3.
-  let outRow = sheet.getLastRow() + 1;
-  seasonChain.forEach(({ leagueId, season }) => {
-    const rosters = fetchJson_(`https://api.sleeper.app/v1/league/${leagueId}/rosters`);
-    const rosterIdToManager = {};
-    rosters.forEach(r => {
-      const userDetails = fetchJson_(`https://api.sleeper.app/v1/user/${r.owner_id}`)
-      const manager = userDetails ? SLEEPER_USERNAME_TO_MANAGER[userDetails.username] : undefined;
-      Logger.log(manager)
-      if (manager) rosterIdToManager[r.roster_id] = manager;
+function readPlayoffPicks_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Picks');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
+  const mvpCol = 29; // AC
+  const rows = sheet.getRange(2, 1, 4, 29).getValues();
+  return rows.filter(r => r[0]).map(r => {
+    const picks = {};
+    headers.forEach((h, i) => {
+      const key = PLAYOFF_KEY_MAP[h] || h;
+      if (r[i + 1]) picks[key] = r[i + 1];
     });
-
-    for (let week = 1; week <= 18; week++) {
-      let matchups;
-      try {
-        matchups = fetchJson_(`https://api.sleeper.app/v1/league/${leagueId}/matchups/${week}`);
-      } catch (e) {
-        continue; // that week doesn't exist for this league — skip it
-      }
-      if (!matchups || !matchups.length) continue;
-
-      // Track every individual score toward the all-time high/low, completely
-      // independent of head-to-head pairing — a bye week or a malformed
-      // matchup_id grouping should never cause a real score to be skipped.
-      matchups.forEach(m => {
-        const manager = rosterIdToManager[m.roster_id];
-        if (!manager) return;
-        trackScore(manager, m.points || 0, season, week);
-      });
-
-      const byMatchupId = {};
-      matchups.forEach(m => {
-        if (!byMatchupId[m.matchup_id]) byMatchupId[m.matchup_id] = [];
-        byMatchupId[m.matchup_id].push(m);
-      });
-
-      Object.values(byMatchupId).forEach(pair => {
-        if (pair.length !== 2) return;
-        const [m1, m2] = pair;
-        const mgr1 = rosterIdToManager[m1.roster_id];
-        const mgr2 = rosterIdToManager[m2.roster_id];
-        if (!mgr1 || !mgr2) return;
-        const score1 = m1.points || 0, score2 = m2.points || 0;
-        if (score1 === 0 && score2 === 0) return; // week hasn't happened yet
-        const winner = score1 === score2 ? 'Tie' : (score1 > score2 ? mgr1 : mgr2);
-        sheet.getRange(outRow, 1, 1, 7).setValues([[season, week, mgr1, score1, mgr2, score2, winner]]);
-        outRow++;
-      });
-    }
+    return { manager: r[0], mvp: r[mvpCol - 1] || '', picks: picks };
   });
-
-  Logger.log(`Head-to-head backfill complete: ${outRow - sheet.getLastRow() - 1 + (outRow - 3)} rows written for Sleeper seasons.`);
-
-  const scoreSheet = getOrCreateScoreRecordsSheet_(ss);
-  Object.entries(scoreRecords).forEach(([manager, rec]) => {
-    const row = SLEEPER_MANAGER_ROW[manager];
-    if (!row) return;
-    scoreSheet.getRange(row, 1, 1, 7).setValues([[
-      manager, rec.highest.value, rec.highest.season, rec.highest.week,
-      rec.lowest.value, rec.lowest.season, rec.lowest.week,
-    ]]);
-  });
-  Logger.log('Score records seeded from backfilled history: ' + JSON.stringify(scoreRecords));
 }
 
-function writeHead2HeadHeaders_(sheet) {
-  sheet.getRange(1, 1).setValue(
-    'REAL HEAD-TO-HEAD MATCHUPS — auto-filled by the Apps Script. Run backfillHeadToHead() ' +
-    'once to pull in past seasons; ongoing weeks get appended automatically by the regular sync.'
-  );
-  sheet.getRange(2, 1, 1, 7).setValues([[
-    'Season', 'Week', 'Manager A', 'Score A', 'Manager B', 'Score B', 'Winner'
-  ]]);
+function readPlayoffActual_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  const headers = sheet.getRange(1, 2, 1, 27).getValues()[0]; // B:AB
+  const actualRow = sheet.getRange(3, 2, 1, 27).getValues()[0];
+  const actual = {};
+  headers.forEach((h, i) => {
+    const key = PLAYOFF_KEY_MAP[h] || h;
+    if (actualRow[i]) actual[key] = actualRow[i];
+  });
+  return actual;
 }
 
-function fetchJson_(url) {
-  const resp = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
-  if (resp.getResponseCode() !== 200) {
-    throw new Error(`Sleeper API error ${resp.getResponseCode()} for ${url}`);
+function readActualMvp_(ss) {
+  const sheet = ss.getSheetByName('Playoff_Actual');
+  return sheet.getRange(3, 29).getValue() || ''; // AC3
+}
+
+function readHomeContent_(ss) {
+  const sheet = ss.getSheetByName('Home_Content');
+  const preseasonSummary = sheet.getRange('A2').getValue() || '';
+  const currentWeekLabel = sheet.getRange('A5').getValue() || '';
+  const roastRows = sheet.getRange(9, 1, 4, 2).getValues();
+  const weeklyRoasts = roastRows
+    .filter(r => r[0] && r[1])
+    .map(r => ({ manager: r[0], roast: r[1] }));
+  return { preseasonSummary, currentWeekLabel, weeklyRoasts };
+}
+
+function readLeagueHistory_(ss) {
+  const sheet = ss.getSheetByName('League_History_Summary');
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  return rows.filter(r => r[0]).map(r => ({
+    season: r[0],
+    champion: r[1],
+    championScore: r[2],
+    lastPlace: r[3],
+    lastPlaceScore: r[4],
+    punishment: r[5],
+  }));
+}
+
+// ============================================================
+// GitHub commit — creates or updates data.json via the Contents API
+// ============================================================
+function commitFileToGithub_(jsonString) {
+  const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
+  if (!token) throw new Error('GITHUB_TOKEN not set — add it in Project Settings > Script Properties.');
+
+  const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${DATA_FILE_PATH}`;
+  const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github+json' };
+
+  let sha = null;
+  const getResp = UrlFetchApp.fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers: headers, muteHttpExceptions: true });
+  if (getResp.getResponseCode() === 200) {
+    sha = JSON.parse(getResp.getContentText()).sha;
   }
-  return JSON.parse(resp.getContentText());
-}
 
-function getCurrentNflWeek_() {
-  const seasonStart = new Date(new Date().getFullYear(), 8, 5); // ~Sept 5
-  const now = new Date();
-  const diffWeeks = Math.floor((now - seasonStart) / (7 * 24 * 60 * 60 * 1000)) + 1;
-  return Math.max(1, Math.min(18, diffWeeks));
-}
+  const body = {
+    message: `Update data.json — ${new Date().toISOString()}`,
+    content: Utilities.base64Encode(jsonString, Utilities.Charset.UTF_8),
+    branch: GITHUB_BRANCH,
+  };
+  if (sha) body.sha = sha;
 
-/**
- * ONE-TIME SETUP: run this once (select installTrigger in the editor toolbar, click Run)
- * to schedule syncPprData automatically.
- */
-function installTrigger() {
-  ScriptApp.getProjectTriggers().forEach(t => {
-    if (t.getHandlerFunction() === 'syncPprData') ScriptApp.deleteTrigger(t);
+  const putResp = UrlFetchApp.fetch(apiUrl, {
+    method: 'put', headers: headers, contentType: 'application/json',
+    payload: JSON.stringify(body), muteHttpExceptions: true,
   });
 
-  ScriptApp.newTrigger('syncPprData')
-    .timeBased()
-    .everyHours(1)
-    .create();
+  const code = putResp.getResponseCode();
+  if (code !== 200 && code !== 201) {
+    throw new Error(`GitHub publish failed (${code}): ${putResp.getContentText()}`);
+  }
+  Logger.log('Published data.json to GitHub successfully.');
+}
+
+// ============================================================
+// Optional: schedule this on its own, OR (simpler) call publishToGithub()
+// at the end of your existing syncPprData() in sleeper_sync.gs so one
+// trigger does both jobs on the same hourly cadence.
+// ============================================================
+function installPublishTrigger() {
+  ScriptApp.getProjectTriggers().forEach(t => {
+    if (t.getHandlerFunction() === 'publishToGithub') ScriptApp.deleteTrigger(t);
+  });
+  ScriptApp.newTrigger('publishToGithub').timeBased().everyHours(1).create();
 }
