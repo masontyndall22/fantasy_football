@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T00:08:31.692Z",
+  "generatedAt": "2026-08-25T00:34:13.730Z",
   "managers": [
     {
       "name": "Ben",
@@ -50,7 +50,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 32.5,
+      "playoffBracketScore": 30.5,
       "overallLeagueRank": 1
     }
   ],
@@ -296,8 +296,8 @@
         "nfcNorth": "Vikings",
         "nfcSouth": "Saints",
         "nfcWest": "Rams",
-        "afcWc1": "Bengals",
-        "afcWc2": "Chiefs",
+        "afcWc1": "Chiefs",
+        "afcWc2": "Raiders",
         "afcWc3": "Chargers",
         "nfcWc1": "49ers",
         "nfcWc2": "Seahawks",
