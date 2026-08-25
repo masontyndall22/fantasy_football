@@ -13,8 +13,8 @@
  */
 
 // ==== CONFIG ====
-const GITHUB_OWNER = 'YOUR_GITHUB_USERNAME';
-const GITHUB_REPO = 'YOUR_REPO_NAME';
+const GITHUB_OWNER = '--';
+const GITHUB_REPO = '--';
 const DATA_FILE_PATH = 'data.json';
 const GITHUB_BRANCH = 'main';
 
@@ -100,10 +100,10 @@ const PLAYOFF_KEY_MAP = {
   'NFC East': 'nfcEast', 'NFC North': 'nfcNorth', 'NFC South': 'nfcSouth', 'NFC West': 'nfcWest',
   'AFC WC1': 'afcWc1', 'AFC WC2': 'afcWc2', 'AFC WC3': 'afcWc3',
   'NFC WC1': 'nfcWc1', 'NFC WC2': 'nfcWc2', 'NFC WC3': 'nfcWc3',
-  'WC Game 1': 'wcGame1', 'WC Game 2': 'wcGame2', 'WC Game 3': 'wcGame3',
-  'WC Game 4': 'wcGame4', 'WC Game 5': 'wcGame5', 'WC Game 6': 'wcGame6',
-  'Divisional Game 1': 'divisionalGame1', 'Divisional Game 2': 'divisionalGame2',
-  'Divisional Game 3': 'divisionalGame3', 'Divisional Game 4': 'divisionalGame4',
+  'AFC WC Game 1': 'afcWcGame1', 'AFC WC Game 2': 'afcWcGame2', 'AFC WC Game 3': 'afcWcGame3',
+  'NFC WC Game 1': 'nfcWcGame4', 'NFC WC Game 2': 'nfcWcGame2', 'NFC WC Game 3': 'nfcWcGame3',
+  'AFC Divisional Game 1': 'afcDivisionalGame1', 'AFC Divisional Game 2': 'afcDivisionalGame2',
+  'NFC Divisional Game 1': 'nfcDivisionalGame1', 'NFC Divisional Game 2': 'nfcDivisionalGame4',
   'AFC Championship': 'afcChampionship', 'NFC Championship': 'nfcChampionship',
   'Super Bowl Winner': 'superBowlWinner',
 };
