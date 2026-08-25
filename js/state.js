@@ -15,7 +15,7 @@ export const PILLARS = [
     { key: "fdSeasonTotal", label: "Total", unit: "Pts", valueFn: m => m.fdSeasonTotal },
   ] },
   { key: "sleeper", label: "Sleeper", categories: [
-    { key: "sleeperPts", label: "Points", unit: "Pts", valueFn: m => m.sleeperPprSeasonPoints },
+    { key: "sleeperPts", label: "Sleeper Points", unit: "Pts", valueFn: m => m.sleeperPprSeasonPoints },
     { key: "sleeperPlacement", label: "Sleeper Placement", unit: "Place", valueFn: m => m.sleeperFinalPlacement, higherBetter: false },
   ] },
   { key: "pickem", label: "Pick'em", categories: [
