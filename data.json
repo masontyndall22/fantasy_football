@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T02:39:21.351Z",
+  "generatedAt": "2026-08-25T02:40:41.208Z",
   "managers": [
     {
       "name": "Ben",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 21.5,
+      "totalStandingsPoints": 22.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -286,7 +286,7 @@
     },
     {
       "manager": "Mason",
-      "mvp": "Josh Allen",
+      "mvp": "Tua",
       "picks": {
         "afcEast": "Dolphins",
         "afcNorth": "Steelers",
