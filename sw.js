@@ -1,4 +1,4 @@
-const CACHE_NAME = "the-league-shell-v5";
+const CACHE_NAME = "the-league-shell-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -46,11 +46,14 @@ self.addEventListener("activate", (event) => {
 });
 
 // Network-first for everything, with cache as an offline fallback only.
-// This means code/style/data changes show up on next load automatically —
-// no need to remember to bump CACHE_NAME every time you edit a file.
+// { cache: "reload" } forces the browser to bypass its own HTTP cache and
+// actually hit the network (bypassing any Cache-Control the host sends) —
+// without this, a plain fetch() can be silently satisfied by the browser's
+// HTTP cache, which defeats "network-first" and is the main reason iOS
+// home-screen installs were serving stale code/styles/data.
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: "reload" })
       .then((res) => {
         const clone = res.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
