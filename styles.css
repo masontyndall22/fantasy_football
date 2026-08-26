@@ -246,7 +246,7 @@ main { padding: 4px 20px 24px; }
 }
 .rank-badge.is-first { background: var(--gold-grad); color: var(--gold-text); }
 .rank-badge.is-leader-tie { background: var(--accent-dark); color: var(--accent-light); }
-.rank-badge.is-hotdog { font-size: 14px; }
+.rank-badge.is-hotdog { font-size: 24px; }
 
 .standings-row__name { flex: 1; font-size: 14px; font-weight: 500; color: var(--text); }
 .standings-row__pts { font-weight: 600; font-size: 16px; color: var(--text); }
