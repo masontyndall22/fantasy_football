@@ -74,6 +74,7 @@ export function renderBios(data) {
           <div><div class="bio-card__stat-num">${fmt(b.leagueLosses)}</div><div class="bio-card__stat-label">Losses</div></div>
           <div><div class="bio-card__stat-num">${fmt(b.averagePlace)}</div><div class="bio-card__stat-label">Avg Place</div></div>
           <div><div class="bio-card__stat-num is-lifetime">${fmt(b.cumulativeScore)}</div><div class="bio-card__stat-label">Lifetime</div></div>
+          <div><div class="bio-card__stat-num is-lifetime">${escapeHtml(b.allTimeRecord || "—")}</div><div class="bio-card__stat-label">Record</div></div>
         </div>
         <div class="bio-card__row"><span class="label">Strength — </span><span class="value">${escapeHtml(b.strength || "—")}</span></div>
         <div class="bio-card__row"><span class="label">Weakness — </span><span class="value">${escapeHtml(b.weakness || "—")}</span></div>

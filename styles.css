@@ -429,16 +429,18 @@ main { padding: 4px 20px 24px; }
 .bio-card__name { font-weight: 500; font-size: 18px; letter-spacing: -0.015em; color: var(--text); }
 .bio-card__team { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-muted); margin-top: 1px; }
 .bio-card__trophies { display: flex; gap: 3px; flex: none; }
-.bio-card__trophies svg { width: 28px; height: 28px; fill: #e0b24a; }
+.bio-card__trophies svg { width: 14px; height: 14px; fill: #e0b24a; }
 
 .bio-card__stats {
   display: flex;
-  gap: 18px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 14px;
   padding: 10px 0;
   border-top: 1px solid var(--hairline);
   border-bottom: 1px solid var(--hairline);
 }
-.bio-card__stat-num { font-weight: 600; font-size: 17px; color: var(--text); }
+.bio-card__stat-num { font-weight: 600; font-size: 17px; color: var(--text); white-space: nowrap; }
 .bio-card__stat-num.is-lifetime { color: var(--accent-light); }
 .bio-card__stat-label { font-size: 10px; color: var(--text-meta); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1px; }
 

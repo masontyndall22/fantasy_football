@@ -16,9 +16,9 @@ function ordinal(n) {
 }
 
 export function renderHistory(data) {
+  renderRecords(data);
   renderFantasyHistory(data);
   renderLeagueHistory(data);
-  renderRecords(data);
 }
 
 // ---------------- Previous Leagues (new, from the manually-kept sheet) ----------------
@@ -38,7 +38,7 @@ function renderFantasyHistory(data) {
     const maxPlace = Math.max(...entries.map(e => Number(e.place) || 0));
     const rowsHtml = entries.map(e => {
       const place = Number(e.place);
-      const placeClass = place === 1 ? "is-gold" : (place === 10) ? "is-last" : "";
+      const placeClass = place === 1 ? "is-gold" : (place === maxPlace && maxPlace > 1) ? "is-last" : "";
       return `
         <div class="fantasy-year-row">
           <div class="fantasy-year-row__main">
@@ -173,9 +173,22 @@ function renderRecords(data) {
     ${sleeperAllTime.worst ? recordCard("Lowest Sleeper Score Ever", fmt(sleeperAllTime.worst.value), `${escapeHtml(sleeperAllTime.worst.manager)} — ${escapeHtml(String(sleeperAllTime.worst.season))} Week ${sleeperAllTime.worst.week}`) : ""}
   `;
   const hasWeeklyData = fd.best || fd.worst || fdAllTime.best || fdAllTime.worst || sleeperAllTime.best || sleeperAllTime.worst;
+  const open = state.recordsOpen;
 
-  $("#recordsContent").innerHTML = `
+  const bodyHtml = `
     <div class="records-grid">${allTimeCards}</div>
     ${hasWeeklyData ? `<div class="records-grid" style="margin-top:10px">${weeklyCards}</div>` : `<div class="empty-state" style="margin-top:10px"><div class="empty-state__title">No weeks played yet this season</div><div class="empty-state__body">FanDuel and Sleeper weekly records will show up here once games start.</div></div>`}
   `;
+
+  $("#recordsSlot").innerHTML = `
+    <div class="collapsible-toggle" id="recordsToggle">
+      <span>All-Time Records</span>
+      <svg class="collapsible-toggle__chevron ${open ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+    </div>
+    ${open ? `<div class="collapsible-body">${bodyHtml}</div>` : ""}
+  `;
+  $("#recordsToggle").addEventListener("click", () => {
+    state.recordsOpen = !state.recordsOpen;
+    renderRecords(data);
+  });
 }

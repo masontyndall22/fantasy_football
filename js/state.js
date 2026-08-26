@@ -40,6 +40,7 @@ export const state = {
   summaryOpen: true,
   flippedBios: {},
   expandedRival: {},
+  recordsOpen: true,
   fantasyHistoryOpen: true,
   leagueHistoryOpen: true,
 };

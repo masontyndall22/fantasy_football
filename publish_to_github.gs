@@ -38,22 +38,33 @@ function onOpen() {
 // ============================================================
 function buildDashboardJson_(ss) {
   const homeContent = readHomeContent_(ss);
+  const historicalSeasons = readHistoricalSeasons_(ss);
+  const sleeperScoreRecords = readScoreRecords_(ss, 'Sleeper_Score_Records');
+  const fanDuelScoreRecords = readScoreRecords_(ss, 'FanDuel_Score_Records');
+  const memberHistory = readMemberHistory_(ss);
+  const currentSeasonRecord = readCurrentSeasonRecord_(ss);
+  const bios = readStats_(ss).map(b => ({
+    ...b,
+    allTimeRecord: buildAllTimeRecord_(b.manager, memberHistory, currentSeasonRecord),
+    careerStats: buildCareerStats_(b.manager, historicalSeasons, sleeperScoreRecords, fanDuelScoreRecords),
+  }));
+
   return {
     generatedAt: new Date().toISOString(),
     managers: readManagers_(ss),
-    bios: readStats_(ss),
+    bios: bios,
     playoffCategories: readPlayoffCategories_(ss),
     playoffPicks: readPlayoffPicks_(ss),
     playoffActual: readPlayoffActual_(ss),
     actualMvp: readActualMvp_(ss),
     leagueHistory: readLeagueHistory_(ss),
-    historicalSeasons: readHistoricalSeasons_(ss),
+    historicalSeasons: historicalSeasons,
     weeklyFanDuel: readWeeklyMatrix_(ss, 'FanDuel_Data', 3, 20),
-    sleeperScoreRecords: readScoreRecords_(ss, 'Sleeper_Score_Records'),
-    fanDuelScoreRecords: readScoreRecords_(ss, 'FanDuel_Score_Records'),
+    sleeperScoreRecords: sleeperScoreRecords,
+    fanDuelScoreRecords: fanDuelScoreRecords,
     headToHead: readHeadToHead_(ss),
     matchups: readHeadToHead_(ss),
-    memberHistory: readMemberHistory_(ss),
+    memberHistory: memberHistory,
     preseasonSummary: homeContent.preseasonSummary,
     currentWeekLabel: homeContent.currentWeekLabel,
     weeklyRoasts: homeContent.weeklyRoasts,
@@ -153,6 +164,42 @@ function readMemberHistory_(ss) {
   }));
 }
 
+// Builds the per-manager Career Stats list for the Bios back face:
+// League High/Low (from League_History_Detail's per-season Total row, via
+// readHistoricalSeasons_), Sleeper High/Low, and FanDuel High/Low (both from
+// their respective all-time score-records sheets, via readScoreRecords_).
+// Any entry with no data yet (e.g. no FanDuel records logged) is simply
+// omitted — the front end doesn't need placeholders.
+function buildCareerStats_(manager, historicalSeasons, sleeperScoreRecords, fanDuelScoreRecords) {
+  const stats = [];
+
+  let leagueHigh = null, leagueLow = null;
+  historicalSeasons.forEach(s => {
+    const val = s.totals ? s.totals[manager] : undefined;
+    if (val == null) return;
+    if (!leagueHigh || val > leagueHigh.value) leagueHigh = { value: val, season: s.season };
+    if (!leagueLow || val < leagueLow.value) leagueLow = { value: val, season: s.season };
+  });
+  if (leagueHigh) stats.push({ label: 'League High', value: leagueHigh.value, sub: leagueHigh.season });
+  if (leagueLow) stats.push({ label: 'League Low', value: leagueLow.value, sub: leagueLow.season });
+
+  function pushRecordPair(label, rec) {
+    if (!rec) return;
+    if (rec.highest && rec.highest.value != null && rec.highest.value !== '') {
+      const sub = [rec.highest.season, rec.highest.week ? `Wk ${rec.highest.week}` : ''].filter(Boolean).join(' ');
+      stats.push({ label: `${label} High`, value: rec.highest.value, sub: sub });
+    }
+    if (rec.lowest && rec.lowest.value != null && rec.lowest.value !== '') {
+      const sub = [rec.lowest.season, rec.lowest.week ? `Wk ${rec.lowest.week}` : ''].filter(Boolean).join(' ');
+      stats.push({ label: `${label} Low`, value: rec.lowest.value, sub: sub });
+    }
+  }
+  pushRecordPair('Sleeper', sleeperScoreRecords[manager]);
+  pushRecordPair('FanDuel', fanDuelScoreRecords[manager]);
+
+  return stats;
+}
+
 // Combines App_Dashboard (totals/ranks), Standings (Sleeper Placing raw),
 // and FanDuel_Data's season summary (the 4 real FanDuel metrics) into the
 // single flat `managers` shape the app expects.
@@ -176,6 +223,36 @@ function readManagers_(ss) {
     mvpBonus: standingsMvpBonus[i][0] || 0,
     overallLeagueRank: row[9],
   }));
+}
+
+// Reads this season's live W/L off Sleeper_PPR_Data (rows 3-6, updated
+// weekly by sleeper_sync.gs) — the in-progress season isn't in League_History
+// yet since that tab only gets a row once a season is fully wrapped up.
+function readCurrentSeasonRecord_(ss) {
+  const sheet = ss.getSheetByName('Sleeper_PPR_Data');
+  if (!sheet) return {};
+  const rows = sheet.getRange(3, 1, 4, 6).getValues(); // A:F, rows 3-6
+  const out = {};
+  rows.forEach(r => {
+    if (!r[0]) return;
+    out[r[0]] = { wins: Number(r[4]) || 0, losses: Number(r[5]) || 0 };
+  });
+  return out;
+}
+
+// All-time record shown on the bio front face: every completed season's
+// W/L from the manually-kept League_History tab, plus whatever the current
+// in-progress season shows on Sleeper_PPR_Data right now.
+function buildAllTimeRecord_(manager, memberHistory, currentSeasonRecord) {
+  let wins = 0, losses = 0;
+  memberHistory.forEach(r => {
+    if (r.manager !== manager) return;
+    wins += Number(r.wins) || 0;
+    losses += Number(r.losses) || 0;
+  });
+  const current = currentSeasonRecord[manager];
+  if (current) { wins += current.wins; losses += current.losses; }
+  return `${wins}-${losses}`;
 }
 
 function readStats_(ss) {
