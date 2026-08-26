@@ -429,7 +429,7 @@ main { padding: 4px 20px 24px; }
 .bio-card__name { font-weight: 500; font-size: 18px; letter-spacing: -0.015em; color: var(--text); }
 .bio-card__team { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-muted); margin-top: 1px; }
 .bio-card__trophies { display: flex; gap: 3px; flex: none; }
-.bio-card__trophies svg { width: 14px; height: 14px; fill: #e0b24a; }
+.bio-card__trophies svg { width: 28px; height: 28px; fill: #e0b24a; }
 
 .bio-card__stats {
   display: flex;
