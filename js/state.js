@@ -40,6 +40,8 @@ export const state = {
   summaryOpen: true,
   flippedBios: {},
   expandedRival: {},
+  fantasyHistoryOpen: true,
+  leagueHistoryOpen: true,
 };
 
 // Holds the most recently loaded data.json payload. Page modules that need

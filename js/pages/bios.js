@@ -1,4 +1,4 @@
-import { $, $$ } from "../dom.js";
+import { $ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state } from "../state.js";
 
@@ -25,15 +25,38 @@ function fallbackCareerStats(data, manager) {
   return out;
 }
 
+// For a given stat label, find the league-wide best value across every
+// manager's careerStats list ("Low" labels compare as min, everything else
+// as max) so a manager's own value can be graded against the field.
+function leagueBestsByLabel(allCareerStats) {
+  const bests = {};
+  Object.entries(allCareerStats).forEach(([, stats]) => {
+    stats.forEach(cs => {
+      const num = Number(cs.value);
+      if (Number.isNaN(num)) return;
+      const isLow = /low/i.test(cs.label);
+      if (!(cs.label in bests)) bests[cs.label] = num;
+      else bests[cs.label] = isLow ? Math.min(bests[cs.label], num) : Math.max(bests[cs.label], num);
+    });
+  });
+  return bests;
+}
+
 export function renderBios(data) {
   const reigningChampion = data.leagueHistory && data.leagueHistory.length ? data.leagueHistory[0].champion : null;
   const bios = data.bios || [];
+
+  const allCareerStats = {};
+  bios.forEach(b => {
+    allCareerStats[b.manager] = (b.careerStats && b.careerStats.length) ? b.careerStats : fallbackCareerStats(data, b.manager);
+  });
+  const bests = leagueBestsByLabel(allCareerStats);
 
   $("#bioList").innerHTML = bios.map(b => {
     const isChampion = !!reigningChampion && b.manager === reigningChampion;
     const wins = Number(b.leagueWins) || 0;
     const isFlipped = !!state.flippedBios[b.manager];
-    const careerStats = (b.careerStats && b.careerStats.length) ? b.careerStats : fallbackCareerStats(data, b.manager);
+    const careerStats = allCareerStats[b.manager];
 
     const frontHtml = `
       <div class="bio-face bio-face--front">
@@ -58,21 +81,34 @@ export function renderBios(data) {
         <div class="bio-card__flip-hint">Tap for career highs &amp; lows</div>
       </div>`;
 
-    const backRowsHtml = careerStats.map(cs => `
+    const backRowsHtml = careerStats.map(cs => {
+      const num = Number(cs.value);
+      const isBest = !Number.isNaN(num) && bests[cs.label] === num;
+      const gradeClass = isBest ? (/low/i.test(cs.label) ? "is-best-low" : "is-best-high") : "";
+      return `
       <div class="career-stat-row">
         <div class="career-stat-row__label">${escapeHtml(cs.label)}${cs.sub ? `<span class="career-stat-row__sub">${escapeHtml(String(cs.sub))}</span>` : ""}</div>
-        <div class="career-stat-row__value">${escapeHtml(String(cs.value))}</div>
-      </div>`).join("") || `<div class="empty-state__body">No career stats yet.</div>`;
+        <div class="career-stat-row__value ${gradeClass}">${escapeHtml(String(cs.value))}</div>
+      </div>`;
+    }).join("") || `<div class="empty-state__body">No career stats yet.</div>`;
+
+    const gridClass = careerStats.length > 3 ? "is-two-col" : "";
 
     const backHtml = `
       <div class="bio-face bio-face--back">
         <div class="bio-card__back-title">Career Stats</div>
-        <div class="career-stat-list">${backRowsHtml}</div>
+        <div class="career-stat-list ${gridClass}">${backRowsHtml}</div>
         <div class="bio-card__flip-hint">Tap to flip back</div>
       </div>`;
 
+    // Card min-height grows with stat count so the back face never clips —
+    // roughly 130px of chrome (title + hint) plus ~54px per row, floor 280px.
+    const cols = careerStats.length > 3 ? 2 : 1;
+    const rows = Math.max(1, Math.ceil(careerStats.length / cols));
+    const minHeight = Math.max(280, 130 + rows * 54);
+
     return `
-      <div class="bio-flip-wrapper" id="bioFlip-${cssId(b.manager)}">
+      <div class="bio-flip-wrapper" id="bioFlip-${cssId(b.manager)}" style="min-height:${minHeight}px">
         <div class="bio-flip-inner ${isFlipped ? "is-flipped" : ""}">
           <div class="bio-card ${isChampion ? "is-champion" : ""}">${frontHtml}</div>
           <div class="bio-card ${isChampion ? "is-champion" : ""}">${backHtml}</div>

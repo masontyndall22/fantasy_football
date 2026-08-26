@@ -13,6 +13,23 @@ function outcomeFor(m, name) {
   return m.winner === name ? "win" : "loss";
 }
 
+// Parses "2023/24" (or a plain year) into a sortable leading-year number.
+function seasonYear(season) {
+  const m = String(season).match(/\d+/);
+  return m ? Number(m[0]) : 0;
+}
+
+// Streak badge: looks at a manager's last 3 games in chronological order.
+// All wins → 🔥, all losses → 🧊, anything mixed → no badge.
+function streakBadge(ownMatchupsChronological, name) {
+  const last3 = ownMatchupsChronological.slice(-3);
+  if (last3.length < 3) return "";
+  const outcomes = last3.map(m => outcomeFor(m, name));
+  if (outcomes.every(o => o === "win")) return " 🔥";
+  if (outcomes.every(o => o === "loss")) return " 🧊";
+  return "";
+}
+
 export function renderRivals(data) {
   const names = (data.managers || []).map(m => m.name);
   const matchups = data.matchups || [];
@@ -55,6 +72,12 @@ function rivalCardHtml(name, allNames, matchups) {
   });
 
   const totalRecord = ties > 0 ? `${wins}-${losses}-${ties}` : `${wins}-${losses}`;
+  const chronological = [...own].sort((a, b) => {
+    const yearDiff = seasonYear(a.season) - seasonYear(b.season);
+    if (yearDiff !== 0) return yearDiff;
+    return (Number(a.week) || 0) - (Number(b.week) || 0);
+  });
+  const recordWithStreak = totalRecord + streakBadge(chronological, name);
 
   const opponentRowsHtml = allNames.filter(n => n !== name).map(opp => {
     const rec = byOpponent[opp] || { wins: 0, losses: 0, ties: 0 };
@@ -91,7 +114,7 @@ function rivalCardHtml(name, allNames, matchups) {
     <div class="rival-card">
       <div class="rival-card__head">
         <div class="rival-card__name">${escapeHtml(name)}</div>
-        <div class="rival-card__record">${totalRecord}</div>
+        <div class="rival-card__record">${recordWithStreak}</div>
       </div>
       <div class="rival-card__opponents">${opponentRowsHtml}</div>
       <div class="rival-card__toggle" id="rivalToggle-${cssId(name)}">

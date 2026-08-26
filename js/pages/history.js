@@ -1,21 +1,99 @@
 import { $ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
+import { state } from "../state.js";
+
+function ordinal(n) {
+  const num = Number(n);
+  if (!Number.isFinite(num)) return String(n);
+  const mod100 = num % 100;
+  if (mod100 >= 11 && mod100 <= 13) return num + "th";
+  switch (num % 10) {
+    case 1: return num + "st";
+    case 2: return num + "nd";
+    case 3: return num + "rd";
+    default: return num + "th";
+  }
+}
 
 export function renderHistory(data) {
-  renderTimeline(data);
+  renderFantasyHistory(data);
+  renderLeagueHistory(data);
   renderRecords(data);
 }
 
-function renderTimeline(data) {
+// ---------------- Previous Leagues (new, from the manually-kept sheet) ----------------
+function renderFantasyHistory(data) {
+  const rows = data.memberHistory || [];
+  const open = state.fantasyHistoryOpen;
+
+  const byYear = {};
+  rows.forEach(r => {
+    if (!byYear[r.year]) byYear[r.year] = [];
+    byYear[r.year].push(r);
+  });
+  const years = Object.keys(byYear).sort((a, b) => String(b).localeCompare(String(a)));
+
+  const bodyHtml = years.length ? years.map(year => {
+    const entries = [...byYear[year]].sort((a, b) => (Number(a.place) || 99) - (Number(b.place) || 99));
+    const maxPlace = Math.max(...entries.map(e => Number(e.place) || 0));
+    const rowsHtml = entries.map(e => {
+      const place = Number(e.place);
+      const placeClass = place === 1 ? "is-gold" : (place === maxPlace && maxPlace > 1) ? "is-last" : "";
+      return `
+        <div class="fantasy-year-row">
+          <div class="fantasy-year-row__main">
+            <div class="fantasy-year-row__manager">${escapeHtml(e.manager)}</div>
+            <div class="fantasy-year-row__team">${escapeHtml(e.teamName || "—")}</div>
+          </div>
+          <div class="fantasy-year-row__record">${fmt(e.wins)}-${fmt(e.losses)}</div>
+          <div class="fantasy-year-row__place ${placeClass}">${ordinal(e.place)}</div>
+        </div>`;
+    }).join("");
+    return `
+      <div class="fantasy-year-card">
+        <div class="fantasy-year-card__label">${escapeHtml(year)}</div>
+        ${rowsHtml}
+      </div>`;
+  }).join("") : `<div class="empty-state"><div class="empty-state__title">No previous league history yet</div><div class="empty-state__body">Add rows to the League_History sheet and they'll show up here.</div></div>`;
+
+  $("#fantasyHistorySlot").innerHTML = `
+    <div class="collapsible-toggle" id="fantasyHistoryToggle">
+      <span>Previous Leagues</span>
+      <svg class="collapsible-toggle__chevron ${open ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+    </div>
+    ${open ? `<div class="collapsible-body">${bodyHtml}</div>` : ""}
+  `;
+  $("#fantasyHistoryToggle").addEventListener("click", () => {
+    state.fantasyHistoryOpen = !state.fantasyHistoryOpen;
+    renderFantasyHistory(data);
+  });
+}
+
+// ---------------- History & Punishment (existing timeline) ----------------
+function renderLeagueHistory(data) {
   const seasons = data.leagueHistory || [];
-  $("#historyTimeline").innerHTML = seasons.map(s => `
+  const open = state.leagueHistoryOpen;
+
+  const timelineHtml = seasons.length ? `<div class="timeline">${seasons.map(s => `
     <div class="timeline-item">
       <div class="timeline-item__season">${escapeHtml(s.season)}</div>
       <div class="timeline-item__champ">${escapeHtml(s.champion)} <span class="score">— ${fmt(s.championScore)} pts</span></div>
       <div class="timeline-item__meta">Last place: ${escapeHtml(s.lastPlace)} — ${fmt(s.lastPlaceScore)} pts</div>
       <div class="timeline-item__punishment">${escapeHtml(s.punishment)}</div>
     </div>
-  `).join("") || `<div class="empty-state"><div class="empty-state__title">No history yet</div><div class="empty-state__body">Past seasons will appear here once they're logged.</div></div>`;
+  `).join("")}</div>` : `<div class="empty-state"><div class="empty-state__title">No history yet</div><div class="empty-state__body">Past seasons will appear here once they're logged.</div></div>`;
+
+  $("#leagueHistorySlot").innerHTML = `
+    <div class="collapsible-toggle" id="leagueHistoryToggle">
+      <span>History &amp; Punishment</span>
+      <svg class="collapsible-toggle__chevron ${open ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+    </div>
+    ${open ? `<div class="collapsible-body">${timelineHtml}</div>` : ""}
+  `;
+  $("#leagueHistoryToggle").addEventListener("click", () => {
+    state.leagueHistoryOpen = !state.leagueHistoryOpen;
+    renderLeagueHistory(data);
+  });
 }
 
 // ---------------- All-Time Records ----------------

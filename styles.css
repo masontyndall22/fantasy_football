@@ -315,6 +315,7 @@ main { padding: 4px 20px 24px; }
 .bio-flip-inner {
   position: relative;
   width: 100%;
+  height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
@@ -322,6 +323,7 @@ main { padding: 4px 20px 24px; }
 
 .bio-flip-inner .bio-card {
   backface-visibility: hidden;
+  height: 100%;
 }
 .bio-flip-inner .bio-card:nth-child(2) {
   position: absolute;
@@ -362,10 +364,15 @@ main { padding: 4px 20px 24px; }
   font-weight: 500;
 }
 .career-stat-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
   overflow-y: auto;
   flex: 1;
+}
+.career-stat-list.is-two-col {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 14px;
 }
 .career-stat-row {
   display: flex;
@@ -374,10 +381,12 @@ main { padding: 4px 20px 24px; }
   padding: 10px 0;
   border-top: 1px solid var(--hairline-soft);
 }
-.career-stat-row:first-child { border-top: none; }
+.career-stat-list:not(.is-two-col) .career-stat-row:first-child { border-top: none; }
 .career-stat-row__label { font-size: 13px; color: var(--text-muted); display: flex; flex-direction: column; }
 .career-stat-row__sub { font-size: 10.5px; color: var(--text-meta); margin-top: 1px; }
-.career-stat-row__value { font-size: 15px; font-weight: 600; color: var(--accent-light); }
+.career-stat-row__value { font-size: 15px; font-weight: 600; color: var(--accent-light); white-space: nowrap; }
+.career-stat-row__value.is-best-high { color: #f6d365; filter: drop-shadow(0 0 6px rgba(246, 211, 101, 0.55)); }
+.career-stat-row__value.is-best-low { color: #7dd3fc; filter: drop-shadow(0 0 6px rgba(125, 211, 252, 0.7)); }
 
 .bio-card__champion-badge {
   position: absolute;
@@ -637,7 +646,7 @@ table.breakdown-table tr.total-row td:first-child {
 }
 .rival-card__head { display: flex; align-items: baseline; justify-content: space-between; }
 .rival-card__name { font-size: 16px; font-weight: 500; color: var(--text); }
-.rival-card__record { font-size: 18px; font-weight: 700; color: var(--accent-light); }
+.rival-card__record { font-size: 18px; font-weight: 700; color: var(--accent-light); white-space: nowrap; }
 
 .rival-card__opponents {
   margin-top: 10px;
@@ -689,6 +698,60 @@ table.breakdown-table tr.total-row td:first-child {
 .matchup-row__vs { font-size: 11px; color: var(--text-muted); }
 .matchup-row__scores .is-winner { font-weight: 700; color: var(--accent-light); }
 .matchup-row__scores .is-loser { color: rgba(233, 233, 237, 0.4); }
+
+/* ---------- Generic collapsible section (History tab) ---------- */
+.collapsible-toggle {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 16px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.collapsible-toggle:first-child { margin-top: 0; }
+.collapsible-toggle__chevron {
+  width: 16px; height: 16px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+  flex: none;
+}
+.collapsible-toggle__chevron.is-collapsed { transform: rotate(-90deg); }
+.collapsible-body {
+  border-radius: 14px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle), 0 6px 16px rgba(0, 0, 0, 0.25);
+  padding: 14px 16px;
+  margin-bottom: 22px;
+}
+
+/* ---------- Previous Leagues (fantasy history, by year) ---------- */
+.fantasy-year-card + .fantasy-year-card { margin-top: 14px; }
+.fantasy-year-card__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent-light);
+  margin-bottom: 8px;
+}
+.fantasy-year-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--hairline-soft);
+}
+.fantasy-year-row:first-of-type { border-top: none; }
+.fantasy-year-row__main { flex: 1; min-width: 0; }
+.fantasy-year-row__manager { font-size: 13px; font-weight: 500; color: var(--text); }
+.fantasy-year-row__team { font-size: 11.5px; color: var(--text-muted); margin-top: 1px; }
+.fantasy-year-row__record { font-size: 12.5px; color: rgba(233, 233, 237, 0.7); flex: none; align-self: center; }
+.fantasy-year-row__place { font-size: 13px; font-weight: 600; color: var(--text); flex: none; width: 34px; text-align: right; align-self: center; }
+.fantasy-year-row__place.is-gold { color: var(--gold); }
+.fantasy-year-row__place.is-last { color: var(--wrong); }
 
 /* ---------- All-Time Records ---------- */
 .records-grid {
