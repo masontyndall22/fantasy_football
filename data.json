@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T00:42:57.040Z",
+  "generatedAt": "2026-08-26T00:59:31.286Z",
   "managers": [
     {
       "name": "Ben",
@@ -69,7 +69,39 @@
       "strength": "Fantasy Luck",
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
-      "punishmentIdeas": "T-Shirt"
+      "punishmentIdeas": "T-Shirt",
+      "careerStats": [
+        {
+          "label": "League High",
+          "value": 19,
+          "sub": "2024/25"
+        },
+        {
+          "label": "League Low",
+          "value": 11.5,
+          "sub": "2023/24"
+        },
+        {
+          "label": "Sleeper High",
+          "value": 191.72,
+          "sub": "2024 Wk 13"
+        },
+        {
+          "label": "Sleeper Low",
+          "value": 76.4,
+          "sub": "2023 Wk 18"
+        },
+        {
+          "label": "FanDuel High",
+          "value": 203.66,
+          "sub": "2024 Wk 17"
+        },
+        {
+          "label": "FanDuel Low",
+          "value": 68.1,
+          "sub": "2025 Wk 18"
+        }
+      ]
     },
     {
       "manager": "Caleb",
@@ -81,7 +113,39 @@
       "strength": "Lake House Owner",
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
-      "punishmentIdeas": ""
+      "punishmentIdeas": "",
+      "careerStats": [
+        {
+          "label": "League High",
+          "value": 18.5,
+          "sub": "2025/26"
+        },
+        {
+          "label": "League Low",
+          "value": 9,
+          "sub": "2022/23"
+        },
+        {
+          "label": "Sleeper High",
+          "value": 172.04,
+          "sub": "2025 Wk 7"
+        },
+        {
+          "label": "Sleeper Low",
+          "value": 55.9,
+          "sub": "2023 Wk 11"
+        },
+        {
+          "label": "FanDuel High",
+          "value": 162.34,
+          "sub": "2023 Wk 6"
+        },
+        {
+          "label": "FanDuel Low",
+          "value": 70.64,
+          "sub": "2025 Wk 1"
+        }
+      ]
     },
     {
       "manager": "Kyle",
@@ -93,7 +157,39 @@
       "strength": "The Outdoors",
       "weakness": "The Regular Season",
       "punishmentsDone": "Full Crawl, T-Shirt",
-      "punishmentIdeas": "Ice Bath"
+      "punishmentIdeas": "Ice Bath",
+      "careerStats": [
+        {
+          "label": "League High",
+          "value": 31,
+          "sub": "2025/26"
+        },
+        {
+          "label": "League Low",
+          "value": 4,
+          "sub": "2022/23"
+        },
+        {
+          "label": "Sleeper High",
+          "value": 169.64,
+          "sub": "2025 Wk 17"
+        },
+        {
+          "label": "Sleeper Low",
+          "value": 70.12,
+          "sub": "2024 Wk 18"
+        },
+        {
+          "label": "FanDuel High",
+          "value": 209.94,
+          "sub": "2025 Wk 12"
+        },
+        {
+          "label": "FanDuel Low",
+          "value": 63.74,
+          "sub": "2025 Wk 11"
+        }
+      ]
     },
     {
       "manager": "Mason",
@@ -105,7 +201,39 @@
       "strength": "Tall",
       "weakness": "Toll Booths",
       "punishmentsDone": "1/3 Crawl",
-      "punishmentIdeas": "Smut Presentation, 2400 Pins"
+      "punishmentIdeas": "Smut Presentation, 2400 Pins",
+      "careerStats": [
+        {
+          "label": "League High",
+          "value": 26,
+          "sub": "2023/24"
+        },
+        {
+          "label": "League Low",
+          "value": 11,
+          "sub": "2022/23"
+        },
+        {
+          "label": "Sleeper High",
+          "value": 186.4,
+          "sub": "2024 Wk 15"
+        },
+        {
+          "label": "Sleeper Low",
+          "value": 58.44,
+          "sub": "2024 Wk 3"
+        },
+        {
+          "label": "FanDuel High",
+          "value": 203.38,
+          "sub": "2024 Wk 14"
+        },
+        {
+          "label": "FanDuel Low",
+          "value": 74.34,
+          "sub": "2025 Wk 8"
+        }
+      ]
     }
   ],
   "playoffCategories": [
