@@ -44,7 +44,11 @@ export function renderRivals(data) {
     return;
   }
 
-  slot.innerHTML = names.map(name => rivalCardHtml(name, names, matchups)).join("");
+  slot.innerHTML = names.map(name => rivalCardHtml(name, names, matchups)).join("") + `
+    <div class="legend">
+      <span class="legend__item">🔥 Won last 3</span>
+      <span class="legend__item">🧊 Lost last 3</span>
+    </div>`;
 
   names.forEach(name => {
     const toggle = $(`#rivalToggle-${cssId(name)}`);

@@ -101,14 +101,8 @@ export function renderBios(data) {
         <div class="bio-card__flip-hint">Tap to flip back</div>
       </div>`;
 
-    // Card min-height grows with stat count so the back face never clips —
-    // roughly 130px of chrome (title + hint) plus ~54px per row, floor 280px.
-    const cols = careerStats.length > 3 ? 2 : 1;
-    const rows = Math.max(1, Math.ceil(careerStats.length / cols));
-    const minHeight = Math.max(280, 130 + rows * 54);
-
     return `
-      <div class="bio-flip-wrapper" id="bioFlip-${cssId(b.manager)}" style="min-height:${minHeight}px">
+      <div class="bio-flip-wrapper" id="bioFlip-${cssId(b.manager)}">
         <div class="bio-flip-inner ${isFlipped ? "is-flipped" : ""}">
           <div class="bio-card ${isChampion ? "is-champion" : ""}">${frontHtml}</div>
           <div class="bio-card ${isChampion ? "is-champion" : ""}">${backHtml}</div>
