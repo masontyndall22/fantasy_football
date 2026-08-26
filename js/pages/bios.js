@@ -114,8 +114,16 @@ export function renderBios(data) {
     const wrapper = $(`#bioFlip-${cssId(b.manager)}`);
     if (!wrapper) return;
     wrapper.addEventListener("click", () => {
-      state.flippedBios[b.manager] = !state.flippedBios[b.manager];
-      renderBios(data);
+      // Toggle the class directly on the existing element rather than
+      // calling renderBios() again — a full innerHTML rebuild would create
+      // the card already in its final rotated state, with no "before" frame
+      // for the CSS transition to animate from, so it'd just snap instead
+      // of flipping. Nothing else about the card changes on tap, so there's
+      // nothing else that needs re-rendering here.
+      const flipped = !state.flippedBios[b.manager];
+      state.flippedBios[b.manager] = flipped;
+      const inner = wrapper.querySelector(".bio-flip-inner");
+      if (inner) inner.classList.toggle("is-flipped", flipped);
     });
   });
 }
