@@ -778,6 +778,8 @@ table.breakdown-table tr.total-row td:first-child {
 }
 .record-card__label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
 .record-card__value { font-size: 22px; font-weight: 700; color: var(--gold); margin-top: 4px; }
+.record-card__value.is-low { color: #7dd3fc; filter: drop-shadow(0 0 6px rgba(125, 211, 252, 0.7)); }
+.record-card__value.is-punishment { color: var(--wrong); }
 .record-card__sub { font-size: 12px; color: rgba(233, 233, 237, 0.7); margin-top: 2px; }
 
 /* ---------- Bottom nav ---------- */

@@ -97,8 +97,8 @@ function renderLeagueHistory(data) {
 }
 
 // ---------------- All-Time Records ----------------
-function recordCard(label, valueHtml, subHtml) {
-  return `<div class="record-card"><div class="record-card__label">${escapeHtml(label)}</div><div class="record-card__value">${valueHtml}</div><div class="record-card__sub">${subHtml}</div></div>`;
+function recordCard(label, valueHtml, subHtml, variant) {
+  return `<div class="record-card"><div class="record-card__label">${escapeHtml(label)}</div><div class="record-card__value ${variant || ""}">${valueHtml}</div><div class="record-card__sub">${subHtml}</div></div>`;
 }
 
 function bestWorstWeek(weeklyByManager) {
@@ -133,6 +133,11 @@ function renderRecords(data) {
   const maxChamps = Math.max(0, ...Object.values(champCounts));
   const champLeaders = Object.entries(champCounts).filter(([, count]) => count === maxChamps && count > 0).map(([name]) => name);
 
+  const bios = data.bios || [];
+  let maxLosses = 0;
+  bios.forEach(b => { const l = Number(b.leagueLosses) || 0; if (l > maxLosses) maxLosses = l; });
+  const mostPunishedLeaders = bios.filter(b => (Number(b.leagueLosses) || 0) === maxLosses).map(b => b.manager);
+
   const fd = bestWorstWeek(data.weeklyFanDuel);
 
   // Shared logic for any "manager -> {highest, lowest}" all-time records
@@ -160,17 +165,18 @@ function renderRecords(data) {
 
   const allTimeCards = seasons.length ? `
     ${recordCard("Highest Season Total Ever", fmt(highestSeason.value), `${escapeHtml(highestSeason.manager)} — ${escapeHtml(highestSeason.season)}`)}
-    ${recordCard("Lowest Season Total Ever", fmt(lowestSeason.value), `${escapeHtml(lowestSeason.manager)} — ${escapeHtml(lowestSeason.season)}`)}
+    ${recordCard("Lowest Season Total Ever", fmt(lowestSeason.value), `${escapeHtml(lowestSeason.manager)} — ${escapeHtml(lowestSeason.season)}`, "is-low")}
     ${champLeaders.length ? recordCard("Most Championships", maxChamps, champLeaders.map(escapeHtml).join(", ")) : ""}
+    ${maxLosses > 0 ? recordCard("Most Punishments", maxLosses, mostPunishedLeaders.map(escapeHtml).join(", "), "is-punishment") : ""}
   ` : `<div class="empty-state"><div class="empty-state__title">No completed seasons yet</div></div>`;
 
   const weeklyCards = `
     ${fd.best ? recordCard("Best FanDuel Week (this season)", fmt(fd.best.value), `${escapeHtml(fd.best.manager)} — Week ${fd.best.week}`) : ""}
-    ${fd.worst ? recordCard("Worst FanDuel Week (this season)", fmt(fd.worst.value), `${escapeHtml(fd.worst.manager)} — Week ${fd.worst.week}`) : ""}
+    ${fd.worst ? recordCard("Worst FanDuel Week (this season)", fmt(fd.worst.value), `${escapeHtml(fd.worst.manager)} — Week ${fd.worst.week}`, "is-low") : ""}
     ${fdAllTime.best ? recordCard("Highest FanDuel Score Ever", fmt(fdAllTime.best.value), `${escapeHtml(fdAllTime.best.manager)} — ${escapeHtml(String(fdAllTime.best.season))} Week ${fdAllTime.best.week}`) : ""}
-    ${fdAllTime.worst ? recordCard("Lowest FanDuel Score Ever", fmt(fdAllTime.worst.value), `${escapeHtml(fdAllTime.worst.manager)} — ${escapeHtml(String(fdAllTime.worst.season))} Week ${fdAllTime.worst.week}`) : ""}
+    ${fdAllTime.worst ? recordCard("Lowest FanDuel Score Ever", fmt(fdAllTime.worst.value), `${escapeHtml(fdAllTime.worst.manager)} — ${escapeHtml(String(fdAllTime.worst.season))} Week ${fdAllTime.worst.week}`, "is-low") : ""}
     ${sleeperAllTime.best ? recordCard("Highest Sleeper Score Ever", fmt(sleeperAllTime.best.value), `${escapeHtml(sleeperAllTime.best.manager)} — ${escapeHtml(String(sleeperAllTime.best.season))} Week ${sleeperAllTime.best.week}`) : ""}
-    ${sleeperAllTime.worst ? recordCard("Lowest Sleeper Score Ever", fmt(sleeperAllTime.worst.value), `${escapeHtml(sleeperAllTime.worst.manager)} — ${escapeHtml(String(sleeperAllTime.worst.season))} Week ${sleeperAllTime.worst.week}`) : ""}
+    ${sleeperAllTime.worst ? recordCard("Lowest Sleeper Score Ever", fmt(sleeperAllTime.worst.value), `${escapeHtml(sleeperAllTime.worst.manager)} — ${escapeHtml(String(sleeperAllTime.worst.season))} Week ${sleeperAllTime.worst.week}`, "is-low") : ""}
   `;
   const hasWeeklyData = fd.best || fd.worst || fdAllTime.best || fdAllTime.worst || sleeperAllTime.best || sleeperAllTime.worst;
   const open = state.recordsOpen;
