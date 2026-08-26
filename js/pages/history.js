@@ -38,7 +38,7 @@ function renderFantasyHistory(data) {
     const maxPlace = Math.max(...entries.map(e => Number(e.place) || 0));
     const rowsHtml = entries.map(e => {
       const place = Number(e.place);
-      const placeClass = place === 1 ? "is-gold" : (place === maxPlace && maxPlace > 1) ? "is-last" : "";
+      const placeClass = place === 1 ? "is-gold" : (place === 10) ? "is-last" : "";
       return `
         <div class="fantasy-year-row">
           <div class="fantasy-year-row__main">
