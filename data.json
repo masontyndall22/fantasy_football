@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T02:42:57.118Z",
+  "generatedAt": "2026-08-27T02:47:51.405Z",
   "managers": [
     {
       "name": "Ben",
@@ -1175,12 +1175,75 @@
     },
     {
       "season": 2019,
-      "week": "",
-      "managerA": "",
-      "scoreA": "",
-      "managerB": "",
-      "scoreB": "",
-      "winner": ""
+      "week": 6,
+      "managerA": "Ben",
+      "scoreA": 125.8,
+      "managerB": "Mason",
+      "scoreB": 102.42,
+      "winner": "Ben"
+    },
+    {
+      "season": 2019,
+      "week": 6,
+      "managerA": "Kyle",
+      "scoreA": 115.04,
+      "managerB": "Caleb",
+      "scoreB": 140.6,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 8,
+      "managerA": "Ben",
+      "scoreA": 123.18,
+      "managerB": "Caleb",
+      "scoreB": 171.06,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 9,
+      "managerA": "Caleb",
+      "scoreA": 120.64,
+      "managerB": "Mason",
+      "scoreB": 137.4,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 10,
+      "managerA": "Mason",
+      "scoreA": 156.44,
+      "managerB": "Kyle",
+      "scoreB": 129.32,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 11,
+      "managerA": "Ben",
+      "scoreA": 80.88,
+      "managerB": "Kyle",
+      "scoreB": 133.88,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2019,
+      "week": 14,
+      "managerA": "Kyle",
+      "scoreA": 101.1,
+      "managerB": "Mason",
+      "scoreB": 126.64,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 15,
+      "managerA": "Kyle",
+      "scoreA": 147.88,
+      "managerB": "Caleb",
+      "scoreB": 111.42,
+      "winner": "Kyle"
     },
     {
       "season": 2023,
@@ -1897,12 +1960,75 @@
     },
     {
       "season": 2019,
-      "week": "",
-      "managerA": "",
-      "scoreA": "",
-      "managerB": "",
-      "scoreB": "",
-      "winner": ""
+      "week": 6,
+      "managerA": "Ben",
+      "scoreA": 125.8,
+      "managerB": "Mason",
+      "scoreB": 102.42,
+      "winner": "Ben"
+    },
+    {
+      "season": 2019,
+      "week": 6,
+      "managerA": "Kyle",
+      "scoreA": 115.04,
+      "managerB": "Caleb",
+      "scoreB": 140.6,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 8,
+      "managerA": "Ben",
+      "scoreA": 123.18,
+      "managerB": "Caleb",
+      "scoreB": 171.06,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 9,
+      "managerA": "Caleb",
+      "scoreA": 120.64,
+      "managerB": "Mason",
+      "scoreB": 137.4,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 10,
+      "managerA": "Mason",
+      "scoreA": 156.44,
+      "managerB": "Kyle",
+      "scoreB": 129.32,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 11,
+      "managerA": "Ben",
+      "scoreA": 80.88,
+      "managerB": "Kyle",
+      "scoreB": 133.88,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2019,
+      "week": 14,
+      "managerA": "Kyle",
+      "scoreA": 101.1,
+      "managerB": "Mason",
+      "scoreB": 126.64,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 15,
+      "managerA": "Kyle",
+      "scoreA": 147.88,
+      "managerB": "Caleb",
+      "scoreB": 111.42,
+      "winner": "Kyle"
     },
     {
       "season": 2023,
