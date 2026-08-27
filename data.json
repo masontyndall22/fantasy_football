@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T02:47:51.405Z",
+  "generatedAt": "2026-08-27T03:42:57.009Z",
   "managers": [
     {
       "name": "Ben",
@@ -2535,7 +2535,7 @@
     {
       "manager": "Kyle",
       "year": 2023,
-      "teamName": "Its All over",
+      "teamName": "Its All Over",
       "wins": 4,
       "losses": 10,
       "place": 8
