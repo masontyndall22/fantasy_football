@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T01:42:59.333Z",
+  "generatedAt": "2026-08-27T02:42:57.118Z",
   "managers": [
     {
       "name": "Ben",
@@ -70,7 +70,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "38-44",
+      "allTimeRecord": "49-59",
       "careerStats": [
         {
           "label": "League High",
@@ -115,7 +115,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "47-35",
+      "allTimeRecord": "60-48",
       "careerStats": [
         {
           "label": "League High",
@@ -160,7 +160,7 @@
       "weakness": "The Regular Season",
       "punishmentsDone": "Full Crawl, T-Shirt",
       "punishmentIdeas": "Ice Bath",
-      "allTimeRecord": "43-39",
+      "allTimeRecord": "61-47",
       "careerStats": [
         {
           "label": "League High",
@@ -205,7 +205,7 @@
       "weakness": "Toll Booths",
       "punishmentsDone": "1/3 Crawl",
       "punishmentIdeas": "Smut Presentation, 2400 Pins",
-      "allTimeRecord": "56-26",
+      "allTimeRecord": "73-35",
       "careerStats": [
         {
           "label": "League High",
@@ -1057,6 +1057,132 @@
       "winner": "Caleb"
     },
     {
+      "season": 2018,
+      "week": 1,
+      "managerA": "Kyle",
+      "scoreA": 123.06,
+      "managerB": "Ben",
+      "scoreB": 104.86,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 3,
+      "managerA": "Mason",
+      "scoreA": 137.66,
+      "managerB": "Kyle",
+      "scoreB": 166.04,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 3,
+      "managerA": "Ben",
+      "scoreA": 138.84,
+      "managerB": "Caleb",
+      "scoreB": 94.2,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 5,
+      "managerA": "Caleb",
+      "scoreA": 110.88,
+      "managerB": "Kyle",
+      "scoreB": 138.22,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 6,
+      "managerA": "Ben",
+      "scoreA": 160.84,
+      "managerB": "Mason",
+      "scoreB": 136.78,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 9,
+      "managerA": "Kyle",
+      "scoreA": 142.54,
+      "managerB": "Caleb",
+      "scoreB": 94.06,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 10,
+      "managerA": "Ben",
+      "scoreA": 132.54,
+      "managerB": "Kyle",
+      "scoreB": 145.2,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 11,
+      "managerA": "Mason",
+      "scoreA": 196.32,
+      "managerB": "Caleb",
+      "scoreB": 141.68,
+      "winner": "Mason"
+    },
+    {
+      "season": 2018,
+      "week": 12,
+      "managerA": "Caleb",
+      "scoreA": 111.12,
+      "managerB": "Ben",
+      "scoreB": 133.72,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 15,
+      "managerA": "Ben",
+      "scoreA": 103.68,
+      "managerB": "Kyle",
+      "scoreB": 128.52,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 16,
+      "managerA": "Ben",
+      "scoreA": 106.78,
+      "managerB": "Mason",
+      "scoreB": 169.32,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 1,
+      "managerA": "Mason",
+      "scoreA": 101.16,
+      "managerB": "Caleb",
+      "scoreB": 124.02,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 2,
+      "managerA": "Kyle",
+      "scoreA": 145.48,
+      "managerB": "Ben",
+      "scoreB": 104.76,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2019,
+      "week": "",
+      "managerA": "",
+      "scoreA": "",
+      "managerB": "",
+      "scoreB": "",
+      "winner": ""
+    },
+    {
       "season": 2023,
       "week": 1,
       "managerA": "Kyle",
@@ -1653,6 +1779,132 @@
       "winner": "Caleb"
     },
     {
+      "season": 2018,
+      "week": 1,
+      "managerA": "Kyle",
+      "scoreA": 123.06,
+      "managerB": "Ben",
+      "scoreB": 104.86,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 3,
+      "managerA": "Mason",
+      "scoreA": 137.66,
+      "managerB": "Kyle",
+      "scoreB": 166.04,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 3,
+      "managerA": "Ben",
+      "scoreA": 138.84,
+      "managerB": "Caleb",
+      "scoreB": 94.2,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 5,
+      "managerA": "Caleb",
+      "scoreA": 110.88,
+      "managerB": "Kyle",
+      "scoreB": 138.22,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 6,
+      "managerA": "Ben",
+      "scoreA": 160.84,
+      "managerB": "Mason",
+      "scoreB": 136.78,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 9,
+      "managerA": "Kyle",
+      "scoreA": 142.54,
+      "managerB": "Caleb",
+      "scoreB": 94.06,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 10,
+      "managerA": "Ben",
+      "scoreA": 132.54,
+      "managerB": "Kyle",
+      "scoreB": 145.2,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 11,
+      "managerA": "Mason",
+      "scoreA": 196.32,
+      "managerB": "Caleb",
+      "scoreB": 141.68,
+      "winner": "Mason"
+    },
+    {
+      "season": 2018,
+      "week": 12,
+      "managerA": "Caleb",
+      "scoreA": 111.12,
+      "managerB": "Ben",
+      "scoreB": 133.72,
+      "winner": "Ben"
+    },
+    {
+      "season": 2018,
+      "week": 15,
+      "managerA": "Ben",
+      "scoreA": 103.68,
+      "managerB": "Kyle",
+      "scoreB": 128.52,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2018,
+      "week": 16,
+      "managerA": "Ben",
+      "scoreA": 106.78,
+      "managerB": "Mason",
+      "scoreB": 169.32,
+      "winner": "Mason"
+    },
+    {
+      "season": 2019,
+      "week": 1,
+      "managerA": "Mason",
+      "scoreA": 101.16,
+      "managerB": "Caleb",
+      "scoreB": 124.02,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2019,
+      "week": 2,
+      "managerA": "Kyle",
+      "scoreA": 145.48,
+      "managerB": "Ben",
+      "scoreB": 104.76,
+      "winner": "Kyle"
+    },
+    {
+      "season": 2019,
+      "week": "",
+      "managerA": "",
+      "scoreA": "",
+      "managerB": "",
+      "scoreB": "",
+      "winner": ""
+    },
+    {
       "season": 2023,
       "week": 1,
       "managerA": "Kyle",
@@ -2073,6 +2325,70 @@
       "wins": 8,
       "losses": 5,
       "place": 5
+    },
+    {
+      "manager": "Ben",
+      "year": 2018,
+      "teamName": "Oaky Afterbirth",
+      "wins": 7,
+      "losses": 6,
+      "place": 4
+    },
+    {
+      "manager": "Caleb",
+      "year": 2018,
+      "teamName": "White Priviledge",
+      "wins": 5,
+      "losses": 8,
+      "place": 8
+    },
+    {
+      "manager": "Kyle",
+      "year": 2018,
+      "teamName": "Exhibition Game",
+      "wins": 11,
+      "losses": 2,
+      "place": 2
+    },
+    {
+      "manager": "Mason",
+      "year": 2018,
+      "teamName": "Barely Know Her(nia)",
+      "wins": 7,
+      "losses": 6,
+      "place": 3
+    },
+    {
+      "manager": "Ben",
+      "year": 2019,
+      "teamName": "Fantasy Is All Luck",
+      "wins": 4,
+      "losses": 9,
+      "place": 9
+    },
+    {
+      "manager": "Caleb",
+      "year": 2019,
+      "teamName": "The Grand Aliens",
+      "wins": 8,
+      "losses": 5,
+      "place": 4
+    },
+    {
+      "manager": "Kyle",
+      "year": 2019,
+      "teamName": "High On Gordon",
+      "wins": 7,
+      "losses": 6,
+      "place": 3
+    },
+    {
+      "manager": "Mason",
+      "year": 2019,
+      "teamName": "Avengers Shirt",
+      "wins": 10,
+      "losses": 3,
+      "place": 2
     },
     {
       "manager": "Ben",
