@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:57:07.469Z",
+  "generatedAt": "2026-08-28T23:01:31.437Z",
   "managers": [
     {
       "name": "Ben",
@@ -3646,11 +3646,13 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": []
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
+      "gradeNote": "Spent big on waivers and it paid off",
       "faabSpent": 65,
       "transactions": {
         "adds": 21,
@@ -3658,9 +3660,9 @@
         "total": 21
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1848.34,
+        "pointsProjected": 2440.52,
+        "pointsAgainst": 1589.22
       }
     },
     {
@@ -3927,13 +3929,11 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 48,
+        "score": 0,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Spent big on waivers and it paid off",
+      "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 100,
       "transactions": {
         "adds": 21,
@@ -3941,9 +3941,9 @@
         "total": 21
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsProjected": 0,
-        "pointsAgainst": 0
+        "pointsFor": 1685.56,
+        "pointsProjected": 2241.9,
+        "pointsAgainst": 1633.7
       }
     },
     {
@@ -4228,11 +4228,13 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 0,
+        "score": 47,
         "letter": "F",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
+      "gradeNote": "Spent big on waivers and it paid off",
       "faabSpent": 100,
       "transactions": {
         "adds": 28,
@@ -4240,9 +4242,9 @@
         "total": 28
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1834.12,
+        "pointsProjected": 2371.4,
+        "pointsAgainst": 1735.08
       }
     },
     {
@@ -4527,13 +4529,11 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "score": 30,
+        "letter": "F",
+        "reasons": []
       },
-      "gradeNote": "Spent big on waivers and it paid off",
+      "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 98,
       "transactions": {
         "adds": 32,
@@ -4541,9 +4541,9 @@
         "total": 32
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1781.2,
+        "pointsProjected": 2265.59,
+        "pointsAgainst": 1511.52
       }
     },
     {
@@ -4822,9 +4822,9 @@
         "total": 43
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1811.64,
+        "pointsProjected": 2173,
+        "pointsAgainst": 1836.26
       }
     },
     {
@@ -5091,11 +5091,13 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": []
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
+      "gradeNote": "Spent big on waivers and it paid off",
       "faabSpent": 120,
       "transactions": {
         "adds": 25,
@@ -5103,9 +5105,9 @@
         "total": 25
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1824.14,
+        "pointsProjected": 2222.62,
+        "pointsAgainst": 1810.42
       }
     },
     {
@@ -5372,13 +5374,11 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 48,
+        "score": 42,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Spent big on waivers and it paid off",
+      "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 80,
       "transactions": {
         "adds": 23,
@@ -5386,9 +5386,9 @@
         "total": 25
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsProjected": 0,
-        "pointsAgainst": 0
+        "pointsFor": 1814.4,
+        "pointsProjected": 2144.76,
+        "pointsAgainst": 1630.92
       }
     },
     {
@@ -5664,8 +5664,8 @@
       ],
       "hasBenchSplit": true,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 73,
+        "letter": "C",
         "reasons": [
           "Spent big on waivers and it paid off"
         ]
@@ -5678,9 +5678,9 @@
         "total": 27
       },
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1738.42,
+        "pointsProjected": 2136.16,
+        "pointsAgainst": 1628.36
       }
     }
   ],
