@@ -38,9 +38,11 @@ export function renderYearReview(data) {
   const orderedManagers = managerNameOrder.length ? managerNameOrder : yearManagerNames;
 
   const review = reviews.find(r => r.manager === manager && r.season === season);
+  const historyEntry = (data.memberHistory || []).find(h => h.manager === manager && String(h.year) === String(season));
+  const teamName = historyEntry ? historyEntry.teamName : "";
 
   overlay.classList.add("is-open");
-  overlay.innerHTML = renderOverlayContent_(review, manager, season, orderedManagers);
+  overlay.innerHTML = renderOverlayContent_(review, manager, season, orderedManagers, teamName);
   wireOverlayEvents_(data, orderedManagers);
 }
 
@@ -84,9 +86,9 @@ function renderFinalRows_(review) {
         <div class="roster-row__left">
           <span class="pos-pill">${escapeHtml(f.position || "")}</span>
           <div class="roster-row__name">${escapeHtml(f.name)}</div>
-          ${f.tag !== "kept" ? tagPillHtml_(f.tag, f.tagWeek) : ""}
         </div>
         <div class="roster-row__right">
+          ${f.tag !== "kept" ? tagPillHtml_(f.tag, f.tagWeek) : ""}
           <span class="roster-row__points">${fmt(f.points)}</span>
           <span class="delta-pill ${deltaClass}">${delta >= 0 ? "+" : ""}${fmt(delta)}</span>
         </div>
@@ -104,14 +106,17 @@ function renderDots_(orderedManagers, activeManager) {
   ).join("");
 }
 
-function renderOverlayContent_(review, manager, season, orderedManagers) {
+function renderOverlayContent_(review, manager, season, orderedManagers, teamName) {
   const rosterTab = state.rosterTab;
   const draftedHtml = review ? renderDraftedRows_(review.drafted) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
   const finalHtml = review ? renderFinalRows_(review) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
 
   return `
     <div class="year-review-header">
-      <div class="year-review-header__title">${escapeHtml(manager)} — ${escapeHtml(season)}</div>
+      <div>
+        <div class="year-review-header__title">${escapeHtml(manager)} — ${escapeHtml(season)}</div>
+        ${teamName ? `<div class="year-review-header__subtitle">${escapeHtml(teamName)}</div>` : ""}
+      </div>
       <button class="year-review-close" id="yearReviewClose" aria-label="Close">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
       </button>

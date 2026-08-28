@@ -803,6 +803,7 @@ table.breakdown-table tr.total-row td:first-child {
   justify-content: space-between;
 }
 .year-review-header__title { font-size: 18px; font-weight: 500; color: var(--text); }
+.year-review-header__subtitle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
 .year-review-close {
   width: 30px; height: 30px;
   border-radius: 8px;
