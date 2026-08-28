@@ -943,6 +943,9 @@ table.breakdown-table tr.total-row td:first-child {
   padding-bottom: 4px;
 }
 .roster-row--final { justify-content: space-between; }
+.roster-row--final .roster-row__left .roster-row__name {
+  flex: 0 1 auto; /* hug the actual text width instead of stretching to fill the row, so the tag pill sits right after the visible name, not far off to the right */
+}
 .roster-row__left { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; }
 .roster-row__right { display: flex; align-items: center; gap: 6px; flex: none; }
 .roster-row__points { font-weight: 600; color: var(--text); font-size: 13px; }
