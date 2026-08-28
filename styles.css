@@ -246,7 +246,7 @@ main { padding: 4px 20px 24px; }
 }
 .rank-badge.is-first { background: var(--gold-grad); color: var(--gold-text); }
 .rank-badge.is-leader-tie { background: var(--accent-dark); color: var(--accent-light); }
-.rank-badge.is-hotdog { font-size: 24px; }
+.rank-badge.is-hotdog { font-size: 14px; }
 
 .standings-row__name { flex: 1; font-size: 14px; font-weight: 500; color: var(--text); }
 .standings-row__pts { font-weight: 600; font-size: 16px; color: var(--text); }
@@ -429,7 +429,7 @@ main { padding: 4px 20px 24px; }
 .bio-card__name { font-weight: 500; font-size: 18px; letter-spacing: -0.015em; color: var(--text); }
 .bio-card__team { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-muted); margin-top: 1px; }
 .bio-card__trophies { display: flex; gap: 3px; flex: none; }
-.bio-card__trophies svg { width: 28px; height: 28px; fill: #e0b24a; filter: drop-shadow(0 0 6px rgba(246, 211, 101, 0.55)); }
+.bio-card__trophies svg { width: 14px; height: 14px; fill: #e0b24a; }
 
 .bio-card__stats {
   display: flex;
@@ -781,6 +781,192 @@ table.breakdown-table tr.total-row td:first-child {
 .record-card__value.is-low { color: #7dd3fc; filter: drop-shadow(0 0 6px rgba(125, 211, 252, 0.7)); }
 .record-card__value.is-punishment { color: var(--wrong); }
 .record-card__sub { font-size: 12px; color: rgba(233, 233, 237, 0.7); margin-top: 2px; }
+
+.fantasy-year-row { cursor: pointer; }
+
+/* ---------- Year Review overlay ---------- */
+.year-review-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #14151f;
+  flex-direction: column;
+  padding: calc(16px + var(--safe-top)) 20px calc(20px + var(--safe-bottom));
+  overflow-y: auto;
+}
+.year-review-overlay.is-open { display: flex; }
+
+.year-review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year-review-header__title { font-size: 18px; font-weight: 500; color: var(--text); }
+.year-review-close {
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+.year-review-close svg { width: 16px; height: 16px; }
+.year-review-close:hover { background: rgba(233, 233, 237, 0.07); color: var(--text); }
+
+.year-review-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 14px 0 4px;
+}
+.year-review-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--text);
+  opacity: 0.25;
+}
+.year-review-dot.is-active {
+  width: 16px; height: 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  opacity: 1;
+}
+
+/* ---------- Roster flip card ---------- */
+.roster-flip-wrapper {
+  perspective: 1400px;
+  -webkit-perspective: 1400px;
+  margin: 16px 0;
+  flex: 1;
+  min-height: 0;
+}
+.roster-flip-inner {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transition: transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s, transform 0.6s;
+}
+.roster-flip-inner.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.roster-flip-inner .roster-face {
+  grid-area: 1 / 1 / -1 / -1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.roster-flip-inner .roster-face:nth-child(2) {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.roster-face {
+  padding: 14px;
+  border-radius: 12px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  min-height: 340px;
+}
+.roster-face__title {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.roster-list { flex: 1; overflow-y: auto; }
+.roster-caption {
+  margin-top: auto;
+  font-size: 11px;
+  color: var(--text-meta);
+  text-align: center;
+  padding-top: 10px;
+}
+
+.roster-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid var(--hairline-soft);
+  font-size: 13px;
+}
+.roster-row:first-child { border-top: none; }
+.roster-row__round { width: 14px; text-align: right; color: var(--text-muted); font-size: 11px; flex: none; }
+.roster-row__name { flex: 1; color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.roster-row__name.is-exited { color: rgba(233, 233, 237, 0.4); text-decoration: line-through; }
+
+.pos-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 14px;
+  padding: 0 2px;
+  border-radius: 5px;
+  background: rgba(233, 233, 237, 0.1);
+  color: rgba(233, 233, 237, 0.6);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  flex: none;
+}
+.tag-pill {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 5px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.roster-final-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(233, 233, 237, 0.4);
+  padding-bottom: 4px;
+}
+.roster-row--final { justify-content: space-between; }
+.roster-row__left { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; }
+.roster-row__right { display: flex; align-items: center; gap: 6px; flex: none; }
+.roster-row__points { font-weight: 600; color: var(--text); font-size: 13px; }
+.delta-pill { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 5px; flex: none; }
+.delta-pill.is-positive { background: rgba(210, 206, 253, 0.14); color: #d2cefd; }
+.delta-pill.is-negative { background: rgba(243, 139, 168, 0.14); color: #f38ba8; }
+
+.roster-bench-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin: 8px 0 2px;
+}
+
+.roster-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px; }
 
 /* ---------- Bottom nav ---------- */
 .bottom-nav {

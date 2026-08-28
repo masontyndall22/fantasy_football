@@ -1,6 +1,7 @@
-import { $ } from "../dom.js";
+import { $, $$ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state } from "../state.js";
+import { openYearReview } from "./year-review.js";
 
 function ordinal(n) {
   const num = Number(n);
@@ -38,9 +39,9 @@ function renderFantasyHistory(data) {
     const maxPlace = Math.max(...entries.map(e => Number(e.place) || 0));
     const rowsHtml = entries.map(e => {
       const place = Number(e.place);
-      const placeClass = place === 1 ? "is-gold" : (place === 10) ? "is-last" : "";
+      const placeClass = place === 1 ? "is-gold" : (place === maxPlace && maxPlace > 1) ? "is-last" : "";
       return `
-        <div class="fantasy-year-row">
+        <div class="fantasy-year-row" data-manager="${escapeHtml(e.manager)}" data-year="${escapeHtml(String(year))}">
           <div class="fantasy-year-row__main">
             <div class="fantasy-year-row__manager">${escapeHtml(e.manager)}</div>
             <div class="fantasy-year-row__team">${escapeHtml(e.teamName || "—")}</div>
@@ -66,6 +67,10 @@ function renderFantasyHistory(data) {
   $("#fantasyHistoryToggle").addEventListener("click", () => {
     state.fantasyHistoryOpen = !state.fantasyHistoryOpen;
     renderFantasyHistory(data);
+  });
+
+  $$(".fantasy-year-row", $("#fantasyHistorySlot")).forEach(row => {
+    row.addEventListener("click", () => openYearReview(row.dataset.manager, row.dataset.year));
   });
 }
 

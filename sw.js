@@ -1,4 +1,4 @@
-const CACHE_NAME = "the-league-shell-v6";
+const CACHE_NAME = "the-league-shell-v7";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -17,6 +17,7 @@ const APP_SHELL = [
   "./js/pages/playoffs.js",
   "./js/pages/rivalries.js",
   "./js/pages/history.js",
+  "./js/pages/year-review.js",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

@@ -7,6 +7,7 @@ import { renderScoring } from "./js/pages/scoring.js";
 import { renderPlayoffs } from "./js/pages/playoffs.js";
 import { renderRivals } from "./js/pages/rivalries.js";
 import { renderHistory } from "./js/pages/history.js";
+import { renderYearReview } from "./js/pages/year-review.js";
 import { initNav, initRefresh } from "./js/nav.js";
 
 function renderAll(data) {
@@ -18,6 +19,7 @@ function renderAll(data) {
   renderPlayoffs(data);
   renderRivals(data);
   renderHistory(data);
+  renderYearReview(data);
 }
 
 async function boot() {

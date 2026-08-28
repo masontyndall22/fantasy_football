@@ -43,6 +43,8 @@ export const state = {
   recordsOpen: true,
   fantasyHistoryOpen: true,
   leagueHistoryOpen: true,
+  yearReviewOpen: null, // "{manager}|{season}" string, or null when closed
+  rosterTab: "drafted", // "drafted" | "final" — which face of the flip card is showing
 };
 
 // Holds the most recently loaded data.json payload. Page modules that need
