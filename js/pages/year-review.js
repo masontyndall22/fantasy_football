@@ -86,9 +86,9 @@ function renderFinalRows_(review) {
         <div class="roster-row__left">
           <span class="pos-pill">${escapeHtml(f.position || "")}</span>
           <div class="roster-row__name">${escapeHtml(f.name)}</div>
+          ${f.tag !== "kept" ? tagPillHtml_(f.tag, f.tagWeek) : ""}
         </div>
         <div class="roster-row__right">
-          ${f.tag !== "kept" ? tagPillHtml_(f.tag, f.tagWeek) : ""}
           <span class="roster-row__points">${fmt(f.points)}</span>
           <span class="delta-pill ${deltaClass}">${delta >= 0 ? "+" : ""}${fmt(delta)}</span>
         </div>
