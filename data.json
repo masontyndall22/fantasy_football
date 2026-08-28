@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T21:47:58.317Z",
+  "generatedAt": "2026-08-28T22:21:52.373Z",
   "managers": [
     {
       "name": "Ben",
@@ -15,10 +15,10 @@
       "mvpBonus": 1,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 43,
+        "score": 48,
         "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Spent big on waivers and it paid off"
         ]
       }
     },
@@ -38,9 +38,7 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       }
     },
     {
@@ -59,9 +57,7 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       }
     },
     {
@@ -81,7 +77,7 @@
         "score": 100,
         "letter": "A+",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Spent big on waivers and it paid off"
         ]
       }
     }
@@ -2913,7 +2909,23 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": []
+      },
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 65,
+      "transactions": {
+        "adds": 21,
+        "trades": 0,
+        "total": 21
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2025",
@@ -3177,7 +3189,25 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 48,
+        "letter": "F",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
+      },
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 100,
+      "transactions": {
+        "adds": 21,
+        "trades": 0,
+        "total": 21
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2025",
@@ -3459,7 +3489,23 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": []
+      },
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 100,
+      "transactions": {
+        "adds": 28,
+        "trades": 0,
+        "total": 28
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2025",
@@ -3741,7 +3787,25 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
+      },
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 98,
+      "transactions": {
+        "adds": 32,
+        "trades": 0,
+        "total": 32
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2024",
@@ -4005,7 +4069,23 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": []
+      },
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 92,
+      "transactions": {
+        "adds": 42,
+        "trades": 1,
+        "total": 43
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2024",
@@ -4269,7 +4349,23 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": []
+      },
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 120,
+      "transactions": {
+        "adds": 25,
+        "trades": 0,
+        "total": 25
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2024",
@@ -4533,7 +4629,25 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 48,
+        "letter": "F",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
+      },
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 80,
+      "transactions": {
+        "adds": 23,
+        "trades": 2,
+        "total": 25
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2024",
@@ -4806,7 +4920,25 @@
           "isStarter": false
         }
       ],
-      "hasBenchSplit": true
+      "hasBenchSplit": true,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
+      },
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 100,
+      "transactions": {
+        "adds": 27,
+        "trades": 0,
+        "total": 27
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2026",
@@ -4966,7 +5098,25 @@
           "isStarter": true
         }
       ],
-      "hasBenchSplit": false
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": {
+        "adds": 0,
+        "trades": 0,
+        "total": 0
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2026",
@@ -5118,7 +5268,25 @@
           "isStarter": true
         }
       ],
-      "hasBenchSplit": false
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": {
+        "adds": 0,
+        "trades": 0,
+        "total": 0
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2026",
@@ -5296,7 +5464,25 @@
           "isStarter": true
         }
       ],
-      "hasBenchSplit": false
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": {
+        "adds": 0,
+        "trades": 0,
+        "total": 0
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     },
     {
       "season": "2026",
@@ -5465,7 +5651,25 @@
           "isStarter": true
         }
       ],
-      "hasBenchSplit": false
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": {
+        "adds": 0,
+        "trades": 0,
+        "total": 0
+      },
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsProjected": 0
+      }
     }
   ],
   "preseasonSummary": "Kyle is two-for-two as champion and has fully transitioned from 'guy who drafts well' to 'guy the group chat quietly hates,' which, respectfully, is earned. Ben was a two-time champion back when Biden had a full head of steam and has since face-planted into last place twice — the '2400 Pins' and cold plunge weren't hazing, Ben, they were a pattern. Caleb remains the league's longest-running mystery: zero championships in five years, yet somehow avoids the basement often enough to keep talking like a contender at the draft table. Mason's the quiet menace — one ring, zero last-place finishes, but one can only imagine he is due like Russel Gage for a seat at the bottom. New this year: last place doesn't get off easy with a crawl or a book report anymore. It's eighteen holes of frisbee golf, a spin of the wheel on every tee box, and however many hot dogs that wheel demands — eaten, not admired. Draft smart. And Don't Get Dogged.\"",
