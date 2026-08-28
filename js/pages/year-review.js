@@ -107,13 +107,6 @@ function renderDots_(orderedManagers, activeManager) {
   ).join("");
 }
 
-function deltaSubHtml_(delta, suffix) {
-  if (delta == null || Number.isNaN(delta)) return "";
-  const cls = delta > 0 ? "is-positive" : delta < 0 ? "is-negative" : "";
-  const sign = delta > 0 ? "+" : "";
-  return `<div class="stat-card__sub ${cls}">${sign}${fmt(delta)} ${suffix}</div>`;
-}
-
 function renderGradeBadge_(review) {
   if (!review || !review.seasonGrade) {
     return `
@@ -131,17 +124,10 @@ function renderGradeBadge_(review) {
     </div>`;
 }
 
-// "Rostered Total" simplification: this sums only the FINAL roster's
-// points, not every player who was ever on the roster that season.
-// Sleeper_Roster_Log only snapshots the roster's end-of-season state, so
-// anyone drafted and dropped before then has no tracked points-while-here
-// to include — a real data gap, not a rounding choice.
 function renderStatCards_(review, historyEntry) {
   const kept = review ? review.final.filter(f => f.tag === "kept").length : 0;
   const totalPlayers = review ? review.final.length : 0;
-  const rosteredTotal = review ? review.final.reduce((sum, f) => sum + (f.points || 0), 0) : 0;
   const starterPoints = review ? review.starterPoints : null;
-  const starterDelta = starterPoints ? starterPoints.pointsFor - starterPoints.pointsProjected : null;
   const tx = review ? review.transactions : { adds: 0, trades: 0, total: 0 };
   const faabSpent = review ? review.faabSpent : 0;
 
@@ -172,11 +158,11 @@ function renderStatCards_(review, historyEntry) {
       <div class="stat-card">
         <div class="stat-card__label">Starter Total</div>
         <div class="stat-card__value">${starterPoints ? fmt(starterPoints.pointsFor) : "—"}</div>
-        ${deltaSubHtml_(starterDelta, "proj")}
+        ${starterPoints ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
       </div>
       <div class="stat-card">
-        <div class="stat-card__label">Rostered Total</div>
-        <div class="stat-card__value" style="color:#d2cefd">${fmt(rosteredTotal)}</div>
+        <div class="stat-card__label">Points Against</div>
+        <div class="stat-card__value" style="color:#f38ba8">${starterPoints && starterPoints.pointsAgainst != null ? fmt(starterPoints.pointsAgainst) : "—"}</div>
       </div>
     </div>`;
 }
