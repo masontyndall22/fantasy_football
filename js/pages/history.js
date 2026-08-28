@@ -3,7 +3,7 @@ import { fmt, escapeHtml } from "../format.js";
 import { state } from "../state.js";
 import { openYearReview } from "./year-review.js";
 
-function ordinal(n) {
+export function ordinal(n) {
   const num = Number(n);
   if (!Number.isFinite(num)) return String(n);
   const mod100 = num % 100;

@@ -741,7 +741,7 @@ table.breakdown-table tr.total-row td:first-child {
 /* ---------- Previous Leagues (fantasy history, by year) ---------- */
 .fantasy-year-card + .fantasy-year-card { margin-top: 14px; }
 .fantasy-year-card__label {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--accent-light);
@@ -815,6 +815,61 @@ table.breakdown-table tr.total-row td:first-child {
 }
 .year-review-close svg { width: 16px; height: 16px; }
 .year-review-close:hover { background: rgba(233, 233, 237, 0.07); color: var(--text); }
+
+/* ---------- Season grade badge ---------- */
+.year-review-grade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px 0 4px;
+}
+.grade-badge {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #262a3c, #1c1e2a);
+  box-shadow: 0 0 0 3px #f6d365, 0 0 24px rgba(246, 211, 101, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.grade-badge__letter { font-weight: 700; font-size: 34px; color: #f6d365; }
+.grade-badge__label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+.grade-badge__note {
+  font-size: 13px;
+  color: #d2cefd;
+  text-align: center;
+  margin-top: 4px;
+  padding: 0 20px;
+}
+
+/* ---------- Stat cards ---------- */
+.year-review-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+.stat-card {
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+}
+.stat-card__label {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(233, 233, 237, 0.45);
+}
+.stat-card__value { font-weight: 600; font-size: 18px; margin-top: 4px; color: var(--text); }
+.stat-card__sub { font-size: 11px; color: var(--text-meta); margin-top: 2px; }
+.stat-card__sub.is-positive { color: #d2cefd; }
+.stat-card__sub.is-negative { color: #f38ba8; }
 
 .year-review-dots {
   display: flex;

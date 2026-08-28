@@ -1,6 +1,7 @@
 import { $, $$ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state, store } from "../state.js";
+import { ordinal } from "./history.js";
 
 const TAG_COLORS = {
   dropped: { bg: "rgba(243,139,168,0.14)", fg: "#f38ba8" },
@@ -42,7 +43,7 @@ export function renderYearReview(data) {
   const teamName = historyEntry ? historyEntry.teamName : "";
 
   overlay.classList.add("is-open");
-  overlay.innerHTML = renderOverlayContent_(review, manager, season, orderedManagers, teamName);
+  overlay.innerHTML = renderOverlayContent_(review, manager, season, orderedManagers, teamName, historyEntry);
   wireOverlayEvents_(data, orderedManagers);
 }
 
@@ -106,7 +107,81 @@ function renderDots_(orderedManagers, activeManager) {
   ).join("");
 }
 
-function renderOverlayContent_(review, manager, season, orderedManagers, teamName) {
+function deltaSubHtml_(delta, suffix) {
+  if (delta == null || Number.isNaN(delta)) return "";
+  const cls = delta > 0 ? "is-positive" : delta < 0 ? "is-negative" : "";
+  const sign = delta > 0 ? "+" : "";
+  return `<div class="stat-card__sub ${cls}">${sign}${fmt(delta)} ${suffix}</div>`;
+}
+
+function renderGradeBadge_(review) {
+  if (!review || !review.seasonGrade) {
+    return `
+      <div class="year-review-grade">
+        <div class="grade-badge"><span class="grade-badge__letter">—</span></div>
+        <div class="grade-badge__label">Season Grade</div>
+        <div class="grade-badge__note">Not enough data yet to grade this season.</div>
+      </div>`;
+  }
+  return `
+    <div class="year-review-grade">
+      <div class="grade-badge"><span class="grade-badge__letter">${escapeHtml(review.seasonGrade.letter)}</span></div>
+      <div class="grade-badge__label">Season Grade</div>
+      <div class="grade-badge__note">${escapeHtml(review.gradeNote || "")}</div>
+    </div>`;
+}
+
+// "Rostered Total" simplification: this sums only the FINAL roster's
+// points, not every player who was ever on the roster that season.
+// Sleeper_Roster_Log only snapshots the roster's end-of-season state, so
+// anyone drafted and dropped before then has no tracked points-while-here
+// to include — a real data gap, not a rounding choice.
+function renderStatCards_(review, historyEntry) {
+  const kept = review ? review.final.filter(f => f.tag === "kept").length : 0;
+  const totalPlayers = review ? review.final.length : 0;
+  const rosteredTotal = review ? review.final.reduce((sum, f) => sum + (f.points || 0), 0) : 0;
+  const starterPoints = review ? review.starterPoints : null;
+  const starterDelta = starterPoints ? starterPoints.pointsFor - starterPoints.pointsProjected : null;
+  const tx = review ? review.transactions : { adds: 0, trades: 0, total: 0 };
+  const faabSpent = review ? review.faabSpent : 0;
+
+  const finishValueHtml = historyEntry
+    ? `<div class="stat-card__value" style="color:var(--gold)">${ordinal(historyEntry.place)}</div>
+       <div class="stat-card__sub">${fmt(historyEntry.wins)}-${fmt(historyEntry.losses)}</div>`
+    : `<div class="stat-card__value">—</div>`;
+
+  return `
+    <div class="year-review-stats">
+      <div class="stat-card">
+        <div class="stat-card__label">Finish</div>
+        ${finishValueHtml}
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__label">FAAB Spent</div>
+        <div class="stat-card__value">$${fmt(faabSpent)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__label">Roster Kept</div>
+        <div class="stat-card__value">${kept}/${totalPlayers}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__label">Transactions</div>
+        <div class="stat-card__value">${tx.total}</div>
+        <div class="stat-card__sub">${tx.adds} adds · ${tx.trades} trades</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__label">Starter Total</div>
+        <div class="stat-card__value">${starterPoints ? fmt(starterPoints.pointsFor) : "—"}</div>
+        ${deltaSubHtml_(starterDelta, "proj")}
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__label">Rostered Total</div>
+        <div class="stat-card__value" style="color:#d2cefd">${fmt(rosteredTotal)}</div>
+      </div>
+    </div>`;
+}
+
+function renderOverlayContent_(review, manager, season, orderedManagers, teamName, historyEntry) {
   const rosterTab = state.rosterTab;
   const draftedHtml = review ? renderDraftedRows_(review.drafted) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
   const finalHtml = review ? renderFinalRows_(review) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
@@ -121,6 +196,8 @@ function renderOverlayContent_(review, manager, season, orderedManagers, teamNam
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
       </button>
     </div>
+    ${renderGradeBadge_(review)}
+    ${renderStatCards_(review, historyEntry)}
     <div class="year-review-dots">${renderDots_(orderedManagers, manager)}</div>
     <div class="roster-flip-wrapper">
       <div class="roster-flip-inner ${rosterTab === "final" ? "is-flipped" : ""}" id="rosterFlipInner">
