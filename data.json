@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T23:42:59.858Z",
+  "generatedAt": "2026-08-28T23:45:58.996Z",
   "managers": [
     {
       "name": "Ben",
@@ -5116,11 +5116,7 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": {
-        "adds": 0,
-        "trades": 0,
-        "total": 0
-      },
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
@@ -5287,16 +5283,8 @@
       },
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
-      "transactions": {
-        "adds": 0,
-        "trades": 0,
-        "total": 0
-      },
-      "starterPoints": {
-        "pointsFor": 0,
-        "pointsProjected": 0,
-        "pointsAgainst": 0
-      }
+      "transactions": null,
+      "starterPoints": null
     },
     {
       "season": "2026",
@@ -5484,11 +5472,7 @@
       },
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
-      "transactions": {
-        "adds": 0,
-        "trades": 0,
-        "total": 0
-      },
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
@@ -5672,11 +5656,7 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": {
-        "adds": 0,
-        "trades": 0,
-        "total": 0
-      },
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
