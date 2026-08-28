@@ -153,7 +153,7 @@ function renderStatCards_(review, historyEntry) {
       <div class="stat-card">
         <div class="stat-card__label">Transactions</div>
         <div class="stat-card__value">${tx.total}</div>
-        <div class="stat-card__sub">${tx.adds} adds · ${tx.trades} trades</div>
+        <div class="stat-card__sub">${tx.adds} Adds<br>${tx.trades} trades</div>
       </div>
       <div class="stat-card">
         <div class="stat-card__label">Starter Total</div>
