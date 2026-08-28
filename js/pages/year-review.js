@@ -125,46 +125,64 @@ function renderGradeBadge_(review) {
 }
 
 function renderStatCards_(review, historyEntry) {
-  const kept = review ? review.final.filter(f => f.tag === "kept").length : 0;
-  const totalPlayers = review ? review.final.length : 0;
-  const starterPoints = review ? review.starterPoints : null;
-  const tx = review ? review.transactions : { adds: 0, trades: 0, total: 0 };
-  const faabSpent = review ? review.faabSpent : 0;
+  if (!review) return "";
 
-  const finishValueHtml = historyEntry
-    ? `<div class="stat-card__value" style="color:var(--gold)">${ordinal(historyEntry.place)}</div>
-       <div class="stat-card__sub">${fmt(historyEntry.wins)}-${fmt(historyEntry.losses)}</div>`
-    : `<div class="stat-card__value">—</div>`;
+  const kept = review.final.filter(f => f.tag === "kept").length;
+  const totalPlayers = review.final.length;
+  const starterPoints = review.starterPoints;
+  const tx = review.transactions;
+  const faabSpent = review.faabSpent;
 
-  return `
-    <div class="year-review-stats">
+  const cards = [];
+
+  if (historyEntry) {
+    cards.push(`
       <div class="stat-card">
         <div class="stat-card__label">Finish</div>
-        ${finishValueHtml}
-      </div>
-      <div class="stat-card">
-        <div class="stat-card__label">FAAB Spent</div>
-        <div class="stat-card__value">$${fmt(faabSpent)}</div>
-      </div>
+        <div class="stat-card__value" style="color:var(--gold)">${ordinal(historyEntry.place)}</div>
+        <div class="stat-card__sub">${fmt(historyEntry.wins)}-${fmt(historyEntry.losses)}</div>
+      </div>`);
+  }
+
+  cards.push(`
+    <div class="stat-card">
+      <div class="stat-card__label">FAAB Spent</div>
+      <div class="stat-card__value">$${fmt(faabSpent)}</div>
+    </div>`);
+
+  if (totalPlayers > 0) {
+    cards.push(`
       <div class="stat-card">
         <div class="stat-card__label">Roster Kept</div>
         <div class="stat-card__value">${kept}/${totalPlayers}</div>
-      </div>
+      </div>`);
+  }
+
+  if (tx) {
+    cards.push(`
       <div class="stat-card">
         <div class="stat-card__label">Transactions</div>
         <div class="stat-card__value">${tx.total}</div>
-        <div class="stat-card__sub">${tx.trades} Trades⇄</div>
-      </div>
+        <div class="stat-card__sub">${tx.adds} + · ${tx.trades} ⇄</div>
+      </div>`);
+  }
+
+  if (starterPoints) {
+    cards.push(`
       <div class="stat-card">
-        <div class="stat-card__label">Points For</div>
-        <div class="stat-card__value">${starterPoints ? fmt(starterPoints.pointsFor) : "—"}</div>
-        ${starterPoints ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
-      </div>
+        <div class="stat-card__label">Starter Total</div>
+        <div class="stat-card__value">${fmt(starterPoints.pointsFor)}</div>
+        <div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>
+      </div>`);
+    cards.push(`
       <div class="stat-card">
         <div class="stat-card__label">Points Against</div>
-        <div class="stat-card__value" style="color:#f38ba8">${starterPoints && starterPoints.pointsAgainst != null ? fmt(starterPoints.pointsAgainst) : "—"}</div>
-      </div>
-    </div>`;
+        <div class="stat-card__value" style="color:#f38ba8">${fmt(starterPoints.pointsAgainst)}</div>
+      </div>`);
+  }
+
+  if (!cards.length) return "";
+  return `<div class="year-review-stats">${cards.join("")}</div>`;
 }
 
 function renderOverlayContent_(review, manager, season, orderedManagers, teamName, historyEntry) {
