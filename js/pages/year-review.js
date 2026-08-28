@@ -156,7 +156,7 @@ function renderStatCards_(review, historyEntry) {
         <div class="stat-card__sub">${tx.trades} Trades⇄</div>
       </div>
       <div class="stat-card">
-        <div class="stat-card__label">Starter Total</div>
+        <div class="stat-card__label">Points For</div>
         <div class="stat-card__value">${starterPoints ? fmt(starterPoints.pointsFor) : "—"}</div>
         ${starterPoints ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
       </div>
