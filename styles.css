@@ -741,7 +741,7 @@ table.breakdown-table tr.total-row td:first-child {
 /* ---------- Previous Leagues (fantasy history, by year) ---------- */
 .fantasy-year-card + .fantasy-year-card { margin-top: 14px; }
 .fantasy-year-card__label {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--accent-light);
