@@ -79,8 +79,10 @@ function renderFinalRows_(review) {
       benchLabelShown = true;
       benchDivider = `<div class="roster-bench-label">Bench</div>`;
     }
-    const delta = f.points - f.projectedPoints;
-    const deltaClass = delta >= 0 ? "is-positive" : "is-negative";
+    const hasPoints = f.points != null;
+    const hasDelta = hasPoints && f.projectedPoints != null;
+    const delta = hasDelta ? f.points - f.projectedPoints : null;
+    const deltaClass = hasDelta && delta >= 0 ? "is-positive" : "is-negative";
     return `
       ${benchDivider}
       <div class="roster-row roster-row--final">
@@ -90,8 +92,8 @@ function renderFinalRows_(review) {
           ${f.tag !== "kept" ? tagPillHtml_(f.tag, f.tagWeek) : ""}
         </div>
         <div class="roster-row__right">
-          <span class="roster-row__points">${fmt(f.points)}</span>
-          <span class="delta-pill ${deltaClass}">${delta >= 0 ? "+" : ""}${fmt(delta)}</span>
+          <span class="roster-row__points">${hasPoints ? fmt(f.points) : "NA"}</span>
+          ${hasDelta ? `<span class="delta-pill ${deltaClass}">${delta >= 0 ? "+" : ""}${fmt(delta)}</span>` : ""}
         </div>
       </div>`;
   }).join("");
@@ -144,11 +146,13 @@ function renderStatCards_(review, historyEntry) {
       </div>`);
   }
 
-  cards.push(`
-    <div class="stat-card">
-      <div class="stat-card__label">FAAB Spent</div>
-      <div class="stat-card__value">$${fmt(faabSpent)}</div>
-    </div>`);
+  if (faabSpent > 0) {
+    cards.push(`
+      <div class="stat-card">
+        <div class="stat-card__label">FAAB Spent</div>
+        <div class="stat-card__value">$${fmt(faabSpent)}</div>
+      </div>`);
+  }
 
   if (totalPlayers > 0) {
     cards.push(`
@@ -172,7 +176,7 @@ function renderStatCards_(review, historyEntry) {
       <div class="stat-card">
         <div class="stat-card__label">Starter Total</div>
         <div class="stat-card__value">${fmt(starterPoints.pointsFor)}</div>
-        <div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>
+        ${starterPoints.pointsProjected ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
       </div>`);
     cards.push(`
       <div class="stat-card">
