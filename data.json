@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T00:43:15.285Z",
+  "generatedAt": "2026-08-29T00:56:38.629Z",
   "managers": [
     {
       "name": "Ben",
@@ -2875,17 +2875,15 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 43,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 1248.61,
+        "pointsProjected": 0,
+        "pointsAgainst": 1272.88
+      }
     },
     {
       "season": "2012",
@@ -3133,20 +3131,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1200.98,
+        "pointsProjected": 0,
+        "pointsAgainst": 1011.91
       }
     },
     {
@@ -3395,20 +3387,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1199.76,
+        "pointsProjected": 0,
+        "pointsAgainst": 1190.55
       }
     },
     {
@@ -3657,20 +3643,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1322.92,
+        "pointsProjected": 0,
+        "pointsAgainst": 1282.03
       }
     },
     {
@@ -3927,17 +3907,15 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 43,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 1562.14,
+        "pointsProjected": 0,
+        "pointsAgainst": 1716.81
+      }
     },
     {
       "season": "2013",
@@ -4202,20 +4180,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 2033.92,
+        "pointsProjected": 0,
+        "pointsAgainst": 2036.65
       }
     },
     {
@@ -4481,20 +4453,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1896.44,
+        "pointsProjected": 0,
+        "pointsAgainst": 1788.76
       }
     },
     {
@@ -4760,20 +4726,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1777.61,
+        "pointsProjected": 0,
+        "pointsAgainst": 1743.87
       }
     },
     {
@@ -5039,17 +4999,15 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 43,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 1317.68,
+        "pointsProjected": 0,
+        "pointsAgainst": 1498
+      }
     },
     {
       "season": "2014",
@@ -5314,20 +5272,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1621.7,
+        "pointsProjected": 0,
+        "pointsAgainst": 1512.04
       }
     },
     {
@@ -5593,20 +5545,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1633.28,
+        "pointsProjected": 0,
+        "pointsAgainst": 1286.24
       }
     },
     {
@@ -5872,20 +5818,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1340.38,
+        "pointsProjected": 0,
+        "pointsAgainst": 1209.34
       }
     },
     {
@@ -6150,17 +6090,15 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 43,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 1748.6,
+        "pointsProjected": 0,
+        "pointsAgainst": 1688.62
+      }
     },
     {
       "season": "2018",
@@ -6442,20 +6380,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1530.88,
+        "pointsProjected": 0,
+        "pointsAgainst": 1781.82
       }
     },
     {
@@ -6738,20 +6670,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1897.98,
+        "pointsProjected": 0,
+        "pointsAgainst": 1533.14
       }
     },
     {
@@ -7034,20 +6960,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1810.96,
+        "pointsProjected": 0,
+        "pointsAgainst": 1582.92
       }
     },
     {
@@ -7321,17 +7241,15 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 43,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 1419.99,
+        "pointsProjected": 0,
+        "pointsAgainst": 1595.52
+      }
     },
     {
       "season": "2019",
@@ -7613,20 +7531,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1715.4,
+        "pointsProjected": 0,
+        "pointsAgainst": 1591.62
       }
     },
     {
@@ -7909,20 +7821,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1687.5,
+        "pointsProjected": 0,
+        "pointsAgainst": 1605.54
       }
     },
     {
@@ -8205,20 +8111,14 @@
         }
       ],
       "hasBenchSplit": true,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "seasonGrade": null,
+      "gradeNote": null,
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
-        "pointsFor": 0,
-        "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsFor": 1640.92,
+        "pointsProjected": 0,
+        "pointsAgainst": 1424.04
       }
     },
     {
