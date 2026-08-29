@@ -156,8 +156,9 @@ main { padding: 4px 20px 24px; }
   padding: 16px 16px 18px;
   border-radius: 14px;
   background: linear-gradient(160deg, #262a3c, #1e2130);
-  box-shadow: 0 0 0 1px var(--edge);
+  box-shadow: 0 0 0 1px #5d4e1f, 0 0 28px rgba(230, 199, 102, 0.12);
   position: relative;
+  overflow: hidden;
 }
 .leader-card::before {
   content: "";
@@ -165,15 +166,28 @@ main { padding: 4px 20px 24px; }
   top: 0; left: 0; bottom: 0;
   width: 3px;
   border-radius: 14px 0 0 14px;
-  background: var(--accent);
+  background: linear-gradient(180deg, #f0d68a, #c9a227 55%, #8a6d1c);
+}
+.leader-card::after {
+  content: "";
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 130px; height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(230, 199, 102, 0.16), transparent 70%);
+  pointer-events: none;
 }
 .leader-card__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-light);
   font-weight: 500;
 }
+.leader-card__trophy { width: 12px; height: 12px; flex: none; }
 .leader-card__name {
   font-family: var(--font);
   font-weight: 500;
@@ -219,6 +233,53 @@ main { padding: 4px 20px 24px; }
 /* ---------- Standings rows ---------- */
 .standings-list { display: flex; flex-direction: column; gap: 8px; }
 
+/* ---------- Home mini standings cards (everyone except the leader) ---------- */
+.mini-standings-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.mini-standings-card {
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px 9px 14px;
+  border-radius: 10px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px #292b31;
+  overflow: hidden;
+}
+.mini-standings-card.is-last { box-shadow: 0 0 0 1px #6b2f3d; }
+.mini-standings-card__accent {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: var(--accent);
+}
+.mini-standings-card.is-last .mini-standings-card__accent { background: var(--wrong); }
+.mini-standings-card__fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  background: rgba(145, 132, 217, 0.08);
+}
+.mini-standings-card.is-last .mini-standings-card__fill { background: rgba(243, 139, 168, 0.08); }
+.mini-standings-card__name {
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+.mini-standings-card__score {
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .standings-row {
   display: flex;
   align-items: center;
@@ -251,17 +312,38 @@ main { padding: 4px 20px 24px; }
 .standings-row__name { flex: 1; font-size: 14px; font-weight: 500; color: var(--text); }
 .standings-row__pts { font-weight: 600; font-size: 16px; color: var(--text); }
 
-/* ---------- Preseason Summary (collapsible) ---------- */
-.preseason-toggle {
+/* ---------- Preseason Summary (collapsible bordered card) ---------- */
+.preseason-card {
+  border-radius: 14px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+  overflow: hidden;
+  margin: 16px 0 22px;
+}
+.preseason-card__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+.preseason-card__icon {
+  width: 26px; height: 26px;
+  border-radius: 8px;
+  background: rgba(145, 132, 217, 0.16);
+  color: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.preseason-card__icon svg { width: 14px; height: 14px; }
+.preseason-card__label {
+  flex: 1;
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin: 16px 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
 }
 .new-badge {
   display: inline-flex;
@@ -287,38 +369,51 @@ main { padding: 4px 20px 24px; }
 }
 .preseason-toggle__chevron.is-collapsed { transform: rotate(-90deg); }
 
-.preseason-body {
-  padding: 14px 16px;
-  border-radius: 14px;
-  background: #1c1e2a;
-  box-shadow: 0 0 0 1px var(--edge-subtle);
+.preseason-card__body {
+  margin: 0 14px 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(233, 233, 237, 0.08);
   font-size: 13px;
   line-height: 1.6;
   color: rgba(233, 233, 237, 0.85);
-  margin-bottom: 22px;
 }
 
 /* ---------- Weekly Update (Home) ---------- */
 .weekly-update-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
 .weekly-update-card {
-  padding: 12px 14px;
+  position: relative;
+  padding: 12px 14px 12px 16px;
   border-radius: 12px;
   background: var(--card);
   box-shadow: 0 0 0 1px var(--edge);
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  overflow: hidden;
 }
-.weekly-update-card__avatar {
-  width: 28px; height: 28px;
-  border-radius: 8px;
-  background: var(--accent-dark);
-  color: var(--accent-light);
-  font-weight: 600;
-  font-size: 12px;
+.weekly-update-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+}
+.weekly-update-card.tier-a::before { background: #86d99c; }
+.weekly-update-card.tier-b::before { background: #d2cefd; }
+.weekly-update-card.tier-c::before { background: #f6d365; }
+.weekly-update-card.tier-d::before { background: #f38ba8; }
+
+.weekly-update-card__badge {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 13px;
   display: flex; align-items: center; justify-content: center;
   flex: none;
 }
+.weekly-update-card.tier-a .weekly-update-card__badge { color: #86d99c; background: rgba(134, 217, 156, 0.14); }
+.weekly-update-card.tier-b .weekly-update-card__badge { color: #d2cefd; background: rgba(210, 206, 253, 0.14); }
+.weekly-update-card.tier-c .weekly-update-card__badge { color: #f6d365; background: rgba(246, 211, 101, 0.14); }
+.weekly-update-card.tier-d .weekly-update-card__badge { color: #f38ba8; background: rgba(243, 139, 168, 0.14); }
 .weekly-update-card__name { font-weight: 500; font-size: 13px; color: var(--text); }
 .weekly-update-card__roast { font-size: 12.5px; line-height: 1.5; color: rgba(233, 233, 237, 0.75); margin-top: 2px; }
 

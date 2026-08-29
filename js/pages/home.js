@@ -1,7 +1,8 @@
 import { $ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state, TONE, COPY_TONE } from "../state.js";
-import { standingsListHtml } from "../components/standings-list.js";
+
+const TROPHY_SVG = '<svg class="leader-card__trophy" viewBox="0 0 24 24" fill="#e6c766" stroke="none"><path d="M6 3h12v2h2a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4 5.5 5.5 0 0 1-3.09 2.44c.2 1.13.83 1.83 2.09 2.06.5.09.9.5.9 1.01v.99a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-.99c0-.51.4-.92.9-1.01 1.26-.23 1.89-.93 2.09-2.06A5.5 5.5 0 0 1 8.9 11H8a4 4 0 0 1-4-4V6a1 1 0 0 1 1-1h2V3Zm0 4V7H5a2 2 0 0 0 2 2V7Zm12 0a2 2 0 0 0 2-2h-2v2Z"></path></svg>';
 
 export function renderHome(data) {
   renderPreseasonSummary(data);
@@ -15,7 +16,7 @@ export function renderHome(data) {
   const leader = ranked[0];
 
   $("#leaderCard").innerHTML = `
-    <div class="leader-card__eyebrow">Leader</div>
+    <div class="leader-card__eyebrow">${TROPHY_SVG}Leader</div>
     <h2 class="leader-card__name">${escapeHtml(leader.name)}</h2>
     <div class="leader-card__points"><b>${fmt(leader.totalStandingsPoints)}</b> standings points${
       isTied ? " — tied with the field" : ` — ${fmt(leader.totalStandingsPoints - ranked[1].totalStandingsPoints)} clear of 2nd`
@@ -38,8 +39,27 @@ export function renderHome(data) {
     onNoticeSlot.innerHTML = "";
   }
 
-  $("#homeStandingsList").innerHTML = standingsListHtml(ranked, maxPts);
+  renderOtherStandings(ranked, maxPts);
   renderWeeklyUpdate(data);
+}
+
+// Every manager except the leader (already shown in the leader card above),
+// as a row of compact mini score cards rather than the old vertical list.
+// The Scoring tab's "Full Leaderboard" is unrelated and untouched — it still
+// uses the shared standingsListHtml component from components/standings-list.js.
+function renderOtherStandings(ranked, maxPts) {
+  const otherStandings = ranked.slice(1);
+  $("#homeStandingsList").innerHTML = otherStandings.map(m => {
+    const isLast = m === ranked[ranked.length - 1] && ranked.length > 1;
+    const pct = Math.max(10, (m.totalStandingsPoints / maxPts) * 100);
+    return `
+      <div class="mini-standings-card ${isLast ? "is-last" : ""}">
+        <div class="mini-standings-card__fill" style="width:${pct}%"></div>
+        <div class="mini-standings-card__accent"></div>
+        <div class="mini-standings-card__name">${escapeHtml(m.name)}</div>
+        <div class="mini-standings-card__score">${fmt(m.totalStandingsPoints)}</div>
+      </div>`;
+  }).join("");
 }
 
 // "New content" badge for the Preseason Summary card — a simple localStorage
@@ -70,17 +90,41 @@ function renderPreseasonSummary(data) {
   if (!data.preseasonSummary) { slot.innerHTML = ""; return; }
   const isNew = hasNewPreseasonSummary_(data.preseasonSummary);
   slot.innerHTML = `
-    <div class="preseason-toggle" id="preseasonToggle">
-      <span>Preseason Summary${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
-      <svg class="preseason-toggle__chevron ${state.summaryOpen ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+    <div class="preseason-card">
+      <div class="preseason-card__header" id="preseasonToggle">
+        <div class="preseason-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg>
+        </div>
+        <span class="preseason-card__label">Preseason Summary${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
+        <svg class="preseason-toggle__chevron ${state.summaryOpen ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+      </div>
+      ${state.summaryOpen ? `<div class="preseason-card__body">${escapeHtml(data.preseasonSummary)}</div>` : ""}
     </div>
-    ${state.summaryOpen ? `<div class="preseason-body">${escapeHtml(data.preseasonSummary)}</div>` : ""}
   `;
   $("#preseasonToggle").addEventListener("click", () => {
     state.summaryOpen = !state.summaryOpen;
     markPreseasonSummarySeen_(data.preseasonSummary);
     renderPreseasonSummary(data);
   });
+}
+
+// Our real weeklyRoasts entries embed the grade INSIDE the roast text
+// itself (e.g. "B+ : roast text..."), unlike the design mock's separate
+// `grade` field — so pull it back out here rather than expecting a field
+// that doesn't exist in the real data. Falls back gracefully (no badge
+// color, roast shown as-is) if a roast doesn't follow that format.
+function parseRoast_(roastRaw) {
+  const m = /^([A-F][+-]?)\s*:\s*([\s\S]*)$/.exec(roastRaw || "");
+  if (m) return { grade: m[1], text: m[2].trim() };
+  return { grade: null, text: roastRaw || "" };
+}
+
+function gradeTier_(grade) {
+  const letter = (grade || "").charAt(0).toUpperCase();
+  if (letter === "A") return "a";
+  if (letter === "B") return "b";
+  if (letter === "C") return "c";
+  return "d"; // D, F, or no grade found
 }
 
 function renderWeeklyUpdate(data) {
@@ -90,13 +134,16 @@ function renderWeeklyUpdate(data) {
   if (!roasts.length) { label.style.display = "none"; list.innerHTML = ""; return; }
   label.style.display = "";
   label.textContent = "Weekly Update" + (data.currentWeekLabel ? ` — ${data.currentWeekLabel}` : "");
-  list.innerHTML = roasts.map(w => `
-    <div class="weekly-update-card">
-      <div class="weekly-update-card__avatar">${escapeHtml((w.manager || "?").slice(0, 1).toUpperCase())}</div>
-      <div>
-        <div class="weekly-update-card__name">${escapeHtml(w.manager)}</div>
-        <div class="weekly-update-card__roast">${escapeHtml(w.roast)}</div>
-      </div>
-    </div>
-  `).join("");
+  list.innerHTML = roasts.map(w => {
+    const { grade, text } = parseRoast_(w.roast);
+    const tier = gradeTier_(grade);
+    return `
+      <div class="weekly-update-card tier-${tier}">
+        <div class="weekly-update-card__badge">${escapeHtml(grade || "?")}</div>
+        <div>
+          <div class="weekly-update-card__name">${escapeHtml(w.manager)}</div>
+          <div class="weekly-update-card__roast">${escapeHtml(text)}</div>
+        </div>
+      </div>`;
+  }).join("");
 }
