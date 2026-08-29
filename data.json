@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T02:16:24.586Z",
+  "generatedAt": "2026-08-29T02:33:50.204Z",
   "managers": [
     {
       "name": "Ben",
@@ -2671,7 +2671,7 @@
           "position": "RB",
           "name": "Adrian Peterson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2695,7 +2695,7 @@
           "position": "WR",
           "name": "Eric Decker",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2711,7 +2711,7 @@
           "position": "QB",
           "name": "Jay Cutler",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2735,7 +2735,7 @@
           "position": "TE",
           "name": "Jared Cook",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2743,7 +2743,7 @@
           "position": "DEF",
           "name": "Cowboys",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2751,7 +2751,7 @@
           "position": "K",
           "name": "Olindo Mare",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -2761,17 +2761,17 @@
           "name": "Matthew Stafford",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Stevan Ridley",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -2779,8 +2779,8 @@
           "name": "C.J. Spiller",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -2788,8 +2788,8 @@
           "name": "Vincent Jackson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -2797,8 +2797,8 @@
           "name": "Andre Johnson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -2806,35 +2806,35 @@
           "name": "Jason Witten",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Texans",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Greg Zuerlein",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Andrew Luck",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -2842,8 +2842,8 @@
           "name": "Chris Johnson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -2851,17 +2851,17 @@
           "name": "Shonn Greene",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Knowshon Moreno",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -2869,8 +2869,8 @@
           "name": "Marques Colston",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -2942,7 +2942,7 @@
           "position": "QB",
           "name": "Andrew Luck",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2950,7 +2950,7 @@
           "position": "RB",
           "name": "DeAngelo Williams",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2958,7 +2958,7 @@
           "position": "DEF",
           "name": "Packers",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2966,7 +2966,7 @@
           "position": "WR",
           "name": "Santonio Holmes",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2982,7 +2982,7 @@
           "position": "WR",
           "name": "Laurent Robinson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2990,7 +2990,7 @@
           "position": "WR",
           "name": "Robert Meachem",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -2998,7 +2998,7 @@
           "position": "K",
           "name": "Rob Bironas",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -3008,8 +3008,8 @@
           "name": "Matt Ryan",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3017,8 +3017,8 @@
           "name": "LeSean McCoy",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3026,17 +3026,17 @@
           "name": "Frank Gore",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Eric Decker",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3044,8 +3044,8 @@
           "name": "Victor Cruz",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3053,53 +3053,53 @@
           "name": "Aaron Hernandez",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Jets",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Phil Dawson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Bryce Brown",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "James Jones",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Nate Washington",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3107,17 +3107,17 @@
           "name": "Antonio Brown",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Owen Daniels",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3125,8 +3125,8 @@
           "name": "Brent Celek",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -3158,7 +3158,7 @@
           "position": "RB",
           "name": "Darren McFadden",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3174,7 +3174,7 @@
           "position": "QB",
           "name": "Michael Vick",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3206,7 +3206,7 @@
           "position": "QB",
           "name": "Josh Freeman",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3214,7 +3214,7 @@
           "position": "DEF",
           "name": "Texans",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3222,7 +3222,7 @@
           "position": "K",
           "name": "Dan Bailey",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3230,7 +3230,7 @@
           "position": "WR",
           "name": "Santana Moss",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3238,7 +3238,7 @@
           "position": "TE",
           "name": "Owen Daniels",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3246,7 +3246,7 @@
           "position": "RB",
           "name": "Stevan Ridley",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3254,7 +3254,7 @@
           "position": "DEF",
           "name": "Saints",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -3262,10 +3262,10 @@
         {
           "position": "QB",
           "name": "Cam Newton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3273,8 +3273,8 @@
           "name": "Jamaal Charles",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3282,8 +3282,8 @@
           "name": "Ahmad Bradshaw",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3291,8 +3291,8 @@
           "name": "Miles Austin",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3300,8 +3300,8 @@
           "name": "Brandon Marshall",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3309,80 +3309,80 @@
           "name": "Vernon Davis",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Browns",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Lawrence Tynes",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Eli Manning",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "QB",
           "name": "Carson Palmer",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Alfred Morris",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Cecil Shorts",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Scott Chandler",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "DEF",
           "name": "Chargers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -3470,7 +3470,7 @@
           "position": "DEF",
           "name": "Jets",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3486,7 +3486,7 @@
           "position": "TE",
           "name": "Jacob Tamme",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3494,7 +3494,7 @@
           "position": "RB",
           "name": "Beanie Wells",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3510,7 +3510,7 @@
           "position": "WR",
           "name": "Titus Young",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -3520,8 +3520,8 @@
           "name": "Tom Brady",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3529,8 +3529,8 @@
           "name": "DeMarco Murray",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3538,8 +3538,8 @@
           "name": "Roddy White",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3547,35 +3547,35 @@
           "name": "Demaryius Thomas",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Randall Cobb",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Heath Miller",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Bengals",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3583,8 +3583,8 @@
           "name": "Matt Bryant",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3592,17 +3592,17 @@
           "name": "Ben Roethlisberger",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Mikel Leshoure",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3610,8 +3610,8 @@
           "name": "Ryan Mathews",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3619,8 +3619,8 @@
           "name": "Percy Harvin",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3628,8 +3628,8 @@
           "name": "Pierre Garcon",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3637,8 +3637,8 @@
           "name": "Brandon Pettigrew",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -3662,7 +3662,7 @@
           "position": "RB",
           "name": "Arian Foster",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3750,7 +3750,7 @@
           "position": "DEF",
           "name": "Steelers",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3758,7 +3758,7 @@
           "position": "K",
           "name": "Sebastian Janikowski",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3766,7 +3766,7 @@
           "position": "WR",
           "name": "DeAndre Hopkins",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3774,7 +3774,7 @@
           "position": "TE",
           "name": "Heath Miller",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -3784,8 +3784,8 @@
           "name": "Tom Brady",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3793,8 +3793,8 @@
           "name": "Alfred Morris",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3802,17 +3802,17 @@
           "name": "Eddie Lacy",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Harry Douglas",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3820,8 +3820,8 @@
           "name": "Roddy White",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3829,8 +3829,8 @@
           "name": "Steve Smith",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3838,26 +3838,26 @@
           "name": "Rob Gronkowski",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Cowboys",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Mason Crosby",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -3865,8 +3865,8 @@
           "name": "Andrew Luck",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3874,8 +3874,8 @@
           "name": "Darren Sproles",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3883,8 +3883,8 @@
           "name": "Anquan Boldin",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -3892,17 +3892,17 @@
           "name": "Hakeem Nicks",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Percy Harvin",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -3942,7 +3942,7 @@
           "position": "WR",
           "name": "Randall Cobb",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -3998,7 +3998,7 @@
           "position": "QB",
           "name": "Michael Vick",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4006,7 +4006,7 @@
           "position": "RB",
           "name": "BenJarvus Green-Ellis",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4014,7 +4014,7 @@
           "position": "WR",
           "name": "Vincent Brown",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4022,7 +4022,7 @@
           "position": "RB",
           "name": "Montee Ball",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4030,7 +4030,7 @@
           "position": "K",
           "name": "Brandon Myers",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4038,7 +4038,7 @@
           "position": "DEF",
           "name": "Giants",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -4046,10 +4046,10 @@
         {
           "position": "QB",
           "name": "Andy Dalton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4057,17 +4057,17 @@
           "name": "Matt Forte",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Knowshon Moreno",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4075,17 +4075,17 @@
           "name": "Antonio Brown",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Michael Floyd",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4093,8 +4093,8 @@
           "name": "Mike Wallace",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4102,17 +4102,17 @@
           "name": "Tony Gonzalez",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Chiefs",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4120,8 +4120,8 @@
           "name": "Stephen Gostkowski",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4129,8 +4129,8 @@
           "name": "Aaron Rodgers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4138,35 +4138,35 @@
           "name": "Frank Gore",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Le'Veon Bell",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Kendall Wright",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Heath Miller",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4174,8 +4174,8 @@
           "name": "Bears",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -4199,7 +4199,7 @@
           "position": "RB",
           "name": "Doug Martin",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4247,7 +4247,7 @@
           "position": "WR",
           "name": "James Jones",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4255,7 +4255,7 @@
           "position": "DEF",
           "name": "Patriots",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4263,7 +4263,7 @@
           "position": "K",
           "name": "Matt Bryant",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4271,7 +4271,7 @@
           "position": "RB",
           "name": "Ryan Mathews",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4295,7 +4295,7 @@
           "position": "WR",
           "name": "Michael Floyd",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4303,7 +4303,7 @@
           "position": "TE",
           "name": "Zach Sudfeld",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4311,7 +4311,7 @@
           "position": "DEF",
           "name": "Packers",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -4321,17 +4321,17 @@
           "name": "Tony Romo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Zac Stacy",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4339,17 +4339,17 @@
           "name": "Maurice Jones-Drew",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Keenan Allen",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4357,8 +4357,8 @@
           "name": "Josh Gordon",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4366,8 +4366,8 @@
           "name": "Danny Amendola",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4375,26 +4375,26 @@
           "name": "Jimmy Graham",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Cardinals",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Justin Tucker",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4402,44 +4402,44 @@
           "name": "Russell Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Jordan Todman",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Pierre Thomas",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Chris Ogbonnaya",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Brian Hartline",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4447,8 +4447,8 @@
           "name": "Dwayne Bowe",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -4496,7 +4496,7 @@
           "position": "RB",
           "name": "Steven Jackson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4520,7 +4520,7 @@
           "position": "RB",
           "name": "Cecil Shorts",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4528,7 +4528,7 @@
           "position": "RB",
           "name": "Darren McFadden",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4536,7 +4536,7 @@
           "position": "WR",
           "name": "Greg Jennings",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4544,7 +4544,7 @@
           "position": "QB",
           "name": "Josh Freeman",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4552,7 +4552,7 @@
           "position": "DEF",
           "name": "Ravens",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4560,7 +4560,7 @@
           "position": "WR",
           "name": "Chris Givens",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4568,7 +4568,7 @@
           "position": "K",
           "name": "Randy Bullock",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4594,17 +4594,17 @@
           "name": "Cam Newton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Andre Brown",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4612,8 +4612,8 @@
           "name": "Shane Vereen",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4621,26 +4621,26 @@
           "name": "A.J. Green",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Julian Edelman",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Jarrett Boykin",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4648,44 +4648,44 @@
           "name": "Jason Witten",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Lions",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Adam Vinatieri",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Philip Rivers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Ben Tate",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4693,8 +4693,8 @@
           "name": "Ray Rice",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4702,17 +4702,17 @@
           "name": "Wes Welker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Jerricho Cotchery",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4720,8 +4720,8 @@
           "name": "Martellus Bennett",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -4761,7 +4761,7 @@
           "position": "RB",
           "name": "Doug Martin",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4793,7 +4793,7 @@
           "position": "TE",
           "name": "Jordan Reed",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4809,7 +4809,7 @@
           "position": "RB",
           "name": "Ray Rice",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4817,7 +4817,7 @@
           "position": "DEF",
           "name": "Ravens",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4825,7 +4825,7 @@
           "position": "WR",
           "name": "Riley Cooper",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4833,7 +4833,7 @@
           "position": "K",
           "name": "Nick Novak",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4841,7 +4841,7 @@
           "position": "QB",
           "name": "Eli Manning",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4849,7 +4849,7 @@
           "position": "WR",
           "name": "Kenny Stills",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -4857,7 +4857,7 @@
           "position": "TE",
           "name": "Coby Fleener",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -4865,10 +4865,10 @@
         {
           "position": "QB",
           "name": "Drew Brees",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4876,17 +4876,17 @@
           "name": "Frank Gore",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Branden Oliver",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4894,8 +4894,8 @@
           "name": "A.J. Green",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4903,44 +4903,44 @@
           "name": "Torrey Smith",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Mohamed Sanu",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Dwayne Allen",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Packers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Dan Carpenter",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -4948,17 +4948,17 @@
           "name": "Cam Newton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Matt Asiata",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4966,17 +4966,17 @@
           "name": "Ben Tate",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Julian Edelman",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -4984,17 +4984,17 @@
           "name": "Brandon Marshall",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Mychal Rivera",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -5018,7 +5018,7 @@
           "position": "QB",
           "name": "Drew Brees",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5050,7 +5050,7 @@
           "position": "WR",
           "name": "Julian Edelman",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5082,7 +5082,7 @@
           "position": "RB",
           "name": "Lamar Miller",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5098,7 +5098,7 @@
           "position": "K",
           "name": "Dan Carpenter",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5106,7 +5106,7 @@
           "position": "WR",
           "name": "Markus Wheaton",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5114,7 +5114,7 @@
           "position": "RB",
           "name": "Chris Ivory",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5122,7 +5122,7 @@
           "position": "WR",
           "name": "Danny Amendola",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5130,7 +5130,7 @@
           "position": "RB",
           "name": "Zach Miller",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -5140,17 +5140,17 @@
           "name": "Tony Romo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Mark Ingram II",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5158,17 +5158,17 @@
           "name": "DeMarco Murray",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Justin Forsett",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5176,26 +5176,26 @@
           "name": "Randall Cobb",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Odell Beckham Jr.",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Larry Donnell",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5203,26 +5203,26 @@
           "name": "Seahawks",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Cody Parkey",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Eli Manning",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5230,26 +5230,26 @@
           "name": "Steven Jackson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Joseph Randle",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Greg Jennings",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5257,8 +5257,8 @@
           "name": "Terrance Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5266,8 +5266,8 @@
           "name": "Vernon Davis",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -5347,7 +5347,7 @@
           "position": "DEF",
           "name": "Bengals",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5363,7 +5363,7 @@
           "position": "WR",
           "name": "Mike Evans",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5371,7 +5371,7 @@
           "position": "QB",
           "name": "Johnny Manziel",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5379,7 +5379,7 @@
           "position": "WR",
           "name": "Josh Gordon",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5387,7 +5387,7 @@
           "position": "RB",
           "name": "Darren McFadden",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5395,7 +5395,7 @@
           "position": "WR",
           "name": "Greg Jennings",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5413,26 +5413,26 @@
           "name": "Tom Brady",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Dan Herron",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Jonathan Stewart",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5440,8 +5440,8 @@
           "name": "Jeremy Maclin",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5449,8 +5449,8 @@
           "name": "Julio Jones",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5458,8 +5458,8 @@
           "name": "Andre Johnson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5467,17 +5467,17 @@
           "name": "Rob Gronkowski",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Dolphins",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5485,26 +5485,26 @@
           "name": "Adam Vinatieri",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "LeGarrette Blount",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Isaiah Crowell",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5512,8 +5512,8 @@
           "name": "Trent Richardson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5521,17 +5521,17 @@
           "name": "Adrian Peterson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Reggie Wayne",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5539,8 +5539,8 @@
           "name": "Jared Cook",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -5572,7 +5572,7 @@
           "position": "RB",
           "name": "Montee Ball",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5612,7 +5612,7 @@
           "position": "TE",
           "name": "Dennis Pitta",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5620,7 +5620,7 @@
           "position": "DEF",
           "name": "Rams",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5636,7 +5636,7 @@
           "position": "QB",
           "name": "Nick Foles",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5644,7 +5644,7 @@
           "position": "WR",
           "name": "Cecil Shorts",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5652,7 +5652,7 @@
           "position": "RB",
           "name": "Bernard Pierce",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5660,7 +5660,7 @@
           "position": "WR",
           "name": "Tavon Austin",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5668,15 +5668,15 @@
           "position": "TE",
           "name": "Heath Miller",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
           "round": 15,
-          "position": "QB",
+          "position": "K",
           "name": "Nick Folk",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -5686,8 +5686,8 @@
           "name": "Matt Ryan",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5695,8 +5695,8 @@
           "name": "Eddie Lacy",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5704,53 +5704,53 @@
           "name": "Alfred Morris",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Josh Gordon",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Kenny Stills",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Brandon LaFell",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Travis Kelce",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Vikings",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5758,44 +5758,44 @@
           "name": "Phil Dawson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Mark Sanchez",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Benny Cunningham Jr.",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Jerick McKinnon",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Anquan Boldin",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5803,8 +5803,8 @@
           "name": "Vincent Jackson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -5812,8 +5812,8 @@
           "name": "Michael Floyd",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -5853,7 +5853,7 @@
           "position": "RB",
           "name": "Jordan Howard",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5869,7 +5869,7 @@
           "position": "RB",
           "name": "Royce Freeman",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5877,7 +5877,7 @@
           "position": "WR",
           "name": "Michael Crabtree",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5909,7 +5909,7 @@
           "position": "WR",
           "name": "Devin Funchess",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5925,7 +5925,7 @@
           "position": "QB",
           "name": "Matthew Stafford",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5933,7 +5933,7 @@
           "position": "WR",
           "name": "Kenny Golladay",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5941,7 +5941,7 @@
           "position": "WR",
           "name": "Michael Gallup",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -5957,7 +5957,7 @@
           "position": "DEF",
           "name": "Broncos",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -5967,8 +5967,8 @@
           "name": "Andrew Luck",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5976,8 +5976,8 @@
           "name": "Leonard Fournette",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5985,8 +5985,8 @@
           "name": "Tarik Cohen",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -5994,8 +5994,8 @@
           "name": "Tevin Coleman",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6003,8 +6003,8 @@
           "name": "DeAndre Hopkins",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6012,8 +6012,8 @@
           "name": "Adam Thielen",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6021,17 +6021,17 @@
           "name": "Jimmy Graham",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Titans",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6039,53 +6039,53 @@
           "name": "Wil Lutz",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Sony Michel",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Latavius Murray",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Spencer Ware",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Odell Beckham Jr.",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Tyler Boyd",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -6117,7 +6117,7 @@
           "position": "RB",
           "name": "Christian McCaffrey",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6181,7 +6181,7 @@
           "position": "WR",
           "name": "Kenny Stills",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6189,7 +6189,7 @@
           "position": "RB",
           "name": "Peyton Barber",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6197,7 +6197,7 @@
           "position": "RB",
           "name": "Marlon Mack",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6205,7 +6205,7 @@
           "position": "TE",
           "name": "Trey Burton",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6213,7 +6213,7 @@
           "position": "QB",
           "name": "Alex Smith",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6229,7 +6229,7 @@
           "position": "DEF",
           "name": "Saints",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -6239,17 +6239,17 @@
           "name": "Aaron Rodgers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Nick Chubb",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6257,8 +6257,8 @@
           "name": "Lamar Miller",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6266,8 +6266,8 @@
           "name": "Tyreek Hill",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6275,26 +6275,26 @@
           "name": "David Johnson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "David Njoku",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Dolphins",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6302,17 +6302,17 @@
           "name": "Justin Tucker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "CB",
           "name": "DJ Moore",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6320,8 +6320,8 @@
           "name": "Chris Thompson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6329,8 +6329,8 @@
           "name": "Golden Tate",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6338,35 +6338,35 @@
           "name": "Marquise Goodwin",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "John Brown",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Courtland Sutton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Keke Coutee",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6374,8 +6374,8 @@
           "name": "Evan Engram",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -6415,7 +6415,7 @@
           "position": "RB",
           "name": "Devonta Freeman",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6423,7 +6423,7 @@
           "position": "WR",
           "name": "Josh Gordon",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6431,7 +6431,7 @@
           "position": "WR",
           "name": "Brandin Cooks",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6439,7 +6439,7 @@
           "position": "TE",
           "name": "Delanie Walker",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6487,7 +6487,7 @@
           "position": "WR",
           "name": "Cameron Meredith",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6495,7 +6495,7 @@
           "position": "RB",
           "name": "Matt Breida",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6503,7 +6503,7 @@
           "position": "QB",
           "name": "Marcus Mariota",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6511,7 +6511,7 @@
           "position": "RB",
           "name": "Giovani Bernard",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6519,7 +6519,7 @@
           "position": "K",
           "name": "Jake Elliott",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -6529,35 +6529,35 @@
           "name": "Drew Brees",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Christian McCaffrey",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Joe Mixon",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Phillip Lindsay",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6565,26 +6565,26 @@
           "name": "Alshon Jeffery",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Keenan Allen",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Jared Cook",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6592,17 +6592,17 @@
           "name": "Rams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Ka'imi Fairbairn",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6610,8 +6610,8 @@
           "name": "Todd Gurley II",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6619,8 +6619,8 @@
           "name": "LeSean McCoy",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6628,26 +6628,26 @@
           "name": "Adrian Peterson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Jaylen Samuels",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Robby Anderson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6655,17 +6655,17 @@
           "name": "Jordy Nelson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "DEF",
           "name": "Texans",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -6729,7 +6729,7 @@
           "position": "WR",
           "name": "Marvin Jones Jr.",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6769,7 +6769,7 @@
           "position": "WR",
           "name": "Josh Doctson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6785,7 +6785,7 @@
           "position": "K",
           "name": "Stephen Gostkowski",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6793,7 +6793,7 @@
           "position": "WR",
           "name": "Mohamed Sanu",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6801,7 +6801,7 @@
           "position": "WR",
           "name": "DJ Moore",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6809,7 +6809,7 @@
           "position": "DEF",
           "name": "Patriots",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -6819,8 +6819,8 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6828,17 +6828,17 @@
           "name": "Saquon Barkley",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Elijah McGuire",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6846,8 +6846,8 @@
           "name": "Michael Thomas",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6855,8 +6855,8 @@
           "name": "T.Y. Hilton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6864,35 +6864,35 @@
           "name": "Robert Woods",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Eric Ebron",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Redskins",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Brett Maher",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -6900,8 +6900,8 @@
           "name": "Russell Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6909,8 +6909,8 @@
           "name": "Alex Collins",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6918,26 +6918,26 @@
           "name": "Isaiah Crowell",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Aaron Jones",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Matt Breida",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6945,8 +6945,8 @@
           "name": "Corey Davis",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -6954,8 +6954,8 @@
           "name": "Kyle Rudolph",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -6979,7 +6979,7 @@
           "position": "RB",
           "name": "David Johnson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -6995,7 +6995,7 @@
           "position": "RB",
           "name": "Leonard Fournette",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7027,7 +7027,7 @@
           "position": "TE",
           "name": "Jared Cook",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7035,7 +7035,7 @@
           "position": "QB",
           "name": "Aaron Rodgers",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7043,7 +7043,7 @@
           "position": "RB",
           "name": "Matt Breida",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7051,7 +7051,7 @@
           "position": "RB",
           "name": "Rashaad Penny",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7059,7 +7059,7 @@
           "position": "WR",
           "name": "Dante Pettis",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7067,7 +7067,7 @@
           "position": "RB",
           "name": "Nyheim Hines",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7083,7 +7083,7 @@
           "position": "QB",
           "name": "Kirk Cousins",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7091,7 +7091,7 @@
           "position": "DEF",
           "name": "Eagles",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7099,7 +7099,7 @@
           "position": "QB",
           "name": "Andrew Luck",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -7107,10 +7107,10 @@
         {
           "position": "QB",
           "name": "Russell Wilson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7118,26 +7118,26 @@
           "name": "Chris Carson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Austin Ekeler",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Tarik Cohen",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7145,35 +7145,35 @@
           "name": "Kenny Golladay",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Darius Slayton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Kyle Rudolph",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "49ers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7181,17 +7181,17 @@
           "name": "Wil Lutz",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Damien Williams",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7199,8 +7199,8 @@
           "name": "JuJu Smith-Schuster",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7208,35 +7208,35 @@
           "name": "Mike Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Terry McLaurin",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Mohamed Sanu Sr.",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Gerald Everett",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -7308,7 +7308,7 @@
           "position": "TE",
           "name": "David Njoku",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7316,7 +7316,7 @@
           "position": "WR",
           "name": "Christian Kirk",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7324,7 +7324,7 @@
           "position": "WR",
           "name": "Courtland Sutton",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7332,7 +7332,7 @@
           "position": "RB",
           "name": "Latavius Murray",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7340,7 +7340,7 @@
           "position": "RB",
           "name": "Darrell Henderson Jr.",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7348,7 +7348,7 @@
           "position": "RB",
           "name": "Peyton Barber",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7364,7 +7364,7 @@
           "position": "QB",
           "name": "Josh Allen",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7380,7 +7380,7 @@
           "position": "K",
           "name": "Matt Bryant",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -7390,8 +7390,8 @@
           "name": "Deshaun Watson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7399,8 +7399,8 @@
           "name": "Le'Veon Bell",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7408,17 +7408,17 @@
           "name": "Aaron Jones",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Raheem Mostert",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7426,26 +7426,26 @@
           "name": "Amari Cooper",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Deebo Samuel",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Tyler Higbee",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7453,17 +7453,17 @@
           "name": "Patriots",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Jason Myers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7471,17 +7471,17 @@
           "name": "James Conner",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "DeAndre Washington",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7489,26 +7489,26 @@
           "name": "Tyler Lockett",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "John Brown",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Dede Westbrook",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7516,17 +7516,17 @@
           "name": "Mark Andrews",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "TE",
           "name": "Jack Doyle",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -7582,7 +7582,7 @@
           "position": "WR",
           "name": "Josh Gordon",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7598,7 +7598,7 @@
           "position": "RB",
           "name": "Austin Ekeler",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7606,7 +7606,7 @@
           "position": "RB",
           "name": "Damien Williams",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7614,7 +7614,7 @@
           "position": "QB",
           "name": "Russell Wilson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7622,7 +7622,7 @@
           "position": "TE",
           "name": "Delanie Walker",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7638,7 +7638,7 @@
           "position": "DEF",
           "name": "Jaguars",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7654,7 +7654,7 @@
           "position": "DEF",
           "name": "Vikings",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7662,7 +7662,7 @@
           "position": "K",
           "name": "Robbie Gould",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7670,7 +7670,7 @@
           "position": "WR",
           "name": "DJ Chark Jr.",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -7680,8 +7680,8 @@
           "name": "Lamar Jackson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7689,17 +7689,17 @@
           "name": "Todd Gurley II",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Leonard Fournette",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7707,8 +7707,8 @@
           "name": "Melvin Gordon",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7716,8 +7716,8 @@
           "name": "Julio Jones",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7725,62 +7725,62 @@
           "name": "Adam Thielen",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Hunter Henry",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Buccaneers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Matt Prater",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Aaron Rodgers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Latavius Murray",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Jaylen Samuels",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7788,8 +7788,8 @@
           "name": "A.J. Green",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -7797,26 +7797,26 @@
           "name": "Golden Tate",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "DeVante Parker",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Bisi Johnson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
@@ -7864,7 +7864,7 @@
           "position": "WR",
           "name": "Brandin Cooks",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7872,7 +7872,7 @@
           "position": "RB",
           "name": "Sony Michel",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7888,7 +7888,7 @@
           "position": "TE",
           "name": "O.J. Howard",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7896,7 +7896,7 @@
           "position": "QB",
           "name": "Cam Newton",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7904,7 +7904,7 @@
           "position": "RB",
           "name": "Tarik Cohen",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7920,7 +7920,7 @@
           "position": "RB",
           "name": "LeSean McCoy",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7928,7 +7928,7 @@
           "position": "QB",
           "name": "Jared Goff",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7936,7 +7936,7 @@
           "position": "TE",
           "name": "Jordan Reed",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         },
         {
@@ -7960,7 +7960,7 @@
           "position": "WR",
           "name": "Albert Wilson",
           "isKeeper": false,
-          "exitTag": null,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -7968,10 +7968,10 @@
         {
           "position": "QB",
           "name": "Ryan Tannehill",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7979,17 +7979,17 @@
           "name": "Devonta Freeman",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Kareem Hunt",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -7997,17 +7997,17 @@
           "name": "Michael Thomas",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Tyreek Hill",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -8015,17 +8015,17 @@
           "name": "Tyler Boyd",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "TE",
           "name": "Darren Waller",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -8033,8 +8033,8 @@
           "name": "Browns",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
@@ -8042,17 +8042,17 @@
           "name": "Harrison Butker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Jimmy Garoppolo",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -8060,17 +8060,17 @@
           "name": "Dalvin Cook",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "RB",
           "name": "Jordan Howard",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
@@ -8078,35 +8078,35 @@
           "name": "Emmanuel Sanders",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Courtland Sutton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "WR",
           "name": "Josh Gordon",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         },
         {
           "position": "G",
           "name": "Josh Allen",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
+          "points": null,
+          "projectedPoints": null,
           "isStarter": false
         }
       ],
