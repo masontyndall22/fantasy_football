@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T23:45:58.996Z",
+  "generatedAt": "2026-08-29T00:02:57.520Z",
   "managers": [
     {
       "name": "Ben",
@@ -2638,6 +2638,2878 @@
     }
   ],
   "yearReviews": [
+    {
+      "season": "2012",
+      "manager": "Ben",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Chris Johnson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "QB",
+          "name": "Matthew Stafford",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Andre Johnson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Adrian Peterson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WE",
+          "name": "Marques Colston",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Jason Witten",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "WR",
+          "name": "Eric Decker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Vincent Jackson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "QB",
+          "name": "Jay Cutler",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "C.J. Spiller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "Shonn Greene",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "TE",
+          "name": "Jared Cook",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "DEF",
+          "name": "Cowboys",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Olindo Mare",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": null
+    },
+    {
+      "season": "2012",
+      "manager": "Caleb",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "LeSean McCoy",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "QB",
+          "name": "Matt Ryan",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Victor Cruz",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "TE",
+          "name": "Aaron Hernandez",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Frank Gore",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Antonio Brown",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "QB",
+          "name": "Andrew Luck",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "RB",
+          "name": "DeAngelo Williams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "DEF",
+          "name": "Packers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Santonio Holmes",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "TE",
+          "name": "Brent Celek",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Laurent Robinson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "WR",
+          "name": "Robert Meachem",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Rob Bironas",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2012",
+      "manager": "Kyle",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Jamaal Charles",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Darren McFadden",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Brandon Marshall",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "QB",
+          "name": "Michael Vick",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "TE",
+          "name": "Vernon Davis",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Miles Austin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Ahmad Bradshaw",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "QB",
+          "name": "Josh Freeman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "DEF",
+          "name": "Texans",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "K",
+          "name": "Dan Bailey",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Santana Moss",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "TE",
+          "name": "Owen Daniels",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Stevan Ridley",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "DEF",
+          "name": "Saints",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2012",
+      "manager": "Mason",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "QB",
+          "name": "Tom Brady",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "DeMarco Murray",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Roddy White",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Percy Harvin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Ryan Mathews",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Brandon Pettigrew",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "QB",
+          "name": "Ben Roethlisberger",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Demaryius Thomas",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "DEF",
+          "name": "Jets",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Pierre Garcon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "TE",
+          "name": "Jacob Tamme",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "Beanie Wells",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Matt Bryant",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Titus Young",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2013",
+      "manager": "Ben",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Arian Foster",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Alfred Morris",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Roddy White",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "QB",
+          "name": "Tom Brady",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "TE",
+          "name": "Rob Gronkowski",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Hakeem Nicks",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Darren Sproles",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Steve Smith",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "QB",
+          "name": "Andrew Luck",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Eddie Lacy",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Anquan Boldin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "DEF",
+          "name": "Steelers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Sebastian Janikowski",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "DeAndre Hopkins",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "TE",
+          "name": "Heath Miller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": null
+    },
+    {
+      "season": "2013",
+      "manager": "Caleb",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "QB",
+          "name": "Aaron Rodgers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Matt Forte",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Randall Cobb",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Frank Gore",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Antonio Brown",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Tony Gonzalez",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "DEF",
+          "name": "Bears",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Mike Wallace",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "K",
+          "name": "Stephen Gostkowski",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "QB",
+          "name": "Michael Vick",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "BenJarvus Green-Ellis",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Vincent Brown",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Montee Ball",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Brandon Myers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "DEF",
+          "name": "Giants",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2013",
+      "manager": "Kyle",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Doug Martin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Maurice Jones-Drew",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "TE",
+          "name": "Jimmy Graham",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Dwayne Bowe",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Danny Amendola",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "QB",
+          "name": "Russell Wilson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "WR",
+          "name": "James Jones",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "DEF",
+          "name": "Patriots",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "K",
+          "name": "Matt Bryant",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Ryan Mathews",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "QB",
+          "name": "Tony Romo",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Josh Gordon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "WR",
+          "name": "Michael Floyd",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "TE",
+          "name": "Zach Sudfeld",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "DEF",
+          "name": "Packers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2013",
+      "manager": "Mason",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Ray Rice",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "A.J. Green",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "QB",
+          "name": "Cam Newton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Steven Jackson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Wes Welker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Jason Witten",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Cecil Shorts",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "RB",
+          "name": "Darren McFadden",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "WR",
+          "name": "Greg Jennings",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "QB",
+          "name": "Josh Freeman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "DEF",
+          "name": "Ravens",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Chris Givens",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Randy Bullock",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "TE",
+          "name": "Martellus Bennett",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "RB",
+          "name": "Shane Vereen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2014",
+      "manager": "Ben",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "WR",
+          "name": "A.J. Green",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "Brandon Marshall",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Doug Martin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "QB",
+          "name": "Cam Newton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Frank Gore",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Torrey Smith",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Jordan Reed",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "RB",
+          "name": "Ben Tate",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Ray Rice",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "DEF",
+          "name": "Ravens",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Riley Cooper",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "K",
+          "name": "Nick Novak",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "QB",
+          "name": "Eli Manning",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Kenny Stills",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "TE",
+          "name": "Coby Fleener",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": null
+    },
+    {
+      "season": "2014",
+      "manager": "Caleb",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "QB",
+          "name": "Drew Brees",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "DeMarco Murray",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Randall Cobb",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "TE",
+          "name": "Vernon Davis",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Julian Edelman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "DEF",
+          "name": "Seahawks",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Steven Jackson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Terrance Williams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Lamar Miller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "QB",
+          "name": "Tony Romo",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "K",
+          "name": "Dan Carpenter",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Markus Wheaton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Chris Ivory",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Danny Amendola",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "RB",
+          "name": "Zach Miller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2014",
+      "manager": "Kyle",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Adrian Peterson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "Julio Jones",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "TE",
+          "name": "Rob Gronkowski",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "QB",
+          "name": "Tom Brady",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Andre Johnson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Jeremy Maclin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Trent Richardson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "DEF",
+          "name": "Bengals",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "K",
+          "name": "Adam Vinatieri",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Mike Evans",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "QB",
+          "name": "Johnny Manziel",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Josh Gordon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Darren McFadden",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Greg Jennings",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "TE",
+          "name": "Jared Cook",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2014",
+      "manager": "Mason",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Eddie Lacy",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Montee Ball",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Alfred Morris",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Vincent Jackson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Michael Floyd",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "QB",
+          "name": "Matt Ryan",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Dennis Pitta",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "DEF",
+          "name": "Rams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "K",
+          "name": "Phil Dawson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "QB",
+          "name": "Nick Foles",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Cecil Shorts",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "Bernard Pierce",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "WR",
+          "name": "Tavon Austin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "TE",
+          "name": "Heath Miller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "QB",
+          "name": "Nick Folk",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2018",
+      "manager": "Ben",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "WR",
+          "name": "DeAndre Hopkins",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Leonard Fournette",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Jordan Howard",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Adam Thielen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Royce Freeman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Michael Crabtree",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Jimmy Graham",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "QB",
+          "name": "Andrew Luck",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Tevin Coleman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Devin Funchess",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "Tarik Cohen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "QB",
+          "name": "Matthew Stafford",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "WR",
+          "name": "Kenny Golladay",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Michael Gallup",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "K",
+          "name": "Wil Lutz",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "DEF",
+          "name": "Broncos",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": null
+    },
+    {
+      "season": "2018",
+      "manager": "Caleb",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "David Johnson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Christian McCaffrey",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Tyreek Hill",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Golden Tate",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "QB",
+          "name": "Aaron Rodgers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "RB",
+          "name": "Lamar Miller",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Evan Engram",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Marquise Goodwin",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Chris Thompson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Kenny Stills",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "Peyton Barber",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "Marlon Mack",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "TE",
+          "name": "Trey Burton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "QB",
+          "name": "Alex Smith",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "K",
+          "name": "Justin Tucker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "DEF",
+          "name": "Saints",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2018",
+      "manager": "Kyle",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Todd Gurley II",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "LeSean McCoy",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Devonta Freeman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Josh Gordon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Brandin Cooks",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Delanie Walker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "QB",
+          "name": "Drew Brees",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Alshon Jeffery",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "WR",
+          "name": "Jordy Nelson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Adrian Peterson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "DEF",
+          "name": "Rams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Cameron Meredith",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Matt Breida",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "QB",
+          "name": "Marcus Mariota",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "RB",
+          "name": "Giovani Bernard",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "K",
+          "name": "Jake Elliott",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2018",
+      "manager": "Mason",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Saquon Barkley",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "Michael Thomas",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "T.Y. Hilton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Alex Collins",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "QB",
+          "name": "Russell Wilson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Marvin Jones Jr.",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Kyle Rudolph",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Corey Davis",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Isaiah Crowell",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Robert Woods",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Josh Doctson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Stephen Gostkowski",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "WR",
+          "name": "Mohamed Sanu",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "WR",
+          "name": "DJ Moore",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "DEF",
+          "name": "Patriots",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2019",
+      "manager": "Ben",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "David Johnson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "JuJu Smith-Schuster",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Leonard Fournette",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Chris Carson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Kenny Golladay",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Mike Williams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "Jared Cook",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "QB",
+          "name": "Aaron Rodgers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Matt Breida",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Rashaad Penny",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "WR",
+          "name": "Dante Pettis",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "Nyheim Hines",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Wil Lutz",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "QB",
+          "name": "Kirk Cousins",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "DEF",
+          "name": "Eagles",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "QB",
+          "name": "Andrew Luck",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 43,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": null
+    },
+    {
+      "season": "2019",
+      "manager": "Caleb",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Le'Veon Bell",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "James Conner",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Amari Cooper",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Aaron Jones",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Tyler Lockett",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "QB",
+          "name": "Deshaun Watson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "David Njoku",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Christian Kirk",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "WR",
+          "name": "Courtland Sutton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Latavius Murray",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "Darrell Henderson Jr.",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "Peyton Barber",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "TE",
+          "name": "Mark Andrews",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "QB",
+          "name": "Josh Allen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "DEF",
+          "name": "Patriots",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "K",
+          "name": "Matt Bryant",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2019",
+      "manager": "Kyle",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "RB",
+          "name": "Todd Gurley II",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "WR",
+          "name": "Julio Jones",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Adam Thielen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Melvin Gordon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Josh Gordon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "A.J. Green",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Austin Ekeler",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "RB",
+          "name": "Damien Williams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "QB",
+          "name": "Russell Wilson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "TE",
+          "name": "Delanie Walker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "QB",
+          "name": "Lamar Jackson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "DEF",
+          "name": "Jaguars",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "WR",
+          "name": "Golden Tate",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "DEF",
+          "name": "Vikings",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "K",
+          "name": "Robbie Gould",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "WR",
+          "name": "DJ Chark Jr.",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
+    {
+      "season": "2019",
+      "manager": "Mason",
+      "drafted": [
+        {
+          "round": 1,
+          "position": "WR",
+          "name": "Michael Thomas",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 2,
+          "position": "RB",
+          "name": "Dalvin Cook",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Devonta Freeman",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Brandin Cooks",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Sony Michel",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Tyler Boyd",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "TE",
+          "name": "O.J. Howard",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "QB",
+          "name": "Cam Newton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "Tarik Cohen",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Emmanuel Sanders",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "LeSean McCoy",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "QB",
+          "name": "Jared Goff",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "TE",
+          "name": "Jordan Reed",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Harrison Butker",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 15,
+          "position": "DEF",
+          "name": "Browns",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 16,
+          "position": "WR",
+          "name": "Albert Wilson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        }
+      ],
+      "final": [],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 0,
+      "transactions": null,
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 0
+      }
+    },
     {
       "season": "2025",
       "manager": "Kyle",
