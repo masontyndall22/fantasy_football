@@ -146,6 +146,20 @@ function renderStatCards_(review, historyEntry) {
       </div>`);
   }
 
+  if (starterPoints) {
+    cards.push(`
+      <div class="stat-card">
+        <div class="stat-card__label">Points For</div>
+        <div class="stat-card__value">${fmt(starterPoints.pointsFor)}</div>
+        ${starterPoints.pointsProjected ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
+      </div>`);
+    cards.push(`
+      <div class="stat-card">
+        <div class="stat-card__label">Points Against</div>
+        <div class="stat-card__value" style="color:#f38ba8">${fmt(starterPoints.pointsAgainst)}</div>
+      </div>`);
+  }
+
   if (faabSpent > 0) {
     cards.push(`
       <div class="stat-card">
@@ -168,20 +182,6 @@ function renderStatCards_(review, historyEntry) {
         <div class="stat-card__label">Transactions</div>
         <div class="stat-card__value">${tx.total}</div>
         <div class="stat-card__sub">${tx.adds} + · ${tx.trades} ⇄</div>
-      </div>`);
-  }
-
-  if (starterPoints) {
-    cards.push(`
-      <div class="stat-card">
-        <div class="stat-card__label">Starter Total</div>
-        <div class="stat-card__value">${fmt(starterPoints.pointsFor)}</div>
-        ${starterPoints.pointsProjected ? `<div class="stat-card__sub">Proj: ${fmt(starterPoints.pointsProjected)}</div>` : ""}
-      </div>`);
-    cards.push(`
-      <div class="stat-card">
-        <div class="stat-card__label">Points Against</div>
-        <div class="stat-card__value" style="color:#f38ba8">${fmt(starterPoints.pointsAgainst)}</div>
       </div>`);
   }
 
