@@ -15,6 +15,26 @@ export function renderScoring(data) {
   renderCategorySection(managers);
 }
 
+// Re-measures both flip cards' heights against their currently active
+// face. Needed because offsetHeight reports 0 while a screen is
+// display:none — see nav.js, which calls this the moment the Scoring tab
+// actually becomes visible (covering the case where it was rendered
+// hidden at initial page load).
+export function remeasureScoringFlipCards() {
+  const inner = $("#scoringFlipInner");
+  if (inner) {
+    const front = $("#scoringFrontFace"), back = $("#scoringBackFace");
+    const activeEl = state.scoringFlipped ? back : front;
+    if (activeEl) inner.style.height = activeEl.offsetHeight + "px";
+  }
+  const fdInner = $("#fdFlipInner");
+  if (fdInner) {
+    const fdFront = $("#fdFrontFace"), fdBack = $("#fdBackFace");
+    const activeEl = state.fdCompareFlipped ? fdBack : fdFront;
+    if (activeEl) fdInner.style.height = activeEl.offsetHeight + "px";
+  }
+}
+
 // ---------------- Weeks Left header ----------------
 function parseWeekNumber_(label) {
   const m = /\d+/.exec(label || "");

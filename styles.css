@@ -1196,10 +1196,10 @@ table.breakdown-table tr.total-row td:first-child {
   top: 0; left: 0; right: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  padding: 14px;
-  border-radius: 12px;
-  background: #1c1e2a;
-  box-shadow: 0 0 0 1px var(--edge-subtle);
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--edge);
   cursor: pointer;
 }
 .scoring-flip-face.is-swipeable { cursor: default; }

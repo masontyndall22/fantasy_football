@@ -1,6 +1,7 @@
 import { $, $$ } from "./dom.js";
 import { state } from "./state.js";
 import { loadData, setLastUpdated } from "./data-loader.js";
+import { remeasureScoringFlipCards } from "./pages/scoring.js";
 
 export function initNav() {
   $$(".nav-btn").forEach(btn => {
@@ -11,6 +12,12 @@ export function initNav() {
       $$(".screen").forEach(s => s.classList.remove("is-active"));
       $(`#screen-${btn.dataset.screen}`).classList.add("is-active");
       window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+      // The Scoring tab's flip cards are measured via real offsetHeight,
+      // which reports 0 while the screen is display:none (e.g. at first
+      // page load, before this tab is ever switched to) — collapsing the
+      // card to zero height and causing everything below it to overlap.
+      // Re-measure now that the screen is actually visible.
+      if (btn.dataset.screen === "scoring") remeasureScoringFlipCards();
     });
   });
 }
