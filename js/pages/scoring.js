@@ -19,20 +19,26 @@ export function renderScoring(data) {
 // face. Needed because offsetHeight reports 0 while a screen is
 // display:none — see nav.js, which calls this the moment the Scoring tab
 // actually becomes visible (covering the case where it was rendered
-// hidden at initial page load).
+// hidden at initial page load). The transition is briefly disabled here
+// so this correction snaps instantly instead of visibly animating from
+// the wrong (0px) height up to the real one — that transition should only
+// ever play for an actual user-triggered flip.
 export function remeasureScoringFlipCards() {
-  const inner = $("#scoringFlipInner");
-  if (inner) {
-    const front = $("#scoringFrontFace"), back = $("#scoringBackFace");
-    const activeEl = state.scoringFlipped ? back : front;
-    if (activeEl) inner.style.height = activeEl.offsetHeight + "px";
-  }
-  const fdInner = $("#fdFlipInner");
-  if (fdInner) {
-    const fdFront = $("#fdFrontFace"), fdBack = $("#fdBackFace");
-    const activeEl = state.fdCompareFlipped ? fdBack : fdFront;
-    if (activeEl) fdInner.style.height = activeEl.offsetHeight + "px";
-  }
+  [
+    ["#scoringFlipInner", "#scoringFrontFace", "#scoringBackFace", () => state.scoringFlipped],
+    ["#fdFlipInner", "#fdFrontFace", "#fdBackFace", () => state.fdCompareFlipped],
+  ].forEach(([innerSel, frontSel, backSel, isFlipped]) => {
+    const inner = $(innerSel);
+    if (!inner) return;
+    const front = $(frontSel), back = $(backSel);
+    const activeEl = isFlipped() ? back : front;
+    if (!activeEl) return;
+    const prevTransition = inner.style.transition;
+    inner.style.transition = "none";
+    inner.style.height = activeEl.offsetHeight + "px";
+    inner.offsetHeight; // force a reflow so the "none" transition actually takes effect before we restore it
+    inner.style.transition = prevTransition;
+  });
 }
 
 // ---------------- Weeks Left header ----------------
