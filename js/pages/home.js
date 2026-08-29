@@ -42,18 +42,43 @@ export function renderHome(data) {
   renderWeeklyUpdate(data);
 }
 
+// "New content" badge for the Preseason Summary card — a simple localStorage
+// compare, not a full change-tracking system. If the summary text differs
+// from whatever was last marked "seen" on this device, show a "!" badge.
+// Tapping the card marks the CURRENT text as seen, so the badge won't come
+// back unless the summary text actually changes again later.
+const PRESEASON_SEEN_KEY = "league:seen:preseasonSummary";
+
+function hasNewPreseasonSummary_(summary) {
+  try {
+    return localStorage.getItem(PRESEASON_SEEN_KEY) !== summary;
+  } catch (e) {
+    return false; // localStorage unavailable (private browsing, etc.) — just skip the badge
+  }
+}
+
+function markPreseasonSummarySeen_(summary) {
+  try {
+    localStorage.setItem(PRESEASON_SEEN_KEY, summary);
+  } catch (e) {
+    // ignore — badge just won't persist this dismissal
+  }
+}
+
 function renderPreseasonSummary(data) {
   const slot = $("#preseasonSlot");
   if (!data.preseasonSummary) { slot.innerHTML = ""; return; }
+  const isNew = hasNewPreseasonSummary_(data.preseasonSummary);
   slot.innerHTML = `
     <div class="preseason-toggle" id="preseasonToggle">
-      <span>Preseason Summary</span>
+      <span>Preseason Summary${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
       <svg class="preseason-toggle__chevron ${state.summaryOpen ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
     </div>
     ${state.summaryOpen ? `<div class="preseason-body">${escapeHtml(data.preseasonSummary)}</div>` : ""}
   `;
   $("#preseasonToggle").addEventListener("click", () => {
     state.summaryOpen = !state.summaryOpen;
+    markPreseasonSummarySeen_(data.preseasonSummary);
     renderPreseasonSummary(data);
   });
 }

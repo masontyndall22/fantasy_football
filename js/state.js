@@ -37,7 +37,7 @@ export const state = {
   pillar: "fanduel",
   subCategory: "fdWins",
   playoffMgr: null,
-  summaryOpen: true,
+  summaryOpen: false,
   flippedBios: {},
   expandedRival: {},
   recordsOpen: true,
