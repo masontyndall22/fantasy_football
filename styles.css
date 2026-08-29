@@ -1131,6 +1131,131 @@ table.breakdown-table tr.total-row td:first-child {
 }
 .legend-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px; }
 
+/* ---------- Weeks Left header (Scoring) ---------- */
+.weeks-left-card {
+  position: relative;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #262a3c, #1e2130);
+  box-shadow: 0 0 0 1px var(--edge);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.weeks-left-card::after {
+  content: "";
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.weeks-left-card__icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+}
+.weeks-left-card__icon svg { width: 22px; height: 22px; }
+.weeks-left-card__count { font-size: 22px; font-weight: 700; color: var(--text); }
+.weeks-left-card__label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+
+.weeks-left-card.tier-green .weeks-left-card__icon { background: rgba(134, 217, 156, 0.16); color: #86d99c; }
+.weeks-left-card.tier-green::after { background: radial-gradient(circle, rgba(134, 217, 156, 0.16), transparent 70%); }
+.weeks-left-card.tier-purple .weeks-left-card__icon { background: rgba(210, 206, 253, 0.16); color: #d2cefd; }
+.weeks-left-card.tier-purple::after { background: radial-gradient(circle, rgba(210, 206, 253, 0.16), transparent 70%); }
+.weeks-left-card.tier-yellow .weeks-left-card__icon { background: rgba(246, 211, 101, 0.16); color: #f6d365; }
+.weeks-left-card.tier-yellow::after { background: radial-gradient(circle, rgba(246, 211, 101, 0.16), transparent 70%); }
+.weeks-left-card.tier-red .weeks-left-card__icon { background: rgba(243, 139, 168, 0.16); color: #f38ba8; }
+.weeks-left-card.tier-red::after { background: radial-gradient(circle, rgba(243, 139, 168, 0.16), transparent 70%); }
+
+/* ---------- Scoring flip cards (measured-height, not grid-stacking) ---------- */
+.scoring-flip-wrapper {
+  perspective: 1400px;
+  -webkit-perspective: 1400px;
+  margin-bottom: 24px;
+}
+.scoring-flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transition: transform 0.6s ease, height 0.6s ease;
+  -webkit-transition: -webkit-transform 0.6s ease, transform 0.6s ease, height 0.6s ease;
+}
+.scoring-flip-inner.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.scoring-flip-face {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  padding: 14px;
+  border-radius: 12px;
+  background: #1c1e2a;
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+  cursor: pointer;
+}
+.scoring-flip-face.is-swipeable { cursor: default; }
+.scoring-flip-inner .scoring-flip-face:nth-child(2) {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.scoring-flip-face .table-card { margin-bottom: 0; box-shadow: none; padding: 0; }
+.scoring-caption {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-meta);
+  text-align: center;
+}
+.scoring-caption.is-link { color: var(--accent-muted); cursor: pointer; }
+
+.scoring-leaderboard-list { display: flex; flex-direction: column; gap: 8px; }
+.scoring-leaderboard-row {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 12px;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--edge-subtle);
+  overflow: hidden;
+}
+.scoring-leaderboard-row__fill {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(145, 132, 217, 0.28), rgba(145, 132, 217, 0.15));
+  box-shadow: inset -2px 0 0 rgba(145, 132, 217, 0.9);
+}
+.scoring-leaderboard-row.is-first .scoring-leaderboard-row__fill {
+  background: linear-gradient(180deg, rgba(230, 199, 102, 0.28), rgba(230, 199, 102, 0.15));
+  box-shadow: inset -2px 0 0 rgba(230, 199, 102, 0.9);
+}
+.scoring-leaderboard-row__safe-marker {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 1;
+  border-left: 1px dashed rgba(233, 233, 237, 0.4);
+}
+.scoring-leaderboard-row__name { position: relative; z-index: 2; font-size: 14px; font-weight: 500; color: var(--text); }
+.scoring-leaderboard-row__pts { position: relative; z-index: 2; font-weight: 600; font-size: 16px; color: var(--text); }
+
+.scoring-safe-legend { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 11px; color: var(--text-muted); }
+.scoring-safe-legend__swatch { width: 14px; height: 0; border-top: 1px dashed rgba(233, 233, 237, 0.4); }
+
+.fd-dots { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; }
+.fd-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text); opacity: 0.25; }
+.fd-dot.is-active { width: 16px; height: 6px; border-radius: 3px; background: var(--accent); opacity: 1; }
+
 /* ---------- Bottom nav ---------- */
 .bottom-nav {
   position: fixed;

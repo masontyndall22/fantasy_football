@@ -59,20 +59,19 @@
 
   <!-- ============ SCORING ============ -->
   <section class="screen" id="screen-scoring">
+    <div id="weeksLeftSlot"></div>
+
     <div class="section-label">Full Leaderboard</div>
-    <div class="standings-list" id="scoringStandingsList" style="margin-bottom:24px"></div>
+    <div class="scoring-flip-wrapper">
+      <div class="scoring-flip-inner" id="scoringFlipInner">
+        <div class="scoring-flip-face" id="scoringFrontFace"></div>
+        <div class="scoring-flip-face" id="scoringBackFace"></div>
+      </div>
+    </div>
 
     <div class="section-label" style="margin-top:0">By Category</div>
     <div class="pillar-tabs" id="pillarTabs"></div>
-    <div id="subTabsSlot"></div>
-    <div class="table-card">
-      <table class="data-table" id="categoryTable"></table>
-    </div>
-
-    <div class="section-label">Full Breakdown</div>
-    <div class="table-card">
-      <table class="breakdown-table" id="breakdownTable"></table>
-    </div>
+    <div id="categorySlot"></div>
   </section>
 
   <!-- ============ PLAYOFFS ============ -->

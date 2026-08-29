@@ -2,59 +2,105 @@ import { $, $$ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { rankCategory, pointsFor } from "../ranking.js";
 import { state, store, PILLARS, ALL_CATEGORIES } from "../state.js";
-import { standingsListHtml } from "../components/standings-list.js";
+
+const TOTAL_WEEKS = 14;
+const MAX_STANDINGS_POINTS = 33; // fixed ceiling for the leaderboard bar fill — not the current leader's score
+const SAFE_SCORE = 22;
 
 export function renderScoring(data) {
   const managers = data.managers;
-  const ranked = [...managers].sort((a, b) => b.totalStandingsPoints - a.totalStandingsPoints);
-  const maxPts = Math.max(...managers.map(m => m.totalStandingsPoints));
-  $("#scoringStandingsList").innerHTML = standingsListHtml(ranked, maxPts);
-
+  renderWeeksLeft(data);
+  renderLeaderboardFlipCard(managers);
   renderPillarTabs();
-  renderSubTabs();
-  renderCategoryTable(managers);
-  renderBreakdownTable(managers);
+  renderCategorySection(managers);
 }
 
-function renderPillarTabs() {
-  $("#pillarTabs").innerHTML = PILLARS.map(p =>
-    `<button class="pillar-tab ${p.key === state.pillar ? "is-active" : ""}" data-pillar="${p.key}">${p.label}</button>`
-  ).join("");
-  $$(".pillar-tab", $("#pillarTabs")).forEach(btn => {
-    btn.addEventListener("click", () => {
-      state.pillar = btn.dataset.pillar;
-      state.subCategory = PILLARS.find(p => p.key === state.pillar).categories[0].key;
-      renderPillarTabs();
-      renderSubTabs();
-      renderCategoryTable(store.data.managers);
-    });
-  });
+// ---------------- Weeks Left header ----------------
+function parseWeekNumber_(label) {
+  const m = /\d+/.exec(label || "");
+  return m ? Number(m[0]) : null;
 }
 
-function renderSubTabs() {
-  const activePillar = PILLARS.find(p => p.key === state.pillar);
-  const slot = $("#subTabsSlot");
-  if (activePillar.categories.length <= 1) { slot.innerHTML = ""; return; }
-  slot.innerHTML = `<div class="sub-tabs">${activePillar.categories.map(c =>
-    `<button class="sub-tab ${c.key === state.subCategory ? "is-active" : ""}" data-sub="${c.key}">${c.label}</button>`
-  ).join("")}</div>`;
-  $$(".sub-tab", slot).forEach(btn => {
-    btn.addEventListener("click", () => {
-      state.subCategory = btn.dataset.sub;
-      renderSubTabs();
-      renderCategoryTable(store.data.managers);
-    });
-  });
+function weeksLeftTier_(weeksLeft) {
+  if (weeksLeft > 8) return "green";
+  if (weeksLeft > 4) return "purple";
+  if (weeksLeft > 1) return "yellow";
+  return "red";
 }
 
-function renderCategoryTable(managers) {
-  const activePillar = PILLARS.find(p => p.key === state.pillar);
-  const activeDef = activePillar.categories.find(c => c.key === state.subCategory) || activePillar.categories[0];
-  const rows = rankCategory(managers, activeDef.valueFn, activeDef.higherBetter);
-  $("#categoryTable").innerHTML = `
-    <thead><tr><th>Manager</th><th>${escapeHtml(activeDef.unit)}</th><th>Pts</th></tr></thead>
-    <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.value)}</td><td class="pts">${fmt(r.points)}</td></tr>`).join("")}</tbody>
+function renderWeeksLeft(data) {
+  const slot = $("#weeksLeftSlot");
+  const weekNum = parseWeekNumber_(data.currentWeekLabel);
+  if (weekNum == null) { slot.innerHTML = ""; return; } // no parseable week (e.g. "Keeper Review") — nothing to show
+  const weeksLeft = Math.max(0, TOTAL_WEEKS - weekNum);
+  const tier = weeksLeftTier_(weeksLeft);
+  slot.innerHTML = `
+    <div class="weeks-left-card tier-${tier}">
+      <div class="weeks-left-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 3v4"></path><path d="M16 3v4"></path></svg>
+      </div>
+      <div>
+        <div class="weeks-left-card__count">${weeksLeft} of ${TOTAL_WEEKS}</div>
+        <div class="weeks-left-card__label">Weeks Left</div>
+      </div>
+    </div>`;
+}
+
+// ---------------- Full Leaderboard ⇄ Full Breakdown (measured-height flip) ----------------
+// Deliberately NOT the grid-stacking flip technique used elsewhere (Bios,
+// Year Review) — that makes the shorter face inherit the taller face's
+// blank space, which looks wrong here since we want the card to visibly
+// grow/shrink as it flips between the short leaderboard and the taller
+// breakdown table. Instead: both faces are position:absolute (sized to
+// their own content), and the wrapper's height is set explicitly from
+// whichever face's real measured offsetHeight is currently active.
+function renderLeaderboardFlipCard(managers) {
+  const ranked = [...managers].sort((a, b) => b.totalStandingsPoints - a.totalStandingsPoints);
+  const safeLeftPct = (SAFE_SCORE / MAX_STANDINGS_POINTS) * 100;
+
+  const rowsHtml = ranked.map((m, i) => {
+    const pct = Math.min(100, Math.max(4, (m.totalStandingsPoints / MAX_STANDINGS_POINTS) * 100));
+    return `
+      <div class="scoring-leaderboard-row ${i === 0 ? "is-first" : ""}">
+        <div class="scoring-leaderboard-row__fill" style="width:${pct}%"></div>
+        <div class="scoring-leaderboard-row__safe-marker" style="left:${safeLeftPct}%"></div>
+        <div class="scoring-leaderboard-row__name">${escapeHtml(m.name)}</div>
+        <div class="scoring-leaderboard-row__pts">${fmt(m.totalStandingsPoints)}</div>
+      </div>`;
+  }).join("");
+
+  $("#scoringFrontFace").innerHTML = `
+    <div class="scoring-leaderboard-list">${rowsHtml}</div>
+    <div class="scoring-safe-legend"><span class="scoring-safe-legend__swatch"></span>Safe Score (${SAFE_SCORE} pts)</div>
+    <div class="scoring-caption">Tap to see full breakdown</div>
   `;
+  $("#scoringBackFace").innerHTML = `
+    <div class="table-card">
+      <table class="breakdown-table" id="breakdownTable"></table>
+    </div>
+    <div class="scoring-caption">Tap to see leaderboard</div>
+  `;
+  renderBreakdownTable(managers);
+
+  const inner = $("#scoringFlipInner");
+  const front = $("#scoringFrontFace");
+  const back = $("#scoringBackFace");
+  inner.classList.toggle("is-flipped", state.scoringFlipped);
+  const activeEl = state.scoringFlipped ? back : front;
+  inner.style.height = activeEl.offsetHeight + "px";
+
+  // .onclick (not addEventListener) since these face elements persist
+  // across re-renders (only their innerHTML is replaced above) — using
+  // addEventListener here would stack a new listener on every data
+  // refresh, firing the toggle multiple times per tap.
+  const toggle = () => {
+    state.scoringFlipped = !state.scoringFlipped;
+    inner.classList.toggle("is-flipped", state.scoringFlipped);
+    const el = state.scoringFlipped ? back : front;
+    inner.style.height = el.offsetHeight + "px";
+  };
+  front.onclick = toggle;
+  back.onclick = toggle;
 }
 
 function renderBreakdownTable(managers) {
@@ -82,4 +128,149 @@ function renderBreakdownTable(managers) {
       <tr class="total-row"><td>Total</td>${totals.map(t => `<td>${fmt(t)}</td>`).join("")}</tr>
     </tbody>
   `;
+}
+
+// ---------------- By Category (pillar tabs, no sub-tab chips) ----------------
+function renderPillarTabs() {
+  $("#pillarTabs").innerHTML = PILLARS.map(p =>
+    `<button class="pillar-tab ${p.key === state.pillar ? "is-active" : ""}" data-pillar="${p.key}">${p.label}</button>`
+  ).join("");
+  $$(".pillar-tab", $("#pillarTabs")).forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.pillar = btn.dataset.pillar;
+      state.fdCategoryIndex = 0; // reset FanDuel swipe position when switching pillars
+      renderPillarTabs();
+      renderCategorySection(store.data.managers);
+    });
+  });
+}
+
+function renderCategorySection(managers) {
+  const slot = $("#categorySlot");
+  if (state.pillar === "sleeper") {
+    slot.innerHTML = renderSleeperCombinedHtml_(managers);
+  } else if (state.pillar === "fanduel") {
+    renderFanDuelSection_(slot, managers);
+  } else {
+    const pillar = PILLARS.find(p => p.key === state.pillar);
+    slot.innerHTML = renderSingleCategoryTableHtml_(managers, pillar.categories[0]);
+  }
+}
+
+function renderSingleCategoryTableHtml_(managers, cat) {
+  const rows = rankCategory(managers, cat.valueFn, cat.higherBetter);
+  return `
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Manager</th><th>${escapeHtml(cat.label)}</th><th>Pts</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.value)}</td><td class="pts">${fmt(r.points)}</td></tr>`).join("")}</tbody>
+      </table>
+    </div>`;
+}
+
+// Sleeper has no separate "Wins" stat in the data model — just Points and
+// Placement — so both fit in one combined table without needing a swipe.
+function renderSleeperCombinedHtml_(managers) {
+  const sleeperPillar = PILLARS.find(p => p.key === "sleeper");
+  const pointsCat = sleeperPillar.categories.find(c => c.key === "sleeperPts");
+  const placeCat = sleeperPillar.categories.find(c => c.key === "sleeperPlacement");
+  const pointsMap = pointsFor(managers, pointsCat);
+  const placeMap = pointsFor(managers, placeCat);
+  const rows = managers.map(m => ({
+    name: m.name,
+    points: pointsCat.valueFn(m),
+    place: placeCat.valueFn(m),
+    pts: (pointsMap[m.name] || 0) + (placeMap[m.name] || 0),
+  })).sort((a, b) => b.pts - a.pts);
+
+  return `
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Manager</th><th>Points</th><th>Place</th><th>Pts</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.points)}</td><td>${fmt(r.place)}</td><td class="pts">${fmt(r.pts)}</td></tr>`).join("")}</tbody>
+      </table>
+    </div>`;
+}
+
+// FanDuel: front face swipes between its 4 categories (dots below), a tap
+// on the caption flips to a back face comparing all 4 at once (managers as
+// columns, categories as rows). The flip uses the same measured-height
+// technique as the leaderboard card above. Swiping re-renders this whole
+// section (content-only change, no animation to protect); flipping does
+// NOT re-render (would break the CSS transition — same lesson as Bios).
+function renderFanDuelSection_(slot, managers) {
+  const fdPillar = PILLARS.find(p => p.key === "fanduel");
+  const categories = fdPillar.categories;
+  const activeCat = categories[state.fdCategoryIndex] || categories[0];
+  const rows = rankCategory(managers, activeCat.valueFn, activeCat.higherBetter);
+
+  const dotsHtml = categories.map((c, i) =>
+    `<span class="fd-dot ${i === state.fdCategoryIndex ? "is-active" : ""}"></span>`
+  ).join("");
+
+  const frontHtml = `
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Manager</th><th>${escapeHtml(activeCat.label)}</th><th>Pts</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.value)}</td><td class="pts">${fmt(r.points)}</td></tr>`).join("")}</tbody>
+      </table>
+    </div>
+    <div class="fd-dots">${dotsHtml}</div>
+    <div class="scoring-caption is-link" id="fdCompareLink">Tap to compare all categories</div>
+  `;
+
+  const names = managers.map(m => m.name);
+  const fdCategories = ALL_CATEGORIES.filter(c => c.pillar === "FanDuel");
+  const compareRowsHtml = fdCategories.map(cat => {
+    const pts = pointsFor(managers, cat);
+    return `<tr><td>${escapeHtml(cat.label)}</td>${names.map(n => `<td>${fmt(pts[n])}</td>`).join("")}</tr>`;
+  }).join("");
+  const backHtml = `
+    <div class="table-card">
+      <table class="breakdown-table">
+        <thead><tr><th>Category</th>${names.map(n => `<th>${escapeHtml(n)}</th>`).join("")}</tr></thead>
+        <tbody>${compareRowsHtml}</tbody>
+      </table>
+    </div>
+    <div class="scoring-caption is-link" id="fdBackLink">Back to single category</div>
+  `;
+
+  slot.innerHTML = `
+    <div class="scoring-flip-wrapper">
+      <div class="scoring-flip-inner ${state.fdCompareFlipped ? "is-flipped" : ""}" id="fdFlipInner">
+        <div class="scoring-flip-face is-swipeable" id="fdFrontFace">${frontHtml}</div>
+        <div class="scoring-flip-face is-swipeable" id="fdBackFace">${backHtml}</div>
+      </div>
+    </div>`;
+
+  const inner = $("#fdFlipInner");
+  const front = $("#fdFrontFace");
+  const back = $("#fdBackFace");
+  const activeEl = state.fdCompareFlipped ? back : front;
+  inner.style.height = activeEl.offsetHeight + "px";
+
+  const toggleFlip = () => {
+    state.fdCompareFlipped = !state.fdCompareFlipped;
+    inner.classList.toggle("is-flipped", state.fdCompareFlipped);
+    const el = state.fdCompareFlipped ? back : front;
+    inner.style.height = el.offsetHeight + "px";
+  };
+  $("#fdCompareLink").onclick = toggleFlip;
+  $("#fdBackLink").onclick = toggleFlip;
+
+  // Swipe to cycle categories — clamped, no wraparound (same 40px-threshold
+  // pattern as the Year Review manager swipe).
+  let touchStartX = null;
+  front.ontouchstart = (e) => { touchStartX = e.touches[0].clientX; };
+  front.ontouchend = (e) => {
+    if (touchStartX == null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    touchStartX = null;
+    if (Math.abs(dx) < 40) return;
+    const delta = dx < 0 ? 1 : -1;
+    const nextIndex = Math.max(0, Math.min(categories.length - 1, state.fdCategoryIndex + delta));
+    if (nextIndex === state.fdCategoryIndex) return;
+    state.fdCategoryIndex = nextIndex;
+    renderFanDuelSection_(slot, managers);
+  };
 }
