@@ -226,15 +226,13 @@ main { padding: 4px 20px 24px; }
 
 /* ---------- Home mini standings cards (everyone except the leader) ---------- */
 .mini-standings-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  flex-wrap: wrap;
   margin-top: 10px;
 }
 .mini-standings-card {
   position: relative;
-  flex: 1;
-  min-width: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -243,6 +241,7 @@ main { padding: 4px 20px 24px; }
   background: #1c1e2a;
   box-shadow: 0 0 0 1px #292b31;
   overflow: hidden;
+  min-width: 0;
 }
 .mini-standings-card.is-last { box-shadow: 0 0 0 1px #6b2f3d; }
 .mini-standings-card__accent {
@@ -263,12 +262,18 @@ main { padding: 4px 20px 24px; }
   font-size: 13px;
   font-weight: 500;
   color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 .mini-standings-card__score {
   position: relative;
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
+  flex: none;
+  margin-left: 6px;
 }
 
 .standings-row {
