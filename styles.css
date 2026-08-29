@@ -601,6 +601,8 @@ main { padding: 4px 20px 24px; }
   margin-bottom: 24px;
   overflow-x: auto;
 }
+.fanduel-stack .table-card { margin-bottom: 12px; }
+.fanduel-stack .table-card:last-child { margin-bottom: 0; }
 table.data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.data-table th {
   text-align: right;

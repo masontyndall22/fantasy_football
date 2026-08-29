@@ -231,5 +231,5 @@ function renderSleeperCombinedHtml_(managers) {
 // card per category, stacked vertically, scrolled like anything else.
 function renderFanDuelSection_(slot, managers) {
   const fdPillar = PILLARS.find(p => p.key === "fanduel");
-  slot.innerHTML = fdPillar.categories.map(cat => renderSingleCategoryTableHtml_(managers, cat)).join("");
+  slot.innerHTML = `<div class="fanduel-stack">${fdPillar.categories.map(cat => renderSingleCategoryTableHtml_(managers, cat)).join("")}</div>`;
 }
