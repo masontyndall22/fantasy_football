@@ -285,9 +285,13 @@ function renderFanDuelSection_(slot, managers) {
   $("#fdBackLink").onclick = toggleFlip;
 
   // Swipe to cycle categories — clamped, no wraparound (same 40px-threshold
-  // pattern as the Year Review manager swipe).
+  // pattern as the Year Review manager swipe). touchmove explicitly blocks
+  // the browser's own native scroll/gesture handling for the duration of
+  // the swipe — without this, the browser can apply its own scroll/bounce
+  // behavior on top of ours, which is what was forcing the page to jump.
   let touchStartX = null;
   front.ontouchstart = (e) => { touchStartX = e.touches[0].clientX; };
+  front.ontouchmove = (e) => { if (touchStartX != null) e.preventDefault(); };
   front.ontouchend = (e) => {
     if (touchStartX == null) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
