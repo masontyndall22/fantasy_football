@@ -168,15 +168,6 @@ main { padding: 4px 20px 24px; }
   border-radius: 14px 0 0 14px;
   background: linear-gradient(180deg, #f0d68a, #c9a227 55%, #8a6d1c);
 }
-.leader-card::after {
-  content: "";
-  position: absolute;
-  top: -40px; right: -40px;
-  width: 130px; height: 130px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(230, 199, 102, 0.16), transparent 70%);
-  pointer-events: none;
-}
 .leader-card__eyebrow {
   display: flex;
   align-items: center;
