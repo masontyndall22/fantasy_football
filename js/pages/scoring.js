@@ -224,88 +224,12 @@ function renderSleeperCombinedHtml_(managers) {
 // technique as the leaderboard card above. Swiping re-renders this whole
 // section (content-only change, no animation to protect); flipping does
 // NOT re-render (would break the CSS transition — same lesson as Bios).
+// FanDuel: previously a swipeable single-category card with a flip to a
+// compare-all view. Both the swipe and the flip's touch handling proved
+// fragile (forced scroll-to-top on some devices, unresolved after two
+// targeted fixes) — replaced with the simplest possible thing: one plain
+// card per category, stacked vertically, scrolled like anything else.
 function renderFanDuelSection_(slot, managers) {
   const fdPillar = PILLARS.find(p => p.key === "fanduel");
-  const categories = fdPillar.categories;
-  const activeCat = categories[state.fdCategoryIndex] || categories[0];
-  const rows = rankCategory(managers, activeCat.valueFn, activeCat.higherBetter);
-
-  const dotsHtml = categories.map((c, i) =>
-    `<span class="fd-dot ${i === state.fdCategoryIndex ? "is-active" : ""}"></span>`
-  ).join("");
-
-  const frontHtml = `
-    <div class="table-card">
-      <table class="data-table">
-        <thead><tr><th>Manager</th><th>${escapeHtml(activeCat.label)}</th><th>Pts</th></tr></thead>
-        <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.value)}</td><td class="pts">${fmt(r.points)}</td></tr>`).join("")}</tbody>
-      </table>
-    </div>
-    <div class="fd-dots">${dotsHtml}</div>
-    <div class="scoring-caption is-link" id="fdCompareLink">Tap to compare all categories</div>
-  `;
-
-  const names = managers.map(m => m.name);
-  const fdCategories = ALL_CATEGORIES.filter(c => c.pillar === "FanDuel");
-  const compareRowsHtml = fdCategories.map(cat => {
-    const pts = pointsFor(managers, cat);
-    return `<tr><td>${escapeHtml(cat.label)}</td>${names.map(n => `<td>${fmt(pts[n])}</td>`).join("")}</tr>`;
-  }).join("");
-  const backHtml = `
-    <div class="table-card">
-      <table class="breakdown-table">
-        <thead><tr><th>Category</th>${names.map(n => `<th>${escapeHtml(n)}</th>`).join("")}</tr></thead>
-        <tbody>${compareRowsHtml}</tbody>
-      </table>
-    </div>
-    <div class="scoring-caption is-link" id="fdBackLink">Back to single category</div>
-  `;
-
-  slot.innerHTML = `
-    <div class="scoring-flip-wrapper">
-      <div class="scoring-flip-inner ${state.fdCompareFlipped ? "is-flipped" : ""}" id="fdFlipInner">
-        <div class="scoring-flip-face is-swipeable" id="fdFrontFace">${frontHtml}</div>
-        <div class="scoring-flip-face is-swipeable" id="fdBackFace">${backHtml}</div>
-      </div>
-    </div>`;
-
-  const inner = $("#fdFlipInner");
-  const front = $("#fdFrontFace");
-  const back = $("#fdBackFace");
-  const activeEl = state.fdCompareFlipped ? back : front;
-  inner.style.height = activeEl.offsetHeight + "px";
-
-  const toggleFlip = () => {
-    state.fdCompareFlipped = !state.fdCompareFlipped;
-    inner.classList.toggle("is-flipped", state.fdCompareFlipped);
-    const el = state.fdCompareFlipped ? back : front;
-    inner.style.height = el.offsetHeight + "px";
-  };
-  $("#fdCompareLink").onclick = toggleFlip;
-  $("#fdBackLink").onclick = toggleFlip;
-
-  // Swipe to cycle categories — clamped, no wraparound (same 40px-threshold
-  // pattern as the Year Review manager swipe). touchmove explicitly blocks
-  // the browser's own native scroll/gesture handling for the duration of
-  // the swipe — without this, the browser can apply its own scroll/bounce
-  // behavior on top of ours, which is what was forcing the page to jump.
-  let touchStartX = null;
-  front.ontouchstart = (e) => { touchStartX = e.touches[0].clientX; };
-  front.ontouchmove = (e) => { if (touchStartX != null) e.preventDefault(); };
-  front.ontouchend = (e) => {
-    if (touchStartX == null) return;
-    const dx = e.changedTouches[0].clientX - touchStartX;
-    touchStartX = null;
-    if (Math.abs(dx) < 40) return;
-    const delta = dx < 0 ? 1 : -1;
-    const nextIndex = Math.max(0, Math.min(categories.length - 1, state.fdCategoryIndex + delta));
-    if (nextIndex === state.fdCategoryIndex) return;
-    state.fdCategoryIndex = nextIndex;
-    // Deferred to the next frame rather than rebuilt synchronously here —
-    // doing it inline, mid-touchend, destroys the very element the touch
-    // gesture is still active on, which on some mobile browsers causes an
-    // unwanted scroll-to-top as a fallback when their touch target
-    // suddenly vanishes underneath them.
-    requestAnimationFrame(() => renderFanDuelSection_(slot, managers));
-  };
+  slot.innerHTML = fdPillar.categories.map(cat => renderSingleCategoryTableHtml_(managers, cat)).join("");
 }
