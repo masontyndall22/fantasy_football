@@ -297,6 +297,11 @@ function renderFanDuelSection_(slot, managers) {
     const nextIndex = Math.max(0, Math.min(categories.length - 1, state.fdCategoryIndex + delta));
     if (nextIndex === state.fdCategoryIndex) return;
     state.fdCategoryIndex = nextIndex;
-    renderFanDuelSection_(slot, managers);
+    // Deferred to the next frame rather than rebuilt synchronously here —
+    // doing it inline, mid-touchend, destroys the very element the touch
+    // gesture is still active on, which on some mobile browsers causes an
+    // unwanted scroll-to-top as a fallback when their touch target
+    // suddenly vanishes underneath them.
+    requestAnimationFrame(() => renderFanDuelSection_(slot, managers));
   };
 }

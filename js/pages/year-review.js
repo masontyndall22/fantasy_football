@@ -267,5 +267,8 @@ function switchManager_(data, orderedManagers, delta) {
   if (nextIdx === idx) return; // clamped at the ends — no wraparound
   state.yearReviewOpen = `${orderedManagers[nextIdx]}|${season}`;
   state.rosterTab = "drafted";
-  renderYearReview(data);
+  // Deferred rather than rebuilt synchronously here — same reasoning as
+  // the Scoring tab's FanDuel swipe fix: destroying the touch target
+  // mid-touchend can cause an unwanted scroll jump on some mobile browsers.
+  requestAnimationFrame(() => renderYearReview(data));
 }
