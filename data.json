@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T15:43:00.617Z",
+  "generatedAt": "2026-08-30T16:43:02.086Z",
   "managers": [
     {
       "name": "Ben",
@@ -11180,6 +11180,15 @@
         },
         {
           "position": "RB",
+          "name": "Rachaad White",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 171.69,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Zach Charbonnet",
           "tag": "kept",
           "tagWeek": null,
@@ -11279,7 +11288,11 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
