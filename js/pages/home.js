@@ -89,13 +89,13 @@ function markSummarySeen_(key) {
 // One card, reused across the whole season rather than a preseason-only
 // card plus a separate weekly one — the header shows whatever period
 // label is currently set (e.g. "Preseason", "Post Draft", "Week 1"), and
-// the body always shows data.preseasonSummary, since that's the single
+// the body always shows data.currentSummary, since that's the single
 // sheet cell the summary gets rewritten into each period.
 function renderPreseasonSummary(data) {
   const slot = $("#preseasonSlot");
-  if (!data.preseasonSummary) { slot.innerHTML = ""; return; }
+  if (!data.currentSummary) { slot.innerHTML = ""; return; }
   const label = data.currentWeekLabel ? `Summary — ${data.currentWeekLabel}` : "Summary";
-  const seenKey = `${data.currentWeekLabel || ""}|${data.preseasonSummary}`;
+  const seenKey = `${data.currentWeekLabel || ""}|${data.currentSummary}`;
   const isNew = hasNewSummary_(seenKey);
   slot.innerHTML = `
     <div class="preseason-card">
@@ -106,7 +106,7 @@ function renderPreseasonSummary(data) {
         <span class="preseason-card__label">${escapeHtml(label)}${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
         <svg class="preseason-toggle__chevron ${state.summaryOpen ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
       </div>
-      ${state.summaryOpen ? `<div class="preseason-card__body">${formatRichText(data.preseasonSummary)}</div>` : ""}
+      ${state.summaryOpen ? `<div class="preseason-card__body">${formatRichText(data.currentSummary)}</div>` : ""}
     </div>
   `;
   $("#preseasonToggle").addEventListener("click", () => {
