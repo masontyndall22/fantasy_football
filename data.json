@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T01:43:01.151Z",
+  "generatedAt": "2026-08-30T02:43:11.009Z",
   "managers": [
     {
       "name": "Ben",
@@ -1592,6 +1592,15 @@
       "managerB": "Ben",
       "scoreB": 146.5,
       "winner": "Ben"
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "managerA": "Kyle",
+      "scoreA": 0,
+      "managerB": "Mason",
+      "scoreB": 0,
+      "winner": "Tie"
     }
   ],
   "matchups": [
@@ -2377,6 +2386,15 @@
       "managerB": "Ben",
       "scoreB": 146.5,
       "winner": "Ben"
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "managerA": "Kyle",
+      "scoreA": 0,
+      "managerB": "Mason",
+      "scoreB": 0,
+      "winner": "Tie"
     }
   ],
   "memberHistory": [
@@ -10704,7 +10722,11 @@
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": null,
-      "starterPoints": null
+      "starterPoints": {
+        "pointsFor": 0,
+        "pointsAgainst": 0,
+        "pointsProjected": 125.37
+      }
     },
     {
       "season": "2026",
@@ -10982,7 +11004,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsProjected": 132.29
       }
     },
     {
@@ -11261,7 +11283,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsProjected": 130.2
       }
     },
     {
@@ -11540,7 +11562,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 0
+        "pointsProjected": 115.26
       }
     }
   ],
