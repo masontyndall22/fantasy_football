@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T18:43:06.662Z",
+  "generatedAt": "2026-08-30T19:43:00.995Z",
   "managers": [
     {
       "name": "Ben",
@@ -10849,8 +10849,8 @@
           "position": "RB",
           "name": "Adam Randall",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -10883,11 +10883,11 @@
         },
         {
           "position": "RB",
-          "name": "Adam Randall",
-          "tag": "kept",
-          "tagWeek": null,
+          "name": "Kaleb Johnson",
+          "tag": "waiver",
+          "tagWeek": 1,
           "points": 0,
-          "projectedPoints": 4.9,
+          "projectedPoints": 3.98,
           "isStarter": true
         },
         {
@@ -10905,7 +10905,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 240.58,
+          "projectedPoints": 227.5,
           "isStarter": true
         },
         {
@@ -11000,11 +11000,15 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 132.29
+        "pointsProjected": 119.21
       }
     },
     {
@@ -11296,7 +11300,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 130.26
+        "pointsProjected": 129.98
       }
     },
     {
