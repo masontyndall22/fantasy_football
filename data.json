@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T00:43:03.487Z",
+  "generatedAt": "2026-08-30T01:09:20.508Z",
   "managers": [
     {
       "name": "Ben",
@@ -10450,6 +10450,102 @@
           "isKeeper": true,
           "exitTag": null,
           "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Emeka Egbuka",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Davante Adams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "TE",
+          "name": "Sam LaPorta",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Chuba Hubbard",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Christian Watson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "WR",
+          "name": "Makai Lemon",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "QB",
+          "name": "Jaxson Dart",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "QB",
+          "name": "Matthew Stafford",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Deebo Samuel",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Isiah Pacheco",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Jake Bates",
+          "isKeeper": false,
+          "exitTag": null,
+          "exitWeek": null
         }
       ],
       "final": [
@@ -10582,7 +10678,7 @@
         {
           "position": "K",
           "name": "Jake Bates",
-          "tag": "waiver",
+          "tag": "kept",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 0,
@@ -10623,11 +10719,99 @@
           "exitWeek": null
         },
         {
+          "round": 3,
+          "position": "RB",
+          "name": "Derrick Henry",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "RB",
+          "name": "Josh Jacobs",
+          "isKeeper": false,
+          "exitTag": null,
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "QB",
+          "name": "Jalen Hurts",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "RB",
+          "name": "Tony Pollard",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "DK Metcalf",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
           "round": 9,
           "position": "TE",
           "name": "Tyler Warren",
           "isKeeper": true,
           "exitTag": null,
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "RB",
+          "name": "Blake Corum",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "TE",
+          "name": "Travis Kelce",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "RB",
+          "name": "MarShawn Lloyd",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Ka'imi Fairbairn",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "DEF",
+          "name": "Jacksonville Jaguars",
+          "isKeeper": false,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -10680,7 +10864,7 @@
         {
           "position": "RB",
           "name": "Josh Jacobs",
-          "tag": "waiver",
+          "tag": "kept",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 0,
@@ -10798,6 +10982,38 @@
           "exitWeek": null
         },
         {
+          "round": 2,
+          "position": "TE",
+          "name": "Trey McBride",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 3,
+          "position": "WR",
+          "name": "Malik Nabers",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 4,
+          "position": "RB",
+          "name": "Travis Etienne",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 5,
+          "position": "WR",
+          "name": "Garrett Wilson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
           "round": 6,
           "position": "WR",
           "name": "Chris Olave",
@@ -10806,11 +11022,67 @@
           "exitWeek": null
         },
         {
+          "round": 7,
+          "position": "QB",
+          "name": "Jayden Daniels",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "WR",
+          "name": "Carnell Tate",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
           "round": 9,
           "position": "RB",
           "name": "Cam Skattebo",
           "isKeeper": true,
           "exitTag": null,
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Jordyn Tyson",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "WR",
+          "name": "Stefon Diggs",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "K",
+          "name": "Cam Little",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "RB",
+          "name": "Zach Charbonnet",
+          "isKeeper": false,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -10990,6 +11262,14 @@
           "exitWeek": null
         },
         {
+          "round": 2,
+          "position": "RB",
+          "name": "Omarion Hampton",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
           "round": 3,
           "position": "RB",
           "name": "Kenneth Walker",
@@ -10998,11 +11278,91 @@
           "exitWeek": null
         },
         {
+          "round": 4,
+          "position": "RB",
+          "name": "Breece Hall",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
           "round": 5,
           "position": "WR",
           "name": "Rashee Rice",
           "isKeeper": true,
           "exitTag": null,
+          "exitWeek": null
+        },
+        {
+          "round": 6,
+          "position": "WR",
+          "name": "Luther Burden",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 7,
+          "position": "QB",
+          "name": "Caleb Williams",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 8,
+          "position": "TE",
+          "name": "George Kittle",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 9,
+          "position": "RB",
+          "name": "J.K. Dobbins",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 10,
+          "position": "WR",
+          "name": "Michael Wilson",
+          "isKeeper": false,
+          "exitTag": null,
+          "exitWeek": null
+        },
+        {
+          "round": 11,
+          "position": "RB",
+          "name": "Jordan Mason",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 12,
+          "position": "QB",
+          "name": "Bo Nix",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 13,
+          "position": "RB",
+          "name": "Mike Washington",
+          "isKeeper": false,
+          "exitTag": "dropped",
+          "exitWeek": null
+        },
+        {
+          "round": 14,
+          "position": "K",
+          "name": "Tyler Loop",
+          "isKeeper": false,
+          "exitTag": "dropped",
           "exitWeek": null
         }
       ],
@@ -11100,7 +11460,7 @@
         {
           "position": "WR",
           "name": "Michael Wilson",
-          "tag": "waiver",
+          "tag": "kept",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 0,
