@@ -1,5 +1,5 @@
 import { $ } from "../dom.js";
-import { fmt, escapeHtml } from "../format.js";
+import { fmt, escapeHtml, formatRichText } from "../format.js";
 import { state, TONE, COPY_TONE } from "../state.js";
 
 const TROPHY_SVG = '<svg class="leader-card__trophy" viewBox="0 0 24 24" fill="#e6c766" stroke="none"><path d="M6 3h12v2h2a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4 5.5 5.5 0 0 1-3.09 2.44c.2 1.13.83 1.83 2.09 2.06.5.09.9.5.9 1.01v.99a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-.99c0-.51.4-.92.9-1.01 1.26-.23 1.89-.93 2.09-2.06A5.5 5.5 0 0 1 8.9 11H8a4 4 0 0 1-4-4V6a1 1 0 0 1 1-1h2V3Zm0 4V7H5a2 2 0 0 0 2 2V7Zm12 0a2 2 0 0 0 2-2h-2v2Z"></path></svg>';
@@ -62,48 +62,56 @@ function renderOtherStandings(ranked, maxPts) {
   }).join("");
 }
 
-// "New content" badge for the Preseason Summary card — a simple localStorage
-// compare, not a full change-tracking system. If the summary text differs
-// from whatever was last marked "seen" on this device, show a "!" badge.
-// Tapping the card marks the CURRENT text as seen, so the badge won't come
-// back unless the summary text actually changes again later.
-const PRESEASON_SEEN_KEY = "league:seen:preseasonSummary";
+// "New content" badge for the Summary card — a simple localStorage
+// compare, not a full change-tracking system. Keys off BOTH the period
+// label and the text together, so either one changing (e.g. still on
+// "Week 3" but the text got corrected) is enough to flag it as new.
+// Tapping the card marks the current label+text as seen, so the badge
+// won't come back until the content genuinely changes again later.
+const SUMMARY_SEEN_KEY = "league:seen:summary";
 
-function hasNewPreseasonSummary_(summary) {
+function hasNewSummary_(key) {
   try {
-    return localStorage.getItem(PRESEASON_SEEN_KEY) !== summary;
+    return localStorage.getItem(SUMMARY_SEEN_KEY) !== key;
   } catch (e) {
     return false; // localStorage unavailable (private browsing, etc.) — just skip the badge
   }
 }
 
-function markPreseasonSummarySeen_(summary) {
+function markSummarySeen_(key) {
   try {
-    localStorage.setItem(PRESEASON_SEEN_KEY, summary);
+    localStorage.setItem(SUMMARY_SEEN_KEY, key);
   } catch (e) {
     // ignore — badge just won't persist this dismissal
   }
 }
 
+// One card, reused across the whole season rather than a preseason-only
+// card plus a separate weekly one — the header shows whatever period
+// label is currently set (e.g. "Preseason", "Post Draft", "Week 1"), and
+// the body always shows data.preseasonSummary, since that's the single
+// sheet cell the summary gets rewritten into each period.
 function renderPreseasonSummary(data) {
   const slot = $("#preseasonSlot");
   if (!data.preseasonSummary) { slot.innerHTML = ""; return; }
-  const isNew = hasNewPreseasonSummary_(data.preseasonSummary);
+  const label = data.currentWeekLabel ? `Summary — ${data.currentWeekLabel}` : "Summary";
+  const seenKey = `${data.currentWeekLabel || ""}|${data.preseasonSummary}`;
+  const isNew = hasNewSummary_(seenKey);
   slot.innerHTML = `
     <div class="preseason-card">
       <div class="preseason-card__header" id="preseasonToggle">
         <div class="preseason-card__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg>
         </div>
-        <span class="preseason-card__label">Preseason Summary${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
+        <span class="preseason-card__label">${escapeHtml(label)}${isNew ? ` <span class="new-badge">!</span>` : ""}</span>
         <svg class="preseason-toggle__chevron ${state.summaryOpen ? "" : "is-collapsed"}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
       </div>
-      ${state.summaryOpen ? `<div class="preseason-card__body">${escapeHtml(data.preseasonSummary)}</div>` : ""}
+      ${state.summaryOpen ? `<div class="preseason-card__body">${formatRichText(data.preseasonSummary)}</div>` : ""}
     </div>
   `;
   $("#preseasonToggle").addEventListener("click", () => {
     state.summaryOpen = !state.summaryOpen;
-    markPreseasonSummarySeen_(data.preseasonSummary);
+    markSummarySeen_(seenKey);
     renderPreseasonSummary(data);
   });
 }
@@ -134,6 +142,7 @@ function renderWeeklyUpdate(data) {
   if (!roasts.length) { label.style.display = "none"; list.innerHTML = ""; return; }
   label.style.display = "";
   label.textContent = "Weekly Update" + (data.currentWeekLabel ? ` — ${data.currentWeekLabel}` : "");
+
   list.innerHTML = roasts.map(w => {
     const { grade, text } = parseRoast_(w.roast);
     const tier = gradeTier_(grade);
@@ -142,7 +151,7 @@ function renderWeeklyUpdate(data) {
         <div class="weekly-update-card__badge">${escapeHtml(grade || "?")}</div>
         <div>
           <div class="weekly-update-card__name">${escapeHtml(w.manager)}</div>
-          <div class="weekly-update-card__roast">${escapeHtml(text)}</div>
+          <div class="weekly-update-card__roast">${formatRichText(text)}</div>
         </div>
       </div>`;
   }).join("");

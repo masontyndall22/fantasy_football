@@ -135,6 +135,15 @@ a:hover { color: #b5abfc; }
   color: var(--text-meta);
   margin-top: 5px;
 }
+.app-header__countdown {
+  font-size: 11px;
+  color: var(--text-meta);
+  margin-top: 3px;
+}
+.app-header__countdown.is-gameday {
+  color: #86d99c;
+  font-weight: 600;
+}
 
 /* ---------- Layout ---------- */
 main { padding: 4px 20px 24px; }
@@ -373,6 +382,7 @@ main { padding: 4px 20px 24px; }
   line-height: 1.6;
   color: rgba(233, 233, 237, 0.85);
 }
+.preseason-card__body strong { color: var(--accent-light); font-weight: 600; }
 
 /* ---------- Weekly Update (Home) ---------- */
 .weekly-update-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
@@ -412,6 +422,7 @@ main { padding: 4px 20px 24px; }
 .weekly-update-card.tier-d .weekly-update-card__badge { color: #f38ba8; background: rgba(243, 139, 168, 0.14); }
 .weekly-update-card__name { font-weight: 500; font-size: 13px; color: var(--text); }
 .weekly-update-card__roast { font-size: 12.5px; line-height: 1.5; color: rgba(233, 233, 237, 0.75); margin-top: 2px; }
+.weekly-update-card__roast strong { color: var(--text); font-weight: 600; }
 
 /* ---------- Bios (flip cards) ---------- */
 .bio-flip-wrapper {
