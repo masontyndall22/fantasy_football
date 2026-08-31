@@ -31,114 +31,135 @@ function pickIcon_(state3) {
   return `<div class="pick-row__icon is-pending"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path></svg></div>`;
 }
 
+// Computes one manager's full playoff result (MVP + group HTML + total
+// score) in one pass — factored out so it can be run once per manager
+// (feeding the score card below) without duplicating this logic, rather
+// than only ever computing it for whichever manager's tab is selected.
+function computePlayoffResultsForManager_(current, data, cats, actual) {
+  let score = 0;
+  const mvpPick = current.mvp;
+  const actualMvp = data.actualMvp;
+  const mvpState = !mvpPick || !actualMvp ? "pending" : mvpPick === actualMvp ? "correct" : "wrong";
+  const mvpHtml = `
+    <div class="playoff-group-label">MVP Pick</div>
+    <div class="playoff-card">
+      <div class="pick-row">
+        <div class="pick-row__label">NFL MVP</div>
+        <div class="pick-row__right">
+          <div class="pick-row__value">${escapeHtml(mvpPick || "—")}</div>
+          ${pickIcon_(mvpState)}
+        </div>
+      </div>
+    </div>`;
+
+  const SET_MATCH_WEIGHTS = [1, 1.25, 1.5];
+  const DIVISION_WINNER_WEIGHT = 2;
+  const WILDCARD_TIER_WEIGHT = 1;
+
+  const groupsHtml = GROUP_ORDER.map(group => {
+    const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
+    const setCatsByConf = { AFC: [], NFC: [] };
+    const fullFieldCatsByConf = { AFC: [], NFC: [] };
+    groupCats.forEach(c => {
+      const conf = conferenceOf_(c.label);
+      if (conf) fullFieldCatsByConf[conf].push(c);
+      if (SET_MATCH_WEIGHTS.includes(c.weight) && conf) setCatsByConf[conf].push(c);
+    });
+    const setActualByConf = {}, setCompleteByConf = {};
+    const fullFieldActualByConf = {}, fullFieldCompleteByConf = {};
+    ["AFC", "NFC"].forEach(conf => {
+      const actuals = setCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
+      setActualByConf[conf] = actuals;
+      setCompleteByConf[conf] = setCatsByConf[conf].length > 0 && actuals.length === setCatsByConf[conf].length;
+      const fullActuals = fullFieldCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
+      fullFieldActualByConf[conf] = fullActuals;
+      fullFieldCompleteByConf[conf] = fullFieldCatsByConf[conf].length > 0 && fullActuals.length === fullFieldCatsByConf[conf].length;
+    });
+
+    const rowsHtml = groupCats.map(c => {
+      const pickVal = current.picks[c.key];
+      const actualVal = actual[c.key];
+      const conf = conferenceOf_(c.label);
+      let rowState, pts = 0;
+
+      if (SET_MATCH_WEIGHTS.includes(c.weight)) {
+        const complete = conf && setCompleteByConf[conf];
+        const actualSet = conf ? setActualByConf[conf] : [];
+        if (!pickVal || !complete) rowState = "pending";
+        else if (actualSet.includes(pickVal)) { rowState = "correct"; pts = c.weight; }
+        else rowState = "wrong";
+      } else if (c.weight === DIVISION_WINNER_WEIGHT && conf) {
+        const complete = fullFieldCompleteByConf[conf];
+        if (!pickVal || (!complete && pickVal !== actualVal)) {
+          rowState = "pending";
+        } else if (pickVal === actualVal) {
+          rowState = "correct-division"; pts = c.weight;
+        } else if (fullFieldActualByConf[conf].includes(pickVal)) {
+          rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
+        } else {
+          rowState = "wrong";
+        }
+      } else {
+        rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
+        if (rowState === "correct") pts = c.weight;
+      }
+
+      score += pts || 0;
+      const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>` : "";
+      return `
+        <div class="pick-row">
+          <div class="pick-row__label">${escapeHtml(c.label)}</div>
+          <div class="pick-row__right">
+            <div class="pick-row__value">${escapeHtml(pickVal || "—")}</div>
+            ${ptsBadge}
+            ${pickIcon_(rowState)}
+          </div>
+        </div>`;
+    }).join("");
+    return `<div class="playoff-group-label">${escapeHtml(group)}</div><div class="playoff-card">${rowsHtml}</div>`;
+  }).join("");
+
+  return { mvpHtml: mvpHtml, groupsHtml: groupsHtml, score: score };
+}
+
 export function renderPlayoffPoolSection(slot, data) {
   const picks = data.playoffPicks || [];
   if (!state.playoffMgr && picks.length) state.playoffMgr = picks[0].manager;
+
+  const cats = data.playoffCategories || [];
+  const actual = data.playoffActual || {};
+
+  // Computed once per manager here — feeds both the all-managers score
+  // card and the selected manager's detail view below, so the same
+  // scoring pass never runs twice.
+  const resultsByManager = {};
+  picks.forEach(p => {
+    const hasPicks = !!(cats.length && p.picks && Object.keys(p.picks).length);
+    resultsByManager[p.manager] = hasPicks
+      ? { ...computePlayoffResultsForManager_(p, data, cats, actual), hasPicks: true }
+      : { mvpHtml: "", groupsHtml: "", score: 0, hasPicks: false };
+  });
+
+  const scoreCardHtml = picks.length ? `
+    <div class="playoff-scores-card">
+      ${[...picks].sort((a, b) => resultsByManager[b.manager].score - resultsByManager[a.manager].score).map(p => `
+        <div class="playoff-scores-row ${p.manager === state.playoffMgr ? "is-active" : ""}">
+          <span class="playoff-scores-row__name">${escapeHtml(p.manager)}</span>
+          <span class="playoff-scores-row__pts">${fmt(resultsByManager[p.manager].score)}</span>
+        </div>`).join("")}
+    </div>` : "";
 
   const tabsHtml = picks.map(p =>
     `<button class="pillar-tab ${p.manager === state.playoffMgr ? "is-active" : ""}" data-mgr="${escapeHtml(p.manager)}">${escapeHtml(p.manager)}</button>`
   ).join("");
 
-  const current = picks.find(p => p.manager === state.playoffMgr);
-  const cats = data.playoffCategories || [];
-  const actual = data.playoffActual || {};
-  const hasPicks = !!(current && cats.length && current.picks && Object.keys(current.picks).length);
-
-  let contentHtml, scoreHtml = "";
-  if (!hasPicks) {
-    contentHtml = `<div class="empty-state"><div class="empty-state__title">No picks yet</div><div class="empty-state__body">Once picks are entered in the sheet, they'll show up here.</div></div>`;
-  } else {
-    let score = 0;
-    const mvpPick = current.mvp;
-    const actualMvp = data.actualMvp;
-    const mvpState = !mvpPick || !actualMvp ? "pending" : mvpPick === actualMvp ? "correct" : "wrong";
-    const mvpHtml = `
-      <div class="playoff-group-label">MVP Pick</div>
-      <div class="playoff-card">
-        <div class="pick-row">
-          <div class="pick-row__label">NFL MVP</div>
-          <div class="pick-row__right">
-            <div class="pick-row__value">${escapeHtml(mvpPick || "—")}</div>
-            ${pickIcon_(mvpState)}
-          </div>
-        </div>
-      </div>`;
-
-    const SET_MATCH_WEIGHTS = [1, 1.25, 1.5];
-    const DIVISION_WINNER_WEIGHT = 2;
-    const WILDCARD_TIER_WEIGHT = 1;
-
-    const groupsHtml = GROUP_ORDER.map(group => {
-      const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
-      const setCatsByConf = { AFC: [], NFC: [] };
-      const fullFieldCatsByConf = { AFC: [], NFC: [] };
-      groupCats.forEach(c => {
-        const conf = conferenceOf_(c.label);
-        if (conf) fullFieldCatsByConf[conf].push(c);
-        if (SET_MATCH_WEIGHTS.includes(c.weight) && conf) setCatsByConf[conf].push(c);
-      });
-      const setActualByConf = {}, setCompleteByConf = {};
-      const fullFieldActualByConf = {}, fullFieldCompleteByConf = {};
-      ["AFC", "NFC"].forEach(conf => {
-        const actuals = setCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
-        setActualByConf[conf] = actuals;
-        setCompleteByConf[conf] = setCatsByConf[conf].length > 0 && actuals.length === setCatsByConf[conf].length;
-        const fullActuals = fullFieldCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
-        fullFieldActualByConf[conf] = fullActuals;
-        fullFieldCompleteByConf[conf] = fullFieldCatsByConf[conf].length > 0 && fullActuals.length === fullFieldCatsByConf[conf].length;
-      });
-
-      const rowsHtml = groupCats.map(c => {
-        const pickVal = current.picks[c.key];
-        const actualVal = actual[c.key];
-        const conf = conferenceOf_(c.label);
-        let rowState, pts = 0;
-
-        if (SET_MATCH_WEIGHTS.includes(c.weight)) {
-          const complete = conf && setCompleteByConf[conf];
-          const actualSet = conf ? setActualByConf[conf] : [];
-          if (!pickVal || !complete) rowState = "pending";
-          else if (actualSet.includes(pickVal)) { rowState = "correct"; pts = c.weight; }
-          else rowState = "wrong";
-        } else if (c.weight === DIVISION_WINNER_WEIGHT && conf) {
-          const complete = fullFieldCompleteByConf[conf];
-          if (!pickVal || (!complete && pickVal !== actualVal)) {
-            rowState = "pending";
-          } else if (pickVal === actualVal) {
-            rowState = "correct-division"; pts = c.weight;
-          } else if (fullFieldActualByConf[conf].includes(pickVal)) {
-            rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
-          } else {
-            rowState = "wrong";
-          }
-        } else {
-          rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
-          if (rowState === "correct") pts = c.weight;
-        }
-
-        score += pts || 0;
-        const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>` : "";
-        return `
-          <div class="pick-row">
-            <div class="pick-row__label">${escapeHtml(c.label)}</div>
-            <div class="pick-row__right">
-              <div class="pick-row__value">${escapeHtml(pickVal || "—")}</div>
-              ${ptsBadge}
-              ${pickIcon_(rowState)}
-            </div>
-          </div>`;
-      }).join("");
-      return `<div class="playoff-group-label">${escapeHtml(group)}</div><div class="playoff-card">${rowsHtml}</div>`;
-    }).join("");
-
-    contentHtml = mvpHtml + groupsHtml;
-    scoreHtml = `<b>${fmt(score)}</b> pts so far`;
-  }
+  const selected = resultsByManager[state.playoffMgr];
+  const contentHtml = selected && selected.hasPicks
+    ? selected.mvpHtml + selected.groupsHtml
+    : `<div class="empty-state"><div class="empty-state__title">No picks yet</div><div class="empty-state__body">Once picks are entered in the sheet, they'll show up here.</div></div>`;
 
   slot.innerHTML = `
-    <div class="playoffs-head">
-      <div class="playoffs-head__score">${scoreHtml}</div>
-    </div>
+    ${scoreCardHtml}
     <div class="pillar-tabs" id="playoffManagerTabs">${tabsHtml}</div>
     <div id="playoffContent">${contentHtml}</div>
     <div class="legend">
