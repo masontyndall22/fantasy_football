@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T23:43:03.670Z",
+  "generatedAt": "2026-08-31T00:43:05.301Z",
   "managers": [
     {
       "name": "Ben",
@@ -11229,6 +11229,15 @@
         },
         {
           "position": "WR",
+          "name": "Barion Brown",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 35.16,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "Stefon Diggs",
           "tag": "kept",
           "tagWeek": null,
@@ -11293,9 +11302,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": {
-        "adds": 1,
+        "adds": 2,
         "trades": 0,
-        "total": 1
+        "total": 2
       },
       "starterPoints": {
         "pointsFor": 0,
