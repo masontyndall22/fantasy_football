@@ -670,27 +670,6 @@ table.breakdown-table tr.total-row td:first-child {
 }
 
 /* ---------- Playoffs ---------- */
-.playoff-scores-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  background: var(--card);
-  box-shadow: 0 0 0 1px var(--edge);
-  margin-bottom: 14px;
-  overflow: hidden;
-}
-.playoff-scores-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  border-top: 1px solid var(--hairline-soft);
-}
-.playoff-scores-row:first-child { border-top: none; }
-.playoff-scores-row.is-active { background: var(--accent-dark); }
-.playoff-scores-row__name { font-size: 13px; font-weight: 500; color: var(--text); }
-.playoff-scores-row__pts { font-size: 15px; font-weight: 600; color: var(--accent-light); }
-
 .playoff-group-label {
   font-size: 11px;
   letter-spacing: 0.06em;

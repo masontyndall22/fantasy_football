@@ -141,12 +141,12 @@ export function renderPlayoffPoolSection(slot, data) {
   });
 
   const scoreCardHtml = picks.length ? `
-    <div class="playoff-scores-card">
-      ${[...picks].sort((a, b) => resultsByManager[b.manager].score - resultsByManager[a.manager].score).map(p => `
-        <div class="playoff-scores-row ${p.manager === state.playoffMgr ? "is-active" : ""}">
-          <span class="playoff-scores-row__name">${escapeHtml(p.manager)}</span>
-          <span class="playoff-scores-row__pts">${fmt(resultsByManager[p.manager].score)}</span>
-        </div>`).join("")}
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Manager</th><th>Pts</th></tr></thead>
+        <tbody>${[...picks].sort((a, b) => resultsByManager[b.manager].score - resultsByManager[a.manager].score).map(p => `
+          <tr><td>${escapeHtml(p.manager)}</td><td class="pts">${fmt(resultsByManager[p.manager].score)}</td></tr>`).join("")}</tbody>
+      </table>
     </div>` : "";
 
   const tabsHtml = picks.map(p =>
