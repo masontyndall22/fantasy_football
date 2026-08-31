@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T01:43:04.180Z",
+  "generatedAt": "2026-08-31T02:43:02.087Z",
   "managers": [
     {
       "name": "Ben",
@@ -10707,7 +10707,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 127.57,
+          "projectedPoints": 127.61,
           "isStarter": true
         }
       ],
@@ -10725,7 +10725,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 125.37
+        "pointsProjected": 125.41
       }
     },
     {
