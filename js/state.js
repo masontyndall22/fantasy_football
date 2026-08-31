@@ -36,9 +36,10 @@ export const state = {
   screen: "home",
   pillar: "fanduel",
   subCategory: "fdWins",
-  fdCategoryIndex: 0,
-  fdCompareFlipped: false,
   scoringFlipped: false,
+  fanduelCardFlipped: {}, // per-category-key flip state, e.g. { fdWins: true }
+  sleeperFlipped: false,
+  pickemFlipped: false,
   playoffMgr: null,
   summaryOpen: false,
   flippedBios: {},

@@ -1,4 +1,4 @@
-const CACHE_NAME = "the-league-shell-v7";
+const CACHE_NAME = "the-league-shell-v9";
 const APP_SHELL = [
   "./",
   "./index.html",

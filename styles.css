@@ -568,13 +568,15 @@ main { padding: 4px 20px 24px; }
 
 /* ---------- Tabs: pillar (segmented underline) + sub (pill) ---------- */
 .pillar-tabs {
-  display: inline-flex;
+  display: flex;
   overflow: hidden;
   border: 1px solid rgba(233, 233, 237, 0.16);
   border-radius: 8px;
   margin-bottom: 8px;
 }
 .pillar-tab {
+  flex: 1;
+  text-align: center;
   padding: 8px 13px;
   font-family: var(--font);
   font-size: 12px;
@@ -671,8 +673,8 @@ table.breakdown-table tr.total-row td:first-child {
 .playoffs-head {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  margin: 16px 0 10px;
+  justify-content: flex-end;
+  margin: 0 0 10px;
 }
 .playoffs-head__score { font-size: 13px; color: var(--text-muted); }
 .playoffs-head__score b { font-weight: 600; font-size: 17px; color: var(--accent-light); }
@@ -1265,9 +1267,11 @@ table.breakdown-table tr.total-row td:first-child {
 .scoring-safe-legend { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 11px; color: var(--text-muted); }
 .scoring-safe-legend__swatch { width: 14px; height: 0; border-top: 1px dashed rgba(233, 233, 237, 0.4); }
 
-.fd-dots { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; }
-.fd-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text); opacity: 0.25; }
-.fd-dot.is-active { width: 16px; height: 6px; border-radius: 3px; background: var(--accent); opacity: 1; }
+.fanduel-flip-card { margin-bottom: 12px; }
+.fanduel-flip-card:last-child { margin-bottom: 0; }
+
+.is-win { color: #86d99c; font-weight: 600; }
+.is-loss { color: #f38ba8; }
 
 /* ---------- Bottom nav ---------- */
 .bottom-nav {
