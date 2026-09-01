@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T14:43:09.163Z",
+  "generatedAt": "2026-09-01T15:43:27.123Z",
   "managers": [
     {
       "name": "Ben",
@@ -10720,7 +10720,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 66.36,
+          "projectedPoints": 65.79,
           "isStarter": true
         },
         {
@@ -10801,7 +10801,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 138.1,
+          "projectedPoints": 137.84,
           "isStarter": true
         },
         {
@@ -10828,7 +10828,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 126.6
+        "pointsProjected": 126.34
       }
     },
     {
@@ -11017,7 +11017,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 172.1,
+          "projectedPoints": 172.2,
           "isStarter": true
         },
         {
@@ -11318,7 +11318,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 188.66,
+          "projectedPoints": 188.5,
           "isStarter": true
         },
         {
@@ -11381,7 +11381,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 102.87,
+          "projectedPoints": 102.68,
           "isStarter": true
         },
         {
@@ -11412,7 +11412,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 129.98
+        "pointsProjected": 129.79
       }
     },
     {
@@ -11565,7 +11565,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 254.57,
+          "projectedPoints": 254.93,
           "isStarter": true
         },
         {
@@ -11673,7 +11673,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 0,
-          "projectedPoints": 112.88,
+          "projectedPoints": 113.01,
           "isStarter": true
         },
         {
@@ -11704,7 +11704,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 123.1
+        "pointsProjected": 123.59
       }
     }
   ],
