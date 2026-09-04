@@ -70,6 +70,29 @@ function renderDots_(orderedManagers, activeManager) {
   ).join("");
 }
 
+function renderDotsAndArrows_(orderedManagers, currentManager) {
+  // If there's only 1 or 0 items, don't show navigation at all
+  if (orderedManagers.length <= 1) return '';
+
+  const currentIndex = orderedManagers.indexOf(currentManager);
+  
+  // Disable buttons if at the boundaries (optional, change to loop if preferred)
+  const isLeftDisabled = currentIndex === 0 ? 'disabled' : '';
+  const isRightDisabled = currentIndex === orderedManagers.length - 1 ? 'disabled' : '';
+
+  const dotsHtml = orderedManagers.map(m =>
+    `<span class="year-review-dot ${m === currentManager ? "is-active" : ""}"></span>`
+  ).join("");
+
+  return `
+    <div class="year-review-nav-container">
+      <button class="nav-arrow left" ${isLeftDisabled} data-dir="-1">←</button>
+      <div class="year-review-dots">${dotsHtml}</div>
+      <button class="nav-arrow right" ${isRightDisabled} data-dir="1">→</button>
+    </div>
+  `;
+}
+
 // The one shared flip-card component: dots + the drafted/final flip card +
 // legend, plus all its flip-tap and swipe-to-change-manager wiring.
 //
@@ -98,7 +121,6 @@ export function renderRosterFlipCard({
   const finalHtml = review ? renderFinalRows(review) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
 
   renderTarget.innerHTML = `
-    <div class="year-review-dots">${renderDots_(orderedManagers, currentManager)}</div>
     <div class="roster-flip-wrapper">
       <div class="roster-flip-inner ${isFlipped ? "is-flipped" : ""}" id="rosterFlipInner">
         <div class="roster-face" id="rosterFrontFace">
@@ -113,7 +135,7 @@ export function renderRosterFlipCard({
         </div>
       </div>
     </div>
-    <div class="year-review-dots">${renderDots_(orderedManagers, currentManager)}</div>
+    <div class="year-review-dots">${renderDotsAndArrows_(orderedManagers, currentManager)}</div>
     <div class="roster-legend">
       <span class="legend-dot" style="background:#f38ba8"></span><span>Dropped</span>
       <span class="legend-dot" style="background:#7dd3fc"></span><span>Trade</span>
