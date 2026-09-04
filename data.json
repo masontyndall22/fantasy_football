@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T22:43:02.792Z",
+  "generatedAt": "2026-09-04T23:43:01.702Z",
   "managers": [
     {
       "name": "Ben",
@@ -10810,7 +10810,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 127.57,
+          "projectedPoints": 126.68,
           "isStarter": true
         }
       ],
@@ -10828,7 +10828,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 129.1
+        "pointsProjected": 128.21
       }
     },
     {
@@ -11089,7 +11089,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 133.78,
+          "projectedPoints": 132.84,
           "isStarter": true
         }
       ],
@@ -11111,7 +11111,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 130.48
+        "pointsProjected": 129.54
       }
     },
     {
@@ -11390,7 +11390,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 124.47,
+          "projectedPoints": 123.45,
           "isStarter": true
         }
       ],
@@ -11412,7 +11412,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 130.96
+        "pointsProjected": 129.94
       }
     },
     {
@@ -11682,7 +11682,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 128.74,
+          "projectedPoints": 128.01,
           "isStarter": true
         }
       ],
@@ -11704,7 +11704,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 124.09
+        "pointsProjected": 123.36
       }
     }
   ],
