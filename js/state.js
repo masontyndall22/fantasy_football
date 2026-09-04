@@ -40,6 +40,8 @@ export const state = {
   fanduelCardFlipped: {}, // per-category-key flip state, e.g. { fdWins: true }
   sleeperFlipped: false,
   pickemFlipped: false,
+  scoringRosterManager: null,
+  scoringRosterFlipped: false,
   playoffMgr: null,
   summaryOpen: false,
   flippedBios: {},
