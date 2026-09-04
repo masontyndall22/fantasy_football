@@ -98,6 +98,7 @@ export function renderRosterFlipCard({
   const finalHtml = review ? renderFinalRows(review) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
 
   renderTarget.innerHTML = `
+    <div class="year-review-dots">${renderDots_(orderedManagers, currentManager)}</div>
     <div class="roster-flip-wrapper">
       <div class="roster-flip-inner ${isFlipped ? "is-flipped" : ""}" id="rosterFlipInner">
         <div class="roster-face" id="rosterFrontFace">
@@ -134,19 +135,36 @@ export function renderRosterFlipCard({
   if (front) front.onclick = toggle;
   if (back) back.onclick = toggle;
 
-  // Swipe to switch managers — clamped, no wraparound. touchmove
-  // explicitly blocks native scroll for the gesture's duration, and the
-  // swap is deferred to the next frame rather than done synchronously
-  // inside touchend — both fixes for real bugs hit earlier (an unwanted
-  // scroll-to-top caused by rebuilding the DOM out from under an
-  // in-progress touch).
-  let touchStartX = null;
-  zone.ontouchstart = (e) => { touchStartX = e.touches[0].clientX; };
-  zone.ontouchmove = (e) => { if (touchStartX != null) e.preventDefault(); };
+  // Swipe to switch managers — clamped, no wraparound. Direction is
+  // determined early in the gesture (first ~10px of movement) so a
+  // horizontal swipe can block the browser's default touch handling
+  // (needed so it doesn't fight with our own manager-switch logic)
+  // while a vertical scroll is left completely alone — this zone can be
+  // the entire Year Review overlay, which still needs to scroll normally.
+  // (A blanket preventDefault on every touchmove, regardless of
+  // direction, was an actual regression here: it blocked vertical
+  // scrolling for the whole overlay, not just horizontal swipes.)
+  let touchStartX = null, touchStartY = null, swipeDirection = null;
+  zone.ontouchstart = (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    swipeDirection = null;
+  };
+  zone.ontouchmove = (e) => {
+    if (touchStartX == null) return;
+    const dx = e.touches[0].clientX - touchStartX;
+    const dy = e.touches[0].clientY - touchStartY;
+    if (swipeDirection === null && (Math.abs(dx) > 10 || Math.abs(dy) > 10)) {
+      swipeDirection = Math.abs(dx) > Math.abs(dy) ? "horizontal" : "vertical";
+    }
+    if (swipeDirection === "horizontal") e.preventDefault();
+  };
   zone.ontouchend = (e) => {
     if (touchStartX == null) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
     touchStartX = null;
+    touchStartY = null;
+    swipeDirection = null;
     if (Math.abs(dx) < 40) return;
     const idx = orderedManagers.indexOf(currentManager);
     const nextIdx = Math.max(0, Math.min(orderedManagers.length - 1, idx + (dx < 0 ? 1 : -1)));

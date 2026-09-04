@@ -15,7 +15,11 @@ function seasonStartYear_(label) {
 
 function currentSeasonFromData_(data) {
   const historicalYears = new Set((data.historicalSeasons || []).map(s => seasonStartYear_(s.season)));
-  const seasons = [...new Set((data.yearReviews || []).map(yr => yr.season))];
+  
+  // Extract and sort seasons in descending order based on their start year
+  const seasons = [...new Set((data.yearReviews || []).map(yr => yr.season))]
+    .sort((a, b) => seasonStartYear_(b) - seasonStartYear_(a));
+
   return seasons.find(s => !historicalYears.has(seasonStartYear_(s))) || null;
 }
 
