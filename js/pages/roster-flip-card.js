@@ -98,7 +98,6 @@ export function renderRosterFlipCard({
   const finalHtml = review ? renderFinalRows(review) : `<div class="empty-state__body">No data for this manager/season yet.</div>`;
 
   renderTarget.innerHTML = `
-    <div class="year-review-dots">${renderDots_(orderedManagers, currentManager)}</div>
     <div class="roster-flip-wrapper">
       <div class="roster-flip-inner ${isFlipped ? "is-flipped" : ""}" id="rosterFlipInner">
         <div class="roster-face" id="rosterFrontFace">
@@ -113,6 +112,7 @@ export function renderRosterFlipCard({
         </div>
       </div>
     </div>
+    <div class="year-review-dots">${renderDots_(orderedManagers, currentManager)}</div>
     <div class="roster-legend">
       <span class="legend-dot" style="background:#f38ba8"></span><span>Dropped</span>
       <span class="legend-dot" style="background:#7dd3fc"></span><span>Trade</span>
