@@ -989,7 +989,7 @@ table.breakdown-table tr.total-row td:first-child {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin: 14px 0 4px;
+  margin: 14px 0 14px;
 }
 .year-review-dot {
   width: 6px; height: 6px;
