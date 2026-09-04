@@ -354,3 +354,45 @@ function renderSleeperSection_(slot, managers, data) {
     () => { state.sleeperFlipped = !state.sleeperFlipped; });
   renderCurrentSeasonRosterCard(managers, data);
 }
+
+// ---------------- Pick'em: single flip card ----------------
+function renderPickemSection_(slot, managers, data) {
+  const pickemPillar = PILLARS.find(p => p.key === "pickem");
+  const cat = pickemPillar.categories[0];
+  const rows = rankCategory(managers, cat.valueFn, cat.higherBetter);
+  const frontHtml = `
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Manager</th><th>${escapeHtml(cat.label)}</th><th>Pts</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.value)}</td><td class="pts">${fmt(r.points)}</td></tr>`).join("")}</tbody>
+      </table>
+    </div>
+    <div class="scoring-caption">Tap to see weekly breakdown</div>`;
+
+  const weekly = data.pickemWeekly || {};
+  const weekCount = weekly[managers[0].name] ? weekly[managers[0].name].length : 0;
+  const backRowsHtml = Array.from({ length: weekCount }, (_, i) => {
+    const values = managers.map(m => (weekly[m.name] && weekly[m.name][i]) || 0);
+    const max = Math.max(...values);
+    const cells = managers.map((m, idx) => {
+      const v = values[idx];
+      const cls = v === max && max > 0 ? "pts" : "";
+      return `<td class="${cls}">${fmt(v)}</td>`;
+    }).join("");
+    return `<tr><td>Wk ${i + 1}</td>${cells}</tr>`;
+  }).join("");
+
+  const backHtml = `
+    <div class="table-card">
+      <table class="breakdown-table">
+        <thead><tr><th>Week</th>${managers.map(m => `<th>${escapeHtml(m.name)}</th>`).join("")}</tr></thead>
+        <tbody>${backRowsHtml || `<tr><td colspan="${managers.length + 1}">No weeks played yet</td></tr>`}</tbody>
+      </table>
+    </div>
+    <div class="scoring-caption">Tap to see leaderboard</div>`;
+
+  slot.innerHTML = `<div id="pickemFlipCard"></div>`;
+  renderMeasuredFlipCard_("pickemFlipCard", frontHtml, backHtml,
+    () => state.pickemFlipped,
+    () => { state.pickemFlipped = !state.pickemFlipped; });
+}
