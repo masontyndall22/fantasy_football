@@ -1298,3 +1298,64 @@ table.breakdown-table tr.total-row td:first-child {
   .app-header__row, .last-updated { max-width: 560px; margin-left: auto; margin-right: auto; }
   .bottom-nav { max-width: 560px; margin: 0 auto; left: 0; right: 0; }
 }
+
+/* ---------- Sidebar nav (desktop only) ---------- */
+/* Hidden on phone/PWA — same markup/data-screen attrs as .bottom-nav, so
+   nav.js's existing `$$(".nav-btn")` wiring picks these buttons up for
+   free with zero JS changes. Purely additive; nothing above this changes. */
+.sidebar-nav { display: none; }
+
+@media (min-width: 900px) {
+  :root { --sidebar-w: 220px; }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: var(--sidebar-w);
+    padding: 20px 12px;
+    background: #14151f;
+    border-right: 1px solid var(--hairline);
+    z-index: 25;
+  }
+  .sidebar-nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 8px 20px;
+  }
+  .sidebar-nav__mark { height: 32px; width: 32px; object-fit: contain; flex: none; }
+  .sidebar-nav__title {
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+    color: var(--text);
+  }
+  .sidebar-nav .nav-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .sidebar-nav .nav-btn svg { width: 18px; height: 18px; }
+  .sidebar-nav .nav-btn:hover { background: rgba(233, 233, 237, 0.06); }
+  .sidebar-nav .nav-btn.is-active { color: var(--accent-light); background: var(--accent-dark); }
+
+  /* Bottom nav is a mobile pattern — swap it out for the sidebar entirely. */
+  .bottom-nav { display: none; }
+  body { padding-bottom: 0; }
+
+  /* Shift the existing (untouched) mobile-width column over to make room
+     for the sidebar, and give it a little more breathing room. */
+  .app-header__row, .last-updated, main {
+    max-width: 640px;
+    margin-left: calc(var(--sidebar-w) + 40px);
+    margin-right: auto;
+  }
+  .app-header { padding-left: 20px; }
+}
