@@ -1350,12 +1350,55 @@ table.breakdown-table tr.total-row td:first-child {
   .bottom-nav { display: none; }
   body { padding-bottom: 0; }
 
-  /* Shift the existing (untouched) mobile-width column over to make room
-     for the sidebar, and give it a little more breathing room. */
+  /* Shift the existing column over to clear the sidebar, and let it use
+     far more of a wide screen instead of just floating in the middle. */
   .app-header__row, .last-updated, main {
-    max-width: 640px;
-    margin-left: calc(var(--sidebar-w) + 40px);
-    margin-right: auto;
+    max-width: 1100px;
+    margin-left: calc(var(--sidebar-w) + 48px);
+    margin-right: 48px;
   }
   .app-header { padding-left: 20px; }
+
+  /* Turn a few single-column stacks into multi-column grids now that
+     there's room — same cards/markup from each page module, just laid
+     out side by side instead of one long column. */
+  .weekly-update-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  #bioList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  #rivalsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+  #rivalsList .legend { grid-column: 1 / -1; }
+
+  .records-grid { grid-template-columns: repeat(4, 1fr); }
+
+  /* Scoring screen: put the leaderboard and the category breakdown side
+     by side instead of one long stacked column. IDs (not nth-of-type)
+     so this stays correct regardless of what scoring.js changes next. */
+  #screen-scoring {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 0 32px;
+    align-items: start;
+  }
+  #weeksLeftSlot, #scoringLeaderboardLabel, #scoringLeaderboard {
+    grid-column: 1;
+  }
+  #scoringCategoryLabel, #pillarTabs, #categorySlot {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .app-header__row, .last-updated, main { max-width: 1300px; }
 }
