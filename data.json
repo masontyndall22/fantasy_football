@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T06:43:03.074Z",
+  "generatedAt": "2026-09-08T07:43:03.536Z",
   "managers": [
     {
       "name": "Ben",
@@ -11269,6 +11269,15 @@
         },
         {
           "position": "RB",
+          "name": "Kaelon Black",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 34.91,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
@@ -11328,15 +11337,6 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 140.52,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Barion Brown",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 0,
-          "projectedPoints": 35.7,
           "isStarter": true
         },
         {
@@ -11405,9 +11405,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": {
-        "adds": 2,
+        "adds": 3,
         "trades": 0,
-        "total": 2
+        "total": 3
       },
       "starterPoints": {
         "pointsFor": 0,
