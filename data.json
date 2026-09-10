@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T18:05:56.934Z",
+  "generatedAt": "2026-09-10T18:43:01.032Z",
   "managers": [
     {
       "name": "Ben",
@@ -10875,7 +10875,7 @@
           "position": "TE",
           "name": "Juwan Johnson",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 168.54,
           "isStarter": true
@@ -10886,7 +10886,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 137.15,
+          "projectedPoints": 137.18,
           "isStarter": true
         },
         {
@@ -10909,7 +10909,11 @@
       },
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
@@ -11038,7 +11042,7 @@
           "name": "Adam Randall",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11073,7 +11077,7 @@
           "position": "RB",
           "name": "Kaleb Johnson",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 17.01,
           "isStarter": true
@@ -11188,7 +11192,11 @@
       },
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
@@ -11352,7 +11360,7 @@
           "position": "RB",
           "name": "Kaelon Black",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 33.65,
           "isStarter": true
@@ -11379,7 +11387,7 @@
           "position": "RB",
           "name": "Rachaad White",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 170.63,
           "isStarter": true
@@ -11485,7 +11493,11 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 3,
+        "trades": 0,
+        "total": 3
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
@@ -11748,7 +11760,7 @@
           "position": "DEF",
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 115.01,
           "isStarter": true
@@ -11773,7 +11785,11 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
