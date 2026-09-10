@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-10T00:43:01.819Z",
+  "generatedAt": "2026-09-10T00:49:48.044Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 21.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -11,18 +11,20 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
-      "mvpBonus": 1,
-      "overallLeagueRank": 3,
+      "playoffBracketScore": 8.5,
+      "mvpBonus": 0,
+      "overallLeagueRank": 1,
       "seasonGrade": {
-        "score": 50,
-        "letter": "F",
-        "reasons": []
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 19,
+      "totalStandingsPoints": 18.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -30,7 +32,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
+      "playoffBracketScore": 5,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
       "seasonGrade": {
@@ -41,7 +43,7 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 21,
+      "totalStandingsPoints": 20,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -51,10 +53,10 @@
       "fdSeasonTotal": 0,
       "playoffBracketScore": 6,
       "mvpBonus": 0,
-      "overallLeagueRank": 1,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 65,
+        "letter": "D",
         "reasons": [
           "Spent big on waivers and it paid off"
         ]
@@ -62,7 +64,7 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 21,
+      "totalStandingsPoints": 20,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -72,13 +74,11 @@
       "fdSeasonTotal": 0,
       "playoffBracketScore": 6,
       "mvpBonus": 0,
-      "overallLeagueRank": 1,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "score": 50,
+        "letter": "F",
+        "reasons": []
       }
     }
   ],
@@ -431,17 +431,73 @@
   "playoffPicks": [
     {
       "manager": "Ben",
-      "mvp": "Tua",
-      "picks": {}
+      "mvp": "Josh Allen",
+      "picks": {
+        "afcEast": "Bills",
+        "afcNorth": "Ravens",
+        "afcSouth": "Texans",
+        "afcWest": "Chargers",
+        "nfcEast": "Cowboys",
+        "nfcNorth": "Lions",
+        "nfcSouth": "Bucs",
+        "nfcWest": "Rams",
+        "afcWc1": "Chiefs",
+        "afcWc2": "Bengals",
+        "afcWc3": "Jags",
+        "nfcWc1": "Seahawks",
+        "nfcWc2": "Eagles",
+        "nfcWc3": "Niners",
+        "AFC WC Game 1": "Ravens",
+        "AFC WC Game 2": "Bills",
+        "AFC WC Game 3": "Bengals",
+        "NFC WC Game 1": "Chiefs",
+        "NFC WC Game 2": "Rams",
+        "NFC WC Game 3": "Lions",
+        "AFC Divisional Game 1": "Seahawks",
+        "AFC Divisional Game 2": "Cowboys",
+        "NFC Divisional Game 1": "Bengals",
+        "NFC Divisional Game 2": "Bills",
+        "afcChampionship": "Bills",
+        "nfcChampionship": "Lions",
+        "superBowlWinner": "Rams"
+      }
     },
     {
       "manager": "Caleb",
-      "mvp": "",
-      "picks": {}
+      "mvp": "Josh Allen",
+      "picks": {
+        "afcEast": "Bills",
+        "afcNorth": "Ravens",
+        "afcSouth": "Texans",
+        "afcWest": "Chargers",
+        "nfcEast": "Eagles",
+        "nfcNorth": "Lions",
+        "nfcSouth": "Saints",
+        "nfcWest": "Seahawks",
+        "afcWc1": "Chiefs",
+        "afcWc2": "Bengals",
+        "afcWc3": "Patriots",
+        "nfcWc1": "Rams",
+        "nfcWc2": "Giants",
+        "nfcWc3": "Bears",
+        "AFC WC Game 1": "Ravens",
+        "AFC WC Game 2": "Bills",
+        "AFC WC Game 3": "Texans",
+        "NFC WC Game 1": "Chiefs",
+        "NFC WC Game 2": "Rams",
+        "NFC WC Game 3": "Lions",
+        "AFC Divisional Game 1": "Seahawks",
+        "AFC Divisional Game 2": "Eagles",
+        "NFC Divisional Game 1": "Ravens",
+        "NFC Divisional Game 2": "Bills",
+        "afcChampionship": "Rams",
+        "nfcChampionship": "Seahwaks",
+        "superBowlWinner": "Rams"
+      }
     },
     {
       "manager": "Kyle",
-      "mvp": "",
+      "mvp": "Dak Prescott",
       "picks": {
         "afcEast": "Bills",
         "afcNorth": "Ravens",
@@ -463,7 +519,13 @@
         "NFC WC Game 1": "Chiefs",
         "NFC WC Game 2": "Rams",
         "NFC WC Game 3": "Lions",
-        "AFC Divisional Game 1": "Seahawks"
+        "AFC Divisional Game 1": "Seahawks",
+        "AFC Divisional Game 2": "Bears",
+        "NFC Divisional Game 1": "Broncos",
+        "NFC Divisional Game 2": "Bills",
+        "afcChampionship": "Rams",
+        "nfcChampionship": "Lions",
+        "superBowlWinner": "Rams"
       }
     },
     {
@@ -10838,13 +10900,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 40,
-        "letter": "F",
+        "score": 100,
+        "letter": "A+",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
@@ -11418,8 +11480,8 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 60,
+        "letter": "D-",
         "reasons": [
           "Drafted well, barely touched waivers"
         ]
@@ -11710,13 +11772,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 40,
+        "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Passive on waivers while the team struggled"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": {
         "adds": 1,
