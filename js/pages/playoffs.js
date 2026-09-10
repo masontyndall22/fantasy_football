@@ -7,6 +7,12 @@ import { teamLogoImg } from "../team-logos.js";
 // not a standalone nav tab anymore — merged in per your call. Kept in its own
 // file purely for organization; nothing else imports this.
 
+// Registry of each round's flip-card id, so remeasurePlayoffFlipCards() (see
+// below) knows what to re-measure. Reset at the top of every full section
+// render — stale ids from a previous manager-tab render are harmless but
+// pointless to keep.
+let activeGroupFlipIds = [];
+
 // Not a flip card — a single plain view with manager tabs, matching what
 // the old standalone tab did (now the only place this view lives).
 function conferenceOf_(label) {
@@ -186,7 +192,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
   // Per-group front-face rows (this manager only) AND the shared back-face
   // compare grid (every manager) — built together since both need the same
   // groupCats/completeness pass for this round.
-  const groupsHtml = GROUP_ORDER.map(group => {
+  const groupsHtml = GROUP_ORDER.map((group, groupIdx) => {
     const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
     const completeness = computeGroupCompleteness_(groupCats, actual);
 
@@ -211,6 +217,8 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
 
     const isFlipped = !!state.playoffFlipped[group];
     const backHtml = renderCompareGridHtml_(groupCats, data.playoffPicks || [], actual);
+    const flipId = `playoffFlip-${groupIdx}`;
+    if (!activeGroupFlipIds.includes(flipId)) activeGroupFlipIds.push(flipId);
 
     return `
       <div class="playoff-group-head">
@@ -221,9 +229,9 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
         </button>
       </div>
       <div class="playoff-flip-wrapper">
-        <div class="playoff-flip-inner ${isFlipped ? "is-flipped" : ""}">
-          <div class="playoff-card playoff-card--front">${rowsHtml}</div>
-          <div class="playoff-card playoff-card--back">${backHtml}</div>
+        <div class="playoff-flip-inner ${isFlipped ? "is-flipped" : ""}" id="${flipId}-inner">
+          <div class="playoff-card playoff-card--front" id="${flipId}-front">${rowsHtml}</div>
+          <div class="playoff-card playoff-card--back" id="${flipId}-back">${backHtml}</div>
         </div>
       </div>`;
   }).join("");
@@ -232,6 +240,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
 }
 
 export function renderPlayoffPoolSection(slot, data) {
+  activeGroupFlipIds = []; // fresh registry each render — see remeasurePlayoffFlipCards below
   const picks = data.playoffPicks || [];
   if (!state.playoffMgr && picks.length) state.playoffMgr = picks[0].manager;
 
@@ -285,15 +294,54 @@ export function renderPlayoffPoolSection(slot, data) {
     });
   });
 
-  // Toggle the flip class directly on click (same pattern as the roster
-  // flip card) rather than re-rendering, so the card actually animates
-  // instead of snapping straight to its new face.
+  // Each round's flip card starts sized to whichever face is currently
+  // active — needed the first time it renders, and any time a manager-tab
+  // click causes a full re-render of this section.
+  activeGroupFlipIds.forEach(id => {
+    const inner = $(`#${id}-inner`, slot);
+    const front = $(`#${id}-front`, slot);
+    const back = $(`#${id}-back`, slot);
+    if (!inner || !front || !back) return;
+    const activeEl = inner.classList.contains("is-flipped") ? back : front;
+    inner.style.height = activeEl.offsetHeight + "px";
+  });
+
+  // Toggle the flip class and re-measure to the newly active face's real
+  // height at the same time, so the height transitions together with the
+  // rotation instead of the card either staying at the old face's height
+  // or (with grid-stacking) always matching whichever face is taller.
   $$(".compare-toggle-btn", slot).forEach(btn => {
     btn.addEventListener("click", () => {
       const group = btn.dataset.group;
       state.playoffFlipped[group] = !state.playoffFlipped[group];
-      const inner = btn.closest(".playoff-group-head").nextElementSibling?.querySelector(".playoff-flip-inner");
-      if (inner) inner.classList.toggle("is-flipped");
+      const wrapper = btn.closest(".playoff-group-head")?.nextElementSibling;
+      const inner = wrapper?.querySelector(".playoff-flip-inner");
+      if (!inner) return;
+      const nowFlipped = inner.classList.toggle("is-flipped");
+      const front = inner.querySelector(".playoff-card--front");
+      const back = inner.querySelector(".playoff-card--back");
+      const activeEl = nowFlipped ? back : front;
+      if (activeEl) inner.style.height = activeEl.offsetHeight + "px";
     });
+  });
+}
+
+// Re-measures every currently-registered round's flip card against its
+// active face. Needed because offsetHeight reports 0 while the Scoring
+// tab is display:none — mirrors remeasureScoringFlipCards() in scoring.js
+// for the same reason (this section can, in principle, get (re-)rendered
+// by a data refresh while the user is on a different tab).
+export function remeasurePlayoffFlipCards() {
+  activeGroupFlipIds.forEach(id => {
+    const inner = $(`#${id}-inner`);
+    if (!inner) return;
+    const front = $(`#${id}-front`), back = $(`#${id}-back`);
+    if (!front || !back) return;
+    const activeEl = inner.classList.contains("is-flipped") ? back : front;
+    const prevTransition = inner.style.transition;
+    inner.style.transition = "none";
+    inner.style.height = activeEl.offsetHeight + "px";
+    inner.offsetHeight; // force a reflow so the "none" transition actually takes effect before we restore it
+    inner.style.transition = prevTransition;
   });
 }
