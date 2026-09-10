@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:43:02.618Z",
+  "generatedAt": "2026-09-10T17:55:25.929Z",
   "managers": [
     {
       "name": "Ben",
@@ -368,6 +368,12 @@
       "group": "Wild Card Round"
     },
     {
+      "key": "AFC WC Game 4",
+      "label": "AFC WC Game 4",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
       "key": "NFC WC Game 1",
       "label": "NFC WC Game 1",
       "weight": 1.25,
@@ -382,6 +388,12 @@
     {
       "key": "NFC WC Game 3",
       "label": "NFC WC Game 3",
+      "weight": 1.25,
+      "group": "Wild Card Round"
+    },
+    {
+      "key": "NFC WC Game 4",
+      "label": "NFC WC Game 4",
       "weight": 1.25,
       "group": "Wild Card Round"
     },
@@ -413,25 +425,13 @@
       "key": "afcChampionship",
       "label": "AFC Championship",
       "weight": 1.75,
-      "group": "Conference Championship"
-    },
-    {
-      "key": "nfcChampionship",
-      "label": "NFC Championship",
-      "weight": 1.75,
-      "group": "Conference Championship"
-    },
-    {
-      "key": "superBowlWinner",
-      "label": "Super Bowl Winner",
-      "weight": 2,
       "group": "Super Bowl"
     }
   ],
   "playoffPicks": [
     {
       "manager": "Ben",
-      "mvp": "Rams",
+      "mvp": "Josh Allen",
       "picks": {
         "afcEast": "Bills",
         "afcNorth": "Ravens",
@@ -459,12 +459,14 @@
         "AFC Divisional Game 2": "Bills",
         "NFC Divisional Game 1": "Cowboys",
         "NFC Divisional Game 2": "Rams",
-        "afcChampionship": "Bills"
+        "afcChampionship": "Bills",
+        "nfcChampionship": "Rams",
+        "superBowlWinner": "Rams"
       }
     },
     {
       "manager": "Caleb",
-      "mvp": "Rams",
+      "mvp": "Josh Allen",
       "picks": {
         "afcEast": "Bills",
         "afcNorth": "Ravens",
@@ -492,12 +494,14 @@
         "AFC Divisional Game 2": "Bills",
         "NFC Divisional Game 1": "Eagles",
         "NFC Divisional Game 2": "Rams",
-        "afcChampionship": "Biils"
+        "afcChampionship": "Biils",
+        "nfcChampionship": "Rams",
+        "superBowlWinner": "Rams"
       }
     },
     {
       "manager": "Kyle",
-      "mvp": "Rams",
+      "mvp": "Dak Prescott",
       "picks": {
         "afcEast": "Bills",
         "afcNorth": "Ravens",
@@ -525,12 +529,14 @@
         "AFC Divisional Game 2": "Bills",
         "NFC Divisional Game 1": "Bears",
         "NFC Divisional Game 2": "Rams",
-        "afcChampionship": "Broncos"
+        "afcChampionship": "Broncos",
+        "nfcChampionship": "Rams",
+        "superBowlWinner": "Rams"
       }
     },
     {
       "manager": "Mason",
-      "mvp": "Rams",
+      "mvp": "Josh Allen",
       "picks": {
         "afcEast": "Bills",
         "afcNorth": "Ravens",
@@ -558,7 +564,9 @@
         "AFC Divisional Game 2": "Bills",
         "NFC Divisional Game 1": "Bears",
         "NFC Divisional Game 2": "Rams",
-        "afcChampionship": "Bills"
+        "afcChampionship": "Bills",
+        "nfcChampionship": "Rams",
+        "superBowlWinner": "Rams"
       }
     }
   ],
