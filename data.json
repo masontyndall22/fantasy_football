@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T22:43:00.269Z",
+  "generatedAt": "2026-09-10T23:43:04.398Z",
   "managers": [
     {
       "name": "Ben",
@@ -11200,7 +11200,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 131.72
+        "pointsProjected": 131.72000000000003
       }
     },
     {
@@ -11501,7 +11501,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 125.51
+        "pointsProjected": 125.50999999999999
       }
     },
     {
@@ -11793,7 +11793,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 119.7
+        "pointsProjected": 119.70000000000002
       }
     }
   ],
