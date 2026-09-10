@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T06:43:06.524Z",
+  "generatedAt": "2026-09-10T07:43:03.282Z",
   "managers": [
     {
       "name": "Ben",
@@ -10852,6 +10852,15 @@
           "isStarter": true
         },
         {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 168.54,
+          "isStarter": true
+        },
+        {
           "position": "DEF",
           "name": "Philadelphia Eagles",
           "tag": "kept",
@@ -10880,7 +10889,11 @@
       },
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
