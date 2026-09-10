@@ -123,68 +123,6 @@ function compareCellClass_(rowState) {
   return "is-pending";
 }
 
-// ---------------- Wild Card Round: the #1 seed's bye ----------------
-// With 7 seeds per conference (4 division winners + 3 wild cards), the #1
-// seed skips the Wild Card Round entirely and enters at the Divisional
-// Round — so 4 teams per conference actually reach the Divisional Round,
-// not just the 3 Wild Card Round game winners. There's no separate guess
-// for this: whoever already has that #1-seed team as one of their 4
-// division-winner picks gets automatic credit here, at the same weight as
-// the other Wild Card Round picks. `afcByeTeam`/`nfcByeTeam` are manually
-// entered into Playoff_Actual once known (see publish_to_github.gs) since
-// nothing else in the sheet identifies which division winner has the bye.
-const BYE_ROUND_GROUP = "Wild Card Round";
-const BYE_WEIGHT = 1.25; // matches the other Wild Card Round games' weight
-const DIVISION_KEYS_BY_CONF = {
-  AFC: ["afcEast", "afcNorth", "afcSouth", "afcWest"],
-  NFC: ["nfcEast", "nfcNorth", "nfcSouth", "nfcWest"],
-};
-
-function byeTeamActual_(conf, actual) {
-  return actual[conf === "AFC" ? "afcByeTeam" : "nfcByeTeam"] || null;
-}
-
-function byeRowState_(conf, picks, actual) {
-  const byeTeam = byeTeamActual_(conf, actual);
-  if (!byeTeam) return { rowState: "pending", pts: 0, teamName: null };
-  const hasCredit = DIVISION_KEYS_BY_CONF[conf].some(k => picks[k] === byeTeam);
-  return { rowState: hasCredit ? "correct" : "wrong", pts: hasCredit ? BYE_WEIGHT : 0, teamName: byeTeam };
-}
-
-function byeRowHtml_(conf, picks, actual) {
-  const { rowState, pts, teamName } = byeRowState_(conf, picks, actual);
-  return {
-    pts,
-    html: `
-      <div class="pick-row">
-        <div class="pick-row__label">${escapeHtml(conf + " WC 4")}</div>
-        <div class="pick-row__right">
-          ${teamName ? teamLogoImg(teamName) : ""}
-          <div class="pick-row__value">${escapeHtml(teamName || "—")}</div>
-          ${pickIcon_(rowState)}
-        </div>
-      </div>`,
-  };
-}
-
-function byeCompareCellHtml_(conf, picks, actual) {
-  const { rowState, teamName } = byeRowState_(conf, picks, actual);
-  const logo = teamName ? teamLogoImg(teamName) : "";
-  const cellInner = logo
-    ? `<span class="compare-grid__logo-wrap">${logo}${compareBadgeHtml_(rowState)}</span>`
-    : `<span class="compare-grid__dash">—</span>`;
-  return `<div class="compare-grid__cell ${compareCellClass_(rowState)}">${cellInner}</div>`;
-}
-
-// Cosmetic only, scoped to the Wild Card Round card per your call — drops
-// "Game" from the displayed label ("AFC WC Game 1" -> "AFC WC 1") so it
-// reads consistently alongside the new "AFC WC 4" bye row. The underlying
-// c.key/PLAYOFF_KEY_MAP (and the sheet's actual column headers) are
-// untouched — this only ever affects what's shown on screen.
-function displayLabel_(c) {
-  return c.group === BYE_ROUND_GROUP ? c.label.replace(/ Game (\d+)$/, " $1") : c.label;
-}
-
 // Small check/X badge shown in the corner of a compare-grid logo — "" for
 // pending picks (nothing to call out yet) or when there's no pick at all.
 function compareBadgeHtml_(rowState) {
@@ -202,15 +140,14 @@ function compareBadgeHtml_(rowState) {
 // tinted/glowed/greyed by whether it was right — the "everyone at a
 // glance" view. Excludes MVP entirely (handled separately, and it's a
 // player name rather than a team logo anyway).
-function renderCompareGridHtml_(group, groupCats, picks, actual) {
+function renderCompareGridHtml_(groupCats, picks, actual) {
   const completeness = computeGroupCompleteness_(groupCats, actual);
   const headHtml = `
     <div class="compare-grid__row compare-grid__row--head">
       <div class="compare-grid__label"></div>
       ${picks.map(p => `<div class="compare-grid__col-head">${escapeHtml(p.manager)}</div>`).join("")}
     </div>`;
-
-  const renderCatRow_ = c => {
+  const rowsHtml = groupCats.map(c => {
     const conf = conferenceOf_(c.label);
     const cellsHtml = picks.map(p => {
       const pickVal = (p.picks || {})[c.key];
@@ -224,26 +161,10 @@ function renderCompareGridHtml_(group, groupCats, picks, actual) {
     }).join("");
     return `
       <div class="compare-grid__row">
-        <div class="compare-grid__label">${escapeHtml(displayLabel_(c))}</div>
+        <div class="compare-grid__label">${escapeHtml(c.label)}</div>
         ${cellsHtml}
       </div>`;
-  };
-
-  const renderByeRow_ = conf => `
-    <div class="compare-grid__row">
-      <div class="compare-grid__label">${escapeHtml(conf + " WC 4")}</div>
-      ${picks.map(p => byeCompareCellHtml_(conf, p.picks || {}, actual)).join("")}
-    </div>`;
-
-  let rowsHtml;
-  if (group === BYE_ROUND_GROUP) {
-    const afcCats = groupCats.filter(c => conferenceOf_(c.label) === "AFC");
-    const nfcCats = groupCats.filter(c => conferenceOf_(c.label) === "NFC");
-    rowsHtml = afcCats.map(renderCatRow_).join("") + renderByeRow_("AFC")
-      + nfcCats.map(renderCatRow_).join("") + renderByeRow_("NFC");
-  } else {
-    rowsHtml = groupCats.map(renderCatRow_).join("");
-  }
+  }).join("");
   return `<div class="compare-grid" style="--compare-cols:${picks.length}">${headHtml}${rowsHtml}</div>`;
 }
 
@@ -275,7 +196,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
     const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
     const completeness = computeGroupCompleteness_(groupCats, actual);
 
-    const renderCatRow_ = c => {
+    const rowsHtml = groupCats.map(c => {
       const pickVal = current.picks[c.key];
       const actualVal = actual[c.key];
       const conf = conferenceOf_(c.label);
@@ -284,7 +205,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
       const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>` : "";
       return `
         <div class="pick-row">
-          <div class="pick-row__label">${escapeHtml(displayLabel_(c))}</div>
+          <div class="pick-row__label">${escapeHtml(c.label)}</div>
           <div class="pick-row__right">
             ${teamLogoImg(pickVal)}
             <div class="pick-row__value">${escapeHtml(pickVal || "—")}</div>
@@ -292,23 +213,10 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
             ${pickIcon_(rowState)}
           </div>
         </div>`;
-    };
-
-    let rowsHtml;
-    if (group === BYE_ROUND_GROUP) {
-      const afcCats = groupCats.filter(c => conferenceOf_(c.label) === "AFC");
-      const nfcCats = groupCats.filter(c => conferenceOf_(c.label) === "NFC");
-      const afcBye = byeRowHtml_("AFC", current.picks, actual);
-      const nfcBye = byeRowHtml_("NFC", current.picks, actual);
-      score += afcBye.pts + nfcBye.pts;
-      rowsHtml = afcCats.map(renderCatRow_).join("") + afcBye.html
-        + nfcCats.map(renderCatRow_).join("") + nfcBye.html;
-    } else {
-      rowsHtml = groupCats.map(renderCatRow_).join("");
-    }
+    }).join("");
 
     const isFlipped = !!state.playoffFlipped[group];
-    const backHtml = renderCompareGridHtml_(group, groupCats, data.playoffPicks || [], actual);
+    const backHtml = renderCompareGridHtml_(groupCats, data.playoffPicks || [], actual);
     const flipId = `playoffFlip-${groupIdx}`;
     if (!activeGroupFlipIds.includes(flipId)) activeGroupFlipIds.push(flipId);
 
