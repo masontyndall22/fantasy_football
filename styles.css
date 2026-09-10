@@ -687,6 +687,114 @@ table.breakdown-table tr.total-row td:first-child {
   padding: 4px 14px;
 }
 
+.playoff-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0 6px 2px;
+}
+.playoff-group-head .playoff-group-label { margin: 0; }
+.compare-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: none;
+  border: 1px solid rgba(233, 233, 237, 0.16);
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.compare-toggle-btn svg { width: 12px; height: 12px; }
+.compare-toggle-btn:hover { color: var(--accent-light); border-color: var(--accent-dark-2); }
+
+/* Each round is a flip card: front = the selected manager's picks (the
+   existing .playoff-card), back = everyone's picks side by side. Both
+   faces share the same grid cell so the card auto-sizes to whichever
+   face is taller — same technique as the bio flip cards, so it needs no
+   JS height measurement even though this section starts out hidden
+   inside the Scoring tab. */
+.playoff-flip-wrapper {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.playoff-flip-inner {
+  position: relative;
+  display: grid;
+  width: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, transform 0.5s;
+}
+.playoff-flip-inner.is-flipped { transform: rotateY(180deg); }
+.playoff-flip-inner .playoff-card {
+  grid-area: 1 / 1 / -1 / -1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.playoff-flip-inner .playoff-card--back {
+  transform: rotateY(180deg);
+  padding: 10px 10px 12px;
+  overflow-x: auto;
+}
+
+/* ---------- Compare grid (back of each round's flip card) ---------- */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr repeat(var(--compare-cols), minmax(52px, 1fr));
+  align-items: center;
+}
+.compare-grid__row {
+  display: contents;
+}
+.compare-grid__label {
+  grid-column: 1;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 9px 6px 9px 0;
+  border-top: 1px solid var(--hairline-soft);
+}
+.compare-grid__row--head .compare-grid__label { border-top: none; }
+.compare-grid__col-head {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  text-align: center;
+  padding-bottom: 6px;
+}
+.compare-grid__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+  border-top: 1px solid var(--hairline-soft);
+}
+.compare-grid__dash { font-size: 12px; color: var(--text-meta); }
+.compare-grid__cell img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: filter 0.15s, box-shadow 0.15s;
+}
+.compare-grid__cell.is-correct img {
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.55), 0 0 10px rgba(74, 222, 128, 0.45);
+}
+.compare-grid__cell.is-gold img {
+  box-shadow: 0 0 0 2px rgba(224, 178, 74, 0.65), 0 0 10px rgba(224, 178, 74, 0.5);
+}
+.compare-grid__cell.is-wrong img {
+  filter: grayscale(1) brightness(0.55);
+  opacity: 0.55;
+}
+.compare-grid__cell.is-pending img { opacity: 0.85; }
+
 .pick-row {
   display: flex;
   align-items: center;

@@ -32,6 +32,106 @@ function pickIcon_(state3) {
   return `<div class="pick-row__icon is-pending"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path></svg></div>`;
 }
 
+// Per-round completeness info (used to decide when a "did this team make
+// the field" pick can be scored yet) — depends only on `actual`, not on any
+// one manager's picks, so it's computed once per group and shared across
+// every manager's row instead of being recomputed per manager.
+const SET_MATCH_WEIGHTS = [1, 1.25, 1.5];
+const DIVISION_WINNER_WEIGHT = 2;
+const WILDCARD_TIER_WEIGHT = 1;
+
+function computeGroupCompleteness_(groupCats, actual) {
+  const setCatsByConf = { AFC: [], NFC: [] };
+  const fullFieldCatsByConf = { AFC: [], NFC: [] };
+  groupCats.forEach(c => {
+    const conf = conferenceOf_(c.label);
+    if (conf) fullFieldCatsByConf[conf].push(c);
+    if (SET_MATCH_WEIGHTS.includes(c.weight) && conf) setCatsByConf[conf].push(c);
+  });
+  const setActualByConf = {}, setCompleteByConf = {};
+  const fullFieldActualByConf = {}, fullFieldCompleteByConf = {};
+  ["AFC", "NFC"].forEach(conf => {
+    const actuals = setCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
+    setActualByConf[conf] = actuals;
+    setCompleteByConf[conf] = setCatsByConf[conf].length > 0 && actuals.length === setCatsByConf[conf].length;
+    const fullActuals = fullFieldCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
+    fullFieldActualByConf[conf] = fullActuals;
+    fullFieldCompleteByConf[conf] = fullFieldCatsByConf[conf].length > 0 && fullActuals.length === fullFieldCatsByConf[conf].length;
+  });
+  return { setActualByConf, setCompleteByConf, fullFieldActualByConf, fullFieldCompleteByConf };
+}
+
+// One pick's result — shared by both the single-manager detail rows and
+// the everyone-compares-at-once grid, so the two views can never disagree
+// about whether a given pick was right.
+function pickRowState_(c, pickVal, actualVal, conf, completeness) {
+  let rowState, pts = 0;
+  if (SET_MATCH_WEIGHTS.includes(c.weight)) {
+    const complete = conf && completeness.setCompleteByConf[conf];
+    const actualSet = conf ? completeness.setActualByConf[conf] : [];
+    if (!pickVal || !complete) rowState = "pending";
+    else if (actualSet.includes(pickVal)) { rowState = "correct"; pts = c.weight; }
+    else rowState = "wrong";
+  } else if (c.weight === DIVISION_WINNER_WEIGHT && conf) {
+    const complete = completeness.fullFieldCompleteByConf[conf];
+    if (!pickVal || (!complete && pickVal !== actualVal)) {
+      rowState = "pending";
+    } else if (pickVal === actualVal) {
+      rowState = "correct-division"; pts = c.weight;
+    } else if (completeness.fullFieldActualByConf[conf].includes(pickVal)) {
+      rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
+    } else {
+      rowState = "wrong";
+    }
+  } else {
+    rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
+    if (rowState === "correct") pts = c.weight;
+  }
+  return { rowState, pts };
+}
+
+// Maps a pick's result to the CSS class used for its logo tile in the
+// compare grid — correct/partial both read as a green glow (matches the
+// green "success" icon they already get in the single-manager view),
+// correct-division gets the gold glow, wrong is greyed out, pending is
+// left neutral since nothing's been decided yet.
+function compareCellClass_(rowState) {
+  if (rowState === "correct-division") return "is-gold";
+  if (rowState === "correct" || rowState === "partial") return "is-correct";
+  if (rowState === "wrong") return "is-wrong";
+  return "is-pending";
+}
+
+// Builds the back face of a round's flip card: one row per pick in that
+// round, one column per manager, each cell just that manager's team logo
+// tinted/glowed/greyed by whether it was right — the "everyone at a
+// glance" view. Excludes MVP entirely (handled separately, and it's a
+// player name rather than a team logo anyway).
+function renderCompareGridHtml_(groupCats, picks, actual) {
+  const completeness = computeGroupCompleteness_(groupCats, actual);
+  const headHtml = `
+    <div class="compare-grid__row compare-grid__row--head">
+      <div class="compare-grid__label"></div>
+      ${picks.map(p => `<div class="compare-grid__col-head">${escapeHtml(p.manager)}</div>`).join("")}
+    </div>`;
+  const rowsHtml = groupCats.map(c => {
+    const conf = conferenceOf_(c.label);
+    const cellsHtml = picks.map(p => {
+      const pickVal = (p.picks || {})[c.key];
+      const actualVal = actual[c.key];
+      const { rowState } = pickRowState_(c, pickVal, actualVal, conf, completeness);
+      const logo = teamLogoImg(pickVal);
+      return `<div class="compare-grid__cell ${compareCellClass_(rowState)}">${logo || `<span class="compare-grid__dash">—</span>`}</div>`;
+    }).join("");
+    return `
+      <div class="compare-grid__row">
+        <div class="compare-grid__label">${escapeHtml(c.label)}</div>
+        ${cellsHtml}
+      </div>`;
+  }).join("");
+  return `<div class="compare-grid" style="--compare-cols:${picks.length}">${headHtml}${rowsHtml}</div>`;
+}
+
 // Computes one manager's full playoff result (MVP + group HTML + total
 // score) in one pass — factored out so it can be run once per manager
 // (feeding the score card below) without duplicating this logic, rather
@@ -53,58 +153,18 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
       </div>
     </div>`;
 
-  const SET_MATCH_WEIGHTS = [1, 1.25, 1.5];
-  const DIVISION_WINNER_WEIGHT = 2;
-  const WILDCARD_TIER_WEIGHT = 1;
-
+  // Per-group front-face rows (this manager only) AND the shared back-face
+  // compare grid (every manager) — built together since both need the same
+  // groupCats/completeness pass for this round.
   const groupsHtml = GROUP_ORDER.map(group => {
     const groupCats = cats.filter(c => c.group === group).sort(conferenceThenNumberSort_);
-    const setCatsByConf = { AFC: [], NFC: [] };
-    const fullFieldCatsByConf = { AFC: [], NFC: [] };
-    groupCats.forEach(c => {
-      const conf = conferenceOf_(c.label);
-      if (conf) fullFieldCatsByConf[conf].push(c);
-      if (SET_MATCH_WEIGHTS.includes(c.weight) && conf) setCatsByConf[conf].push(c);
-    });
-    const setActualByConf = {}, setCompleteByConf = {};
-    const fullFieldActualByConf = {}, fullFieldCompleteByConf = {};
-    ["AFC", "NFC"].forEach(conf => {
-      const actuals = setCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
-      setActualByConf[conf] = actuals;
-      setCompleteByConf[conf] = setCatsByConf[conf].length > 0 && actuals.length === setCatsByConf[conf].length;
-      const fullActuals = fullFieldCatsByConf[conf].map(c => actual[c.key]).filter(Boolean);
-      fullFieldActualByConf[conf] = fullActuals;
-      fullFieldCompleteByConf[conf] = fullFieldCatsByConf[conf].length > 0 && fullActuals.length === fullFieldCatsByConf[conf].length;
-    });
+    const completeness = computeGroupCompleteness_(groupCats, actual);
 
     const rowsHtml = groupCats.map(c => {
       const pickVal = current.picks[c.key];
       const actualVal = actual[c.key];
       const conf = conferenceOf_(c.label);
-      let rowState, pts = 0;
-
-      if (SET_MATCH_WEIGHTS.includes(c.weight)) {
-        const complete = conf && setCompleteByConf[conf];
-        const actualSet = conf ? setActualByConf[conf] : [];
-        if (!pickVal || !complete) rowState = "pending";
-        else if (actualSet.includes(pickVal)) { rowState = "correct"; pts = c.weight; }
-        else rowState = "wrong";
-      } else if (c.weight === DIVISION_WINNER_WEIGHT && conf) {
-        const complete = fullFieldCompleteByConf[conf];
-        if (!pickVal || (!complete && pickVal !== actualVal)) {
-          rowState = "pending";
-        } else if (pickVal === actualVal) {
-          rowState = "correct-division"; pts = c.weight;
-        } else if (fullFieldActualByConf[conf].includes(pickVal)) {
-          rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
-        } else {
-          rowState = "wrong";
-        }
-      } else {
-        rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
-        if (rowState === "correct") pts = c.weight;
-      }
-
+      const { rowState, pts } = pickRowState_(c, pickVal, actualVal, conf, completeness);
       score += pts || 0;
       const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>` : "";
       return `
@@ -118,7 +178,24 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
           </div>
         </div>`;
     }).join("");
-    return `<div class="playoff-group-label">${escapeHtml(group)}</div><div class="playoff-card">${rowsHtml}</div>`;
+
+    const isFlipped = !!state.playoffFlipped[group];
+    const backHtml = renderCompareGridHtml_(groupCats, data.playoffPicks || [], actual);
+
+    return `
+      <div class="playoff-group-head">
+        <div class="playoff-group-label">${escapeHtml(group)}</div>
+        <button class="compare-toggle-btn" data-group="${escapeHtml(group)}" aria-label="Compare everyone's picks">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="16" rx="2"></rect><rect x="13" y="4" width="8" height="16" rx="2"></rect></svg>
+          Compare
+        </button>
+      </div>
+      <div class="playoff-flip-wrapper">
+        <div class="playoff-flip-inner ${isFlipped ? "is-flipped" : ""}">
+          <div class="playoff-card playoff-card--front">${rowsHtml}</div>
+          <div class="playoff-card playoff-card--back">${backHtml}</div>
+        </div>
+      </div>`;
   }).join("");
 
   return { mvpHtml: mvpHtml, groupsHtml: groupsHtml, score: score };
@@ -175,6 +252,18 @@ export function renderPlayoffPoolSection(slot, data) {
     btn.addEventListener("click", () => {
       state.playoffMgr = btn.dataset.mgr;
       renderPlayoffPoolSection(slot, data);
+    });
+  });
+
+  // Toggle the flip class directly on click (same pattern as the roster
+  // flip card) rather than re-rendering, so the card actually animates
+  // instead of snapping straight to its new face.
+  $$(".compare-toggle-btn", slot).forEach(btn => {
+    btn.addEventListener("click", () => {
+      const group = btn.dataset.group;
+      state.playoffFlipped[group] = !state.playoffFlipped[group];
+      const inner = btn.closest(".playoff-group-head").nextElementSibling?.querySelector(".playoff-flip-inner");
+      if (inner) inner.classList.toggle("is-flipped");
     });
   });
 }

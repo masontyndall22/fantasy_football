@@ -43,6 +43,7 @@ export const state = {
   scoringRosterManager: null,
   scoringRosterFlipped: false,
   playoffMgr: null,
+  playoffFlipped: {}, // group label -> bool, whether that round's compare-everyone card is flipped
   summaryOpen: false,
   flippedBios: {},
   expandedRival: {},
