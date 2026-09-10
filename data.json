@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-10T15:08:52.735Z",
+  "generatedAt": "2026-09-10T15:09:57.896Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 20.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -11,7 +11,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
+      "playoffBracketScore": 2,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
       "seasonGrade": {
@@ -24,7 +24,7 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 18.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -33,6 +33,25 @@
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
+      "mvpBonus": 0,
+      "overallLeagueRank": 4,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": []
+      }
+    },
+    {
+      "name": "Kyle",
+      "totalStandingsPoints": 20.5,
+      "sleeperPprSeasonPoints": 0,
+      "sleeperFinalPlacement": 0,
+      "pickemTotalCorrect": 0,
+      "fdWins": 0,
+      "fdTop5Total": 0,
+      "fdTop10Total": 0,
+      "fdSeasonTotal": 0,
+      "playoffBracketScore": 2,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
       "seasonGrade": {
@@ -44,27 +63,8 @@
       }
     },
     {
-      "name": "Kyle",
-      "totalStandingsPoints": 20,
-      "sleeperPprSeasonPoints": 0,
-      "sleeperFinalPlacement": 0,
-      "pickemTotalCorrect": 0,
-      "fdWins": 0,
-      "fdTop5Total": 0,
-      "fdTop10Total": 0,
-      "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
-      "mvpBonus": 0,
-      "overallLeagueRank": 1,
-      "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": []
-      }
-    },
-    {
       "name": "Mason",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 20.5,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -72,7 +72,7 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
+      "playoffBracketScore": 2,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
       "seasonGrade": {
@@ -491,7 +491,7 @@
         "NFC Divisional Game 1": "Ravens",
         "NFC Divisional Game 2": "Bills",
         "afcChampionship": "Rams",
-        "nfcChampionship": "Seahwaks",
+        "nfcChampionship": "Seahawks",
         "superBowlWinner": "Rams"
       }
     },
@@ -563,8 +563,8 @@
     }
   ],
   "playoffActual": {
-    "afcWest": "Rams",
     "nfcEast": "Commanders",
+    "nfcWest": "Rams",
     "afcWc1": "Chiefs"
   },
   "actualMvp": "",
@@ -11168,13 +11168,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 0,
+        "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Passive on waivers while the team struggled"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": {
         "adds": 1,
@@ -11469,13 +11469,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 90,
-        "letter": "A-",
+        "score": 100,
+        "letter": "A+",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": {
         "adds": 3,
