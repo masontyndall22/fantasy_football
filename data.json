@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T23:43:04.896Z",
+  "generatedAt": "2026-09-10T00:43:01.819Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 20.5,
+      "totalStandingsPoints": 20,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -13,18 +13,16 @@
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
       "mvpBonus": 1,
-      "overallLeagueRank": 2,
+      "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 48,
+        "score": 50,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 19.5,
+      "totalStandingsPoints": 19,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -34,7 +32,7 @@
       "fdSeasonTotal": 0,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 4,
       "seasonGrade": {
         "score": 0,
         "letter": "F",
@@ -43,7 +41,7 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 19.5,
+      "totalStandingsPoints": 21,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -51,18 +49,20 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 0,
+      "playoffBracketScore": 6,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 1,
       "seasonGrade": {
-        "score": 0,
-        "letter": "F",
-        "reasons": []
+        "score": 100,
+        "letter": "A+",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 22.5,
+      "totalStandingsPoints": 21,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
@@ -70,8 +70,8 @@
       "fdTop5Total": 0,
       "fdTop10Total": 0,
       "fdSeasonTotal": 0,
-      "playoffBracketScore": 30.5,
-      "mvpBonus": 1,
+      "playoffBracketScore": 6,
+      "mvpBonus": 0,
       "overallLeagueRank": 1,
       "seasonGrade": {
         "score": 100,
@@ -442,39 +442,61 @@
     {
       "manager": "Kyle",
       "mvp": "",
-      "picks": {}
+      "picks": {
+        "afcEast": "Bills",
+        "afcNorth": "Ravens",
+        "afcSouth": "Texans",
+        "afcWest": "Broncos",
+        "nfcEast": "Eagles",
+        "nfcNorth": "Lions",
+        "nfcSouth": "Saints",
+        "nfcWest": "Rams",
+        "afcWc1": "Cheifs",
+        "afcWc2": "Bengals",
+        "afcWc3": "Chargers",
+        "nfcWc1": "Seahawks",
+        "nfcWc2": "Cowboys",
+        "nfcWc3": "Bears",
+        "AFC WC Game 1": "Broncos",
+        "AFC WC Game 2": "Bills",
+        "AFC WC Game 3": "Chargers",
+        "NFC WC Game 1": "Chiefs",
+        "NFC WC Game 2": "Rams",
+        "NFC WC Game 3": "Lions",
+        "AFC Divisional Game 1": "Seahawks"
+      }
     },
     {
       "manager": "Mason",
-      "mvp": "Tua",
+      "mvp": "Josh Allen",
       "picks": {
-        "afcEast": "Dolphins",
-        "afcNorth": "Steelers",
-        "afcSouth": "Colts",
-        "afcWest": "Raiders",
-        "nfcEast": "Cowboys",
-        "nfcNorth": "Vikings",
+        "afcEast": "Bills",
+        "afcNorth": "Ravens",
+        "afcSouth": "Texans",
+        "afcWest": "Broncos",
+        "nfcEast": "Eagles",
+        "nfcNorth": "Bears",
         "nfcSouth": "Saints",
         "nfcWest": "Rams",
         "afcWc1": "Chiefs",
-        "afcWc2": "Texans",
-        "afcWc3": "Chargers",
-        "nfcWc1": "49ers",
-        "nfcWc2": "Seahawks",
-        "nfcWc3": "Packers",
-        "AFC WC Game 1": "Chiefs",
-        "AFC WC Game 2": "Rams",
-        "AFC WC Game 3": "Seahawks",
-        "NFC WC Game 1": "Chargers",
-        "NFC WC Game 2": "49ers",
-        "NFC WC Game 3": "Saints",
-        "AFC Divisional Game 1": "Rams",
-        "AFC Divisional Game 2": "Saints",
-        "NFC Divisional Game 1": "Chiefs",
+        "afcWc2": "Bengals",
+        "afcWc3": "Patriots",
+        "nfcWc1": "Seahawks",
+        "nfcWc2": "Niners",
+        "nfcWc3": "Lions",
+        "AFC WC Game 1": "Ravens",
+        "AFC WC Game 2": "Bills",
+        "AFC WC Game 3": "Bengals",
+        "NFC WC Game 1": "Chiefs",
+        "NFC WC Game 2": "Rams",
+        "NFC WC Game 3": "Lions",
+        "AFC Divisional Game 1": "Eagles",
+        "AFC Divisional Game 2": "Bears",
+        "NFC Divisional Game 1": "Ravens",
         "NFC Divisional Game 2": "Bills",
-        "afcChampionship": "Saints",
-        "nfcChampionship": "Bills",
-        "superBowlWinner": "Bills"
+        "afcChampionship": "Rams",
+        "nfcChampionship": "Lions",
+        "superBowlWinner": "Rams"
       }
     }
   ],
@@ -10816,13 +10838,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 43,
+        "score": 40,
         "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Passive on waivers while the team struggled"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": null,
       "starterPoints": {
@@ -11396,13 +11418,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
-        "letter": "F",
+        "score": 100,
+        "letter": "A+",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": {
         "adds": 3,
@@ -11673,7 +11695,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 0,
-          "projectedPoints": 114.97,
+          "projectedPoints": 115.01,
           "isStarter": true
         },
         {
@@ -11704,7 +11726,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 122.43
+        "pointsProjected": 122.47
       }
     }
   ],
