@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T15:04:33.621Z",
+  "generatedAt": "2026-09-10T15:08:52.735Z",
   "managers": [
     {
       "name": "Ben",
@@ -445,8 +445,8 @@
         "afcWc2": "Bengals",
         "afcWc3": "Jaguars",
         "nfcWc1": "Seahawks",
-        "nfcWc2": "Eagles",
-        "nfcWc3": "Niners",
+        "nfcWc2": "49ers",
+        "nfcWc3": "Eagles",
         "AFC WC Game 1": "Ravens",
         "AFC WC Game 2": "Bills",
         "AFC WC Game 3": "Bengals",
@@ -507,7 +507,7 @@
         "nfcNorth": "Lions",
         "nfcSouth": "Saints",
         "nfcWest": "Rams",
-        "afcWc1": "Cheifs",
+        "afcWc1": "Chiefs",
         "afcWc2": "Bengals",
         "afcWc3": "Chargers",
         "nfcWc1": "Seahawks",
@@ -544,7 +544,7 @@
         "afcWc2": "Bengals",
         "afcWc3": "Patriots",
         "nfcWc1": "Seahawks",
-        "nfcWc2": "Niners",
+        "nfcWc2": "49ers",
         "nfcWc3": "Lions",
         "AFC WC Game 1": "Ravens",
         "AFC WC Game 2": "Bills",
@@ -10762,7 +10762,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 262.11,
+          "projectedPoints": 261.36,
           "isStarter": true
         },
         {
@@ -10901,7 +10901,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 132.02
+        "pointsProjected": 131.27
       }
     },
     {
@@ -11647,7 +11647,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 55.52,
+          "projectedPoints": 55.94,
           "isStarter": true
         },
         {
