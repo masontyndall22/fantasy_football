@@ -1,6 +1,7 @@
 import { $, $$ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state, GROUP_ORDER } from "../state.js";
+import { teamLogoImg } from "../team-logos.js";
 
 // Rendered from inside the Scoring tab's Playoff Pool pillar (scoring.js),
 // not a standalone nav tab anymore — merged in per your call. Kept in its own
@@ -110,6 +111,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
         <div class="pick-row">
           <div class="pick-row__label">${escapeHtml(c.label)}</div>
           <div class="pick-row__right">
+            ${teamLogoImg(pickVal)}
             <div class="pick-row__value">${escapeHtml(pickVal || "—")}</div>
             ${ptsBadge}
             ${pickIcon_(rowState)}
