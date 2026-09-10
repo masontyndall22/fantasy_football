@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:55:25.929Z",
+  "generatedAt": "2026-09-10T17:55:36.859Z",
   "managers": [
     {
       "name": "Ben",
@@ -425,6 +425,18 @@
       "key": "afcChampionship",
       "label": "AFC Championship",
       "weight": 1.75,
+      "group": "Conference Championship"
+    },
+    {
+      "key": "nfcChampionship",
+      "label": "NFC Championship",
+      "weight": 1.75,
+      "group": "Conference Championship"
+    },
+    {
+      "key": "superBowlWinner",
+      "label": "Super Bowl Winner",
+      "weight": 2,
       "group": "Super Bowl"
     }
   ],
