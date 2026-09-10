@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T15:43:05.710Z",
+  "generatedAt": "2026-09-10T16:38:04.681Z",
   "managers": [
     {
       "name": "Ben",
@@ -458,7 +458,7 @@
         "NFC Divisional Game 1": "Bengals",
         "NFC Divisional Game 2": "Bills",
         "afcChampionship": "Bills",
-        "nfcChampionship": "Lions",
+        "nfcChampionship": "Rams",
         "superBowlWinner": "Rams"
       }
     },
@@ -490,8 +490,8 @@
         "AFC Divisional Game 2": "Eagles",
         "NFC Divisional Game 1": "Ravens",
         "NFC Divisional Game 2": "Bills",
-        "afcChampionship": "Rams",
-        "nfcChampionship": "Seahawks",
+        "afcChampionship": "Biils",
+        "nfcChampionship": "Rams",
         "superBowlWinner": "Rams"
       }
     },
@@ -523,8 +523,8 @@
         "AFC Divisional Game 2": "Bears",
         "NFC Divisional Game 1": "Broncos",
         "NFC Divisional Game 2": "Bills",
-        "afcChampionship": "Rams",
-        "nfcChampionship": "Lions",
+        "afcChampionship": "Broncos",
+        "nfcChampionship": "Rams",
         "superBowlWinner": "Rams"
       }
     },
@@ -556,8 +556,8 @@
         "AFC Divisional Game 2": "Bears",
         "NFC Divisional Game 1": "Ravens",
         "NFC Divisional Game 2": "Bills",
-        "afcChampionship": "Rams",
-        "nfcChampionship": "Lions",
+        "afcChampionship": "Bills",
+        "nfcChampionship": "Rams",
         "superBowlWinner": "Rams"
       }
     }
@@ -11153,7 +11153,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 121.72,
+          "projectedPoints": 121.68,
           "isStarter": true
         },
         {
@@ -11184,7 +11184,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 132.06
+        "pointsProjected": 132.02
       }
     },
     {
@@ -11463,7 +11463,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 107.46,
+          "projectedPoints": 107.43,
           "isStarter": true
         }
       ],
@@ -11485,7 +11485,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 125.54
+        "pointsProjected": 125.51
       }
     },
     {
