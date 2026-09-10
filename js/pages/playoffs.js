@@ -102,6 +102,18 @@ function compareCellClass_(rowState) {
   return "is-pending";
 }
 
+// Small check/X badge shown in the corner of a compare-grid logo — "" for
+// pending picks (nothing to call out yet) or when there's no pick at all.
+function compareBadgeHtml_(rowState) {
+  if (rowState === "correct" || rowState === "correct-division" || rowState === "partial") {
+    return `<span class="compare-grid__badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"></path></svg></span>`;
+  }
+  if (rowState === "wrong") {
+    return `<span class="compare-grid__badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></span>`;
+  }
+  return "";
+}
+
 // Builds the back face of a round's flip card: one row per pick in that
 // round, one column per manager, each cell just that manager's team logo
 // tinted/glowed/greyed by whether it was right — the "everyone at a
@@ -121,7 +133,10 @@ function renderCompareGridHtml_(groupCats, picks, actual) {
       const actualVal = actual[c.key];
       const { rowState } = pickRowState_(c, pickVal, actualVal, conf, completeness);
       const logo = teamLogoImg(pickVal);
-      return `<div class="compare-grid__cell ${compareCellClass_(rowState)}">${logo || `<span class="compare-grid__dash">—</span>`}</div>`;
+      const cellInner = logo
+        ? `<span class="compare-grid__logo-wrap">${logo}${compareBadgeHtml_(rowState)}</span>`
+        : `<span class="compare-grid__dash">—</span>`;
+      return `<div class="compare-grid__cell ${compareCellClass_(rowState)}">${cellInner}</div>`;
     }).join("");
     return `
       <div class="compare-grid__row">

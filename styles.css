@@ -747,13 +747,20 @@ table.breakdown-table tr.total-row td:first-child {
 .compare-grid {
   display: grid;
   grid-template-columns: 1fr repeat(var(--compare-cols), minmax(52px, 1fr));
-  align-items: center;
+  /* Items stretch to the row's full height (the grid default) so every
+     column's border-top lands on the same line — centering items here
+     instead would let differing label/cell padding push their borders
+     out of sync with each other, which is what caused the misaligned
+     divider lines. Vertical centering of each cell's own content still
+     happens inside the cell (see .compare-grid__cell/.__label below). */
 }
 .compare-grid__row {
   display: contents;
 }
 .compare-grid__label {
   grid-column: 1;
+  display: flex;
+  align-items: center;
   font-size: 11px;
   color: var(--text-muted);
   padding: 9px 6px 9px 0;
@@ -772,28 +779,45 @@ table.breakdown-table tr.total-row td:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 2px;
+  padding: 9px 2px;
   border-top: 1px solid var(--hairline-soft);
 }
 .compare-grid__dash { font-size: 12px; color: var(--text-meta); }
-.compare-grid__cell img {
+.compare-grid__logo-wrap {
+  position: relative;
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+.compare-grid__logo-wrap img {
   width: 22px;
   height: 22px;
   object-fit: contain;
   border-radius: 4px;
-  transition: filter 0.15s, box-shadow 0.15s;
 }
-.compare-grid__cell.is-correct img {
-  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.55), 0 0 10px rgba(74, 222, 128, 0.45);
+/* Small status badge anchored to the logo's own box (not the cell), so it
+   sits right on the logo's corner regardless of how wide the column is —
+   never shifts or resizes the logo itself. */
+.compare-grid__badge {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px var(--card);
 }
-.compare-grid__cell.is-gold img {
-  box-shadow: 0 0 0 2px rgba(224, 178, 74, 0.65), 0 0 10px rgba(224, 178, 74, 0.5);
-}
-.compare-grid__cell.is-wrong img {
-  filter: grayscale(1) brightness(0.55);
-  opacity: 0.55;
-}
-.compare-grid__cell.is-pending img { opacity: 0.85; }
+.compare-grid__badge svg { width: 8px; height: 8px; }
+.compare-grid__cell.is-correct .compare-grid__badge { background: #123c22; }
+.compare-grid__cell.is-correct .compare-grid__badge svg { stroke: var(--success); }
+.compare-grid__cell.is-gold .compare-grid__badge { background: #3d2f10; }
+.compare-grid__cell.is-gold .compare-grid__badge svg { stroke: var(--gold); }
+.compare-grid__cell.is-wrong .compare-grid__badge { background: #3d141f; }
+.compare-grid__cell.is-wrong .compare-grid__badge svg { stroke: var(--wrong); }
 
 .pick-row {
   display: flex;
