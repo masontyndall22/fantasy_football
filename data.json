@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T00:50:56.275Z",
+  "generatedAt": "2026-09-10T01:43:01.234Z",
   "managers": [
     {
       "name": "Ben",
@@ -158,8 +158,8 @@
         },
         {
           "label": "Sleeper Low",
-          "value": 55.9,
-          "sub": "2023 Wk 11"
+          "value": 4.1,
+          "sub": "2026 Wk 1"
         },
         {
           "label": "FanDuel High",
@@ -888,9 +888,9 @@
         "week": 7
       },
       "lowest": {
-        "value": 55.9,
-        "season": 2023,
-        "week": 11
+        "value": 4.1,
+        "season": 2026,
+        "week": 1
       }
     },
     "Kyle": {
@@ -11108,7 +11108,7 @@
           "name": "Jaxon Smith-Njigba",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 4.1,
           "projectedPoints": 349.7,
           "isStarter": true
         },
