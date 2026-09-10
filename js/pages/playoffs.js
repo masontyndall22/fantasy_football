@@ -64,24 +64,39 @@ function computeGroupCompleteness_(groupCats, actual) {
 // One pick's result — shared by both the single-manager detail rows and
 // the everyone-compares-at-once grid, so the two views can never disagree
 // about whether a given pick was right.
+//
+// Key rule: a pick can be confirmed CORRECT (or, for division picks,
+// confirmed NOT the division winner) as soon as the specific actual value
+// it depends on is revealed — it doesn't need to wait on the rest of the
+// conference's field. Only a final "wrong" (zero points, no shot at
+// partial credit) has to wait for full completeness, since a pick that
+// isn't a division/wildcard winner yet could still land partial credit
+// once the rest of the field is known.
 function pickRowState_(c, pickVal, actualVal, conf, completeness) {
   let rowState, pts = 0;
   if (SET_MATCH_WEIGHTS.includes(c.weight)) {
     const complete = conf && completeness.setCompleteByConf[conf];
     const actualSet = conf ? completeness.setActualByConf[conf] : [];
-    if (!pickVal || !complete) rowState = "pending";
+    if (!pickVal) rowState = "pending";
     else if (actualSet.includes(pickVal)) { rowState = "correct"; pts = c.weight; }
-    else rowState = "wrong";
+    else if (complete) rowState = "wrong";
+    else rowState = "pending";
   } else if (c.weight === DIVISION_WINNER_WEIGHT && conf) {
-    const complete = completeness.fullFieldCompleteByConf[conf];
-    if (!pickVal || (!complete && pickVal !== actualVal)) {
+    const fullFieldActuals = completeness.fullFieldActualByConf[conf];
+    if (!pickVal) {
       rowState = "pending";
-    } else if (pickVal === actualVal) {
+    } else if (actualVal && pickVal === actualVal) {
       rowState = "correct-division"; pts = c.weight;
-    } else if (completeness.fullFieldActualByConf[conf].includes(pickVal)) {
+    } else if (fullFieldActuals.includes(pickVal)) {
       rowState = "partial"; pts = WILDCARD_TIER_WEIGHT;
-    } else {
+    } else if (actualVal) {
+      // We already know who actually won the division and it isn't this
+      // pick. They could still turn up as a wildcard team once more of the
+      // conference's results land (which would flip this to "partial"
+      // above) — but there's no evidence of that yet, so call it wrong.
       rowState = "wrong";
+    } else {
+      rowState = "pending";
     }
   } else {
     rowState = !pickVal || !actualVal ? "pending" : pickVal === actualVal ? "correct" : "wrong";
