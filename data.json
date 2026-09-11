@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T03:43:04.886Z",
+  "generatedAt": "2026-09-11T04:43:03.420Z",
   "managers": [
     {
       "name": "Ben",
@@ -1776,7 +1776,7 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 11.9,
+      "scoreA": 13.8,
       "managerB": "Mason",
       "scoreB": 3.2,
       "winner": "Kyle"
@@ -2570,7 +2570,7 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 11.9,
+      "scoreA": 13.8,
       "managerB": "Mason",
       "scoreB": 3.2,
       "winner": "Kyle"
@@ -10768,7 +10768,7 @@
           "name": "Matthew Stafford",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4.9,
+          "points": 5.1,
           "projectedPoints": 279.39,
           "isStarter": true
         },
@@ -11069,7 +11069,7 @@
           "name": "Blake Corum",
           "tag": "kept",
           "tagWeek": null,
-          "points": 5,
+          "points": 5.4,
           "projectedPoints": 143.27,
           "isStarter": true
         },
@@ -11361,7 +11361,7 @@
           "name": "Kaelon Black",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 7.4,
+          "points": 8,
           "projectedPoints": 33.92,
           "isStarter": true
         },
@@ -11370,7 +11370,7 @@
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 11.9,
+          "points": 13.8,
           "projectedPoints": 354.32,
           "isStarter": true
         },
@@ -11625,8 +11625,8 @@
           "position": "WR",
           "name": "Tyreek Hill",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11727,15 +11727,6 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 214.69,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Tyreek Hill",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
           "isStarter": true
         },
         {
