@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T00:43:02.584Z",
+  "generatedAt": "2026-09-11T01:43:04.740Z",
   "managers": [
     {
       "name": "Ben",
@@ -203,8 +203,8 @@
         },
         {
           "label": "Sleeper Low",
-          "value": 70.12,
-          "sub": "2024 Wk 18"
+          "value": 2.4,
+          "sub": "2026 Wk 1"
         },
         {
           "label": "FanDuel High",
@@ -248,8 +248,8 @@
         },
         {
           "label": "Sleeper Low",
-          "value": 58.44,
-          "sub": "2024 Wk 3"
+          "value": 3.2,
+          "sub": "2026 Wk 1"
         },
         {
           "label": "FanDuel High",
@@ -920,9 +920,9 @@
         "week": 17
       },
       "lowest": {
-        "value": 70.12,
-        "season": 2024,
-        "week": 18
+        "value": 2.4,
+        "season": 2026,
+        "week": 1
       }
     },
     "Mason": {
@@ -932,9 +932,9 @@
         "week": 15
       },
       "lowest": {
-        "value": 58.44,
-        "season": 2024,
-        "week": 3
+        "value": 3.2,
+        "season": 2026,
+        "week": 1
       }
     }
   },
@@ -1776,10 +1776,10 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 0,
+      "scoreA": 2.4,
       "managerB": "Mason",
-      "scoreB": 0,
-      "winner": "Tie"
+      "scoreB": 3.2,
+      "winner": "Mason"
     }
   ],
   "matchups": [
@@ -2570,10 +2570,10 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 0,
+      "scoreA": 2.4,
       "managerB": "Mason",
-      "scoreB": 0,
-      "winner": "Tie"
+      "scoreB": 3.2,
+      "winner": "Mason"
     }
   ],
   "memberHistory": [
@@ -10760,7 +10760,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 310.03,
+          "projectedPoints": 309.85,
           "isStarter": true
         },
         {
@@ -10768,7 +10768,7 @@
           "name": "Matthew Stafford",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 0.16,
           "projectedPoints": 279.39,
           "isStarter": true
         },
@@ -10778,7 +10778,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 251.19,
+          "projectedPoints": 251.85,
           "isStarter": true
         },
         {
@@ -10787,7 +10787,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 161.95,
+          "projectedPoints": 161.83,
           "isStarter": true
         },
         {
@@ -10832,7 +10832,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 118.89,
+          "projectedPoints": 118.98,
           "isStarter": true
         },
         {
@@ -10849,7 +10849,7 @@
           "name": "Deebo Samuel",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 3.1,
           "projectedPoints": 163.85,
           "isStarter": true
         },
@@ -10859,7 +10859,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 236.34,
+          "projectedPoints": 235.99,
           "isStarter": true
         },
         {
@@ -10917,7 +10917,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 131.74
+        "pointsProjected": 132.22
       }
     },
     {
@@ -11052,7 +11052,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 337.12,
+          "projectedPoints": 337.43,
           "isStarter": true
         },
         {
@@ -11061,7 +11061,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 195.03,
+          "projectedPoints": 194.76,
           "isStarter": true
         },
         {
@@ -11069,7 +11069,7 @@
           "name": "Blake Corum",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 0.8,
           "projectedPoints": 143.27,
           "isStarter": true
         },
@@ -11079,7 +11079,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 0,
-          "projectedPoints": 16.94,
+          "projectedPoints": 16.86,
           "isStarter": true
         },
         {
@@ -11124,7 +11124,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 197.54,
+          "projectedPoints": 197.74,
           "isStarter": true
         },
         {
@@ -11151,7 +11151,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 202.13,
+          "projectedPoints": 202.32,
           "isStarter": true
         },
         {
@@ -11200,7 +11200,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 131.72000000000003
+        "pointsProjected": 132.22000000000003
       }
     },
     {
@@ -11353,7 +11353,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 227.2,
+          "projectedPoints": 227.07,
           "isStarter": true
         },
         {
@@ -11361,7 +11361,7 @@
           "name": "Kaelon Black",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 0,
+          "points": 1.9,
           "projectedPoints": 33.92,
           "isStarter": true
         },
@@ -11370,7 +11370,7 @@
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 2.4,
           "projectedPoints": 354.32,
           "isStarter": true
         },
@@ -11407,7 +11407,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 232.94,
+          "projectedPoints": 232.81,
           "isStarter": true
         },
         {
@@ -11501,7 +11501,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 125.50999999999999
+        "pointsProjected": 125.38
       }
     },
     {
@@ -11636,7 +11636,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 306.31,
+          "projectedPoints": 306.1,
           "isStarter": true
         },
         {
@@ -11645,7 +11645,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 288.72,
+          "projectedPoints": 288.58,
           "isStarter": true
         },
         {
@@ -11663,7 +11663,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 54.06,
+          "projectedPoints": 54.31,
           "isStarter": true
         },
         {
@@ -11672,7 +11672,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 145.52,
+          "projectedPoints": 145.44,
           "isStarter": true
         },
         {
@@ -11699,7 +11699,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 161.34,
+          "projectedPoints": 161.53,
           "isStarter": true
         },
         {
@@ -11726,7 +11726,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 214.84,
+          "projectedPoints": 214.69,
           "isStarter": true
         },
         {
@@ -11744,7 +11744,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 291.8,
+          "projectedPoints": 292.16,
           "isStarter": true
         },
         {
@@ -11752,7 +11752,7 @@
           "name": "George Kittle",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 3.2,
           "projectedPoints": 191.81,
           "isStarter": true
         },
@@ -11793,7 +11793,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 119.70000000000002
+        "pointsProjected": 119.85000000000001
       }
     }
   ],
