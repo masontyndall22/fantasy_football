@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T22:43:07.479Z",
+  "generatedAt": "2026-09-13T23:43:03.672Z",
   "managers": [
     {
       "name": "Ben",
@@ -1776,9 +1776,9 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 102.42,
+      "scoreA": 119.12,
       "managerB": "Mason",
-      "scoreB": 120.26,
+      "scoreB": 121.16,
       "winner": "Mason"
     }
   ],
@@ -2570,9 +2570,9 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 102.42,
+      "scoreA": 119.12,
       "managerB": "Mason",
-      "scoreB": 120.26,
+      "scoreB": 121.16,
       "winner": "Mason"
     }
   ],
@@ -10777,7 +10777,7 @@
           "name": "Ashton Jeanty",
           "tag": "kept",
           "tagWeek": null,
-          "points": 15.6,
+          "points": 32.7,
           "projectedPoints": 251.39,
           "isStarter": true
         },
@@ -10831,7 +10831,7 @@
           "name": "Makai Lemon",
           "tag": "kept",
           "tagWeek": null,
-          "points": 1.8,
+          "points": 2.5,
           "projectedPoints": 118.61,
           "isStarter": true
         },
@@ -10885,7 +10885,7 @@
           "name": "Philadelphia Eagles",
           "tag": "kept",
           "tagWeek": null,
-          "points": 6,
+          "points": 4,
           "projectedPoints": 132.92,
           "isStarter": true
         },
@@ -11051,7 +11051,7 @@
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
-          "points": 13.62,
+          "points": 17.12,
           "projectedPoints": 333.73,
           "isStarter": true
         },
@@ -11060,7 +11060,7 @@
           "name": "MarShawn Lloyd",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0.6,
+          "points": 4,
           "projectedPoints": 194.73,
           "isStarter": true
         },
@@ -11114,7 +11114,7 @@
           "name": "Ladd McConkey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 11.4,
+          "points": 19.2,
           "projectedPoints": 212.84,
           "isStarter": true
         },
@@ -11334,7 +11334,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 3.32,
+          "points": 11.82,
           "projectedPoints": 317.17,
           "isStarter": true
         },
@@ -11388,7 +11388,7 @@
           "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 2.2,
+          "points": 4.7,
           "projectedPoints": 170.82,
           "isStarter": true
         },
@@ -11433,7 +11433,7 @@
           "name": "Stefon Diggs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4.8,
+          "points": 12.8,
           "projectedPoints": 179.89,
           "isStarter": true
         },
@@ -11460,7 +11460,7 @@
           "name": "Trey McBride",
           "tag": "kept",
           "tagWeek": null,
-          "points": 12.4,
+          "points": 24.6,
           "projectedPoints": 261.85,
           "isStarter": true
         },
@@ -11469,7 +11469,7 @@
           "name": "Los Angeles Chargers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4,
+          "points": 0,
           "projectedPoints": 103.47,
           "isStarter": true
         },
@@ -11653,7 +11653,7 @@
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 7.4,
+          "points": 8.3,
           "projectedPoints": 240.37,
           "isStarter": true
         },
@@ -11662,7 +11662,7 @@
           "name": "Mike Washington",
           "tag": "kept",
           "tagWeek": null,
-          "points": 3.5,
+          "points": 3.8,
           "projectedPoints": 54.82,
           "isStarter": true
         },
@@ -11716,7 +11716,7 @@
           "name": "Michael Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4,
+          "points": 10.6,
           "projectedPoints": 190.4,
           "isStarter": true
         },
