@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T16:43:06.042Z",
+  "generatedAt": "2026-09-13T17:43:02.106Z",
   "managers": [
     {
       "name": "Ben",
@@ -1778,7 +1778,7 @@
       "managerA": "Kyle",
       "scoreA": 13.8,
       "managerB": "Mason",
-      "scoreB": 3.2,
+      "scoreB": 13.2,
       "winner": "Kyle"
     }
   ],
@@ -2572,7 +2572,7 @@
       "managerA": "Kyle",
       "scoreA": 13.8,
       "managerB": "Mason",
-      "scoreB": 3.2,
+      "scoreB": 13.2,
       "winner": "Kyle"
     }
   ],
@@ -10895,7 +10895,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 113.53,
+          "projectedPoints": 113.56,
           "isStarter": true
         }
       ],
@@ -11169,7 +11169,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 119.12,
+          "projectedPoints": 119.1,
           "isStarter": true
         },
         {
@@ -11200,7 +11200,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 129.95000000000002
+        "pointsProjected": 130.46
       }
     },
     {
@@ -11470,7 +11470,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 103.53,
+          "projectedPoints": 103.5,
           "isStarter": true
         },
         {
@@ -11479,7 +11479,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 107.48,
+          "projectedPoints": 107.46,
           "isStarter": true
         }
       ],
@@ -11501,7 +11501,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 128.28
+        "pointsProjected": 127.73999999999998
       }
     },
     {
@@ -11752,7 +11752,7 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 0,
+          "points": 10,
           "projectedPoints": 118.62,
           "isStarter": true
         },
@@ -11762,7 +11762,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 114.13,
+          "projectedPoints": 114.16,
           "isStarter": true
         }
       ],
@@ -11784,7 +11784,7 @@
       "starterPoints": {
         "pointsFor": 0,
         "pointsAgainst": 0,
-        "pointsProjected": 120.28
+        "pointsProjected": 120.31
       }
     }
   ],
