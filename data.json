@@ -1,43 +1,41 @@
 {
-  "generatedAt": "2026-09-14T02:43:15.095Z",
+  "generatedAt": "2026-09-14T03:31:17.469Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 15,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
       "fdWins": 0,
-      "fdTop5Total": 0,
-      "fdTop10Total": 0,
-      "fdSeasonTotal": 0,
+      "fdTop5Total": 128.86,
+      "fdTop10Total": 128.86,
+      "fdSeasonTotal": 128.86,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 1,
+      "overallLeagueRank": 4,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "score": 0,
+        "letter": "F",
+        "reasons": []
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 21,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
       "fdWins": 0,
-      "fdTop5Total": 0,
-      "fdTop10Total": 0,
-      "fdSeasonTotal": 0,
+      "fdTop5Total": 148.4,
+      "fdTop10Total": 148.4,
+      "fdSeasonTotal": 148.4,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 1,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 70,
+        "letter": "C-",
         "reasons": [
           "Spent big on waivers and it paid off"
         ]
@@ -45,40 +43,42 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 18,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
       "fdWins": 0,
-      "fdTop5Total": 0,
-      "fdTop10Total": 0,
-      "fdSeasonTotal": 0,
+      "fdTop5Total": 134.9,
+      "fdTop10Total": 134.9,
+      "fdSeasonTotal": 134.9,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 1,
+      "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 27,
+        "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 26,
       "sleeperPprSeasonPoints": 0,
       "sleeperFinalPlacement": 0,
       "pickemTotalCorrect": 0,
-      "fdWins": 0,
-      "fdTop5Total": 0,
-      "fdTop10Total": 0,
-      "fdSeasonTotal": 0,
+      "fdWins": 1,
+      "fdTop5Total": 192.5,
+      "fdTop10Total": 192.5,
+      "fdSeasonTotal": 192.5,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
       "seasonGrade": {
         "score": 100,
         "letter": "A+",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     }
   ],
@@ -705,7 +705,7 @@
   ],
   "weeklyFanDuel": {
     "Ben": [
-      0,
+      128.86,
       0,
       0,
       0,
@@ -725,7 +725,7 @@
       0
     ],
     "Caleb": [
-      0,
+      148.4,
       0,
       0,
       0,
@@ -745,7 +745,7 @@
       0
     ],
     "Kyle": [
-      0,
+      134.9,
       0,
       0,
       0,
@@ -765,7 +765,7 @@
       0
     ],
     "Mason": [
-      0,
+      192.5,
       0,
       0,
       0,
@@ -786,24 +786,58 @@
     ]
   },
   "fanduelWeekly": {
-    "fdWins": [],
+    "fdWins": [
+      {
+        "week": 1,
+        "scores": {
+          "Ben": 128.86,
+          "Caleb": 148.4,
+          "Kyle": 134.9,
+          "Mason": 192.5
+        }
+      }
+    ],
     "fdTop5": {
-      "Ben": [],
-      "Caleb": [],
-      "Kyle": [],
-      "Mason": []
+      "Ben": [
+        128.86
+      ],
+      "Caleb": [
+        148.4
+      ],
+      "Kyle": [
+        134.9
+      ],
+      "Mason": [
+        192.5
+      ]
     },
     "fdTop10": {
-      "Ben": [],
-      "Caleb": [],
-      "Kyle": [],
-      "Mason": []
+      "Ben": [
+        128.86
+      ],
+      "Caleb": [
+        148.4
+      ],
+      "Kyle": [
+        134.9
+      ],
+      "Mason": [
+        192.5
+      ]
     },
     "fdAllWeeks": {
-      "Ben": [],
-      "Caleb": [],
-      "Kyle": [],
-      "Mason": []
+      "Ben": [
+        128.86
+      ],
+      "Caleb": [
+        148.4
+      ],
+      "Kyle": [
+        134.9
+      ],
+      "Mason": [
+        192.5
+      ]
     }
   },
   "pickemWeekly": {
@@ -1776,10 +1810,10 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 133.56,
+      "scoreA": 137.56,
       "managerB": "Mason",
       "scoreB": 133.76,
-      "winner": "Mason"
+      "winner": "Kyle"
     }
   ],
   "matchups": [
@@ -2570,10 +2604,10 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 133.56,
+      "scoreA": 137.56,
       "managerB": "Mason",
       "scoreB": 133.76,
-      "winner": "Mason"
+      "winner": "Kyle"
     }
   ],
   "memberHistory": [
@@ -10759,7 +10793,7 @@
           "name": "Jaxson Dart",
           "tag": "kept",
           "tagWeek": null,
-          "points": 13.26,
+          "points": 26.32,
           "projectedPoints": 296.72,
           "isStarter": true
         },
@@ -10901,13 +10935,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 0,
+        "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Passive on waivers while the team struggled"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
       "transactions": {
         "adds": 1,
@@ -11184,8 +11218,8 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 100,
-        "letter": "A+",
+        "score": 65,
+        "letter": "D",
         "reasons": [
           "Drafted well, barely touched waivers"
         ]
@@ -11352,7 +11386,7 @@
           "name": "Cam Skattebo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 7.7,
+          "points": 11.7,
           "projectedPoints": 226.97,
           "isStarter": true
         },
@@ -11406,7 +11440,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 6.2,
+          "points": 12.9,
           "projectedPoints": 230.29,
           "isStarter": true
         },
@@ -11485,8 +11519,8 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 90,
-        "letter": "A-",
+        "score": 17,
+        "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
         ]
@@ -11768,13 +11802,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 90,
-        "letter": "A-",
+        "score": 100,
+        "letter": "A+",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": {
         "adds": 1,
