@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T00:43:15.278Z",
+  "generatedAt": "2026-09-14T01:43:03.202Z",
   "managers": [
     {
       "name": "Ben",
@@ -1776,7 +1776,7 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 125.86,
+      "scoreA": 133.56,
       "managerB": "Mason",
       "scoreB": 133.76,
       "winner": "Mason"
@@ -2570,7 +2570,7 @@
       "season": 2026,
       "week": 1,
       "managerA": "Kyle",
-      "scoreA": 125.86,
+      "scoreA": 133.56,
       "managerB": "Mason",
       "scoreB": 133.76,
       "winner": "Mason"
@@ -10759,7 +10759,7 @@
           "name": "Jaxson Dart",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 3.78,
           "projectedPoints": 296.72,
           "isStarter": true
         },
@@ -11352,7 +11352,7 @@
           "name": "Cam Skattebo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 7.7,
           "projectedPoints": 226.97,
           "isStarter": true
         },
@@ -11406,7 +11406,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 0,
+          "points": 3.6,
           "projectedPoints": 230.29,
           "isStarter": true
         },
