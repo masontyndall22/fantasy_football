@@ -169,11 +169,20 @@ function renderCompareGridHtml_(groupCats, picks, actual) {
 }
 
 // Computes one manager's full playoff result (MVP + group HTML + total
-// score) in one pass — factored out so it can be run once per manager
-// (feeding the score card below) without duplicating this logic, rather
-// than only ever computing it for whichever manager's tab is selected.
+// score + correct-pick count) in one pass — factored out so it can be run
+// once per manager (feeding the score card below) without duplicating this
+// logic, rather than only ever computing it for whichever manager's tab is
+// selected.
+//
+// "correct" counts any pick that scored points at all — an exact division
+// winner, a wildcard-tier set match, or a division pick that landed
+// partial credit for making the field a different way. It intentionally
+// does NOT distinguish "got the exact division winner" from "got a team
+// that made it, just not as division winner" — both count as a correct
+// pick, they just differ in how many points ("Pts") that pick was worth.
 function computePlayoffResultsForManager_(current, data, cats, actual) {
   let score = 0;
+  let correct = 0;
   const mvpPick = current.mvp;
   const actualMvp = data.actualMvp;
   const mvpState = !mvpPick || !actualMvp ? "pending" : mvpPick === actualMvp ? "correct" : "wrong";
@@ -202,6 +211,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
       const conf = conferenceOf_(c.label);
       const { rowState, pts } = pickRowState_(c, pickVal, actualVal, conf, completeness);
       score += pts || 0;
+      if (rowState === "correct" || rowState === "correct-division" || rowState === "partial") correct++;
       const ptsBadge = rowState === "correct-division" ? `<span class="pick-row__pts-badge is-gold">+1</span>` : "";
       return `
         <div class="pick-row">
@@ -236,7 +246,7 @@ function computePlayoffResultsForManager_(current, data, cats, actual) {
       </div>`;
   }).join("");
 
-  return { mvpHtml: mvpHtml, groupsHtml: groupsHtml, score: score };
+  return { mvpHtml: mvpHtml, groupsHtml: groupsHtml, score: score, correct: correct };
 }
 
 export function renderPlayoffPoolSection(slot, data) {
@@ -255,15 +265,15 @@ export function renderPlayoffPoolSection(slot, data) {
     const hasPicks = !!(cats.length && p.picks && Object.keys(p.picks).length);
     resultsByManager[p.manager] = hasPicks
       ? { ...computePlayoffResultsForManager_(p, data, cats, actual), hasPicks: true }
-      : { mvpHtml: "", groupsHtml: "", score: 2.5, hasPicks: false };
+      : { mvpHtml: "", groupsHtml: "", score: 0, correct: 0, hasPicks: false };
   });
 
   const scoreCardHtml = picks.length ? `
     <div class="table-card">
       <table class="data-table">
-        <thead><tr><th>Manager</th><th>Pts</th></tr></thead>
+        <thead><tr><th>Manager</th><th>Correct</th><th>Pts</th></tr></thead>
         <tbody>${[...picks].sort((a, b) => resultsByManager[b.manager].score - resultsByManager[a.manager].score).map(p => `
-          <tr><td>${escapeHtml(p.manager)}</td><td class="pts">${fmt(resultsByManager[p.manager].score)}</td></tr>`).join("")}</tbody>
+          <tr><td>${escapeHtml(p.manager)}</td><td>${fmt(resultsByManager[p.manager].correct)}</td><td class="pts">${fmt(resultsByManager[p.manager].score)}</td></tr>`).join("")}</tbody>
       </table>
     </div>` : "";
 
