@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-15T13:43:04.561Z",
+  "generatedAt": "2026-09-15T13:57:41.649Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 16,
+      "totalStandingsPoints": 16.5,
       "sleeperPprSeasonPoints": 149.4,
-      "sleeperFinalPlacement": 0,
+      "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 9,
       "fdWins": 0,
       "fdTop5Total": 128.86,
@@ -15,16 +15,16 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 7,
+        "score": 18,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 147.32,
-      "sleeperFinalPlacement": 0,
+      "sleeperFinalPlacement": 3,
       "pickemTotalCorrect": 8,
       "fdWins": 0,
       "fdTop5Total": 148.4,
@@ -34,7 +34,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 51,
+        "score": 50,
         "letter": "F",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -43,9 +43,9 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 15,
+      "totalStandingsPoints": 13.5,
       "sleeperPprSeasonPoints": 139.96,
-      "sleeperFinalPlacement": 0,
+      "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 7,
       "fdWins": 0,
       "fdTop5Total": 134.9,
@@ -62,9 +62,9 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 29,
+      "totalStandingsPoints": 30.5,
       "sleeperPprSeasonPoints": 177.76,
-      "sleeperFinalPlacement": 0,
+      "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 10,
       "fdWins": 1,
       "fdTop5Total": 192.5,
@@ -10935,7 +10935,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
+        "score": 8,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -11218,7 +11218,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 46,
+        "score": 45,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
