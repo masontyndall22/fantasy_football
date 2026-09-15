@@ -2,6 +2,7 @@ import { $, $$ } from "../dom.js";
 import { fmt, escapeHtml } from "../format.js";
 import { state, GROUP_ORDER } from "../state.js";
 import { teamLogoImg } from "../team-logos.js";
+import { rankCategory } from "../ranking.js";
 
 // Rendered from inside the Scoring tab's Playoff Pool pillar (scoring.js),
 // not a standalone nav tab anymore — merged in per your call. Kept in its own
@@ -168,9 +169,9 @@ function renderCompareGridHtml_(groupCats, picks, actual) {
   return `<div class="compare-grid" style="--compare-cols:${picks.length}">${headHtml}${rowsHtml}</div>`;
 }
 
-// Computes one manager's full playoff result (MVP + group HTML + total
-// score + correct-pick count) in one pass — factored out so it can be run
-// once per manager (feeding the score card below) without duplicating this
+// Computes one manager's full playoff result (MVP + group HTML + raw score
+// + correct-pick count) in one pass — factored out so it can be run once
+// per manager (feeding the score card below) without duplicating this
 // logic, rather than only ever computing it for whichever manager's tab is
 // selected.
 //
@@ -179,7 +180,13 @@ function renderCompareGridHtml_(groupCats, picks, actual) {
 // partial credit for making the field a different way. It intentionally
 // does NOT distinguish "got the exact division winner" from "got a team
 // that made it, just not as division winner" — both count as a correct
-// pick, they just differ in how many points ("Pts") that pick was worth.
+// pick, they just differ in how many raw weight points that pick was worth.
+//
+// "score" here is the RAW weighted total (sum of pick weights) — NOT the
+// tie-aware "Tier Pts" shown on the score card. See renderPlayoffPoolSection
+// below, which re-ranks these raw scores the same way ranking.js's
+// pointsFor() does for every other category, so this card's Pts column
+// always matches the Scoring tab's breakdown table.
 function computePlayoffResultsForManager_(current, data, cats, actual) {
   let score = 0;
   let correct = 0;
@@ -268,12 +275,23 @@ export function renderPlayoffPoolSection(slot, data) {
       : { mvpHtml: "", groupsHtml: "", score: 0, correct: 0, hasPicks: false };
   });
 
+  // Re-rank each manager's raw score tie-aware (same 4/3/2/1, avg-if-tied
+  // logic as ranking.js's pointsFor()) so this card's "Pts" always matches
+  // the Scoring tab's "Playoff Bracket Pool — Tier Pts" column, rather than
+  // showing the raw weighted total.
+  const tierPtsByManager = {};
+  if (picks.length) {
+    const managersForRank = picks.map(p => ({ name: p.manager, rawScore: resultsByManager[p.manager].score }));
+    const tierRows = rankCategory(managersForRank, m => m.rawScore);
+    tierRows.forEach(r => { tierPtsByManager[r.name] = r.points; });
+  }
+
   const scoreCardHtml = picks.length ? `
     <div class="table-card">
       <table class="data-table">
         <thead><tr><th>Manager</th><th>Correct</th><th>Pts</th></tr></thead>
         <tbody>${[...picks].sort((a, b) => resultsByManager[b.manager].score - resultsByManager[a.manager].score).map(p => `
-          <tr><td>${escapeHtml(p.manager)}</td><td>${fmt(resultsByManager[p.manager].correct)}</td><td class="pts">${fmt(resultsByManager[p.manager].score)}</td></tr>`).join("")}</tbody>
+          <tr><td>${escapeHtml(p.manager)}</td><td>${fmt(resultsByManager[p.manager].correct)}</td><td class="pts">${fmt(tierPtsByManager[p.manager])}</td></tr>`).join("")}</tbody>
       </table>
     </div>` : "";
 
