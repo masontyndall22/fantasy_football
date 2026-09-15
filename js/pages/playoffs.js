@@ -255,7 +255,7 @@ export function renderPlayoffPoolSection(slot, data) {
     const hasPicks = !!(cats.length && p.picks && Object.keys(p.picks).length);
     resultsByManager[p.manager] = hasPicks
       ? { ...computePlayoffResultsForManager_(p, data, cats, actual), hasPicks: true }
-      : { mvpHtml: "", groupsHtml: "", score: 0, hasPicks: false };
+      : { mvpHtml: "", groupsHtml: "", score: 2.5, hasPicks: false };
   });
 
   const scoreCardHtml = picks.length ? `
