@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T07:43:04.675Z",
+  "generatedAt": "2026-09-16T08:43:01.661Z",
   "managers": [
     {
       "name": "Ben",
@@ -15,9 +15,11 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 18,
+        "score": 8,
         "letter": "F",
-        "reasons": []
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
       }
     },
     {
@@ -34,10 +36,10 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 50,
+        "score": 45,
         "letter": "F",
         "reasons": [
-          "Spent big on waivers and it paid off"
+          "Drafted well, barely touched waivers"
         ]
       }
     },
@@ -57,7 +59,9 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": []
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
       }
     },
     {
@@ -77,7 +81,7 @@
         "score": 100,
         "letter": "A+",
         "reasons": [
-          "Spent big on waivers and it paid off"
+          "Drafted well, barely touched waivers"
         ]
       }
     }
@@ -11067,8 +11071,8 @@
           "position": "DEF",
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 1
         },
         {
           "round": 15,
@@ -11091,6 +11095,15 @@
         },
         {
           "position": "RB",
+          "name": "Chris Brooks",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 90.84,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "MarShawn Lloyd",
           "tag": "kept",
           "tagWeek": null,
@@ -11105,15 +11118,6 @@
           "tagWeek": null,
           "points": 5.4,
           "projectedPoints": 145.66,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Kaleb Johnson",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 0,
-          "projectedPoints": 16.79,
           "isStarter": true
         },
         {
@@ -11199,11 +11203,11 @@
         },
         {
           "position": "DEF",
-          "name": "Jacksonville Jaguars",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 15,
-          "projectedPoints": 119.25,
+          "name": "San Francisco 49ers",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 105.53,
           "isStarter": true
         },
         {
@@ -11225,11 +11229,11 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
+      "faabSpent": 2,
       "transactions": {
-        "adds": 1,
+        "adds": 3,
         "trades": 0,
-        "total": 1
+        "total": 3
       },
       "starterPoints": {
         "pointsFor": 147.32,
@@ -11358,8 +11362,8 @@
           "position": "DEF",
           "name": "Los Angeles Chargers",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11500,11 +11504,11 @@
         },
         {
           "position": "DEF",
-          "name": "Los Angeles Chargers",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 1,
-          "projectedPoints": 103.09,
+          "name": "Tampa Bay Buccaneers",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 104.19,
           "isStarter": true
         },
         {
@@ -11526,11 +11530,11 @@
         ]
       },
       "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
+      "faabSpent": 2,
       "transactions": {
-        "adds": 3,
+        "adds": 4,
         "trades": 0,
-        "total": 3
+        "total": 4
       },
       "starterPoints": {
         "pointsFor": 139.96,
