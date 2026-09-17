@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T07:43:04.146Z",
+  "generatedAt": "2026-09-17T08:43:11.572Z",
   "managers": [
     {
       "name": "Ben",
@@ -10913,7 +10913,7 @@
           "position": "TE",
           "name": "Juwan Johnson",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 14.4,
           "projectedPoints": 169.15,
           "isStarter": true
@@ -10947,7 +10947,11 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": null,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
       "starterPoints": {
         "pointsFor": 149.4,
         "pointsAgainst": 104.36,
@@ -11068,7 +11072,7 @@
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         },
         {
           "round": 15,
@@ -11076,7 +11080,7 @@
           "name": "Adam Randall",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11093,7 +11097,7 @@
           "position": "RB",
           "name": "Chris Brooks",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 90.84,
           "isStarter": true
@@ -11201,7 +11205,7 @@
           "position": "DEF",
           "name": "San Francisco 49ers",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 105.49,
           "isStarter": true
@@ -11225,8 +11229,12 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
-      "transactions": null,
+      "faabSpent": 2,
+      "transactions": {
+        "adds": 3,
+        "trades": 0,
+        "total": 3
+      },
       "starterPoints": {
         "pointsFor": 147.32,
         "pointsAgainst": 95.46,
@@ -11355,7 +11363,7 @@
           "name": "Los Angeles Chargers",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11390,7 +11398,7 @@
           "position": "RB",
           "name": "Kaelon Black",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 8,
           "projectedPoints": 90.82,
           "isStarter": true
@@ -11417,7 +11425,7 @@
           "position": "RB",
           "name": "Rachaad White",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 4.7,
           "projectedPoints": 146.81,
           "isStarter": true
@@ -11498,7 +11506,7 @@
           "position": "DEF",
           "name": "Tampa Bay Buccaneers",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 0,
           "projectedPoints": 104.19,
           "isStarter": true
@@ -11522,8 +11530,12 @@
         ]
       },
       "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
-      "transactions": null,
+      "faabSpent": 2,
+      "transactions": {
+        "adds": 4,
+        "trades": 0,
+        "total": 4
+      },
       "starterPoints": {
         "pointsFor": 139.96,
         "pointsAgainst": 177.76,
@@ -11652,7 +11664,7 @@
           "name": "Tyreek Hill",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11786,7 +11798,7 @@
           "position": "DEF",
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 20,
           "projectedPoints": 118.48,
           "isStarter": true
@@ -11812,9 +11824,9 @@
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 1,
       "transactions": {
-        "adds": 1,
+        "adds": 2,
         "trades": 0,
-        "total": 1
+        "total": 2
       },
       "starterPoints": {
         "pointsFor": 177.76,
