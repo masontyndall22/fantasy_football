@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T06:43:05.730Z",
+  "generatedAt": "2026-09-17T07:43:04.146Z",
   "managers": [
     {
       "name": "Ben",
@@ -10913,7 +10913,7 @@
           "position": "TE",
           "name": "Juwan Johnson",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 14.4,
           "projectedPoints": 169.15,
           "isStarter": true
@@ -10947,11 +10947,7 @@
       },
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 0,
-      "transactions": {
-        "adds": 1,
-        "trades": 0,
-        "total": 1
-      },
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 149.4,
         "pointsAgainst": 104.36,
@@ -11072,7 +11068,7 @@
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": 1
+          "exitWeek": null
         },
         {
           "round": 15,
@@ -11080,7 +11076,7 @@
           "name": "Adam Randall",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": 1
+          "exitWeek": null
         }
       ],
       "final": [
@@ -11097,7 +11093,7 @@
           "position": "RB",
           "name": "Chris Brooks",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 0,
           "projectedPoints": 90.84,
           "isStarter": true
@@ -11205,7 +11201,7 @@
           "position": "DEF",
           "name": "San Francisco 49ers",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 0,
           "projectedPoints": 105.49,
           "isStarter": true
@@ -11229,12 +11225,8 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 2,
-      "transactions": {
-        "adds": 3,
-        "trades": 0,
-        "total": 3
-      },
+      "faabSpent": 0,
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 147.32,
         "pointsAgainst": 95.46,
@@ -11363,7 +11355,7 @@
           "name": "Los Angeles Chargers",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": 1
+          "exitWeek": null
         }
       ],
       "final": [
@@ -11398,7 +11390,7 @@
           "position": "RB",
           "name": "Kaelon Black",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 8,
           "projectedPoints": 90.82,
           "isStarter": true
@@ -11425,7 +11417,7 @@
           "position": "RB",
           "name": "Rachaad White",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 4.7,
           "projectedPoints": 146.81,
           "isStarter": true
@@ -11506,7 +11498,7 @@
           "position": "DEF",
           "name": "Tampa Bay Buccaneers",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 0,
           "projectedPoints": 104.19,
           "isStarter": true
@@ -11530,12 +11522,8 @@
         ]
       },
       "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 2,
-      "transactions": {
-        "adds": 4,
-        "trades": 0,
-        "total": 4
-      },
+      "faabSpent": 0,
+      "transactions": null,
       "starterPoints": {
         "pointsFor": 139.96,
         "pointsAgainst": 177.76,
@@ -11664,7 +11652,7 @@
           "name": "Tyreek Hill",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": 1
+          "exitWeek": null
         }
       ],
       "final": [
@@ -11786,10 +11774,19 @@
           "isStarter": true
         },
         {
+          "position": "TE",
+          "name": "Dallas Goedert",
+          "tag": "waiver",
+          "tagWeek": 2,
+          "points": 0,
+          "projectedPoints": 155.81,
+          "isStarter": true
+        },
+        {
           "position": "DEF",
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
-          "tagWeek": 1,
+          "tagWeek": null,
           "points": 20,
           "projectedPoints": 118.48,
           "isStarter": true
@@ -11813,7 +11810,7 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
+      "faabSpent": 1,
       "transactions": {
         "adds": 1,
         "trades": 0,
