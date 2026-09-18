@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T06:43:00.440Z",
+  "generatedAt": "2026-09-18T07:43:04.034Z",
   "managers": [
     {
       "name": "Ben",
@@ -11423,15 +11423,6 @@
         },
         {
           "position": "RB",
-          "name": "Rachaad White",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 4.7,
-          "projectedPoints": 122.78,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
           "name": "Zach Charbonnet",
           "tag": "kept",
           "tagWeek": null,
@@ -11504,6 +11495,15 @@
         },
         {
           "position": "DEF",
+          "name": "Minnesota Vikings",
+          "tag": "waiver",
+          "tagWeek": 2,
+          "points": 0,
+          "projectedPoints": 116.01,
+          "isStarter": true
+        },
+        {
+          "position": "DEF",
           "name": "Tampa Bay Buccaneers",
           "tag": "waiver",
           "tagWeek": 1,
@@ -11532,9 +11532,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
-        "adds": 4,
+        "adds": 5,
         "trades": 0,
-        "total": 4
+        "total": 5
       },
       "starterPoints": {
         "pointsFor": 139.96,
