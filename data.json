@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T05:43:03.811Z",
+  "generatedAt": "2026-09-19T06:43:18.309Z",
   "managers": [
     {
       "name": "Ben",
@@ -10668,709 +10668,13 @@
     },
     {
       "season": "2026",
-      "manager": "Ben",
-      "drafted": [
-        {
-          "round": 1,
-          "position": "RB",
-          "name": "Jahmyr Gibbs",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 2,
-          "position": "RB",
-          "name": "Chase Brown",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 3,
-          "position": "RB",
-          "name": "Ashton Jeanty",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 4,
-          "position": "WR",
-          "name": "Emeka Egbuka",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 5,
-          "position": "WR",
-          "name": "Davante Adams",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 6,
-          "position": "TE",
-          "name": "Sam LaPorta",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 7,
-          "position": "RB",
-          "name": "Chuba Hubbard",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 8,
-          "position": "WR",
-          "name": "Christian Watson",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 9,
-          "position": "WR",
-          "name": "Makai Lemon",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 10,
-          "position": "QB",
-          "name": "Jaxson Dart",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 11,
-          "position": "QB",
-          "name": "Matthew Stafford",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 12,
-          "position": "WR",
-          "name": "Deebo Samuel",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 13,
-          "position": "RB",
-          "name": "Isiah Pacheco",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
-          "position": "K",
-          "name": "Jake Bates",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "DEF",
-          "name": "Philadelphia Eagles",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        }
-      ],
-      "final": [
-        {
-          "position": "QB",
-          "name": "Jaxson Dart",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 26.6,
-          "projectedPoints": 310.76,
-          "isStarter": true
-        },
-        {
-          "position": "QB",
-          "name": "Matthew Stafford",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 5.1,
-          "projectedPoints": 290.58,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Ashton Jeanty",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 32.7,
-          "projectedPoints": 247.3,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Chuba Hubbard",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 23.7,
-          "projectedPoints": 198.04,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Isiah Pacheco",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 0,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Jahmyr Gibbs",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 56.9,
-          "projectedPoints": 411.08,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Chase Brown",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 18.8,
-          "projectedPoints": 282.78,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Emeka Egbuka",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 11.3,
-          "projectedPoints": 194.48,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Makai Lemon",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 2.5,
-          "projectedPoints": 108.96,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Davante Adams",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 5.6,
-          "projectedPoints": 209.84,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Deebo Samuel",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 18,
-          "projectedPoints": 163.77,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Christian Watson",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 32.7,
-          "projectedPoints": 241.5,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
-          "name": "Sam LaPorta",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 27,
-          "projectedPoints": 203.67,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
-          "name": "Juwan Johnson",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 14.4,
-          "projectedPoints": 164.22,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
-          "name": "Philadelphia Eagles",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 4,
-          "projectedPoints": 132.61,
-          "isStarter": true
-        },
-        {
-          "position": "K",
-          "name": "Jake Bates",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 14,
-          "projectedPoints": 114.15,
-          "isStarter": true
-        }
-      ],
-      "hasBenchSplit": false,
-      "seasonGrade": {
-        "score": 8,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
-      "transactions": {
-        "adds": 1,
-        "trades": 0,
-        "total": 1
-      },
-      "starterPoints": {
-        "pointsFor": 149.4,
-        "pointsAgainst": 104.36,
-        "pointsProjected": 129.2
-      }
-    },
-    {
-      "season": "2026",
-      "manager": "Caleb",
-      "drafted": [
-        {
-          "round": 1,
-          "position": "WR",
-          "name": "Ja'Marr Chase",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 2,
-          "position": "WR",
-          "name": "Jaxon Smith-Njigba",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 3,
-          "position": "RB",
-          "name": "Derrick Henry",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 4,
-          "position": "WR",
-          "name": "Ladd McConkey",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 5,
-          "position": "RB",
-          "name": "Josh Jacobs",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 6,
-          "position": "QB",
-          "name": "Jalen Hurts",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 7,
-          "position": "RB",
-          "name": "Tony Pollard",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 8,
-          "position": "WR",
-          "name": "DK Metcalf",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 9,
-          "position": "TE",
-          "name": "Tyler Warren",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 10,
-          "position": "RB",
-          "name": "Blake Corum",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 11,
-          "position": "TE",
-          "name": "Travis Kelce",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 12,
-          "position": "RB",
-          "name": "MarShawn Lloyd",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 13,
-          "position": "K",
-          "name": "Ka'imi Fairbairn",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
-          "position": "DEF",
-          "name": "Jacksonville Jaguars",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
-        },
-        {
-          "round": 15,
-          "position": "RB",
-          "name": "Adam Randall",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
-        }
-      ],
-      "final": [
-        {
-          "position": "QB",
-          "name": "Jalen Hurts",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 24.72,
-          "projectedPoints": 332.82,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Chris Brooks",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 0,
-          "projectedPoints": 65.16,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "MarShawn Lloyd",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 3.7,
-          "projectedPoints": 138.38,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Blake Corum",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 5.4,
-          "projectedPoints": 145.66,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Derrick Henry",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 35.3,
-          "projectedPoints": 263.26,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Josh Jacobs",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 107.14,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Tony Pollard",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 4.4,
-          "projectedPoints": 173.87,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Ladd McConkey",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 19.2,
-          "projectedPoints": 223.76,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "DK Metcalf",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 8,
-          "projectedPoints": 193.06,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Ja'Marr Chase",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 3.2,
-          "projectedPoints": 320.48,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Jaxon Smith-Njigba",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 26.2,
-          "projectedPoints": 333.91,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
-          "name": "Tyler Warren",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 10.3,
-          "projectedPoints": 198.97,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
-          "name": "Travis Kelce",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 10.1,
-          "projectedPoints": 195.05,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
-          "name": "San Francisco 49ers",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 0,
-          "projectedPoints": 107.14,
-          "isStarter": true
-        },
-        {
-          "position": "K",
-          "name": "Ka'imi Fairbairn",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 9,
-          "projectedPoints": 117.81,
-          "isStarter": true
-        }
-      ],
-      "hasBenchSplit": false,
-      "seasonGrade": {
-        "score": 45,
-        "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
-      },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 2,
-      "transactions": {
-        "adds": 3,
-        "trades": 0,
-        "total": 3
-      },
-      "starterPoints": {
-        "pointsFor": 147.32,
-        "pointsAgainst": 95.46,
-        "pointsProjected": 130.46
-      }
-    },
-    {
-      "season": "2026",
       "manager": "Kyle",
-      "drafted": [
-        {
-          "round": 1,
-          "position": "RB",
-          "name": "Christian McCaffrey",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 2,
-          "position": "TE",
-          "name": "Trey McBride",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 3,
-          "position": "WR",
-          "name": "Malik Nabers",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 4,
-          "position": "RB",
-          "name": "Travis Etienne",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 5,
-          "position": "WR",
-          "name": "Garrett Wilson",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 6,
-          "position": "WR",
-          "name": "Chris Olave",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 7,
-          "position": "QB",
-          "name": "Jayden Daniels",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 8,
-          "position": "WR",
-          "name": "Carnell Tate",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 9,
-          "position": "RB",
-          "name": "Cam Skattebo",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 10,
-          "position": "WR",
-          "name": "Jordyn Tyson",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 11,
-          "position": "QB",
-          "name": "Patrick Mahomes",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 12,
-          "position": "WR",
-          "name": "Stefon Diggs",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 13,
-          "position": "K",
-          "name": "Cam Little",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
-          "position": "RB",
-          "name": "Zach Charbonnet",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "DEF",
-          "name": "Los Angeles Chargers",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
-        }
-      ],
+      "drafted": [],
       "final": [
         {
           "position": "QB",
           "name": "Jayden Daniels",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 17.66,
           "projectedPoints": 309.21,
@@ -11379,7 +10683,7 @@
         {
           "position": "QB",
           "name": "Patrick Mahomes",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 22.66,
           "projectedPoints": 321.23,
@@ -11388,7 +10692,7 @@
         {
           "position": "RB",
           "name": "Cam Skattebo",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 14.1,
           "projectedPoints": 237.37,
@@ -11406,7 +10710,7 @@
         {
           "position": "RB",
           "name": "Christian McCaffrey",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 13.8,
           "projectedPoints": 320.23,
@@ -11415,7 +10719,7 @@
         {
           "position": "RB",
           "name": "Travis Etienne",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 14.8,
           "projectedPoints": 197.48,
@@ -11424,7 +10728,7 @@
         {
           "position": "RB",
           "name": "Zach Charbonnet",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 0,
@@ -11433,7 +10737,7 @@
         {
           "position": "WR",
           "name": "Malik Nabers",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 12.9,
           "projectedPoints": 234.77,
@@ -11442,7 +10746,7 @@
         {
           "position": "WR",
           "name": "Carnell Tate",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 7.8,
           "projectedPoints": 175.7,
@@ -11451,7 +10755,7 @@
         {
           "position": "WR",
           "name": "Jordyn Tyson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 121.44,
@@ -11460,7 +10764,7 @@
         {
           "position": "WR",
           "name": "Stefon Diggs",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 15.5,
           "projectedPoints": 183.02,
@@ -11469,7 +10773,7 @@
         {
           "position": "WR",
           "name": "Chris Olave",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 28.2,
           "projectedPoints": 271.64,
@@ -11478,7 +10782,7 @@
         {
           "position": "WR",
           "name": "Garrett Wilson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 13.9,
           "projectedPoints": 232.77,
@@ -11487,7 +10791,7 @@
         {
           "position": "TE",
           "name": "Trey McBride",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 24.5,
           "projectedPoints": 264.34,
@@ -11514,7 +10818,7 @@
         {
           "position": "K",
           "name": "Cam Little",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 12,
           "projectedPoints": 107.79,
@@ -11544,134 +10848,346 @@
     },
     {
       "season": "2026",
-      "manager": "Mason",
-      "drafted": [
+      "manager": "Caleb",
+      "drafted": [],
+      "final": [
         {
-          "round": 1,
-          "position": "WR",
-          "name": "Justin Jefferson",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 2,
-          "position": "RB",
-          "name": "Omarion Hampton",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 3,
-          "position": "RB",
-          "name": "Kenneth Walker",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 4,
-          "position": "RB",
-          "name": "Breece Hall",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 5,
-          "position": "WR",
-          "name": "Rashee Rice",
-          "isKeeper": true,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 6,
-          "position": "WR",
-          "name": "Luther Burden",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 7,
           "position": "QB",
-          "name": "Caleb Williams",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "name": "Jalen Hurts",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 24.72,
+          "projectedPoints": 332.82,
+          "isStarter": true
         },
         {
-          "round": 8,
+          "position": "RB",
+          "name": "Chris Brooks",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 65.16,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "MarShawn Lloyd",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 3.7,
+          "projectedPoints": 138.38,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Blake Corum",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 5.4,
+          "projectedPoints": 145.66,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Derrick Henry",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 35.3,
+          "projectedPoints": 263.26,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Josh Jacobs",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 0,
+          "projectedPoints": 107.14,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Tony Pollard",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 4.4,
+          "projectedPoints": 173.87,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 19.2,
+          "projectedPoints": 223.76,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "DK Metcalf",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 8,
+          "projectedPoints": 193.06,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Ja'Marr Chase",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 3.2,
+          "projectedPoints": 320.48,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Jaxon Smith-Njigba",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 26.2,
+          "projectedPoints": 333.91,
+          "isStarter": true
+        },
+        {
           "position": "TE",
-          "name": "George Kittle",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "name": "Tyler Warren",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 10.3,
+          "projectedPoints": 198.97,
+          "isStarter": true
         },
         {
-          "round": 9,
-          "position": "RB",
-          "name": "J.K. Dobbins",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "position": "TE",
+          "name": "Travis Kelce",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 10.1,
+          "projectedPoints": 195.05,
+          "isStarter": true
         },
         {
-          "round": 10,
-          "position": "WR",
-          "name": "Michael Wilson",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "position": "DEF",
+          "name": "San Francisco 49ers",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 0,
+          "projectedPoints": 107.14,
+          "isStarter": true
         },
         {
-          "round": 11,
-          "position": "RB",
-          "name": "Jordan Mason",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 12,
-          "position": "QB",
-          "name": "Bo Nix",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 13,
-          "position": "RB",
-          "name": "Mike Washington",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
           "position": "K",
-          "name": "Tyler Loop",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "WR",
-          "name": "Tyreek Hill",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
+          "name": "Ka'imi Fairbairn",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 9,
+          "projectedPoints": 117.81,
+          "isStarter": true
         }
       ],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 45,
+        "letter": "F",
+        "reasons": [
+          "Drafted well, barely touched waivers"
+        ]
+      },
+      "gradeNote": "Drafted well, barely touched waivers",
+      "faabSpent": 2,
+      "transactions": {
+        "adds": 3,
+        "trades": 0,
+        "total": 3
+      },
+      "starterPoints": {
+        "pointsFor": 147.32,
+        "pointsAgainst": 95.46,
+        "pointsProjected": 130.46
+      }
+    },
+    {
+      "season": "2026",
+      "manager": "Ben",
+      "drafted": [],
+      "final": [
+        {
+          "position": "QB",
+          "name": "Jaxson Dart",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 26.6,
+          "projectedPoints": 310.76,
+          "isStarter": true
+        },
+        {
+          "position": "QB",
+          "name": "Matthew Stafford",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 5.1,
+          "projectedPoints": 290.58,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 32.7,
+          "projectedPoints": 247.3,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Chuba Hubbard",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 23.7,
+          "projectedPoints": 198.04,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Isiah Pacheco",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 0,
+          "projectedPoints": 0,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Jahmyr Gibbs",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 56.9,
+          "projectedPoints": 411.08,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Chase Brown",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 18.8,
+          "projectedPoints": 282.78,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Emeka Egbuka",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 11.3,
+          "projectedPoints": 194.48,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Makai Lemon",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 2.5,
+          "projectedPoints": 108.96,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Davante Adams",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 5.6,
+          "projectedPoints": 209.84,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Deebo Samuel",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 18,
+          "projectedPoints": 163.77,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Christian Watson",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 32.7,
+          "projectedPoints": 241.5,
+          "isStarter": true
+        },
+        {
+          "position": "TE",
+          "name": "Sam LaPorta",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 27,
+          "projectedPoints": 203.67,
+          "isStarter": true
+        },
+        {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "tag": "waiver",
+          "tagWeek": 1,
+          "points": 14.4,
+          "projectedPoints": 164.22,
+          "isStarter": true
+        },
+        {
+          "position": "DEF",
+          "name": "Philadelphia Eagles",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 4,
+          "projectedPoints": 132.61,
+          "isStarter": true
+        },
+        {
+          "position": "K",
+          "name": "Jake Bates",
+          "tag": "waiver",
+          "tagWeek": null,
+          "points": 14,
+          "projectedPoints": 114.15,
+          "isStarter": true
+        }
+      ],
+      "hasBenchSplit": false,
+      "seasonGrade": {
+        "score": 8,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      },
+      "gradeNote": "Passive on waivers while the team struggled",
+      "faabSpent": 0,
+      "transactions": {
+        "adds": 1,
+        "trades": 0,
+        "total": 1
+      },
+      "starterPoints": {
+        "pointsFor": 149.4,
+        "pointsAgainst": 104.36,
+        "pointsProjected": 129.2
+      }
+    },
+    {
+      "season": "2026",
+      "manager": "Mason",
+      "drafted": [],
       "final": [
         {
           "position": "QB",
           "name": "Caleb Williams",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 37.26,
           "projectedPoints": 324.29,
@@ -11680,7 +11196,7 @@
         {
           "position": "QB",
           "name": "Bo Nix",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 6.44,
           "projectedPoints": 292.5,
@@ -11689,7 +11205,7 @@
         {
           "position": "RB",
           "name": "Omarion Hampton",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 8.3,
           "projectedPoints": 240.72,
@@ -11698,7 +11214,7 @@
         {
           "position": "RB",
           "name": "Mike Washington",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 4.1,
           "projectedPoints": 63.13,
@@ -11707,7 +11223,7 @@
         {
           "position": "RB",
           "name": "J.K. Dobbins",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 3.6,
           "projectedPoints": 146.2,
@@ -11716,7 +11232,7 @@
         {
           "position": "RB",
           "name": "Kenneth Walker",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 34.1,
           "projectedPoints": 263.96,
@@ -11725,7 +11241,7 @@
         {
           "position": "RB",
           "name": "Breece Hall",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 19.8,
           "projectedPoints": 244.49,
@@ -11734,7 +11250,7 @@
         {
           "position": "RB",
           "name": "Jordan Mason",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 11.9,
           "projectedPoints": 114.31,
@@ -11743,7 +11259,7 @@
         {
           "position": "WR",
           "name": "Rashee Rice",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 9.9,
           "projectedPoints": 241.63,
@@ -11752,7 +11268,7 @@
         {
           "position": "WR",
           "name": "Michael Wilson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 10.6,
           "projectedPoints": 187.08,
@@ -11761,7 +11277,7 @@
         {
           "position": "WR",
           "name": "Luther Burden",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 9.5,
           "projectedPoints": 212.5,
@@ -11770,7 +11286,7 @@
         {
           "position": "WR",
           "name": "Justin Jefferson",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 31.2,
           "projectedPoints": 288.09,
@@ -11779,7 +11295,7 @@
         {
           "position": "TE",
           "name": "George Kittle",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 3.2,
           "projectedPoints": 190.08,
@@ -11806,7 +11322,7 @@
         {
           "position": "K",
           "name": "Tyler Loop",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 14,
           "projectedPoints": 114.82,
