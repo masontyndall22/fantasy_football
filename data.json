@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:43:04.452Z",
+  "generatedAt": "2026-09-20T17:43:07.780Z",
   "managers": [
     {
       "name": "Ben",
@@ -10923,7 +10923,7 @@
           "name": "Philadelphia Eagles",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4,
+          "points": 14,
           "projectedPoints": 132.61,
           "isStarter": true
         },
@@ -11125,7 +11125,7 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 35.3,
+          "points": 35.8,
           "projectedPoints": 263.33,
           "isStarter": true
         },
@@ -11207,7 +11207,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 0,
-          "projectedPoints": 107.17,
+          "projectedPoints": 107.1,
           "isStarter": true
         },
         {
@@ -11216,7 +11216,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 9,
-          "projectedPoints": 117.81,
+          "projectedPoints": 117.87,
           "isStarter": true
         }
       ],
@@ -11498,8 +11498,8 @@
           "name": "Minnesota Vikings",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 0,
-          "projectedPoints": 115.95,
+          "points": 10,
+          "projectedPoints": 115.92,
           "isStarter": true
         },
         {
@@ -11507,7 +11507,7 @@
           "name": "Tampa Bay Buccaneers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 0,
+          "points": 10,
           "projectedPoints": 104.27,
           "isStarter": true
         },
@@ -11674,7 +11674,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 37.26,
-          "projectedPoints": 338.96,
+          "projectedPoints": 338.97,
           "isStarter": true
         },
         {
@@ -11799,8 +11799,8 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 20,
-          "projectedPoints": 118.91,
+          "points": 30,
+          "projectedPoints": 118.97,
           "isStarter": true
         },
         {
@@ -11809,7 +11809,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 14,
-          "projectedPoints": 114.73,
+          "projectedPoints": 114.76,
           "isStarter": true
         }
       ],
