@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T21:43:02.990Z",
+  "generatedAt": "2026-09-20T22:43:04.431Z",
   "managers": [
     {
       "name": "Ben",
@@ -10815,7 +10815,7 @@
           "name": "Ashton Jeanty",
           "tag": "kept",
           "tagWeek": null,
-          "points": 35.4,
+          "points": 40.2,
           "projectedPoints": 247.3,
           "isStarter": true
         },
@@ -10887,7 +10887,7 @@
           "name": "Deebo Samuel",
           "tag": "kept",
           "tagWeek": null,
-          "points": 19.2,
+          "points": 22.7,
           "projectedPoints": 163.98,
           "isStarter": true
         },
@@ -11107,7 +11107,7 @@
           "name": "MarShawn Lloyd",
           "tag": "kept",
           "tagWeek": null,
-          "points": 14.3,
+          "points": 12.3,
           "projectedPoints": 138.68,
           "isStarter": true
         },
@@ -11179,7 +11179,7 @@
           "name": "Jaxon Smith-Njigba",
           "tag": "kept",
           "tagWeek": null,
-          "points": 41.4,
+          "points": 47,
           "projectedPoints": 346.99,
           "isStarter": true
         },
@@ -11206,7 +11206,7 @@
           "name": "San Francisco 49ers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 9,
+          "points": 11,
           "projectedPoints": 107.07,
           "isStarter": true
         },
@@ -11372,7 +11372,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 22.76,
+          "points": 32.4,
           "projectedPoints": 310.23,
           "isStarter": true
         },
@@ -11408,7 +11408,7 @@
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 25.1,
+          "points": 28.5,
           "projectedPoints": 320.47,
           "isStarter": true
         },
@@ -11462,7 +11462,7 @@
           "name": "Stefon Diggs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 15.5,
+          "points": 26.7,
           "projectedPoints": 183.28,
           "isStarter": true
         },
@@ -11489,7 +11489,7 @@
           "name": "Trey McBride",
           "tag": "kept",
           "tagWeek": null,
-          "points": 38.4,
+          "points": 40.8,
           "projectedPoints": 277.01,
           "isStarter": true
         },
@@ -11516,7 +11516,7 @@
           "name": "Cam Little",
           "tag": "kept",
           "tagWeek": null,
-          "points": 13,
+          "points": 20,
           "projectedPoints": 107.79,
           "isStarter": true
         }
@@ -11682,7 +11682,7 @@
           "name": "Bo Nix",
           "tag": "kept",
           "tagWeek": null,
-          "points": 9.78,
+          "points": 12.82,
           "projectedPoints": 292.5,
           "isStarter": true
         },
@@ -11691,7 +11691,7 @@
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 14.1,
+          "points": 26.7,
           "projectedPoints": 240.72,
           "isStarter": true
         },
@@ -11700,7 +11700,7 @@
           "name": "Mike Washington",
           "tag": "kept",
           "tagWeek": null,
-          "points": 4.5,
+          "points": 4.4,
           "projectedPoints": 62.84,
           "isStarter": true
         },
@@ -11709,7 +11709,7 @@
           "name": "J.K. Dobbins",
           "tag": "kept",
           "tagWeek": null,
-          "points": 6.6,
+          "points": 6.8,
           "projectedPoints": 149.57,
           "isStarter": true
         },
@@ -11754,7 +11754,7 @@
           "name": "Michael Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 12.5,
+          "points": 14.4,
           "projectedPoints": 187.08,
           "isStarter": true
         },
@@ -11781,7 +11781,7 @@
           "name": "George Kittle",
           "tag": "kept",
           "tagWeek": null,
-          "points": 3.2,
+          "points": 16.4,
           "projectedPoints": 190.31,
           "isStarter": true
         },
