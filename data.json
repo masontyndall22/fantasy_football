@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T03:43:01.684Z",
+  "generatedAt": "2026-09-21T04:12:55.647Z",
   "managers": [
     {
       "name": "Ben",
@@ -8,35 +8,14 @@
       "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 9,
       "fdWins": 0,
-      "fdTop5Total": 128.86,
-      "fdTop10Total": 128.86,
-      "fdSeasonTotal": 128.86,
-      "playoffBracketScore": 0,
-      "mvpBonus": 0,
-      "overallLeagueRank": 3,
-      "seasonGrade": {
-        "score": 8,
-        "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
-      }
-    },
-    {
-      "name": "Caleb",
-      "totalStandingsPoints": 19.5,
-      "sleeperPprSeasonPoints": 147.32,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 8,
-      "fdWins": 0,
-      "fdTop5Total": 148.4,
-      "fdTop10Total": 148.4,
-      "fdSeasonTotal": 148.4,
+      "fdTop5Total": 221.78000000000003,
+      "fdTop10Total": 221.78000000000003,
+      "fdSeasonTotal": 221.78000000000003,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 45,
+        "score": 10,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -44,18 +23,39 @@
       }
     },
     {
+      "name": "Caleb",
+      "totalStandingsPoints": 16.5,
+      "sleeperPprSeasonPoints": 147.32,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 8,
+      "fdWins": 0,
+      "fdTop5Total": 242.84,
+      "fdTop10Total": 242.84,
+      "fdSeasonTotal": 242.84,
+      "playoffBracketScore": 0,
+      "mvpBonus": 0,
+      "overallLeagueRank": 2,
+      "seasonGrade": {
+        "score": 0,
+        "letter": "F",
+        "reasons": [
+          "Passive on waivers while the team struggled"
+        ]
+      }
+    },
+    {
       "name": "Kyle",
-      "totalStandingsPoints": 13.5,
+      "totalStandingsPoints": 16.5,
       "sleeperPprSeasonPoints": 139.96,
       "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 7,
       "fdWins": 0,
-      "fdTop5Total": 134.9,
-      "fdTop10Total": 134.9,
-      "fdSeasonTotal": 134.9,
+      "fdTop5Total": 247.78,
+      "fdTop10Total": 247.78,
+      "fdSeasonTotal": 247.78,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 4,
+      "overallLeagueRank": 2,
       "seasonGrade": {
         "score": 0,
         "letter": "F",
@@ -70,10 +70,10 @@
       "sleeperPprSeasonPoints": 177.76,
       "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 10,
-      "fdWins": 1,
-      "fdTop5Total": 192.5,
-      "fdTop10Total": 192.5,
-      "fdSeasonTotal": 192.5,
+      "fdWins": 2,
+      "fdTop5Total": 317.18,
+      "fdTop10Total": 317.18,
+      "fdSeasonTotal": 317.18,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -710,7 +710,7 @@
   "weeklyFanDuel": {
     "Ben": [
       128.86,
-      0,
+      92.92,
       0,
       0,
       0,
@@ -730,7 +730,7 @@
     ],
     "Caleb": [
       148.4,
-      0,
+      94.44,
       0,
       0,
       0,
@@ -750,7 +750,7 @@
     ],
     "Kyle": [
       134.9,
-      0,
+      112.88,
       0,
       0,
       0,
@@ -770,7 +770,7 @@
     ],
     "Mason": [
       192.5,
-      0,
+      124.68,
       0,
       0,
       0,
@@ -799,48 +799,69 @@
           "Kyle": 134.9,
           "Mason": 192.5
         }
+      },
+      {
+        "week": 2,
+        "scores": {
+          "Ben": 92.92,
+          "Caleb": 94.44,
+          "Kyle": 112.88,
+          "Mason": 124.68
+        }
       }
     ],
     "fdTop5": {
       "Ben": [
-        128.86
+        128.86,
+        92.92
       ],
       "Caleb": [
-        148.4
+        148.4,
+        94.44
       ],
       "Kyle": [
-        134.9
+        134.9,
+        112.88
       ],
       "Mason": [
-        192.5
+        192.5,
+        124.68
       ]
     },
     "fdTop10": {
       "Ben": [
-        128.86
+        128.86,
+        92.92
       ],
       "Caleb": [
-        148.4
+        148.4,
+        94.44
       ],
       "Kyle": [
-        134.9
+        134.9,
+        112.88
       ],
       "Mason": [
-        192.5
+        192.5,
+        124.68
       ]
     },
     "fdAllWeeks": {
       "Ben": [
-        128.86
+        128.86,
+        92.92
       ],
       "Caleb": [
-        148.4
+        148.4,
+        94.44
       ],
       "Kyle": [
-        134.9
+        134.9,
+        112.88
       ],
       "Mason": [
-        192.5
+        192.5,
+        124.68
       ]
     }
   },
@@ -10939,13 +10960,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 8,
+        "score": 10,
         "letter": "F",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 0,
       "transactions": {
         "adds": 1,
@@ -11197,7 +11218,7 @@
           "name": "Travis Kelce",
           "tag": "kept",
           "tagWeek": null,
-          "points": 30.4,
+          "points": 35.2,
           "projectedPoints": 193.9,
           "isStarter": true
         },
@@ -11222,13 +11243,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 45,
+        "score": 0,
         "letter": "F",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Passive on waivers while the team struggled"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
+      "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
         "adds": 3,
@@ -11381,7 +11402,7 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 45.5,
+          "points": 51.64,
           "projectedPoints": 321.24,
           "isStarter": true
         },
@@ -11718,7 +11739,7 @@
           "name": "Kenneth Walker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 50.5,
+          "points": 57.9,
           "projectedPoints": 264.03,
           "isStarter": true
         },
@@ -11745,7 +11766,7 @@
           "name": "Rashee Rice",
           "tag": "kept",
           "tagWeek": null,
-          "points": 18.1,
+          "points": 22.2,
           "projectedPoints": 241.63,
           "isStarter": true
         },
