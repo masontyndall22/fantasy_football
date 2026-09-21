@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T23:43:02.139Z",
+  "generatedAt": "2026-09-21T00:43:04.944Z",
   "managers": [
     {
       "name": "Ben",
@@ -11206,7 +11206,7 @@
           "name": "San Francisco 49ers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 12,
+          "points": 9,
           "projectedPoints": 107.07,
           "isStarter": true
         },
@@ -11462,8 +11462,8 @@
           "name": "Stefon Diggs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 28.2,
-          "projectedPoints": 183.28,
+          "points": 37.2,
+          "projectedPoints": 181.3,
           "isStarter": true
         },
         {
