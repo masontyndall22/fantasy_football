@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:43:11.658Z",
+  "generatedAt": "2026-09-22T12:43:03.002Z",
   "managers": [
     {
       "name": "Ben",
@@ -24,9 +24,9 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 18.5,
+      "totalStandingsPoints": 20.5,
       "sleeperPprSeasonPoints": 296.88,
-      "sleeperFinalPlacement": 3,
+      "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 8,
       "fdWins": 0,
       "fdTop5Total": 242.84,
@@ -36,7 +36,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 31,
+        "score": 52,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -66,9 +66,9 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 29.5,
+      "totalStandingsPoints": 27.5,
       "sleeperPprSeasonPoints": 295.78,
-      "sleeperFinalPlacement": 1,
+      "sleeperFinalPlacement": 3,
       "pickemTotalCorrect": 10,
       "fdWins": 2,
       "fdTop5Total": 317.18,
@@ -11243,7 +11243,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 31,
+        "score": 52,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
