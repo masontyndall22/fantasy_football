@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:43:03.002Z",
+  "generatedAt": "2026-09-22T12:54:09.008Z",
   "managers": [
     {
       "name": "Ben",
@@ -1839,6 +1839,15 @@
       "managerB": "Mason",
       "scoreB": 177.76,
       "winner": "Mason"
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "managerA": "Ben",
+      "scoreA": 127.4,
+      "managerB": "Mason",
+      "scoreB": 118.02,
+      "winner": "Ben"
     }
   ],
   "matchups": [
@@ -2633,6 +2642,15 @@
       "managerB": "Mason",
       "scoreB": 177.76,
       "winner": "Mason"
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "managerA": "Ben",
+      "scoreA": 127.4,
+      "managerB": "Mason",
+      "scoreB": 118.02,
+      "winner": "Ben"
     }
   ],
   "memberHistory": [
@@ -10945,7 +10963,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 8,
-          "projectedPoints": 134.3,
+          "projectedPoints": 134.27,
           "isStarter": true
         },
         {
@@ -10976,7 +10994,7 @@
       "starterPoints": {
         "pointsFor": 276.8,
         "pointsAgainst": 222.38,
-        "pointsProjected": 129.2
+        "pointsProjected": 132.95
       }
     },
     {
@@ -11138,7 +11156,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 15.6,
-          "projectedPoints": 144.09,
+          "projectedPoints": 144.1,
           "isStarter": true
         },
         {
@@ -11259,7 +11277,7 @@
       "starterPoints": {
         "pointsFor": 296.88,
         "pointsAgainst": 204.42,
-        "pointsProjected": 130.46
+        "pointsProjected": 128.15999999999997
       }
     },
     {
@@ -11560,7 +11578,7 @@
       "starterPoints": {
         "pointsFor": 254.3,
         "pointsAgainst": 319.48,
-        "pointsProjected": 127.70999999999998
+        "pointsProjected": 131.63
       }
     },
     {
@@ -11852,7 +11870,7 @@
       "starterPoints": {
         "pointsFor": 295.78,
         "pointsAgainst": 267.36,
-        "pointsProjected": 120.24000000000001
+        "pointsProjected": 120.77
       }
     }
   ],
@@ -11861,19 +11879,19 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "B- : Leaving Christian Watson’s 32.7 points on your bench for Davante Adams is a questionable move for a real-life football coach, even if your opponent handed you an easy Sleeper win. That victory is the only thing masking a dead-last FanDuel performance where you got blown out by 63 points."
+      "roast": "C+ : Winning 127.4-118.02 is nice, but starting Jaxson Dart's 0.8 over Matthew Stafford's 27.98 is the kind of QB call that leaves 27.2 points on the table — a rough one for a guy who coaches this stuff for a living. That win covers up dead-last FanDuel and a missed projection; it doesn't cover up the lineup card."
     },
     {
       "manager": "Caleb",
-      "roast": "B- : Walking away with a 50-point Sleeper win despite finishing third out of four in scoring, Pick'em, and projection overperformance is pure luck. Enjoy getting handed a free victory against a sub-100 dud before you inevitably start complaining about how screwed your team is."
+      "roast": "A- : Best Sleeper score of the week, the only manager to clear projection (+21.4), and a comfortable ~40-point win — a genuinely strong week across the board. The lone smudge is 10.7 points left on the bench starting Tyler Warren over Travis Kelce, but that's a rounding error next to everything else that went right."
     },
     {
       "manager": "Kyle",
-      "roast": "D- : Finishing dead last in Sleeper, dead last in Pick'em, and nearly 60 points off the lead in FanDuel is an impressively thorough way to open the season. Beating your lineup projection by 12 points is cute, but it doesn't mask a Week 1 where the entire operation completely derailed across every single competition."
+      "roast": "D+ : Last in Sleeper, missed projection by 17.3, and a QB-tier bench mistake at receiver — Malik Nabers' 1.1 over Stefon Diggs' 21.7 cost 20.6 points — on top of the loss. Second best in FanDuel is the only thing keeping this from a total wipeout; two weeks in and the \"streaky\" reputation is currently parked on the cold side."
     },
     {
       "manager": "Mason",
-      "roast": "A+ : Sweeping #1 in Sleeper, FanDuel, and Pick'em while smashing your projection by 57 points is about as dominant as a Week 1 can get. It's a complete masterclass across the board, even if your programmer brain will still insist it was all just random variance."
+      "roast": "B : No bench blunder, best FanDuel score of the week, and only a 2.75-point miss on projection — the clean, steady week of the group, just not quite enough to escape the Ben matchup loss (118.02-127.4). Quietly the most mistake-free performance of the four, even in a loss."
     }
   ]
 }
