@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T16:43:01.824Z",
+  "generatedAt": "2026-09-22T17:43:02.201Z",
   "managers": [
     {
       "name": "Ben",
@@ -11539,15 +11539,6 @@
           "tagWeek": 2,
           "points": 18,
           "projectedPoints": 117.72,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
-          "name": "Tampa Bay Buccaneers",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 2,
-          "projectedPoints": 104.1,
           "isStarter": true
         },
         {
