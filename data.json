@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T07:43:12.788Z",
+  "generatedAt": "2026-09-23T08:43:02.161Z",
   "managers": [
     {
       "name": "Ben",
@@ -17,9 +17,7 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       }
     },
     {
@@ -10778,8 +10776,8 @@
           "position": "WR",
           "name": "Makai Lemon",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 2
         },
         {
           "round": 10,
@@ -10850,6 +10848,15 @@
           "isStarter": true
         },
         {
+          "position": "QB",
+          "name": "Brock Purdy",
+          "tag": "waiver",
+          "tagWeek": 2,
+          "points": 0,
+          "projectedPoints": 305.58,
+          "isStarter": true
+        },
+        {
           "position": "RB",
           "name": "Ashton Jeanty",
           "tag": "kept",
@@ -10901,15 +10908,6 @@
           "tagWeek": null,
           "points": 21.6,
           "projectedPoints": 186.05,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Makai Lemon",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 4.4,
-          "projectedPoints": 108.08,
           "isStarter": true
         },
         {
@@ -10980,16 +10978,14 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 21,
       "transactions": {
-        "adds": 1,
+        "adds": 2,
         "trades": 0,
-        "total": 1
+        "total": 2
       },
       "starterPoints": {
         "pointsFor": 276.8,
@@ -11219,7 +11215,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.7,
-          "projectedPoints": 347.05,
+          "projectedPoints": 347.61,
           "isStarter": true
         },
         {
@@ -11502,7 +11498,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 37.2,
-          "projectedPoints": 188.72,
+          "projectedPoints": 188.98,
           "isStarter": true
         },
         {
