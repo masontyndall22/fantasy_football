@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T06:43:03.464Z",
+  "generatedAt": "2026-09-24T07:43:06.190Z",
   "managers": [
     {
       "name": "Ben",
@@ -11521,6 +11521,15 @@
         },
         {
           "position": "TE",
+          "name": "Dalton Schultz",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 142.14,
+          "isStarter": true
+        },
+        {
+          "position": "TE",
           "name": "Trey McBride",
           "tag": "kept",
           "tagWeek": null,
@@ -11558,9 +11567,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
-        "adds": 5,
+        "adds": 6,
         "trades": 0,
-        "total": 5
+        "total": 6
       },
       "starterPoints": {
         "pointsFor": 254.3,
@@ -11713,6 +11722,15 @@
           "isStarter": true
         },
         {
+          "position": "QB",
+          "name": "Jared Goff",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 274.17,
+          "isStarter": true
+        },
+        {
           "position": "RB",
           "name": "Omarion Hampton",
           "tag": "kept",
@@ -11848,11 +11866,11 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 1,
+      "faabSpent": 4,
       "transactions": {
-        "adds": 2,
+        "adds": 3,
         "trades": 0,
-        "total": 2
+        "total": 3
       },
       "starterPoints": {
         "pointsFor": 295.78,
