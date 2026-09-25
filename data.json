@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T06:43:05.176Z",
+  "generatedAt": "2026-09-25T07:43:08.972Z",
   "managers": [
     {
       "name": "Ben",
@@ -11089,8 +11089,8 @@
           "position": "K",
           "name": "Ka'imi Fairbairn",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 3
         },
         {
           "round": 14,
@@ -11238,11 +11238,11 @@
         },
         {
           "position": "K",
-          "name": "Ka'imi Fairbairn",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 15,
-          "projectedPoints": 147.03,
+          "name": "Evan McPherson",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 119.78,
           "isStarter": true
         }
       ],
@@ -11257,9 +11257,9 @@
       "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 2,
       "transactions": {
-        "adds": 3,
+        "adds": 4,
         "trades": 0,
-        "total": 3
+        "total": 4
       },
       "starterPoints": {
         "pointsFor": 296.88,
