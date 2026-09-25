@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T02:43:02.037Z",
+  "generatedAt": "2026-09-25T03:43:03.992Z",
   "managers": [
     {
       "name": "Ben",
@@ -10924,7 +10924,7 @@
           "name": "Christian Watson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 57.4,
+          "points": 65.4,
           "projectedPoints": 261.78,
           "isStarter": true
         },
@@ -11133,7 +11133,7 @@
           "name": "MarShawn Lloyd",
           "tag": "kept",
           "tagWeek": null,
-          "points": 15.7,
+          "points": 16.1,
           "projectedPoints": 137.95,
           "isStarter": true
         },
@@ -11152,7 +11152,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53,
-          "projectedPoints": 295.13,
+          "projectedPoints": 295.16,
           "isStarter": true
         },
         {
@@ -11844,7 +11844,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 19,
-          "projectedPoints": 135.95,
+          "projectedPoints": 135.98,
           "isStarter": true
         }
       ],
