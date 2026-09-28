@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-28T12:43:03.873Z",
+  "generatedAt": "2026-09-28T13:09:02.624Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 16.5,
+      "totalStandingsPoints": 16,
       "sleeperPprSeasonPoints": 276.8,
       "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 17,
       "fdWins": 0,
-      "fdTop5Total": 221.78000000000003,
-      "fdTop10Total": 221.78000000000003,
-      "fdSeasonTotal": 221.78000000000003,
+      "fdTop5Total": 322.42,
+      "fdTop10Total": 322.42,
+      "fdSeasonTotal": 322.42,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -22,19 +22,19 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 296.88,
       "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 14,
       "fdWins": 0,
-      "fdTop5Total": 242.84,
-      "fdTop10Total": 242.84,
-      "fdSeasonTotal": 242.84,
+      "fdTop5Total": 343.52,
+      "fdTop10Total": 343.52,
+      "fdSeasonTotal": 343.52,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 45,
+        "score": 43,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -43,19 +43,19 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 17,
+      "totalStandingsPoints": 18,
       "sleeperPprSeasonPoints": 254.3,
       "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 14,
-      "fdWins": 0,
-      "fdTop5Total": 247.78,
-      "fdTop10Total": 247.78,
-      "fdSeasonTotal": 247.78,
+      "fdWins": 1,
+      "fdTop5Total": 389.82,
+      "fdTop10Total": 389.82,
+      "fdSeasonTotal": 389.82,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 0,
+        "score": 9,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -69,9 +69,9 @@
       "sleeperFinalPlacement": 3,
       "pickemTotalCorrect": 16,
       "fdWins": 2,
-      "fdTop5Total": 317.18,
-      "fdTop10Total": 317.18,
-      "fdSeasonTotal": 317.18,
+      "fdTop5Total": 425.1,
+      "fdTop10Total": 425.1,
+      "fdSeasonTotal": 425.1,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -709,7 +709,7 @@
     "Ben": [
       128.86,
       92.92,
-      0,
+      100.64,
       0,
       0,
       0,
@@ -729,7 +729,7 @@
     "Caleb": [
       148.4,
       94.44,
-      0,
+      100.68,
       0,
       0,
       0,
@@ -749,7 +749,7 @@
     "Kyle": [
       134.9,
       112.88,
-      0,
+      142.04,
       0,
       0,
       0,
@@ -769,7 +769,7 @@
     "Mason": [
       192.5,
       124.68,
-      0,
+      107.92,
       0,
       0,
       0,
@@ -806,60 +806,81 @@
           "Kyle": 112.88,
           "Mason": 124.68
         }
+      },
+      {
+        "week": 3,
+        "scores": {
+          "Ben": 100.64,
+          "Caleb": 100.68,
+          "Kyle": 142.04,
+          "Mason": 107.92
+        }
       }
     ],
     "fdTop5": {
       "Ben": [
         128.86,
+        100.64,
         92.92
       ],
       "Caleb": [
         148.4,
+        100.68,
         94.44
       ],
       "Kyle": [
+        142.04,
         134.9,
         112.88
       ],
       "Mason": [
         192.5,
-        124.68
+        124.68,
+        107.92
       ]
     },
     "fdTop10": {
       "Ben": [
         128.86,
+        100.64,
         92.92
       ],
       "Caleb": [
         148.4,
+        100.68,
         94.44
       ],
       "Kyle": [
+        142.04,
         134.9,
         112.88
       ],
       "Mason": [
         192.5,
-        124.68
+        124.68,
+        107.92
       ]
     },
     "fdAllWeeks": {
       "Ben": [
         128.86,
+        100.64,
         92.92
       ],
       "Caleb": [
         148.4,
+        100.68,
         94.44
       ],
       "Kyle": [
+        142.04,
         134.9,
         112.88
       ],
       "Mason": [
         192.5,
-        124.68
+        124.68,
+        107.92
       ]
     }
   },
@@ -11248,7 +11269,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 45,
+        "score": 43,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -11549,7 +11570,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
+        "score": 9,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
