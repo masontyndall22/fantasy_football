@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T04:43:06.370Z",
+  "generatedAt": "2026-09-29T05:43:03.735Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 16,
-      "sleeperPprSeasonPoints": 276.8,
+      "totalStandingsPoints": 17,
+      "sleeperPprSeasonPoints": 429.38,
       "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 17,
       "fdWins": 0,
@@ -23,7 +23,7 @@
     {
       "name": "Caleb",
       "totalStandingsPoints": 19.5,
-      "sleeperPprSeasonPoints": 296.88,
+      "sleeperPprSeasonPoints": 442.66,
       "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 14,
       "fdWins": 0,
@@ -34,7 +34,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 43,
+        "score": 39,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -44,7 +44,7 @@
     {
       "name": "Kyle",
       "totalStandingsPoints": 18,
-      "sleeperPprSeasonPoints": 254.3,
+      "sleeperPprSeasonPoints": 398.74,
       "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 14,
       "fdWins": 1,
@@ -55,7 +55,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 9,
+        "score": 2,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -64,8 +64,8 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 26.5,
-      "sleeperPprSeasonPoints": 295.78,
+      "totalStandingsPoints": 25.5,
+      "sleeperPprSeasonPoints": 414.74,
       "sleeperFinalPlacement": 3,
       "pickemTotalCorrect": 16,
       "fdWins": 2,
@@ -96,7 +96,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "51-59",
+      "allTimeRecord": "52-59",
       "careerStats": [
         {
           "label": "League High",
@@ -141,7 +141,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "62-48",
+      "allTimeRecord": "63-48",
       "careerStats": [
         {
           "label": "League High",
@@ -186,7 +186,7 @@
       "weakness": "The Regular Season",
       "punishmentsDone": "Full Crawl, T-Shirt",
       "punishmentIdeas": "Ice Bath",
-      "allTimeRecord": "61-49",
+      "allTimeRecord": "61-50",
       "careerStats": [
         {
           "label": "League High",
@@ -231,7 +231,7 @@
       "weakness": "Toll Booths",
       "punishmentsDone": "1/3 Crawl",
       "punishmentIdeas": "Smut Presentation, 2400 Pins",
-      "allTimeRecord": "74-36",
+      "allTimeRecord": "74-37",
       "careerStats": [
         {
           "label": "League High",
@@ -10856,7 +10856,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 54.98,
-          "projectedPoints": 309.87,
+          "projectedPoints": 309.19,
           "isStarter": true
         },
         {
@@ -10874,7 +10874,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 55.3,
-          "projectedPoints": 262.56,
+          "projectedPoints": 262.52,
           "isStarter": true
         },
         {
@@ -10883,7 +10883,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53.1,
-          "projectedPoints": 245.96,
+          "projectedPoints": 246.04,
           "isStarter": true
         },
         {
@@ -10901,7 +10901,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 98.3,
-          "projectedPoints": 379.35,
+          "projectedPoints": 379.51,
           "isStarter": true
         },
         {
@@ -10910,7 +10910,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38.9,
-          "projectedPoints": 300.33,
+          "projectedPoints": 300.48,
           "isStarter": true
         },
         {
@@ -10919,7 +10919,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 32.8,
-          "projectedPoints": 183.87,
+          "projectedPoints": 184.27,
           "isStarter": true
         },
         {
@@ -10928,7 +10928,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 65.8,
-          "projectedPoints": 224.12,
+          "projectedPoints": 223.84,
           "isStarter": true
         },
         {
@@ -10955,7 +10955,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 34.4,
-          "projectedPoints": 199.88,
+          "projectedPoints": 199.76,
           "isStarter": true
         },
         {
@@ -10973,7 +10973,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 9,
-          "projectedPoints": 134.56,
+          "projectedPoints": 134.47,
           "isStarter": true
         },
         {
@@ -11000,8 +11000,8 @@
         "total": 2
       },
       "starterPoints": {
-        "pointsFor": 276.8,
-        "pointsAgainst": 222.38,
+        "pointsFor": 429.38,
+        "pointsAgainst": 349.54,
         "pointsProjected": 132.95
       }
     },
@@ -11137,7 +11137,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 56.5,
-          "projectedPoints": 330.07,
+          "projectedPoints": 329.72,
           "isStarter": true
         },
         {
@@ -11164,7 +11164,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 19.1,
-          "projectedPoints": 138.37,
+          "projectedPoints": 138.3,
           "isStarter": true
         },
         {
@@ -11173,7 +11173,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 74.9,
-          "projectedPoints": 313.04,
+          "projectedPoints": 313.07,
           "isStarter": true
         },
         {
@@ -11191,7 +11191,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 25.5,
-          "projectedPoints": 172.12,
+          "projectedPoints": 172.13,
           "isStarter": true
         },
         {
@@ -11200,7 +11200,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 36.3,
-          "projectedPoints": 236.78,
+          "projectedPoints": 236.72,
           "isStarter": true
         },
         {
@@ -11218,7 +11218,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 54.5,
-          "projectedPoints": 306.9,
+          "projectedPoints": 307.07,
           "isStarter": true
         },
         {
@@ -11227,7 +11227,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 104.06,
-          "projectedPoints": 360.2,
+          "projectedPoints": 360.09,
           "isStarter": true
         },
         {
@@ -11245,7 +11245,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 49.1,
-          "projectedPoints": 191.92,
+          "projectedPoints": 191.88,
           "isStarter": true
         },
         {
@@ -11263,13 +11263,13 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 11,
-          "projectedPoints": 119.93,
+          "projectedPoints": 119.97,
           "isStarter": true
         }
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 43,
+        "score": 39,
         "letter": "F",
         "reasons": [
           "Drafted well, barely touched waivers"
@@ -11283,8 +11283,8 @@
         "total": 4
       },
       "starterPoints": {
-        "pointsFor": 296.88,
-        "pointsAgainst": 204.42,
+        "pointsFor": 442.66,
+        "pointsAgainst": 294.78,
         "pointsProjected": 128.15999999999997
       }
     },
@@ -11429,7 +11429,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.58,
-          "projectedPoints": 318.28,
+          "projectedPoints": 318.16,
           "isStarter": true
         },
         {
@@ -11438,7 +11438,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 36.6,
-          "projectedPoints": 227.5,
+          "projectedPoints": 227.53,
           "isStarter": true
         },
         {
@@ -11483,7 +11483,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 21.6,
-          "projectedPoints": 216.53,
+          "projectedPoints": 216.48,
           "isStarter": true
         },
         {
@@ -11492,7 +11492,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 25.3,
-          "projectedPoints": 186.79,
+          "projectedPoints": 186.76,
           "isStarter": true
         },
         {
@@ -11528,7 +11528,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 57.3,
-          "projectedPoints": 262.3,
+          "projectedPoints": 262.12,
           "isStarter": true
         },
         {
@@ -11546,7 +11546,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 59.1,
-          "projectedPoints": 290.55,
+          "projectedPoints": 290.49,
           "isStarter": true
         },
         {
@@ -11555,7 +11555,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 35,
-          "projectedPoints": 122.49,
+          "projectedPoints": 119.46,
           "isStarter": true
         },
         {
@@ -11564,13 +11564,13 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 23,
-          "projectedPoints": 139.65,
+          "projectedPoints": 139.68,
           "isStarter": true
         }
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 9,
+        "score": 2,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -11584,8 +11584,8 @@
         "total": 6
       },
       "starterPoints": {
-        "pointsFor": 254.3,
-        "pointsAgainst": 319.48,
+        "pointsFor": 398.74,
+        "pointsAgainst": 464.22,
         "pointsProjected": 131.63
       }
     },
@@ -11739,7 +11739,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 19.36,
-          "projectedPoints": 280.04,
+          "projectedPoints": 279.89,
           "isStarter": true
         },
         {
@@ -11748,7 +11748,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 31.4,
-          "projectedPoints": 199.29,
+          "projectedPoints": 199.26,
           "isStarter": true
         },
         {
@@ -11757,7 +11757,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 16.2,
-          "projectedPoints": 69.77,
+          "projectedPoints": 69.76,
           "isStarter": true
         },
         {
@@ -11775,7 +11775,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 79.2,
-          "projectedPoints": 305.8,
+          "projectedPoints": 305.76,
           "isStarter": true
         },
         {
@@ -11802,7 +11802,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38,
-          "projectedPoints": 236.25,
+          "projectedPoints": 236.19,
           "isStarter": true
         },
         {
@@ -11811,7 +11811,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 40.3,
-          "projectedPoints": 227.36,
+          "projectedPoints": 227.32,
           "isStarter": true
         },
         {
@@ -11820,7 +11820,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 35.5,
-          "projectedPoints": 202.61,
+          "projectedPoints": 202.5,
           "isStarter": true
         },
         {
@@ -11829,7 +11829,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.9,
-          "projectedPoints": 280.52,
+          "projectedPoints": 280.49,
           "isStarter": true
         },
         {
@@ -11885,8 +11885,8 @@
         "total": 3
       },
       "starterPoints": {
-        "pointsFor": 295.78,
-        "pointsAgainst": 267.36,
+        "pointsFor": 414.74,
+        "pointsAgainst": 386.4,
         "pointsProjected": 120.77
       }
     }
