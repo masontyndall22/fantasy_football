@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T01:43:03.519Z",
+  "generatedAt": "2026-09-29T02:43:07.133Z",
   "managers": [
     {
       "name": "Ben",
@@ -11136,7 +11136,7 @@
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
-          "points": 44,
+          "points": 53.44,
           "projectedPoints": 330.07,
           "isStarter": true
         },
@@ -11819,7 +11819,7 @@
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
-          "points": 29.8,
+          "points": 34.6,
           "projectedPoints": 202.61,
           "isStarter": true
         },
