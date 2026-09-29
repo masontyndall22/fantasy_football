@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T02:43:07.133Z",
+  "generatedAt": "2026-09-29T03:43:25.620Z",
   "managers": [
     {
       "name": "Ben",
@@ -10972,7 +10972,7 @@
           "name": "Philadelphia Eagles",
           "tag": "kept",
           "tagWeek": null,
-          "points": 12,
+          "points": 9,
           "projectedPoints": 134.56,
           "isStarter": true
         },
@@ -11136,7 +11136,7 @@
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
-          "points": 53.44,
+          "points": 56.5,
           "projectedPoints": 330.07,
           "isStarter": true
         },
@@ -11819,7 +11819,7 @@
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
-          "points": 34.6,
+          "points": 35.5,
           "projectedPoints": 202.61,
           "isStarter": true
         },
