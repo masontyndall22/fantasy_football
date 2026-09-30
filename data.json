@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:43:03.928Z",
+  "generatedAt": "2026-09-30T01:19:21.584Z",
   "managers": [
     {
       "name": "Ben",
@@ -10865,7 +10865,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 31.28,
-          "projectedPoints": 336.74,
+          "projectedPoints": 336.86,
           "isStarter": true
         },
         {
@@ -10937,7 +10937,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 39.9,
-          "projectedPoints": 172.61,
+          "projectedPoints": 172.65,
           "isStarter": true
         },
         {
@@ -11002,7 +11002,7 @@
       "starterPoints": {
         "pointsFor": 429.38,
         "pointsAgainst": 349.54,
-        "pointsProjected": 132.95
+        "pointsProjected": 136.82
       }
     },
     {
@@ -11254,7 +11254,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 10,
-          "projectedPoints": 106.04,
+          "projectedPoints": 106.06,
           "isStarter": true
         },
         {
@@ -11285,7 +11285,7 @@
       "starterPoints": {
         "pointsFor": 442.66,
         "pointsAgainst": 294.78,
-        "pointsProjected": 128.15999999999997
+        "pointsProjected": 129.99
       }
     },
     {
@@ -11456,7 +11456,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 58,
-          "projectedPoints": 337.11,
+          "projectedPoints": 337.15,
           "isStarter": true
         },
         {
@@ -11586,7 +11586,7 @@
       "starterPoints": {
         "pointsFor": 398.74,
         "pointsAgainst": 464.22,
-        "pointsProjected": 131.63
+        "pointsProjected": 135.32999999999998
       }
     },
     {
@@ -11730,7 +11730,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 46.7,
-          "projectedPoints": 299.01,
+          "projectedPoints": 299.13,
           "isStarter": true
         },
         {
@@ -11766,7 +11766,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 13.5,
-          "projectedPoints": 151.79,
+          "projectedPoints": 151.8,
           "isStarter": true
         },
         {
@@ -11838,7 +11838,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 47.4,
-          "projectedPoints": 215.19,
+          "projectedPoints": 215.24,
           "isStarter": true
         },
         {
@@ -11887,28 +11887,28 @@
       "starterPoints": {
         "pointsFor": 414.74,
         "pointsAgainst": 386.4,
-        "pointsProjected": 120.77
+        "pointsProjected": 125.5
       }
     }
   ],
   "currentSummary": "Projected Final Standings (10-Team League)\n\nQuick honest caveat: this is inherently a roster-talent guess, not a hard prediction — health, waiver activity, and matchup luck will decide the real thing. But going purely off what's actually on these rosters:\n\nThe field is tougher than just \"our 4 vs. the rest\" — a couple of the other teams are legitimately stacked. **RickBinkerson** landed Jonathan Taylor plus a Lamar Jackson keeper (arguably the single best keeper value in the whole league) on top of a London/Higgins/Waddle receiver room. **JONTHETANK** somehow has both De'Von Achane and Saquon Barkley plus Joe Burrow — an absurd RB1/RB2 combo. Those two rosters are real threats to finish above all four of you.\n\nAmong the four of you, here's how I'd stack it up based on the draft:\n\n**Caleb — 11-3, 1st**\nThe keeper bonanza (JSN + Warren on top of Chase/Henry/Hurts) gives this roster the highest floor and ceiling of the four. I'd favor this team over the outside competition too.\n\n**Ben — 9-5, 3rd**\nCleanest, lowest-variance build of the bunch, but Rick's and JONTHETANK's rosters are strong enough that I can't put Ben ahead of both.\n\n**Kyle — 8-6, 4th**\nExcellent balanced team (McBride discount, Nabers, Wilson), just fewer top-5-overall-caliber assets than Caleb or Ben.\n\n**Mason — 7-7, 5th** \nReal upside if Rice returns to 2023 form, but that ACL recovery (plus banking on Dobbins/Kittle staying healthy) is genuine variance the other three teams don't carry as much of.\n\nIf Rice comes back fully healthy early, bump Mason up a couple spots — that's the single biggest swing factor on any of these four rosters.",
-  "currentWeekLabel": "Week 1 Recap",
+  "currentWeekLabel": "Week 3 Recap",
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "C+ : Winning 127.4-118.02 is nice, but starting Jaxson Dart's 0.8 over Matthew Stafford's 27.98 is the kind of QB call that leaves 27.2 points on the table — a rough one for a guy who coaches this stuff for a living. That win covers up dead-last FanDuel and a missed projection; it doesn't cover up the lineup card."
+      "roast": "B : Winning by 25 while starting Sam LaPorta's 7.4 over Juwan Johnson's 23.3 is a real-life football coach leaving 15.9 points on his own bench and getting bailed out anyway. He was dead last in FanDuel and dead last in Pick'em too, so the only skill on display this week was the luck."
     },
     {
       "manager": "Caleb",
-      "roast": "A- : Best Sleeper score of the week, the only manager to clear projection (+21.4), and a comfortable ~40-point win — a genuinely strong week across the board. The lone smudge is 10.7 points left on the bench starting Tyler Warren over Travis Kelce, but that's a rounding error next to everything else that went right."
+      "roast": "A- : 55-point win, 15.8 over projection, and a clean 3-0 start. There's nothing left to be screwed about, which is presumably why he'll find something anyway. His FanDuel score beat Ben's by 0.04 and still only landed him third."
     },
     {
       "manager": "Kyle",
-      "roast": "D+ : Last in Sleeper, missed projection by 17.3, and a QB-tier bench mistake at receiver — Malik Nabers' 1.1 over Stefon Diggs' 21.7 cost 20.6 points — on top of the loss. Second best in FanDuel is the only thing keeping this from a total wipeout; two weeks in and the \"streaky\" reputation is currently parked on the cold side."
+      "roast": "C+ : He lost 144.44 to 144.74 and is 0-3 with a score that would have won most weeks. He also had the best FanDuel week (142.04, 34 points clear of second) and 10 correct Pick'em picks, so he was elite at everything that doesn't count toward his Sleeper record. A train master who can't get the one train that matters to the station is a bad look with the hot dog wheel getting closer."
     },
     {
       "manager": "Mason",
-      "roast": "B : No bench blunder, best FanDuel score of the week, and only a 2.75-point miss on projection — the clean, steady week of the group, just not quite enough to escape the Ben matchup loss (118.02-127.4). Quietly the most mistake-free performance of the four, even in a loss."
+      "roast": "D+ : Justin Jefferson's 5.2 over Michael Wilson's 25.9 left 20.7 points on the bench, and Mason lost by 0.08. Fantasy is all luck, right? This one was a lineup bug he shipped himself. The 12 Pick'em picks and second-place FanDuel mean he's still first overall, but he's 1-2 in Sleeper, and the group already thinks he's due for last place."
     }
   ]
 }
