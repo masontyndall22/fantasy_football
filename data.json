@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:43:02.259Z",
+  "generatedAt": "2026-09-30T08:43:05.192Z",
   "managers": [
     {
       "name": "Ben",
@@ -34,11 +34,9 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 46,
+        "score": 36,
         "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       }
     },
     {
@@ -78,9 +76,7 @@
       "seasonGrade": {
         "score": 100,
         "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       }
     }
   ],
@@ -10845,8 +10841,8 @@
           "position": "DEF",
           "name": "Philadelphia Eagles",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 3
         }
       ],
       "final": [
@@ -10969,11 +10965,11 @@
         },
         {
           "position": "DEF",
-          "name": "Philadelphia Eagles",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 9,
-          "projectedPoints": 134.36,
+          "name": "Chicago Bears",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 91.29,
           "isStarter": true
         },
         {
@@ -10993,11 +10989,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 21,
+      "faabSpent": 23,
       "transactions": {
-        "adds": 2,
+        "adds": 3,
         "trades": 0,
-        "total": 2
+        "total": 3
       },
       "starterPoints": {
         "pointsFor": 429.38,
@@ -11142,15 +11138,6 @@
         },
         {
           "position": "RB",
-          "name": "Chris Brooks",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 5,
-          "projectedPoints": 64.81,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
           "name": "MarShawn Lloyd",
           "tag": "kept",
           "tagWeek": null,
@@ -11174,6 +11161,15 @@
           "tagWeek": null,
           "points": 74.9,
           "projectedPoints": 313.71,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Alvin Kamara",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 113.33,
           "isStarter": true
         },
         {
@@ -11250,11 +11246,11 @@
         },
         {
           "position": "DEF",
-          "name": "San Francisco 49ers",
+          "name": "Buffalo Bills",
           "tag": "waiver",
-          "tagWeek": 1,
-          "points": 10,
-          "projectedPoints": 106.03,
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 90.88,
           "isStarter": true
         },
         {
@@ -11269,18 +11265,16 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 46,
+        "score": 36,
         "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 2,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 27,
       "transactions": {
-        "adds": 4,
+        "adds": 6,
         "trades": 0,
-        "total": 4
+        "total": 6
       },
       "starterPoints": {
         "pointsFor": 442.66,
@@ -11662,8 +11656,8 @@
           "position": "RB",
           "name": "J.K. Dobbins",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 3
         },
         {
           "round": 10,
@@ -11744,6 +11738,15 @@
         },
         {
           "position": "RB",
+          "name": "Braelon Allen",
+          "tag": "waiver",
+          "tagWeek": 3,
+          "points": 0,
+          "projectedPoints": 83.83,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
@@ -11758,15 +11761,6 @@
           "tagWeek": null,
           "points": 16.2,
           "projectedPoints": 70.23,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "J.K. Dobbins",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 13.5,
-          "projectedPoints": 151.81,
           "isStarter": true
         },
         {
@@ -11873,16 +11867,14 @@
       "seasonGrade": {
         "score": 100,
         "letter": "A+",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 4,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 31,
       "transactions": {
-        "adds": 3,
+        "adds": 4,
         "trades": 0,
-        "total": 3
+        "total": 4
       },
       "starterPoints": {
         "pointsFor": 414.74,
