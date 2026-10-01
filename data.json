@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:43:08.192Z",
+  "generatedAt": "2026-10-01T07:43:10.296Z",
   "managers": [
     {
       "name": "Ben",
@@ -11509,6 +11509,15 @@
         },
         {
           "position": "WR",
+          "name": "Tyreek Hill",
+          "tag": "waiver",
+          "tagWeek": 4,
+          "points": 0,
+          "projectedPoints": 0,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
@@ -11523,15 +11532,6 @@
           "tagWeek": null,
           "points": 57.3,
           "projectedPoints": 264.99,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
-          "name": "Dalton Schultz",
-          "tag": "waiver",
-          "tagWeek": 3,
-          "points": 6,
-          "projectedPoints": 149.52,
           "isStarter": true
         },
         {
@@ -11573,9 +11573,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
-        "adds": 6,
+        "adds": 7,
         "trades": 0,
-        "total": 6
+        "total": 7
       },
       "starterPoints": {
         "pointsFor": 398.74,
