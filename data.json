@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T02:43:00.630Z",
+  "generatedAt": "2026-10-02T03:43:01.342Z",
   "managers": [
     {
       "name": "Ben",
@@ -11204,7 +11204,7 @@
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
-          "points": 31,
+          "points": 36.3,
           "projectedPoints": 178.66,
           "isStarter": true
         },
@@ -11849,7 +11849,7 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 35,
+          "points": 41,
           "projectedPoints": 119.45,
           "isStarter": true
         },
