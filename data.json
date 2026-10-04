@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T14:43:11.775Z",
+  "generatedAt": "2026-10-04T15:43:05.168Z",
   "managers": [
     {
       "name": "Ben",
@@ -10879,7 +10879,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53.1,
-          "projectedPoints": 246.15,
+          "projectedPoints": 245.88,
           "isStarter": true
         },
         {
@@ -11231,7 +11231,7 @@
           "name": "Tyler Warren",
           "tag": "kept",
           "tagWeek": null,
-          "points": 39.4,
+          "points": 43.5,
           "projectedPoints": 189.85,
           "isStarter": true
         },
@@ -11503,7 +11503,7 @@
           "name": "Stefon Diggs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 47.9,
+          "points": 51,
           "projectedPoints": 193.37,
           "isStarter": true
         },
