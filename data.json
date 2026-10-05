@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T02:43:04.953Z",
+  "generatedAt": "2026-10-05T03:43:00.894Z",
   "managers": [
     {
       "name": "Ben",
@@ -1891,7 +1891,7 @@
       "managerA": "Kyle",
       "scoreA": 102.6,
       "managerB": "Ben",
-      "scoreB": 105.62,
+      "scoreB": 111.52,
       "winner": "Ben"
     }
   ],
@@ -2703,7 +2703,7 @@
       "managerA": "Kyle",
       "scoreA": 102.6,
       "managerB": "Ben",
-      "scoreB": 105.62,
+      "scoreB": 111.52,
       "winner": "Ben"
     }
   ],
@@ -10917,7 +10917,7 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 63.4,
+          "points": 78.6,
           "projectedPoints": 245.8,
           "isStarter": true
         },
@@ -10935,7 +10935,7 @@
           "name": "Jahmyr Gibbs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 110.7,
+          "points": 113.6,
           "projectedPoints": 399.46,
           "isStarter": true
         },
@@ -10989,7 +10989,7 @@
           "name": "Sam LaPorta",
           "tag": "kept",
           "tagWeek": null,
-          "points": 39,
+          "points": 42.5,
           "projectedPoints": 200.86,
           "isStarter": true
         },
@@ -11016,7 +11016,7 @@
           "name": "Jake Bates",
           "tag": "kept",
           "tagWeek": null,
-          "points": 35,
+          "points": 38,
           "projectedPoints": 139.36,
           "isStarter": true
         }
@@ -11771,7 +11771,7 @@
           "name": "Jared Goff",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 25.48,
+          "points": 30.72,
           "projectedPoints": 282.28,
           "isStarter": true
         },
