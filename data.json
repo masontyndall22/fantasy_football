@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:43:00.855Z",
+  "generatedAt": "2026-10-05T01:43:01.725Z",
   "managers": [
     {
       "name": "Ben",
@@ -1884,6 +1884,15 @@
       "managerB": "Mason",
       "scoreB": 118.02,
       "winner": "Ben"
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "managerA": "Kyle",
+      "scoreA": 102.6,
+      "managerB": "Ben",
+      "scoreB": 86.52,
+      "winner": "Kyle"
     }
   ],
   "matchups": [
@@ -2687,6 +2696,15 @@
       "managerB": "Mason",
       "scoreB": 118.02,
       "winner": "Ben"
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "managerA": "Kyle",
+      "scoreA": 102.6,
+      "managerB": "Ben",
+      "scoreB": 86.52,
+      "winner": "Kyle"
     }
   ],
   "memberHistory": [
@@ -10899,8 +10917,8 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 53.1,
-          "projectedPoints": 245.83,
+          "points": 62.9,
+          "projectedPoints": 245.8,
           "isStarter": true
         },
         {
@@ -10917,8 +10935,8 @@
           "name": "Jahmyr Gibbs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 98.3,
-          "projectedPoints": 398.99,
+          "points": 100.6,
+          "projectedPoints": 399.46,
           "isStarter": true
         },
         {
@@ -10971,8 +10989,8 @@
           "name": "Sam LaPorta",
           "tag": "kept",
           "tagWeek": null,
-          "points": 34.4,
-          "projectedPoints": 200.69,
+          "points": 38.9,
+          "projectedPoints": 200.86,
           "isStarter": true
         },
         {
@@ -10998,8 +11016,8 @@
           "name": "Jake Bates",
           "tag": "kept",
           "tagWeek": null,
-          "points": 21,
-          "projectedPoints": 139.3,
+          "points": 26,
+          "projectedPoints": 139.36,
           "isStarter": true
         }
       ],
@@ -11019,7 +11037,7 @@
       "starterPoints": {
         "pointsFor": 429.38,
         "pointsAgainst": 349.54,
-        "pointsProjected": 136.82
+        "pointsProjected": 137.53
       }
     },
     {
@@ -11300,7 +11318,7 @@
       "starterPoints": {
         "pointsFor": 442.66,
         "pointsAgainst": 294.78,
-        "pointsProjected": 129.99
+        "pointsProjected": 98.56
       }
     },
     {
@@ -11601,7 +11619,7 @@
       "starterPoints": {
         "pointsFor": 398.74,
         "pointsAgainst": 464.22,
-        "pointsProjected": 135.32999999999998
+        "pointsProjected": 142.94
       }
     },
     {
@@ -11753,8 +11771,8 @@
           "name": "Jared Goff",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 19.36,
-          "projectedPoints": 281.83,
+          "points": 21.28,
+          "projectedPoints": 282.28,
           "isStarter": true
         },
         {
@@ -11900,7 +11918,7 @@
       "starterPoints": {
         "pointsFor": 414.74,
         "pointsAgainst": 386.4,
-        "pointsProjected": 125.5
+        "pointsProjected": 121.41999999999999
       }
     }
   ],
