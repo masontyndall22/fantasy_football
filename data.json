@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:43:05.663Z",
+  "generatedAt": "2026-10-06T02:42:59.322Z",
   "managers": [
     {
       "name": "Ben",
@@ -1889,9 +1889,9 @@
       "season": 2026,
       "week": 4,
       "managerA": "Kyle",
-      "scoreA": 102.6,
+      "scoreA": 111.8,
       "managerB": "Ben",
-      "scoreB": 119.42,
+      "scoreB": 123.32,
       "winner": "Ben"
     }
   ],
@@ -2701,9 +2701,9 @@
       "season": 2026,
       "week": 4,
       "managerA": "Kyle",
-      "scoreA": 102.6,
+      "scoreA": 111.8,
       "managerB": "Ben",
-      "scoreB": 119.42,
+      "scoreB": 123.32,
       "winner": "Ben"
     }
   ],
@@ -10998,7 +10998,7 @@
           "name": "Juwan Johnson",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 52.8,
+          "points": 56.7,
           "projectedPoints": 192.79,
           "isStarter": true
         },
@@ -11207,7 +11207,7 @@
           "name": "Alvin Kamara",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 4.8,
+          "points": 12.3,
           "projectedPoints": 110.94,
           "isStarter": true
         },
@@ -11560,7 +11560,7 @@
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
-          "points": 70.5,
+          "points": 79.7,
           "projectedPoints": 306.06,
           "isStarter": true
         },
