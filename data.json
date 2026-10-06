@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:43:15.518Z",
+  "generatedAt": "2026-10-06T12:43:15.253Z",
   "managers": [
     {
       "name": "Ben",
@@ -10990,7 +10990,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 60.2,
-          "projectedPoints": 192.57,
+          "projectedPoints": 192.52,
           "isStarter": true
         },
         {
@@ -11199,7 +11199,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 22.8,
-          "projectedPoints": 111.23,
+          "projectedPoints": 111.2,
           "isStarter": true
         },
         {
@@ -11272,15 +11272,6 @@
           "tagWeek": null,
           "points": 52.6,
           "projectedPoints": 199.03,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
-          "name": "Buffalo Bills",
-          "tag": "waiver",
-          "tagWeek": 3,
-          "points": 5,
-          "projectedPoints": 89.75,
           "isStarter": true
         },
         {
@@ -11552,7 +11543,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.1,
-          "projectedPoints": 305.7,
+          "projectedPoints": 305.62,
           "isStarter": true
         },
         {
@@ -11579,7 +11570,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 44,
-          "projectedPoints": 119.89,
+          "projectedPoints": 119.86,
           "isStarter": true
         },
         {
@@ -11853,7 +11844,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.9,
-          "projectedPoints": 269.05,
+          "projectedPoints": 268.97,
           "isStarter": true
         },
         {
