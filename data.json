@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-06T12:43:15.253Z",
+  "generatedAt": "2026-10-06T13:17:04.677Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 15.5,
+      "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 556.2,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 26,
+      "sleeperFinalPlacement": 1,
+      "pickemTotalCorrect": 34,
       "fdWins": 0,
       "fdTop5Total": 433.20000000000005,
       "fdTop10Total": 433.20000000000005,
       "fdSeasonTotal": 433.20000000000005,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 4,
+      "overallLeagueRank": 3,
       "seasonGrade": {
         "score": 0,
         "letter": "F",
@@ -22,10 +22,10 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 19.5,
+      "totalStandingsPoints": 18.5,
       "sleeperPprSeasonPoints": 541.84,
-      "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 24,
+      "sleeperFinalPlacement": 2,
+      "pickemTotalCorrect": 32,
       "fdWins": 1,
       "fdTop5Total": 465.4,
       "fdTop10Total": 465.4,
@@ -34,7 +34,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 33,
+        "score": 11,
         "letter": "F",
         "reasons": []
       }
@@ -44,7 +44,7 @@
       "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 520.94,
       "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 24,
+      "pickemTotalCorrect": 32,
       "fdWins": 1,
       "fdTop5Total": 487.78,
       "fdTop10Total": 487.78,
@@ -53,7 +53,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 7,
+        "score": 0,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -62,10 +62,10 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 27.5,
+      "totalStandingsPoints": 26.5,
       "sleeperPprSeasonPoints": 534.72,
-      "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 28,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 39,
       "fdWins": 2,
       "fdTop5Total": 543.04,
       "fdTop10Total": 543.04,
@@ -906,7 +906,7 @@
       9,
       8,
       9,
-      0,
+      8,
       0,
       0,
       0,
@@ -926,7 +926,7 @@
       8,
       6,
       10,
-      0,
+      8,
       0,
       0,
       0,
@@ -946,7 +946,7 @@
       7,
       7,
       10,
-      0,
+      8,
       0,
       0,
       0,
@@ -966,7 +966,7 @@
       10,
       6,
       12,
-      0,
+      11,
       0,
       0,
       0,
@@ -10891,7 +10891,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 66.66,
-          "projectedPoints": 298.72,
+          "projectedPoints": 298.84,
           "isStarter": true
         },
         {
@@ -10927,7 +10927,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 116,
-          "projectedPoints": 414.06,
+          "projectedPoints": 414.08,
           "isStarter": true
         },
         {
@@ -10954,7 +10954,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 73,
-          "projectedPoints": 268.36,
+          "projectedPoints": 268.35,
           "isStarter": true
         },
         {
@@ -10981,7 +10981,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 56.8,
-          "projectedPoints": 200.95,
+          "projectedPoints": 200.96,
           "isStarter": true
         },
         {
@@ -11181,7 +11181,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 22.2,
-          "projectedPoints": 137.44,
+          "projectedPoints": 137.43,
           "isStarter": true
         },
         {
@@ -11190,7 +11190,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.8,
-          "projectedPoints": 302.35,
+          "projectedPoints": 302.32,
           "isStarter": true
         },
         {
@@ -11286,7 +11286,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 33,
+        "score": 11,
         "letter": "F",
         "reasons": []
       },
@@ -11435,7 +11435,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 32.4,
-          "projectedPoints": 253.02,
+          "projectedPoints": 252.81,
           "isStarter": true
         },
         {
@@ -11525,7 +11525,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53,
-          "projectedPoints": 187.24,
+          "projectedPoints": 187.25,
           "isStarter": true
         },
         {
@@ -11585,7 +11585,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 7,
+        "score": 0,
         "letter": "F",
         "reasons": [
           "Passive on waivers while the team struggled"
@@ -11754,7 +11754,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 39.84,
-          "projectedPoints": 281.38,
+          "projectedPoints": 281.34,
           "isStarter": true
         },
         {
@@ -11909,19 +11909,19 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "B : Winning by 25 while starting Sam LaPorta's 7.4 over Juwan Johnson's 23.3 is a real-life football coach leaving 15.9 points on his own bench and getting bailed out anyway. He was dead last in FanDuel and dead last in Pick'em too, so the only skill on display this week was the luck."
+      "roast": "B- : A 4-0 start on a 126.82 that missed projection by 11.6, with Davante Adams' 7.2 starting over Deebo Samuel's 18 on a team coached by a real-life football coach. He beat Kyle by 4.62 and Kyle left 15.8 on his own bench, so the win came from his opponent's lineup mistake. He's 4-0 and still tied for last in the overall standings, which tells you how much the luck is covering for."
     },
     {
       "manager": "Caleb",
-      "roast": "A- : 55-point win, 15.8 over projection, and a clean 3-0 start. There's nothing left to be screwed about, which is presumably why he'll find something anyway. His FanDuel score beat Ben's by 0.04 and still only landed him third."
+      "roast": "D+ : A 99.18 is the lowest Sleeper score of the week by 20 points, and it came with Ladd McConkey's goose egg in the lineup over DK Metcalf's 16.5. He finally has a legitimate \"I'm screwed\" claim, since his opponent hit 145.76, and it's still half his own doing. The best FanDuel score of the week (121.88) is a nice consolation prize for a guy who's 3-1 and sounds like he's 0-4."
     },
     {
       "manager": "Kyle",
-      "roast": "C+ : He lost 144.44 to 144.74 and is 0-3 with a score that would have won most weeks. He also had the best FanDuel week (142.04, 34 points clear of second) and 10 correct Pick'em picks, so he was elite at everything that doesn't count toward his Sleeper record. A train master who can't get the one train that matters to the station is a bad look with the hot dog wheel getting closer."
+      "roast": "F+ : He's 0-4 with the league's worst points-for and a loss by 4.62 while leaving 15.8 on the bench, so Garrett Wilson's 5.7 over Carnell Tate's 21.5 was the whole game. He also missed projection by 20.6, finished last in FanDuel (97.96), and tied for the bottom of the overall standings with Ben. \"Streaky\" only works if the streak ever ends, and the hot dog wheel has started drawing up its plans for him."
     },
     {
       "manager": "Mason",
-      "roast": "D+ : Justin Jefferson's 5.2 over Michael Wilson's 25.9 left 20.7 points on the bench, and Mason lost by 0.08. Fantasy is all luck, right? This one was a lineup bug he shipped himself. The 12 Pick'em picks and second-place FanDuel mean he's still first overall, but he's 1-2 in Sleeper, and the group already thinks he's due for last place."
+      "roast": "B : A 45-point win, no bench blunder, a league-best 11 Pick'em picks, and a second-place FanDuel score gave him an 8-point lead in the overall standings. The only blemish is a 1.4-point miss on projection, so the lineup was clean for once. Fantasy is mostly luck, he says, so he can't take credit for a week that went this well."
     }
   ]
 }
