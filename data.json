@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:43:05.012Z",
+  "generatedAt": "2026-10-07T08:43:10.497Z",
   "managers": [
     {
       "name": "Ben",
@@ -10900,7 +10900,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 50.9,
-          "projectedPoints": 327.38,
+          "projectedPoints": 327.45,
           "isStarter": true
         },
         {
@@ -10963,7 +10963,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 57.9,
-          "projectedPoints": 178.09,
+          "projectedPoints": 178.14,
           "isStarter": true
         },
         {
@@ -10972,7 +10972,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.1,
-          "projectedPoints": 262.52,
+          "projectedPoints": 262.53,
           "isStarter": true
         },
         {
@@ -11003,6 +11003,15 @@
           "isStarter": true
         },
         {
+          "position": "DEF",
+          "name": "Dallas Cowboys",
+          "tag": "waiver",
+          "tagWeek": 4,
+          "points": 0,
+          "projectedPoints": 84.51,
+          "isStarter": true
+        },
+        {
           "position": "K",
           "name": "Jake Bates",
           "tag": "kept",
@@ -11021,9 +11030,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 23,
       "transactions": {
-        "adds": 3,
+        "adds": 4,
         "trades": 0,
-        "total": 3
+        "total": 4
       },
       "starterPoints": {
         "pointsFor": 556.2,
@@ -11144,8 +11153,8 @@
           "position": "DEF",
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
+          "exitTag": null,
+          "exitWeek": null
         },
         {
           "round": 15,
@@ -11163,7 +11172,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 70.02,
-          "projectedPoints": 318.94,
+          "projectedPoints": 318.95,
           "isStarter": true
         },
         {
@@ -11172,7 +11181,7 @@
           "tag": "waiver",
           "tagWeek": 4,
           "points": 23.08,
-          "projectedPoints": 225.91,
+          "projectedPoints": 225.92,
           "isStarter": true
         },
         {
@@ -11222,6 +11231,15 @@
         },
         {
           "position": "WR",
+          "name": "Malik Washington",
+          "tag": "waiver",
+          "tagWeek": 4,
+          "points": 0,
+          "projectedPoints": 144.41,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "Ladd McConkey",
           "tag": "kept",
           "tagWeek": null,
@@ -11253,7 +11271,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 116.66,
-          "projectedPoints": 371.62,
+          "projectedPoints": 371.74,
           "isStarter": true
         },
         {
@@ -11262,7 +11280,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.5,
-          "projectedPoints": 195.41,
+          "projectedPoints": 195.4,
           "isStarter": true
         },
         {
@@ -11272,6 +11290,15 @@
           "tagWeek": null,
           "points": 52.6,
           "projectedPoints": 199.03,
+          "isStarter": true
+        },
+        {
+          "position": "DEF",
+          "name": "Jacksonville Jaguars",
+          "tag": "kept",
+          "tagWeek": null,
+          "points": 15,
+          "projectedPoints": 102.21,
           "isStarter": true
         },
         {
@@ -11291,11 +11318,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 27,
+      "faabSpent": 29,
       "transactions": {
-        "adds": 7,
+        "adds": 9,
         "trades": 0,
-        "total": 7
+        "total": 9
       },
       "starterPoints": {
         "pointsFor": 541.84,
@@ -11462,7 +11489,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 13.5,
-          "projectedPoints": 75.62,
+          "projectedPoints": 75.61,
           "isStarter": true
         },
         {
@@ -11471,7 +11498,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 74,
-          "projectedPoints": 354.33,
+          "projectedPoints": 354.3,
           "isStarter": true
         },
         {
@@ -11498,7 +11525,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.8,
-          "projectedPoints": 226.09,
+          "projectedPoints": 226.08,
           "isStarter": true
         },
         {
@@ -11525,7 +11552,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53,
-          "projectedPoints": 187.12,
+          "projectedPoints": 187.1,
           "isStarter": true
         },
         {
@@ -11552,7 +11579,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 63,
-          "projectedPoints": 271.27,
+          "projectedPoints": 271.26,
           "isStarter": true
         },
         {
@@ -11853,7 +11880,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 64.4,
-          "projectedPoints": 218.94,
+          "projectedPoints": 219.02,
           "isStarter": true
         },
         {
