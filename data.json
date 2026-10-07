@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T13:43:00.092Z",
+  "generatedAt": "2026-10-07T14:43:08.142Z",
   "managers": [
     {
       "name": "Ben",
@@ -11129,7 +11129,7 @@
           "name": "MarShawn Lloyd",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": 4
+          "exitWeek": null
         },
         {
           "round": 13,
@@ -11550,7 +11550,7 @@
           "position": "WR",
           "name": "Tyreek Hill",
           "tag": "waiver",
-          "tagWeek": 4,
+          "tagWeek": null,
           "points": 0,
           "projectedPoints": 0,
           "isStarter": true
@@ -11612,9 +11612,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
-        "adds": 7,
+        "adds": 6,
         "trades": 0,
-        "total": 7
+        "total": 6
       },
       "starterPoints": {
         "pointsFor": 520.94,
