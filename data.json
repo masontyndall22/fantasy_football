@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T14:43:08.142Z",
+  "generatedAt": "2026-10-07T15:43:22.973Z",
   "managers": [
     {
       "name": "Ben",
@@ -10900,7 +10900,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 50.9,
-          "projectedPoints": 327.45,
+          "projectedPoints": 327.33,
           "isStarter": true
         },
         {
@@ -10963,7 +10963,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 57.9,
-          "projectedPoints": 178.14,
+          "projectedPoints": 178.11,
           "isStarter": true
         },
         {
@@ -11129,7 +11129,7 @@
           "name": "MarShawn Lloyd",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 4
         },
         {
           "round": 13,
@@ -11262,7 +11262,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 116.66,
-          "projectedPoints": 371.74,
+          "projectedPoints": 371.51,
           "isStarter": true
         },
         {
@@ -11271,7 +11271,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.5,
-          "projectedPoints": 195.4,
+          "projectedPoints": 195.39,
           "isStarter": true
         },
         {
@@ -11489,7 +11489,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 74,
-          "projectedPoints": 354.3,
+          "projectedPoints": 354.24,
           "isStarter": true
         },
         {
@@ -11516,7 +11516,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.8,
-          "projectedPoints": 225.98,
+          "projectedPoints": 225.99,
           "isStarter": true
         },
         {
@@ -11550,7 +11550,7 @@
           "position": "WR",
           "name": "Tyreek Hill",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 4,
           "points": 0,
           "projectedPoints": 0,
           "isStarter": true
@@ -11570,7 +11570,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 63,
-          "projectedPoints": 271.17,
+          "projectedPoints": 271.27,
           "isStarter": true
         },
         {
@@ -11612,9 +11612,9 @@
       "gradeNote": "Passive on waivers while the team struggled",
       "faabSpent": 2,
       "transactions": {
-        "adds": 6,
+        "adds": 7,
         "trades": 0,
-        "total": 6
+        "total": 7
       },
       "starterPoints": {
         "pointsFor": 520.94,
@@ -11781,7 +11781,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 8.7,
-          "projectedPoints": 86.8,
+          "projectedPoints": 86.78,
           "isStarter": true
         },
         {
@@ -11817,7 +11817,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 42.5,
-          "projectedPoints": 229.13,
+          "projectedPoints": 229.11,
           "isStarter": true
         },
         {
@@ -11871,7 +11871,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 64.4,
-          "projectedPoints": 219.02,
+          "projectedPoints": 218.96,
           "isStarter": true
         },
         {
