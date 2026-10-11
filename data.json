@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:42:59.772Z",
+  "generatedAt": "2026-10-11T14:42:59.089Z",
   "managers": [
     {
       "name": "Ben",
@@ -10972,7 +10972,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.1,
-          "projectedPoints": 263.13,
+          "projectedPoints": 263.51,
           "isStarter": true
         },
         {
@@ -11171,7 +11171,7 @@
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
-          "points": 70.02,
+          "points": 70.86,
           "projectedPoints": 316.69,
           "isStarter": true
         },
@@ -11279,7 +11279,7 @@
           "name": "Jacksonville Jaguars",
           "tag": "kept",
           "tagWeek": null,
-          "points": 15,
+          "points": 25,
           "projectedPoints": 103.27,
           "isStarter": true
         },
@@ -11516,7 +11516,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 46.8,
-          "projectedPoints": 221.65,
+          "projectedPoints": 221.66,
           "isStarter": true
         },
         {
@@ -11587,7 +11587,7 @@
           "name": "Cam Little",
           "tag": "kept",
           "tagWeek": null,
-          "points": 37,
+          "points": 38,
           "projectedPoints": 139.41,
           "isStarter": true
         }
@@ -11844,7 +11844,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 46.9,
-          "projectedPoints": 212.39,
+          "projectedPoints": 212.72,
           "isStarter": true
         },
         {
@@ -11870,7 +11870,7 @@
           "name": "Dallas Goedert",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 1.4,
+          "points": 4.3,
           "projectedPoints": 158.77,
           "isStarter": true
         },
