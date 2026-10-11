@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T17:43:09.134Z",
+  "generatedAt": "2026-10-11T18:42:59.468Z",
   "managers": [
     {
       "name": "Ben",
@@ -10908,7 +10908,7 @@
           "name": "Ashton Jeanty",
           "tag": "kept",
           "tagWeek": null,
-          "points": 74.3,
+          "points": 75.2,
           "projectedPoints": 272.27,
           "isStarter": true
         },
@@ -10935,7 +10935,7 @@
           "name": "Chase Brown",
           "tag": "kept",
           "tagWeek": null,
-          "points": 59.6,
+          "points": 63.2,
           "projectedPoints": 283.32,
           "isStarter": true
         },
@@ -10971,7 +10971,7 @@
           "name": "Christian Watson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 77.1,
+          "points": 89.8,
           "projectedPoints": 263.49,
           "isStarter": true
         },
@@ -11171,7 +11171,7 @@
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
-          "points": 81.82,
+          "points": 83.02,
           "projectedPoints": 317.34,
           "isStarter": true
         },
@@ -11198,7 +11198,7 @@
           "name": "Alvin Kamara",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 22.8,
+          "points": 25.2,
           "projectedPoints": 113.37,
           "isStarter": true
         },
@@ -11216,7 +11216,7 @@
           "name": "Tony Pollard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 38.9,
+          "points": 41.7,
           "projectedPoints": 178.66,
           "isStarter": true
         },
@@ -11234,7 +11234,7 @@
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
-          "points": 43.3,
+          "points": 46.7,
           "projectedPoints": 188.23,
           "isStarter": true
         },
@@ -11243,7 +11243,7 @@
           "name": "Ja'Marr Chase",
           "tag": "kept",
           "tagWeek": null,
-          "points": 60.2,
+          "points": 62.9,
           "projectedPoints": 290.34,
           "isStarter": true
         },
@@ -11261,7 +11261,7 @@
           "name": "Tyler Warren",
           "tag": "kept",
           "tagWeek": null,
-          "points": 48.5,
+          "points": 58.4,
           "projectedPoints": 195.09,
           "isStarter": true
         },
@@ -11288,7 +11288,7 @@
           "name": "Evan McPherson",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 16,
+          "points": 18,
           "projectedPoints": 120.33,
           "isStarter": true
         }
@@ -11443,7 +11443,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 33.04,
+          "points": 37.02,
           "projectedPoints": 252.78,
           "isStarter": true
         },
@@ -11461,7 +11461,7 @@
           "name": "Cam Skattebo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 44.2,
+          "points": 44.7,
           "projectedPoints": 221.73,
           "isStarter": true
         },
@@ -11506,7 +11506,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 44.8,
+          "points": 49.5,
           "projectedPoints": 226.4,
           "isStarter": true
         },
@@ -11551,7 +11551,7 @@
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
-          "points": 90.1,
+          "points": 94,
           "projectedPoints": 305.29,
           "isStarter": true
         },
@@ -11560,7 +11560,7 @@
           "name": "Garrett Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 63,
+          "points": 79,
           "projectedPoints": 271.42,
           "isStarter": true
         },
@@ -11578,7 +11578,7 @@
           "name": "Minnesota Vikings",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 54,
+          "points": 48,
           "projectedPoints": 119.9,
           "isStarter": true
         },
@@ -11587,7 +11587,7 @@
           "name": "Cam Little",
           "tag": "kept",
           "tagWeek": null,
-          "points": 40,
+          "points": 45,
           "projectedPoints": 139.41,
           "isStarter": true
         }
@@ -11754,7 +11754,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 60.26,
-          "projectedPoints": 297.55,
+          "projectedPoints": 297.67,
           "isStarter": true
         },
         {
@@ -11771,7 +11771,7 @@
           "name": "Braelon Allen",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 8.7,
+          "points": 13.2,
           "projectedPoints": 111.27,
           "isStarter": true
         },
@@ -11781,7 +11781,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.7,
-          "projectedPoints": 183.85,
+          "projectedPoints": 183.89,
           "isStarter": true
         },
         {
@@ -11789,7 +11789,7 @@
           "name": "Mike Washington",
           "tag": "kept",
           "tagWeek": null,
-          "points": 18.9,
+          "points": 19.4,
           "projectedPoints": 101,
           "isStarter": true
         },
@@ -11843,7 +11843,7 @@
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
-          "points": 46.9,
+          "points": 50.9,
           "projectedPoints": 212.25,
           "isStarter": true
         },
@@ -11852,7 +11852,7 @@
           "name": "Justin Jefferson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 44.9,
+          "points": 49.3,
           "projectedPoints": 268.96,
           "isStarter": true
         },
@@ -11870,7 +11870,7 @@
           "name": "Dallas Goedert",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 8.5,
+          "points": 11.2,
           "projectedPoints": 159.13,
           "isStarter": true
         },
@@ -11879,7 +11879,7 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 53,
+          "points": 47,
           "projectedPoints": 121.15,
           "isStarter": true
         },
