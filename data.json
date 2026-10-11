@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T09:43:03.753Z",
+  "generatedAt": "2026-10-11T10:43:00.786Z",
   "managers": [
     {
       "name": "Ben",
@@ -11159,20 +11159,20 @@
       "final": [
         {
           "position": "QB",
+          "name": "Jacoby Brissett",
+          "tag": "waiver",
+          "tagWeek": 5,
+          "points": 0,
+          "projectedPoints": 204.12,
+          "isStarter": true
+        },
+        {
+          "position": "QB",
           "name": "Jalen Hurts",
           "tag": "kept",
           "tagWeek": null,
           "points": 70.02,
           "projectedPoints": 316.68,
-          "isStarter": true
-        },
-        {
-          "position": "QB",
-          "name": "C.J. Stroud",
-          "tag": "waiver",
-          "tagWeek": 4,
-          "points": 23.08,
-          "projectedPoints": 225.84,
           "isStarter": true
         },
         {
@@ -11217,16 +11217,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38.5,
-          "projectedPoints": 178.38,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Malik Washington",
-          "tag": "waiver",
-          "tagWeek": 4,
-          "points": 0,
-          "projectedPoints": 145.03,
+          "projectedPoints": 178.39,
           "isStarter": true
         },
         {
@@ -11244,7 +11235,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 43.3,
-          "projectedPoints": 181.11,
+          "projectedPoints": 181.08,
           "isStarter": true
         },
         {
@@ -11253,7 +11244,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 60.2,
-          "projectedPoints": 290.16,
+          "projectedPoints": 290.17,
           "isStarter": true
         },
         {
@@ -11271,7 +11262,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.5,
-          "projectedPoints": 195.36,
+          "projectedPoints": 195.33,
           "isStarter": true
         },
         {
@@ -11311,9 +11302,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 29,
       "transactions": {
-        "adds": 9,
+        "adds": 10,
         "trades": 0,
-        "total": 9
+        "total": 10
       },
       "starterPoints": {
         "pointsFor": 541.84,
@@ -11516,7 +11507,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.8,
-          "projectedPoints": 226.34,
+          "projectedPoints": 226.35,
           "isStarter": true
         },
         {
@@ -11525,7 +11516,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 46.8,
-          "projectedPoints": 221.68,
+          "projectedPoints": 221.65,
           "isStarter": true
         },
         {
@@ -11570,7 +11561,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 63,
-          "projectedPoints": 271.47,
+          "projectedPoints": 271.44,
           "isStarter": true
         },
         {
@@ -11799,7 +11790,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 18.9,
-          "projectedPoints": 100.97,
+          "projectedPoints": 100.98,
           "isStarter": true
         },
         {
