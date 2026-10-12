@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T03:43:04.508Z",
+  "generatedAt": "2026-10-12T04:43:03.556Z",
   "managers": [
     {
       "name": "Ben",
@@ -11189,7 +11189,7 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 106.6,
+          "points": 111.8,
           "projectedPoints": 301.29,
           "isStarter": true
         },
@@ -11888,7 +11888,7 @@
           "name": "Tyler Loop",
           "tag": "kept",
           "tagWeek": null,
-          "points": 51,
+          "points": 52,
           "projectedPoints": 134.5,
           "isStarter": true
         }
