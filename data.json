@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T12:43:04.447Z",
+  "generatedAt": "2026-10-13T13:13:28.423Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 19,
+      "totalStandingsPoints": 18,
       "sleeperPprSeasonPoints": 724.12,
       "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 44,
@@ -13,16 +13,16 @@
       "fdSeasonTotal": 560.58,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 2,
+      "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 15,
+        "score": 7,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 18.5,
+      "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 669.92,
       "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 40,
@@ -32,31 +32,31 @@
       "fdSeasonTotal": 615.52,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 4,
       "seasonGrade": {
-        "score": 8,
+        "score": 0,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 18,
+      "totalStandingsPoints": 20,
       "sleeperPprSeasonPoints": 679.3,
       "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 38,
       "fdWins": 2,
-      "fdTop5Total": 527.54,
+      "fdTop5Total": 662.4399999999999,
       "fdTop10Total": 662.4399999999999,
       "fdSeasonTotal": 662.4399999999999,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 4,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 0,
+        "score": 46,
         "letter": "F",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       }
     },
@@ -849,6 +849,7 @@
       "Kyle": [
         174.66,
         142.04,
+        134.9,
         112.88,
         97.96
       ],
@@ -10929,7 +10930,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 93.98,
-          "projectedPoints": 294.88,
+          "projectedPoints": 294.48,
           "isStarter": true
         },
         {
@@ -10992,7 +10993,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.1,
-          "projectedPoints": 270.7,
+          "projectedPoints": 270.48,
           "isStarter": true
         },
         {
@@ -11052,7 +11053,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 15,
+        "score": 7,
         "letter": "F",
         "reasons": []
       },
@@ -11201,7 +11202,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 26.28,
-          "projectedPoints": 202.82,
+          "projectedPoints": 203.04,
           "isStarter": true
         },
         {
@@ -11219,7 +11220,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38.4,
-          "projectedPoints": 126.3,
+          "projectedPoints": 126.13,
           "isStarter": true
         },
         {
@@ -11333,7 +11334,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 8,
+        "score": 0,
         "letter": "F",
         "reasons": []
       },
@@ -11608,7 +11609,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.8,
-          "projectedPoints": 283.8,
+          "projectedPoints": 283.94,
           "isStarter": true
         },
         {
@@ -11632,13 +11633,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
+        "score": 46,
         "letter": "F",
         "reasons": [
-          "Passive on waivers while the team struggled"
+          "Drafted well, barely touched waivers"
         ]
       },
-      "gradeNote": "Passive on waivers while the team struggled",
+      "gradeNote": "Drafted well, barely touched waivers",
       "faabSpent": 2,
       "transactions": {
         "adds": 7,
@@ -11873,7 +11874,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 64.08,
-          "projectedPoints": 234.12,
+          "projectedPoints": 234.24,
           "isStarter": true
         },
         {
