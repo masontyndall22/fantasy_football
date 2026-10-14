@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T07:43:05.298Z",
+  "generatedAt": "2026-10-14T08:43:02.657Z",
   "managers": [
     {
       "name": "Ben",
@@ -76,7 +76,9 @@
       "seasonGrade": {
         "score": 100,
         "letter": "A+",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     }
   ],
@@ -11029,7 +11031,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 65.8,
-          "projectedPoints": 188.85,
+          "projectedPoints": 188.92,
           "isStarter": true
         },
         {
@@ -11175,8 +11177,8 @@
           "position": "K",
           "name": "Ka'imi Fairbairn",
           "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 3
+          "exitTag": null,
+          "exitWeek": null
         },
         {
           "round": 14,
@@ -11198,11 +11200,11 @@
       "final": [
         {
           "position": "QB",
-          "name": "Jacoby Brissett",
+          "name": "Jordan Love",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 26.28,
-          "projectedPoints": 202.81,
+          "points": 0,
+          "projectedPoints": 221.18,
           "isStarter": true
         },
         {
@@ -11238,7 +11240,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 25.4,
-          "projectedPoints": 115.2,
+          "projectedPoints": 115.16,
           "isStarter": true
         },
         {
@@ -11274,7 +11276,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.6,
-          "projectedPoints": 189.95,
+          "projectedPoints": 189.94,
           "isStarter": true
         },
         {
@@ -11292,7 +11294,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.46,
-          "projectedPoints": 380.45,
+          "projectedPoints": 380.62,
           "isStarter": true
         },
         {
@@ -11324,11 +11326,11 @@
         },
         {
           "position": "K",
-          "name": "Evan McPherson",
-          "tag": "waiver",
-          "tagWeek": 3,
-          "points": 23,
-          "projectedPoints": 120.33,
+          "name": "Ka'imi Fairbairn",
+          "tag": "kept",
+          "tagWeek": null,
+          "points": 15,
+          "projectedPoints": 120.35,
           "isStarter": true
         }
       ],
@@ -11339,11 +11341,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 29,
+      "faabSpent": 34,
       "transactions": {
-        "adds": 10,
+        "adds": 12,
         "trades": 0,
-        "total": 10
+        "total": 12
       },
       "starterPoints": {
         "pointsFor": 669.92,
@@ -11501,16 +11503,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.3,
-          "projectedPoints": 217.65,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Kaelon Black",
-          "tag": "waiver",
-          "tagWeek": 1,
-          "points": 15.1,
-          "projectedPoints": 76.22,
+          "projectedPoints": 217.62,
           "isStarter": true
         },
         {
@@ -11546,7 +11539,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 73.9,
-          "projectedPoints": 233.37,
+          "projectedPoints": 233.46,
           "isStarter": true
         },
         {
@@ -11591,7 +11584,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 98.7,
-          "projectedPoints": 298.74,
+          "projectedPoints": 298.85,
           "isStarter": true
         },
         {
@@ -11600,7 +11593,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 86.4,
-          "projectedPoints": 273.55,
+          "projectedPoints": 273.65,
           "isStarter": true
         },
         {
@@ -11622,6 +11615,15 @@
           "isStarter": true
         },
         {
+          "position": "DEF",
+          "name": "New England Patriots",
+          "tag": "waiver",
+          "tagWeek": 5,
+          "points": 0,
+          "projectedPoints": 86.29,
+          "isStarter": true
+        },
+        {
           "position": "K",
           "name": "Cam Little",
           "tag": "kept",
@@ -11640,11 +11642,11 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 2,
+      "faabSpent": 5,
       "transactions": {
-        "adds": 7,
+        "adds": 8,
         "trades": 0,
-        "total": 7
+        "total": 8
       },
       "starterPoints": {
         "pointsFor": 679.3,
@@ -11749,8 +11751,8 @@
           "position": "QB",
           "name": "Bo Nix",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 5
         },
         {
           "round": 13,
@@ -11789,15 +11791,6 @@
         },
         {
           "position": "QB",
-          "name": "Bo Nix",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 68.18,
-          "projectedPoints": 293.56,
-          "isStarter": true
-        },
-        {
-          "position": "QB",
           "name": "Jared Goff",
           "tag": "waiver",
           "tagWeek": 3,
@@ -11811,7 +11804,16 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 27.3,
-          "projectedPoints": 110.42,
+          "projectedPoints": 110.39,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Woody Marks",
+          "tag": "waiver",
+          "tagWeek": 5,
+          "points": 0,
+          "projectedPoints": 110.29,
           "isStarter": true
         },
         {
@@ -11847,7 +11849,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 42.5,
-          "projectedPoints": 203.98,
+          "projectedPoints": 203.96,
           "isStarter": true
         },
         {
@@ -11936,14 +11938,16 @@
       "seasonGrade": {
         "score": 100,
         "letter": "A+",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 31,
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 57,
       "transactions": {
-        "adds": 4,
+        "adds": 5,
         "trades": 0,
-        "total": 4
+        "total": 5
       },
       "starterPoints": {
         "pointsFor": 644.54,
