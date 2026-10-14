@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T20:43:02.155Z",
+  "generatedAt": "2026-10-14T21:43:01.328Z",
   "managers": [
     {
       "name": "Ben",
@@ -15,11 +15,9 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 0,
+        "score": 7,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       }
     },
     {
@@ -38,9 +36,7 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       }
     },
     {
@@ -81,7 +77,7 @@
         "score": 100,
         "letter": "A+",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Spent big on waivers and it paid off"
         ]
       }
     }
@@ -10878,7 +10874,7 @@
           "name": "Makai Lemon",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 2
         },
         {
           "round": 10,
@@ -10886,7 +10882,7 @@
           "name": "Jaxson Dart",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         },
         {
           "round": 11,
@@ -10910,7 +10906,7 @@
           "name": "Isiah Pacheco",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 4
         },
         {
           "round": 14,
@@ -10926,7 +10922,7 @@
           "name": "Philadelphia Eagles",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         }
       ],
       "final": [
@@ -10943,7 +10939,7 @@
           "position": "QB",
           "name": "Brock Purdy",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 2,
           "points": 68.06,
           "projectedPoints": 328.45,
           "isStarter": true
@@ -10963,7 +10959,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 79,
-          "projectedPoints": 260.24,
+          "projectedPoints": 260.19,
           "isStarter": true
         },
         {
@@ -11042,7 +11038,7 @@
           "position": "DEF",
           "name": "Dallas Cowboys",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 4,
           "points": 1,
           "projectedPoints": 82.91,
           "isStarter": true
@@ -11059,18 +11055,16 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
+        "score": 7,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 23,
       "transactions": {
-        "adds": 1,
+        "adds": 4,
         "trades": 0,
-        "total": 1
+        "total": 4
       },
       "starterPoints": {
         "pointsFor": 724.12,
@@ -11176,7 +11170,7 @@
           "name": "MarShawn Lloyd",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 4
         },
         {
           "round": 13,
@@ -11208,7 +11202,7 @@
           "position": "QB",
           "name": "Jordan Love",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 5,
           "points": 0,
           "projectedPoints": 220.6,
           "isStarter": true
@@ -11219,7 +11213,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 83.02,
-          "projectedPoints": 311.24,
+          "projectedPoints": 311.14,
           "isStarter": true
         },
         {
@@ -11244,7 +11238,7 @@
           "position": "RB",
           "name": "Alvin Kamara",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 25.4,
           "projectedPoints": 115.16,
           "isStarter": true
@@ -11300,7 +11294,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.46,
-          "projectedPoints": 380.63,
+          "projectedPoints": 380.64,
           "isStarter": true
         },
         {
@@ -11344,16 +11338,14 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 2,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 34,
       "transactions": {
-        "adds": 3,
+        "adds": 12,
         "trades": 0,
-        "total": 3
+        "total": 12
       },
       "starterPoints": {
         "pointsFor": 669.92,
@@ -11581,7 +11573,7 @@
           "position": "WR",
           "name": "Tyreek Hill",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 4,
           "points": 0,
           "projectedPoints": 0,
           "isStarter": true
@@ -11617,7 +11609,7 @@
           "position": "DEF",
           "name": "Minnesota Vikings",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 2,
           "points": 55,
           "projectedPoints": 119.9,
           "isStarter": true
@@ -11626,7 +11618,7 @@
           "position": "DEF",
           "name": "New England Patriots",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 5,
           "points": 0,
           "projectedPoints": 86.29,
           "isStarter": true
@@ -11650,11 +11642,11 @@
         ]
       },
       "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 2,
+      "faabSpent": 5,
       "transactions": {
-        "adds": 4,
+        "adds": 8,
         "trades": 0,
-        "total": 4
+        "total": 8
       },
       "starterPoints": {
         "pointsFor": 679.3,
@@ -11736,7 +11728,7 @@
           "name": "J.K. Dobbins",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         },
         {
           "round": 10,
@@ -11760,7 +11752,7 @@
           "name": "Bo Nix",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 5
         },
         {
           "round": 13,
@@ -11794,14 +11786,14 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 45.98,
-          "projectedPoints": 257.92,
+          "projectedPoints": 257.32,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Jared Goff",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 68.78,
           "projectedPoints": 283.84,
           "isStarter": true
@@ -11810,7 +11802,7 @@
           "position": "RB",
           "name": "Braelon Allen",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 27.3,
           "projectedPoints": 114.95,
           "isStarter": true
@@ -11819,9 +11811,9 @@
           "position": "RB",
           "name": "Woody Marks",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 5,
           "points": 0,
-          "projectedPoints": 110.3,
+          "projectedPoints": 110.33,
           "isStarter": true
         },
         {
@@ -11893,7 +11885,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 55.8,
-          "projectedPoints": 209.13,
+          "projectedPoints": 208.91,
           "isStarter": true
         },
         {
@@ -11918,9 +11910,9 @@
           "position": "TE",
           "name": "Dallas Goedert",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 2,
           "points": 11.2,
-          "projectedPoints": 156.32,
+          "projectedPoints": 156.25,
           "isStarter": true
         },
         {
@@ -11947,15 +11939,15 @@
         "score": 100,
         "letter": "A+",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Spent big on waivers and it paid off"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 57,
       "transactions": {
-        "adds": 1,
+        "adds": 5,
         "trades": 0,
-        "total": 1
+        "total": 5
       },
       "starterPoints": {
         "pointsFor": 644.54,
