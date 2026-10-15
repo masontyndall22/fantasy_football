@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T06:43:03.714Z",
+  "generatedAt": "2026-10-15T07:43:04.411Z",
   "managers": [
     {
       "name": "Ben",
@@ -11036,11 +11036,11 @@
         },
         {
           "position": "DEF",
-          "name": "Dallas Cowboys",
+          "name": "Kansas City Chiefs",
           "tag": "waiver",
-          "tagWeek": 4,
-          "points": 1,
-          "projectedPoints": 82.91,
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 90.32,
           "isStarter": true
         },
         {
@@ -11051,6 +11051,15 @@
           "points": 49,
           "projectedPoints": 138.61,
           "isStarter": true
+        },
+        {
+          "position": "K",
+          "name": "Nick Folk",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 94.32,
+          "isStarter": true
         }
       ],
       "hasBenchSplit": false,
@@ -11060,11 +11069,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 23,
+      "faabSpent": 25,
       "transactions": {
-        "adds": 4,
+        "adds": 6,
         "trades": 0,
-        "total": 4
+        "total": 6
       },
       "starterPoints": {
         "pointsFor": 724.12,
