@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:43:13.523Z",
+  "generatedAt": "2026-10-16T07:43:04.347Z",
   "managers": [
     {
       "name": "Ben",
@@ -11818,6 +11818,15 @@
         },
         {
           "position": "RB",
+          "name": "MarShawn Lloyd",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 84.07,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Woody Marks",
           "tag": "waiver",
           "tagWeek": 5,
@@ -11916,15 +11925,6 @@
           "isStarter": true
         },
         {
-          "position": "TE",
-          "name": "Dallas Goedert",
-          "tag": "waiver",
-          "tagWeek": 2,
-          "points": 11.2,
-          "projectedPoints": 154.59,
-          "isStarter": true
-        },
-        {
           "position": "DEF",
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
@@ -11952,11 +11952,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 57,
+      "faabSpent": 58,
       "transactions": {
-        "adds": 5,
+        "adds": 6,
         "trades": 0,
-        "total": 5
+        "total": 6
       },
       "starterPoints": {
         "pointsFor": 644.54,
