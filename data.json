@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T03:43:02.158Z",
+  "generatedAt": "2026-10-16T04:43:04.604Z",
   "managers": [
     {
       "name": "Ben",
@@ -11240,7 +11240,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 111.8,
-          "projectedPoints": 292.04,
+          "projectedPoints": 291.97,
           "isStarter": true
         },
         {
@@ -11285,7 +11285,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.6,
-          "projectedPoints": 190.9,
+          "projectedPoints": 190.89,
           "isStarter": true
         },
         {
@@ -11302,7 +11302,7 @@
           "name": "Jaxon Smith-Njigba",
           "tag": "kept",
           "tagWeek": null,
-          "points": 155.66,
+          "points": 164.86,
           "projectedPoints": 381.13,
           "isStarter": true
         },
