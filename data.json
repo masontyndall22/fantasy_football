@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T06:43:01.063Z",
+  "generatedAt": "2026-10-17T07:43:04.203Z",
   "managers": [
     {
       "name": "Ben",
@@ -53,11 +53,9 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 46,
+        "score": 36,
         "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       }
     },
     {
@@ -11271,6 +11269,15 @@
           "isStarter": true
         },
         {
+          "position": "RB",
+          "name": "Kendre Miller",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 46.56,
+          "isStarter": true
+        },
+        {
           "position": "WR",
           "name": "Ladd McConkey",
           "tag": "kept",
@@ -11352,9 +11359,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 34,
       "transactions": {
-        "adds": 12,
+        "adds": 13,
         "trades": 0,
-        "total": 12
+        "total": 13
       },
       "starterPoints": {
         "pointsFor": 669.92,
@@ -11459,8 +11466,8 @@
           "position": "WR",
           "name": "Stefon Diggs",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 6
         },
         {
           "round": 13,
@@ -11535,6 +11542,15 @@
         },
         {
           "position": "RB",
+          "name": "Tyler Allgeier",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 90.98,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Zach Charbonnet",
           "tag": "kept",
           "tagWeek": null,
@@ -11567,15 +11583,6 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 105.42,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Stefon Diggs",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 53,
-          "projectedPoints": 172.3,
           "isStarter": true
         },
         {
@@ -11644,18 +11651,16 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 46,
+        "score": 36,
         "letter": "F",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 5,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 24,
       "transactions": {
-        "adds": 8,
+        "adds": 9,
         "trades": 0,
-        "total": 8
+        "total": 9
       },
       "starterPoints": {
         "pointsFor": 679.3,
