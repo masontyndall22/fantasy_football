@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:43:01.334Z",
+  "generatedAt": "2026-10-18T17:43:00.211Z",
   "managers": [
     {
       "name": "Ben",
@@ -10930,7 +10930,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 93.98,
-          "projectedPoints": 294.32,
+          "projectedPoints": 294.09,
           "isStarter": true
         },
         {
@@ -10957,7 +10957,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 79,
-          "projectedPoints": 260.03,
+          "projectedPoints": 260.08,
           "isStarter": true
         },
         {
@@ -10984,7 +10984,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53.3,
-          "projectedPoints": 186.35,
+          "projectedPoints": 191.41,
           "isStarter": true
         },
         {
@@ -10993,7 +10993,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.1,
-          "projectedPoints": 264.32,
+          "projectedPoints": 264.18,
           "isStarter": true
         },
         {
@@ -11229,7 +11229,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38.4,
-          "projectedPoints": 126.4,
+          "projectedPoints": 126.35,
           "isStarter": true
         },
         {
@@ -11237,7 +11237,7 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 111.8,
+          "points": 115,
           "projectedPoints": 293.96,
           "isStarter": true
         },
@@ -11264,17 +11264,17 @@
           "name": "Tony Pollard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 43.7,
+          "points": 44.2,
           "projectedPoints": 177.04,
           "isStarter": true
         },
         {
           "position": "RB",
-          "name": "Kendre Miller",
+          "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 47.75,
+          "projectedPoints": 98.22,
           "isStarter": true
         },
         {
@@ -11292,7 +11292,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.6,
-          "projectedPoints": 201.96,
+          "projectedPoints": 202.02,
           "isStarter": true
         },
         {
@@ -11336,8 +11336,8 @@
           "name": "Carolina Panthers",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 0,
-          "projectedPoints": 83.1,
+          "points": 11,
+          "projectedPoints": 83.13,
           "isStarter": true
         },
         {
@@ -11345,7 +11345,7 @@
           "name": "Ka'imi Fairbairn",
           "tag": "kept",
           "tagWeek": null,
-          "points": 22,
+          "points": 26,
           "projectedPoints": 120.24,
           "isStarter": true
         }
@@ -11359,9 +11359,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 34,
       "transactions": {
-        "adds": 14,
+        "adds": 15,
         "trades": 0,
-        "total": 14
+        "total": 15
       },
       "starterPoints": {
         "pointsFor": 669.92,
@@ -11555,7 +11555,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 90.88,
+          "projectedPoints": 90.85,
           "isStarter": true
         },
         {
@@ -11572,7 +11572,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 73.9,
+          "points": 74.7,
           "projectedPoints": 233.97,
           "isStarter": true
         },
@@ -11608,7 +11608,7 @@
           "name": "Garrett Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 86.4,
+          "points": 88.9,
           "projectedPoints": 268.48,
           "isStarter": true
         },
@@ -11618,7 +11618,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.8,
-          "projectedPoints": 283.97,
+          "projectedPoints": 283.88,
           "isStarter": true
         },
         {
@@ -11635,7 +11635,7 @@
           "name": "New England Patriots",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 0,
+          "points": 10,
           "projectedPoints": 84.78,
           "isStarter": true
         },
@@ -11644,7 +11644,7 @@
           "name": "Cam Little",
           "tag": "kept",
           "tagWeek": null,
-          "points": 48,
+          "points": 54,
           "projectedPoints": 141.71,
           "isStarter": true
         }
@@ -11799,7 +11799,7 @@
           "name": "Caleb Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 45.98,
+          "points": 47.1,
           "projectedPoints": 255.98,
           "isStarter": true
         },
@@ -11817,7 +11817,7 @@
           "name": "Braelon Allen",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 27.3,
+          "points": 27.7,
           "projectedPoints": 116.83,
           "isStarter": true
         },
@@ -11835,7 +11835,7 @@
           "name": "Woody Marks",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 2.9,
+          "points": 10.1,
           "projectedPoints": 110.1,
           "isStarter": true
         },
@@ -11899,7 +11899,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 64.08,
-          "projectedPoints": 234.26,
+          "projectedPoints": 234.19,
           "isStarter": true
         },
         {
@@ -11934,8 +11934,8 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 44,
-          "projectedPoints": 121.62,
+          "points": 55,
+          "projectedPoints": 121.69,
           "isStarter": true
         },
         {
