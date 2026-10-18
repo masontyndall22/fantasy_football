@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:43:03.663Z",
+  "generatedAt": "2026-10-18T15:43:03.105Z",
   "managers": [
     {
       "name": "Ben",
@@ -11265,7 +11265,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 43.7,
-          "projectedPoints": 176.72,
+          "projectedPoints": 176.66,
           "isStarter": true
         },
         {
@@ -11319,7 +11319,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 69.9,
-          "projectedPoints": 198.1,
+          "projectedPoints": 197.9,
           "isStarter": true
         },
         {
@@ -11345,7 +11345,7 @@
           "name": "Ka'imi Fairbairn",
           "tag": "kept",
           "tagWeek": null,
-          "points": 16,
+          "points": 20,
           "projectedPoints": 120.24,
           "isStarter": true
         }
@@ -11582,7 +11582,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 48.4,
-          "projectedPoints": 213.89,
+          "projectedPoints": 213.8,
           "isStarter": true
         },
         {
@@ -11609,7 +11609,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 86.4,
-          "projectedPoints": 268.63,
+          "projectedPoints": 268.48,
           "isStarter": true
         },
         {
@@ -11636,7 +11636,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 0,
-          "projectedPoints": 84.91,
+          "projectedPoints": 84.84,
           "isStarter": true
         },
         {
@@ -11644,7 +11644,7 @@
           "name": "Cam Little",
           "tag": "kept",
           "tagWeek": null,
-          "points": 45,
+          "points": 47,
           "projectedPoints": 141.71,
           "isStarter": true
         }
@@ -11818,7 +11818,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 27.3,
-          "projectedPoints": 116.92,
+          "projectedPoints": 116.83,
           "isStarter": true
         },
         {
@@ -11835,7 +11835,7 @@
           "name": "Woody Marks",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 1.1,
+          "points": 2,
           "projectedPoints": 110.1,
           "isStarter": true
         },
