@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T06:43:01.380Z",
+  "generatedAt": "2026-10-18T07:43:09.680Z",
   "managers": [
     {
       "name": "Ben",
@@ -11056,7 +11056,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 93.96,
+          "projectedPoints": 94.4,
           "isStarter": true
         }
       ],
@@ -11524,6 +11524,15 @@
         },
         {
           "position": "RB",
+          "name": "Kaelon Black",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 15.1,
+          "projectedPoints": 76.28,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
@@ -11583,15 +11592,6 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 105.42,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Tyreek Hill",
-          "tag": "waiver",
-          "tagWeek": 4,
-          "points": 0,
-          "projectedPoints": 0,
           "isStarter": true
         },
         {
@@ -11658,9 +11658,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 24,
       "transactions": {
-        "adds": 9,
+        "adds": 10,
         "trades": 0,
-        "total": 9
+        "total": 10
       },
       "starterPoints": {
         "pointsFor": 679.3,
@@ -11800,7 +11800,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 45.98,
-          "projectedPoints": 256.27,
+          "projectedPoints": 258.62,
           "isStarter": true
         },
         {
@@ -11908,7 +11908,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 55.8,
-          "projectedPoints": 209.48,
+          "projectedPoints": 210.53,
           "isStarter": true
         },
         {
