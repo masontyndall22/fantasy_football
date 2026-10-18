@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T20:43:07.203Z",
+  "generatedAt": "2026-10-18T21:43:03.630Z",
   "managers": [
     {
       "name": "Ben",
@@ -10929,7 +10929,7 @@
           "name": "Matthew Stafford",
           "tag": "kept",
           "tagWeek": null,
-          "points": 93.98,
+          "points": 100.38,
           "projectedPoints": 293.94,
           "isStarter": true
         },
@@ -10947,7 +10947,7 @@
           "name": "Ashton Jeanty",
           "tag": "kept",
           "tagWeek": null,
-          "points": 84.6,
+          "points": 95.3,
           "projectedPoints": 266.15,
           "isStarter": true
         },
@@ -10956,8 +10956,8 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 94.9,
-          "projectedPoints": 260.12,
+          "points": 98.1,
+          "projectedPoints": 259.96,
           "isStarter": true
         },
         {
@@ -10983,7 +10983,7 @@
           "name": "Emeka Egbuka",
           "tag": "kept",
           "tagWeek": null,
-          "points": 69.7,
+          "points": 71.1,
           "projectedPoints": 191.22,
           "isStarter": true
         },
@@ -10992,7 +10992,7 @@
           "name": "Davante Adams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 95.1,
+          "points": 96.8,
           "projectedPoints": 264.1,
           "isStarter": true
         },
@@ -11037,7 +11037,7 @@
           "name": "Kansas City Chiefs",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 0,
+          "points": 7,
           "projectedPoints": 90.93,
           "isStarter": true
         },
@@ -11211,7 +11211,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 0,
-          "projectedPoints": 215.16,
+          "projectedPoints": 215.43,
           "isStarter": true
         },
         {
@@ -11228,7 +11228,7 @@
           "name": "Blake Corum",
           "tag": "kept",
           "tagWeek": null,
-          "points": 38.4,
+          "points": 50.7,
           "projectedPoints": 126.28,
           "isStarter": true
         },
@@ -11256,7 +11256,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 149.73,
+          "projectedPoints": 149.47,
           "isStarter": true
         },
         {
@@ -11264,7 +11264,7 @@
           "name": "Tony Pollard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 51,
+          "points": 51.3,
           "projectedPoints": 177.04,
           "isStarter": true
         },
@@ -11282,7 +11282,7 @@
           "name": "Ladd McConkey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 36.3,
+          "points": 39,
           "projectedPoints": 189.48,
           "isStarter": true
         },
@@ -11291,7 +11291,7 @@
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
-          "points": 62.9,
+          "points": 68.9,
           "projectedPoints": 201.87,
           "isStarter": true
         },
@@ -11336,7 +11336,7 @@
           "name": "Carolina Panthers",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 5,
+          "points": 6,
           "projectedPoints": 83.13,
           "isStarter": true
         },
@@ -11509,7 +11509,7 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 85.58,
+          "points": 88.82,
           "projectedPoints": 320.48,
           "isStarter": true
         },
@@ -11554,7 +11554,7 @@
           "name": "Tyler Allgeier",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 0,
+          "points": 0.3,
           "projectedPoints": 90.91,
           "isStarter": true
         },
@@ -11572,7 +11572,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 92.6,
+          "points": 102.4,
           "projectedPoints": 234.03,
           "isStarter": true
         },
@@ -11617,7 +11617,7 @@
           "name": "Trey McBride",
           "tag": "kept",
           "tagWeek": null,
-          "points": 90.8,
+          "points": 98,
           "projectedPoints": 283.95,
           "isStarter": true
         },
@@ -11799,7 +11799,7 @@
           "name": "Caleb Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 62.38,
+          "points": 62.48,
           "projectedPoints": 255.94,
           "isStarter": true
         },
@@ -11827,7 +11827,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 70.01,
+          "projectedPoints": 69.94,
           "isStarter": true
         },
         {
@@ -11844,7 +11844,7 @@
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 49.6,
+          "points": 50.5,
           "projectedPoints": 180.03,
           "isStarter": true
         },
@@ -11853,7 +11853,7 @@
           "name": "Mike Washington",
           "tag": "kept",
           "tagWeek": null,
-          "points": 20.9,
+          "points": 22.7,
           "projectedPoints": 97.09,
           "isStarter": true
         },
@@ -11862,7 +11862,7 @@
           "name": "Kenneth Walker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 110.1,
+          "points": 121.6,
           "projectedPoints": 342.11,
           "isStarter": true
         },
@@ -11934,7 +11934,7 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 52,
+          "points": 54,
           "projectedPoints": 121.62,
           "isStarter": true
         },
