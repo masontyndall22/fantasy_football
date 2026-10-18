@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:43:01.926Z",
+  "generatedAt": "2026-10-18T14:43:03.663Z",
   "managers": [
     {
       "name": "Ben",
@@ -10984,7 +10984,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 53.3,
-          "projectedPoints": 186.23,
+          "projectedPoints": 186.26,
           "isStarter": true
         },
         {
@@ -11029,7 +11029,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 65.8,
-          "projectedPoints": 188.61,
+          "projectedPoints": 188.56,
           "isStarter": true
         },
         {
@@ -11192,8 +11192,8 @@
           "position": "DEF",
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 6
         },
         {
           "round": 15,
@@ -11247,7 +11247,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 25.4,
-          "projectedPoints": 114.33,
+          "projectedPoints": 114.31,
           "isStarter": true
         },
         {
@@ -11274,7 +11274,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 47.78,
+          "projectedPoints": 47.75,
           "isStarter": true
         },
         {
@@ -11333,11 +11333,11 @@
         },
         {
           "position": "DEF",
-          "name": "Jacksonville Jaguars",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 17,
-          "projectedPoints": 104.11,
+          "name": "Carolina Panthers",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 83.13,
           "isStarter": true
         },
         {
@@ -11345,7 +11345,7 @@
           "name": "Ka'imi Fairbairn",
           "tag": "kept",
           "tagWeek": null,
-          "points": 15,
+          "points": 16,
           "projectedPoints": 120.24,
           "isStarter": true
         }
@@ -11359,9 +11359,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 34,
       "transactions": {
-        "adds": 13,
+        "adds": 14,
         "trades": 0,
-        "total": 13
+        "total": 14
       },
       "starterPoints": {
         "pointsFor": 669.92,
@@ -11519,7 +11519,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.3,
-          "projectedPoints": 217.12,
+          "projectedPoints": 214.69,
           "isStarter": true
         },
         {
@@ -11573,7 +11573,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 73.9,
-          "projectedPoints": 234.07,
+          "projectedPoints": 233.96,
           "isStarter": true
         },
         {
@@ -11600,7 +11600,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 98.7,
-          "projectedPoints": 298.46,
+          "projectedPoints": 298.39,
           "isStarter": true
         },
         {
@@ -11835,8 +11835,8 @@
           "name": "Woody Marks",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 0,
-          "projectedPoints": 110.08,
+          "points": 1.1,
+          "projectedPoints": 110.1,
           "isStarter": true
         },
         {
