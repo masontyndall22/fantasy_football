@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:43:01.965Z",
+  "generatedAt": "2026-10-18T20:43:07.203Z",
   "managers": [
     {
       "name": "Ben",
@@ -10930,7 +10930,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 93.98,
-          "projectedPoints": 294.09,
+          "projectedPoints": 293.94,
           "isStarter": true
         },
         {
@@ -10956,8 +10956,8 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 83.5,
-          "projectedPoints": 260.08,
+          "points": 94.9,
+          "projectedPoints": 260.12,
           "isStarter": true
         },
         {
@@ -10975,7 +10975,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 65,
-          "projectedPoints": 275.42,
+          "projectedPoints": 275.36,
           "isStarter": true
         },
         {
@@ -10983,8 +10983,8 @@
           "name": "Emeka Egbuka",
           "tag": "kept",
           "tagWeek": null,
-          "points": 69.8,
-          "projectedPoints": 191.29,
+          "points": 69.7,
+          "projectedPoints": 191.22,
           "isStarter": true
         },
         {
@@ -10993,7 +10993,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.1,
-          "projectedPoints": 264.18,
+          "projectedPoints": 264.1,
           "isStarter": true
         },
         {
@@ -11011,7 +11011,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 109.4,
-          "projectedPoints": 279.05,
+          "projectedPoints": 279.41,
           "isStarter": true
         },
         {
@@ -11229,7 +11229,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 38.4,
-          "projectedPoints": 126.35,
+          "projectedPoints": 126.28,
           "isStarter": true
         },
         {
@@ -11237,8 +11237,8 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 117.6,
-          "projectedPoints": 293.96,
+          "points": 116.8,
+          "projectedPoints": 293.82,
           "isStarter": true
         },
         {
@@ -11246,7 +11246,7 @@
           "name": "Alvin Kamara",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 37.4,
+          "points": 40.3,
           "projectedPoints": 114.33,
           "isStarter": true
         },
@@ -11264,7 +11264,7 @@
           "name": "Tony Pollard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 48.7,
+          "points": 51,
           "projectedPoints": 177.04,
           "isStarter": true
         },
@@ -11291,7 +11291,7 @@
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
-          "points": 51.8,
+          "points": 62.9,
           "projectedPoints": 201.87,
           "isStarter": true
         },
@@ -11301,7 +11301,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 79.9,
-          "projectedPoints": 292.24,
+          "projectedPoints": 292.41,
           "isStarter": true
         },
         {
@@ -11310,7 +11310,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 164.86,
-          "projectedPoints": 398.33,
+          "projectedPoints": 398.31,
           "isStarter": true
         },
         {
@@ -11328,7 +11328,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 52.6,
-          "projectedPoints": 208.65,
+          "projectedPoints": 208.64,
           "isStarter": true
         },
         {
@@ -11555,7 +11555,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 0,
-          "projectedPoints": 90.85,
+          "projectedPoints": 90.91,
           "isStarter": true
         },
         {
@@ -11572,7 +11572,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 82.9,
+          "points": 92.6,
           "projectedPoints": 234.03,
           "isStarter": true
         },
@@ -11581,7 +11581,7 @@
           "name": "Carnell Tate",
           "tag": "kept",
           "tagWeek": null,
-          "points": 57.7,
+          "points": 67.4,
           "projectedPoints": 213.93,
           "isStarter": true
         },
@@ -11599,7 +11599,7 @@
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
-          "points": 104.2,
+          "points": 113,
           "projectedPoints": 298.46,
           "isStarter": true
         },
@@ -11608,8 +11608,8 @@
           "name": "Garrett Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 88.9,
-          "projectedPoints": 268.48,
+          "points": 94.8,
+          "projectedPoints": 268.67,
           "isStarter": true
         },
         {
@@ -11618,7 +11618,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.8,
-          "projectedPoints": 283.88,
+          "projectedPoints": 283.95,
           "isStarter": true
         },
         {
@@ -11799,7 +11799,7 @@
           "name": "Caleb Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 58.9,
+          "points": 62.38,
           "projectedPoints": 255.94,
           "isStarter": true
         },
@@ -11817,8 +11817,8 @@
           "name": "Braelon Allen",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 39.6,
-          "projectedPoints": 116.83,
+          "points": 39.7,
+          "projectedPoints": 116.8,
           "isStarter": true
         },
         {
@@ -11863,7 +11863,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 110.1,
-          "projectedPoints": 342.1,
+          "projectedPoints": 342.11,
           "isStarter": true
         },
         {
@@ -11872,7 +11872,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 42.5,
-          "projectedPoints": 191.36,
+          "projectedPoints": 191.32,
           "isStarter": true
         },
         {
@@ -11899,7 +11899,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 64.08,
-          "projectedPoints": 234.19,
+          "projectedPoints": 234.25,
           "isStarter": true
         },
         {
@@ -11907,7 +11907,7 @@
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
-          "points": 64.9,
+          "points": 73.3,
           "projectedPoints": 209.39,
           "isStarter": true
         },
@@ -11934,7 +11934,7 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 1,
-          "points": 51,
+          "points": 52,
           "projectedPoints": 121.62,
           "isStarter": true
         },
@@ -11943,7 +11943,7 @@
           "name": "Tyler Loop",
           "tag": "kept",
           "tagWeek": null,
-          "points": 56,
+          "points": 55,
           "projectedPoints": 135.55,
           "isStarter": true
         }
