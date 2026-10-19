@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T01:43:03.938Z",
+  "generatedAt": "2026-10-19T02:43:05.255Z",
   "managers": [
     {
       "name": "Ben",
@@ -11010,7 +11010,7 @@
           "name": "Christian Watson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 113.1,
+          "points": 116.9,
           "projectedPoints": 278.9,
           "isStarter": true
         },
@@ -11210,7 +11210,7 @@
           "name": "Jordan Love",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 7.36,
+          "points": 18,
           "projectedPoints": 214.88,
           "isStarter": true
         },
