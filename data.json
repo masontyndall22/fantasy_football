@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T03:43:04.445Z",
+  "generatedAt": "2026-10-19T04:42:59.966Z",
   "managers": [
     {
       "name": "Ben",
@@ -11210,7 +11210,7 @@
           "name": "Jordan Love",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 21.12,
+          "points": 21.24,
           "projectedPoints": 214.88,
           "isStarter": true
         },
@@ -11826,7 +11826,7 @@
           "name": "MarShawn Lloyd",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 0.4,
+          "points": 1,
           "projectedPoints": 69.86,
           "isStarter": true
         },
