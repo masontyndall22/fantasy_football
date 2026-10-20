@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T01:43:05.915Z",
+  "generatedAt": "2026-10-20T02:43:04.205Z",
   "managers": [
     {
       "name": "Ben",
@@ -10938,7 +10938,7 @@
           "name": "Brock Purdy",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 77.6,
+          "points": 82.62,
           "projectedPoints": 329.34,
           "isStarter": true
         },
@@ -11273,7 +11273,7 @@
           "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 0.2,
+          "points": 2.3,
           "projectedPoints": 106.66,
           "isStarter": true
         },
@@ -11500,7 +11500,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 68.44,
+          "points": 69.94,
           "projectedPoints": 264.74,
           "isStarter": true
         },
@@ -11527,7 +11527,7 @@
           "name": "Kaelon Black",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 15.3,
+          "points": 18.9,
           "projectedPoints": 83.8,
           "isStarter": true
         },
@@ -11536,7 +11536,7 @@
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 104.4,
+          "points": 116.7,
           "projectedPoints": 354.64,
           "isStarter": true
         },
@@ -11925,7 +11925,7 @@
           "name": "George Kittle",
           "tag": "kept",
           "tagWeek": null,
-          "points": 83.8,
+          "points": 85.2,
           "projectedPoints": 244.75,
           "isStarter": true
         },
