@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-10-20T02:43:04.205Z",
+  "generatedAt": "2026-10-20T03:30:28.023Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 18,
+      "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 724.12,
       "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 44,
+      "pickemTotalCorrect": 50,
       "fdWins": 0,
-      "fdTop5Total": 560.58,
-      "fdTop10Total": 560.58,
-      "fdSeasonTotal": 560.58,
+      "fdTop5Total": 570.54,
+      "fdTop10Total": 663.46,
+      "fdSeasonTotal": 663.46,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 7,
+        "score": 6,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 17.5,
+      "totalStandingsPoints": 17,
       "sleeperPprSeasonPoints": 669.92,
       "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 40,
+      "pickemTotalCorrect": 43,
       "fdWins": 1,
-      "fdTop5Total": 615.52,
-      "fdTop10Total": 615.52,
-      "fdSeasonTotal": 615.52,
+      "fdTop5Total": 630.2,
+      "fdTop10Total": 724.64,
+      "fdSeasonTotal": 724.64,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -41,33 +41,33 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 21,
       "sleeperPprSeasonPoints": 679.3,
-      "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 38,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 43,
       "fdWins": 2,
-      "fdTop5Total": 662.4399999999999,
-      "fdTop10Total": 662.4399999999999,
-      "fdSeasonTotal": 662.4399999999999,
+      "fdTop5Total": 709.36,
+      "fdTop10Total": 807.3199999999999,
+      "fdSeasonTotal": 807.3199999999999,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 36,
+        "score": 47,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 24.5,
+      "totalStandingsPoints": 25.5,
       "sleeperPprSeasonPoints": 644.54,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 44,
-      "fdWins": 2,
-      "fdTop5Total": 686,
-      "fdTop10Total": 686,
-      "fdSeasonTotal": 686,
+      "sleeperFinalPlacement": 4,
+      "pickemTotalCorrect": 53,
+      "fdWins": 3,
+      "fdTop5Total": 729.4000000000001,
+      "fdTop10Total": 837.3199999999999,
+      "fdSeasonTotal": 837.3199999999999,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -92,7 +92,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "54-59",
+      "allTimeRecord": "55-59",
       "careerStats": [
         {
           "label": "League High",
@@ -137,7 +137,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "64-49",
+      "allTimeRecord": "65-49",
       "careerStats": [
         {
           "label": "League High",
@@ -182,7 +182,7 @@
       "weakness": "The Regular Season",
       "punishmentsDone": "Full Crawl, T-Shirt",
       "punishmentIdeas": "Ice Bath",
-      "allTimeRecord": "62-51",
+      "allTimeRecord": "63-51",
       "careerStats": [
         {
           "label": "League High",
@@ -708,7 +708,7 @@
       100.64,
       110.78,
       127.38,
-      0,
+      102.88,
       0,
       0,
       0,
@@ -728,7 +728,7 @@
       100.68,
       121.88,
       150.12,
-      0,
+      109.12,
       0,
       0,
       0,
@@ -748,7 +748,7 @@
       142.04,
       97.96,
       174.66,
-      0,
+      144.88,
       0,
       0,
       0,
@@ -768,7 +768,7 @@
       107.92,
       117.94,
       142.96,
-      0,
+      151.32,
       0,
       0,
       0,
@@ -829,6 +829,15 @@
           "Kyle": 174.66,
           "Mason": 142.96
         }
+      },
+      {
+        "week": 6,
+        "scores": {
+          "Ben": 102.88,
+          "Caleb": 109.12,
+          "Kyle": 144.88,
+          "Mason": 151.32
+        }
       }
     ],
     "fdTop5": {
@@ -836,29 +845,29 @@
         128.86,
         127.38,
         110.78,
-        100.64,
-        92.92
+        102.88,
+        100.64
       ],
       "Caleb": [
         150.12,
         148.4,
         121.88,
-        100.68,
-        94.44
+        109.12,
+        100.68
       ],
       "Kyle": [
         174.66,
+        144.88,
         142.04,
         134.9,
-        112.88,
-        97.96
+        112.88
       ],
       "Mason": [
         192.5,
+        151.32,
         142.96,
         124.68,
-        117.94,
-        107.92
+        117.94
       ]
     },
     "fdTop10": {
@@ -866,6 +875,7 @@
         128.86,
         127.38,
         110.78,
+        102.88,
         100.64,
         92.92
       ],
@@ -873,11 +883,13 @@
         150.12,
         148.4,
         121.88,
+        109.12,
         100.68,
         94.44
       ],
       "Kyle": [
         174.66,
+        144.88,
         142.04,
         134.9,
         112.88,
@@ -885,6 +897,7 @@
       ],
       "Mason": [
         192.5,
+        151.32,
         142.96,
         124.68,
         117.94,
@@ -896,6 +909,7 @@
         128.86,
         127.38,
         110.78,
+        102.88,
         100.64,
         92.92
       ],
@@ -903,11 +917,13 @@
         150.12,
         148.4,
         121.88,
+        109.12,
         100.68,
         94.44
       ],
       "Kyle": [
         174.66,
+        144.88,
         142.04,
         134.9,
         112.88,
@@ -915,6 +931,7 @@
       ],
       "Mason": [
         192.5,
+        151.32,
         142.96,
         124.68,
         117.94,
@@ -929,7 +946,7 @@
       9,
       8,
       10,
-      0,
+      6,
       0,
       0,
       0,
@@ -949,7 +966,7 @@
       10,
       8,
       8,
-      0,
+      3,
       0,
       0,
       0,
@@ -969,7 +986,7 @@
       10,
       8,
       6,
-      0,
+      5,
       0,
       0,
       0,
@@ -989,7 +1006,7 @@
       12,
       11,
       5,
-      0,
+      9,
       0,
       0,
       0,
@@ -10938,7 +10955,7 @@
           "name": "Brock Purdy",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 82.62,
+          "points": 85.42,
           "projectedPoints": 329.34,
           "isStarter": true
         },
@@ -11062,7 +11079,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 7,
+        "score": 6,
         "letter": "F",
         "reasons": []
       },
@@ -11076,7 +11093,7 @@
       "starterPoints": {
         "pointsFor": 724.12,
         "pointsAgainst": 597.78,
-        "pointsProjected": 137.04999999999998
+        "pointsProjected": 110.92
       }
     },
     {
@@ -11273,7 +11290,7 @@
           "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 2.3,
+          "points": 15.7,
           "projectedPoints": 106.66,
           "isStarter": true
         },
@@ -11366,7 +11383,7 @@
       "starterPoints": {
         "pointsFor": 669.92,
         "pointsAgainst": 550.36,
-        "pointsProjected": 130.86999999999998
+        "pointsProjected": 126.38999999999999
       }
     },
     {
@@ -11500,7 +11517,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 69.94,
+          "points": 85.66,
           "projectedPoints": 264.74,
           "isStarter": true
         },
@@ -11527,7 +11544,7 @@
           "name": "Kaelon Black",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 18.9,
+          "points": 19.8,
           "projectedPoints": 83.8,
           "isStarter": true
         },
@@ -11536,7 +11553,7 @@
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
-          "points": 116.7,
+          "points": 122,
           "projectedPoints": 354.64,
           "isStarter": true
         },
@@ -11651,7 +11668,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 36,
+        "score": 47,
         "letter": "F",
         "reasons": []
       },
@@ -11665,7 +11682,7 @@
       "starterPoints": {
         "pointsFor": 679.3,
         "pointsAgainst": 684.28,
-        "pointsProjected": 128.87
+        "pointsProjected": 133.86999999999998
       }
     },
     {
@@ -11925,7 +11942,7 @@
           "name": "George Kittle",
           "tag": "kept",
           "tagWeek": null,
-          "points": 85.2,
+          "points": 89.7,
           "projectedPoints": 244.75,
           "isStarter": true
         },
@@ -11966,7 +11983,7 @@
       "starterPoints": {
         "pointsFor": 644.54,
         "pointsAgainst": 589.1,
-        "pointsProjected": 119.17
+        "pointsProjected": 119.62
       }
     }
   ],
@@ -11975,19 +11992,19 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "B+ : A 167.92, the league’s best Sleeper score, a 31-point beat of projection, and a 5-0 start, with no bench blunder to blame it on. So it’s not even a lucky week this time, and the “fantasy luck” label is going to need a new excuse. He still managed dead last in FanDuel (127.38) while winning the Pick’em with 10 correct, which is the most Ben thing possible: great at the game he won’t be graded on and worst at the one where he’d get called out."
+      "roast": "C- : His first loss of the season came on 103.36, the lowest Sleeper score of the four and 7.6 under projection, so for once the luck ran out. No bench blunder this week, just a team that stopped scoring. He was also dead last in FanDuel (102.88) for the second week running. The 5-0 start looked like genius, and now he’s 5-1 with the worst week in the group."
     },
     {
       "manager": "Caleb",
-      "roast": "B- : He beat Mason 128.08 to 109.82 and is 4-1, so the “I’m screwed” speech will have to wait. He still started Alvin Kamara’s 2.6 over Blake Corum’s 16.2, leaving 13.6 on the bench, and missed projection by 2.8 while winning. He’s the only one of the four to beat another manager head to head this week, and he can thank Mason’s lineup for that. Second in FanDuel (150.12) and second in Pick’em keep this from being worse."
+      "roast": "C : Beat 108.0 with 119.54 and missed projection by 6.9, which is a win that happened to him more than one he earned. Only 3 Pick’em picks right, dead last by two, and third in FanDuel (109.12). He’s 5-1 with nothing to complain about, which has to be killing him. Give it a week."
     },
     {
       "manager": "Kyle",
-      "roast": "B : First win of the season at 1-4, a 158.36 that beat projection by 29.5, and the best FanDuel score of the week (174.66). The win came against a 93.24, so he beat the worst score on the board and still needed all of it. A train master finally pulled into the station after four weeks of derailments, but only 6 Pick’em picks right means he’s still out of the overall lead. Enjoy the one W, because the wheel isn’t going anywhere."
+      "roast": "C+ : A second win of the year at 2-4, a 126.48 that missed projection by 7.4 and still beat a 91.48 for the easiest W available. He also left 10.6 on the bench by starting Garrett Wilson’s 8.4 over Carnell Tate’s 19, so the win could have been cleaner. Second in FanDuel (144.88) is the only thing he did right, and he’s a long way from climbing out of the basement."
     },
     {
       "manager": "Mason",
-      "roast": "D : Lost 109.82 to 128.08 with the worst Sleeper score of the four, missed projection by 9.4, and got only 5 Pick’em picks right, last in the group. He’s 2-3 and has the lowest points for of the four, so “fantasy is mostly luck” is a tough sell when his own roster is the problem. He still leads the overall standings (24.5 to Ben’s 19) on the strength of his FanDuel total and a hot start, but that lead is leaking and the group still thinks he’s due for last place."
+      "roast": "C : Lost 113.4 to 125.4 and missed projection by 6.2, so he’s 2-4 and has the lowest points for of the four. The week wasn’t a total disaster, because he had the best FanDuel score (151.32) and the best Pick’em (9 correct), and that’s why he still leads the overall standings by 5.5. “Fantasy is mostly luck” gets harder to say when he’s 2-4 in the one league that counts the most. The wheel is warming up."
     }
   ]
 }
