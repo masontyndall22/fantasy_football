@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T11:43:01.835Z",
+  "generatedAt": "2026-10-21T12:43:10.076Z",
   "managers": [
     {
       "name": "Ben",
@@ -11294,15 +11294,6 @@
           "tagWeek": null,
           "points": 51.3,
           "projectedPoints": 174.94,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Justice Hill",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 0,
-          "projectedPoints": 68.84,
           "isStarter": true
         },
         {
