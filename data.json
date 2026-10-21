@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T12:43:10.076Z",
+  "generatedAt": "2026-10-21T13:43:26.604Z",
   "managers": [
     {
       "name": "Ben",
@@ -11858,15 +11858,6 @@
           "tagWeek": 3,
           "points": 39.7,
           "projectedPoints": 116.66,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "MarShawn Lloyd",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 1,
-          "projectedPoints": 68.38,
           "isStarter": true
         },
         {
