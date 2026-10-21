@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:43:06.050Z",
+  "generatedAt": "2026-10-21T08:43:02.279Z",
   "managers": [
     {
       "name": "Ben",
@@ -53,9 +53,11 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 47,
-        "letter": "F",
-        "reasons": []
+        "score": 62,
+        "letter": "D-",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     },
     {
@@ -10974,7 +10976,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 98.1,
-          "projectedPoints": 264.85,
+          "projectedPoints": 264.9,
           "isStarter": true
         },
         {
@@ -11001,7 +11003,16 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 71.1,
-          "projectedPoints": 190.21,
+          "projectedPoints": 190.14,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Omar Cooper",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 104.79,
           "isStarter": true
         },
         {
@@ -11032,6 +11043,15 @@
           "isStarter": true
         },
         {
+          "position": "WR",
+          "name": "Tank Dell",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 28.21,
+          "isStarter": true
+        },
+        {
           "position": "TE",
           "name": "Sam LaPorta",
           "tag": "kept",
@@ -11051,6 +11071,15 @@
         },
         {
           "position": "DEF",
+          "name": "Cleveland Browns",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 70.48,
+          "isStarter": true
+        },
+        {
+          "position": "DEF",
           "name": "Kansas City Chiefs",
           "tag": "waiver",
           "tagWeek": 6,
@@ -11066,15 +11095,6 @@
           "points": 49,
           "projectedPoints": 139.22,
           "isStarter": true
-        },
-        {
-          "position": "K",
-          "name": "Nick Folk",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 1,
-          "projectedPoints": 95.7,
-          "isStarter": true
         }
       ],
       "hasBenchSplit": false,
@@ -11084,11 +11104,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 25,
+      "faabSpent": 36,
       "transactions": {
-        "adds": 6,
+        "adds": 9,
         "trades": 0,
-        "total": 6
+        "total": 9
       },
       "starterPoints": {
         "pointsFor": 827.48,
@@ -11278,6 +11298,24 @@
         },
         {
           "position": "RB",
+          "name": "Justice Hill",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 68.84,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Kenny Gainwell",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 94.81,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 6,
@@ -11341,11 +11379,11 @@
         },
         {
           "position": "DEF",
-          "name": "Carolina Panthers",
+          "name": "New York Jets",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 4,
-          "projectedPoints": 83.22,
+          "points": 0,
+          "projectedPoints": 60.06,
           "isStarter": true
         },
         {
@@ -11367,9 +11405,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 34,
       "transactions": {
-        "adds": 15,
+        "adds": 18,
         "trades": 0,
-        "total": 15
+        "total": 18
       },
       "starterPoints": {
         "pointsFor": 789.46,
@@ -11482,8 +11520,8 @@
           "position": "K",
           "name": "Cam Little",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 6
         },
         {
           "round": 14,
@@ -11546,6 +11584,15 @@
           "tagWeek": null,
           "points": 122,
           "projectedPoints": 355.88,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "J.K. Dobbins",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 98.31,
           "isStarter": true
         },
         {
@@ -11639,36 +11686,29 @@
           "isStarter": true
         },
         {
-          "position": "DEF",
-          "name": "New England Patriots",
-          "tag": "waiver",
-          "tagWeek": 5,
-          "points": 6,
-          "projectedPoints": 84.81,
-          "isStarter": true
-        },
-        {
           "position": "K",
-          "name": "Cam Little",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 54,
-          "projectedPoints": 141.71,
+          "name": "Chris Boswell",
+          "tag": "waiver",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 88.34,
           "isStarter": true
         }
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 47,
-        "letter": "F",
-        "reasons": []
+        "score": 62,
+        "letter": "D-",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 24,
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 50,
       "transactions": {
-        "adds": 10,
+        "adds": 12,
         "trades": 0,
-        "total": 10
+        "total": 12
       },
       "starterPoints": {
         "pointsFor": 805.78,
