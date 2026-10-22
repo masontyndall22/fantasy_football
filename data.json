@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T17:43:03.812Z",
+  "generatedAt": "2026-10-22T18:43:08.429Z",
   "managers": [
     {
       "name": "Ben",
@@ -10916,30 +10916,6 @@
           "isKeeper": false,
           "exitTag": null,
           "exitWeek": null
-        },
-        {
-          "round": 13,
-          "position": "RB",
-          "name": "Isiah Pacheco",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 4
-        },
-        {
-          "round": 14,
-          "position": "K",
-          "name": "Jake Bates",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "DEF",
-          "name": "Philadelphia Eagles",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 3
         }
       ],
       "final": [
@@ -11090,7 +11066,7 @@
         {
           "position": "K",
           "name": "Jake Bates",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 49,
           "projectedPoints": 139.18,
@@ -11215,30 +11191,6 @@
           "isKeeper": false,
           "exitTag": "dropped",
           "exitWeek": 4
-        },
-        {
-          "round": 13,
-          "position": "K",
-          "name": "Ka'imi Fairbairn",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
-          "position": "DEF",
-          "name": "Jacksonville Jaguars",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 6
-        },
-        {
-          "round": 15,
-          "position": "RB",
-          "name": "Adam Randall",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
         }
       ],
       "final": [
@@ -11380,8 +11332,8 @@
         {
           "position": "K",
           "name": "Ka'imi Fairbairn",
-          "tag": "kept",
-          "tagWeek": null,
+          "tag": "waiver",
+          "tagWeek": 5,
           "points": 26,
           "projectedPoints": 121.05,
           "isStarter": true
@@ -11505,30 +11457,6 @@
           "isKeeper": false,
           "exitTag": "dropped",
           "exitWeek": 6
-        },
-        {
-          "round": 13,
-          "position": "K",
-          "name": "Cam Little",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 6
-        },
-        {
-          "round": 14,
-          "position": "RB",
-          "name": "Zach Charbonnet",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "DEF",
-          "name": "Los Angeles Chargers",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
         }
       ],
       "final": [
@@ -11607,7 +11535,7 @@
         {
           "position": "RB",
           "name": "Zach Charbonnet",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 104.84,
@@ -11806,30 +11734,6 @@
           "isKeeper": false,
           "exitTag": "dropped",
           "exitWeek": 5
-        },
-        {
-          "round": 13,
-          "position": "RB",
-          "name": "Mike Washington",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 14,
-          "position": "K",
-          "name": "Tyler Loop",
-          "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
-        },
-        {
-          "round": 15,
-          "position": "WR",
-          "name": "Tyreek Hill",
-          "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 1
         }
       ],
       "final": [
@@ -11881,7 +11785,7 @@
         {
           "position": "RB",
           "name": "Mike Washington",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 26.9,
           "projectedPoints": 96.21,
@@ -11971,7 +11875,7 @@
         {
           "position": "K",
           "name": "Tyler Loop",
-          "tag": "kept",
+          "tag": "waiver",
           "tagWeek": null,
           "points": 55,
           "projectedPoints": 134.52,
