@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T06:43:02.975Z",
+  "generatedAt": "2026-10-22T07:43:42.371Z",
   "managers": [
     {
       "name": "Ben",
@@ -11157,8 +11157,8 @@
           "position": "RB",
           "name": "Josh Jacobs",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "traded",
+          "exitWeek": 6
         },
         {
           "round": 6,
@@ -11253,6 +11253,15 @@
         },
         {
           "position": "RB",
+          "name": "Bucky Irving",
+          "tag": "trade",
+          "tagWeek": 6,
+          "points": 0,
+          "projectedPoints": 164.08,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Blake Corum",
           "tag": "kept",
           "tagWeek": null,
@@ -11276,15 +11285,6 @@
           "tagWeek": 3,
           "points": 40.3,
           "projectedPoints": 97.67,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Josh Jacobs",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 0,
-          "projectedPoints": 148.54,
           "isStarter": true
         },
         {
@@ -11397,8 +11397,8 @@
       "faabSpent": 34,
       "transactions": {
         "adds": 18,
-        "trades": 0,
-        "total": 18
+        "trades": 1,
+        "total": 19
       },
       "starterPoints": {
         "pointsFor": 789.46,
@@ -11601,7 +11601,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 5.8,
-          "projectedPoints": 94.37,
+          "projectedPoints": 94.38,
           "isStarter": true
         },
         {
@@ -11664,7 +11664,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 103.1,
-          "projectedPoints": 280.81,
+          "projectedPoints": 280.83,
           "isStarter": true
         },
         {
@@ -11929,7 +11929,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 71.28,
-          "projectedPoints": 228.35,
+          "projectedPoints": 228.36,
           "isStarter": true
         },
         {
