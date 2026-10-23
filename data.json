@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T00:43:08.615Z",
+  "generatedAt": "2026-10-23T01:43:03.501Z",
   "managers": [
     {
       "name": "Ben",
@@ -11329,7 +11329,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.9,
-          "projectedPoints": 188.1,
+          "projectedPoints": 188.09,
           "isStarter": true
         },
         {
@@ -11838,7 +11838,7 @@
           "name": "Caleb Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 62.48,
+          "points": 66.28,
           "projectedPoints": 255.96,
           "isStarter": true
         },
@@ -11937,7 +11937,7 @@
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
-          "points": 73.3,
+          "points": 83.7,
           "projectedPoints": 210.51,
           "isStarter": true
         },
