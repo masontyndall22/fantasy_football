@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T06:43:01.741Z",
+  "generatedAt": "2026-10-24T07:43:00.738Z",
   "managers": [
     {
       "name": "Ben",
@@ -11325,6 +11325,15 @@
         },
         {
           "position": "WR",
+          "name": "Stefon Diggs",
+          "tag": "waiver",
+          "tagWeek": 7,
+          "points": 0,
+          "projectedPoints": 133.05,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
@@ -11396,9 +11405,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 34,
       "transactions": {
-        "adds": 18,
+        "adds": 19,
         "trades": 1,
-        "total": 19
+        "total": 20
       },
       "starterPoints": {
         "pointsFor": 789.46,
@@ -11889,6 +11898,15 @@
         },
         {
           "position": "RB",
+          "name": "Seth McGowan",
+          "tag": "waiver",
+          "tagWeek": 7,
+          "points": 0,
+          "projectedPoints": 34.61,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Kenneth Walker",
           "tag": "kept",
           "tagWeek": null,
@@ -11987,11 +12005,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 58,
+      "faabSpent": 59,
       "transactions": {
-        "adds": 6,
+        "adds": 7,
         "trades": 0,
-        "total": 6
+        "total": 7
       },
       "starterPoints": {
         "pointsFor": 757.94,
