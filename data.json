@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T02:43:04.262Z",
+  "generatedAt": "2026-10-26T03:43:19.930Z",
   "managers": [
     {
       "name": "Ben",
@@ -11083,7 +11083,7 @@
           "name": "Kansas City Chiefs",
           "tag": "waiver",
           "tagWeek": 6,
-          "points": 22,
+          "points": 19,
           "projectedPoints": 92.56,
           "isStarter": true
         },
@@ -11355,7 +11355,7 @@
           "name": "Jaxon Smith-Njigba",
           "tag": "kept",
           "tagWeek": null,
-          "points": 191.06,
+          "points": 196.16,
           "projectedPoints": 399.09,
           "isStarter": true
         },
@@ -11373,7 +11373,7 @@
           "name": "Travis Kelce",
           "tag": "kept",
           "tagWeek": null,
-          "points": 61.9,
+          "points": 69,
           "projectedPoints": 211.99,
           "isStarter": true
         },
@@ -11555,7 +11555,7 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 98.78,
+          "points": 103.94,
           "projectedPoints": 326.23,
           "isStarter": true
         },
@@ -11910,7 +11910,7 @@
           "name": "Kenneth Walker",
           "tag": "kept",
           "tagWeek": null,
-          "points": 143.9,
+          "points": 147.7,
           "projectedPoints": 352.72,
           "isStarter": true
         },
