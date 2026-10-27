@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T02:43:02.395Z",
+  "generatedAt": "2026-10-27T03:21:42.417Z",
   "managers": [
     {
       "name": "Ben",
       "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 827.48,
       "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 50,
+      "pickemTotalCorrect": 58,
       "fdWins": 0,
       "fdTop5Total": 571.92,
       "fdTop10Total": 765.48,
       "fdSeasonTotal": 765.48,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 4,
       "seasonGrade": {
         "score": 0,
         "letter": "F",
@@ -22,10 +22,10 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 17.5,
+      "totalStandingsPoints": 18,
       "sleeperPprSeasonPoints": 789.46,
       "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 43,
+      "pickemTotalCorrect": 52,
       "fdWins": 2,
       "fdTop5Total": 656.8399999999999,
       "fdTop10Total": 851.96,
@@ -34,17 +34,17 @@
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 0,
+        "score": 6,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 20.5,
+      "totalStandingsPoints": 19,
       "sleeperPprSeasonPoints": 805.78,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 43,
+      "sleeperFinalPlacement": 4,
+      "pickemTotalCorrect": 50,
       "fdWins": 2,
       "fdTop5Total": 710.74,
       "fdTop10Total": 921.5799999999999,
@@ -53,7 +53,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 53,
+        "score": 34,
         "letter": "F",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -64,8 +64,8 @@
       "name": "Mason",
       "totalStandingsPoints": 25.5,
       "sleeperPprSeasonPoints": 757.94,
-      "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 53,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 62,
       "fdWins": 3,
       "fdTop5Total": 729.4000000000001,
       "fdTop10Total": 942.3799999999999,
@@ -966,7 +966,7 @@
       8,
       10,
       6,
-      0,
+      8,
       0,
       0,
       0,
@@ -986,7 +986,7 @@
       8,
       8,
       3,
-      0,
+      9,
       0,
       0,
       0,
@@ -1006,7 +1006,7 @@
       8,
       6,
       5,
-      0,
+      7,
       0,
       0,
       0,
@@ -1026,7 +1026,7 @@
       11,
       5,
       9,
-      0,
+      9,
       0,
       0,
       0,
@@ -1959,6 +1959,15 @@
       "managerB": "Mason",
       "scoreB": 109.82,
       "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 7,
+      "managerA": "Kyle",
+      "scoreA": 119.7,
+      "managerB": "Caleb",
+      "scoreB": 124.36,
+      "winner": "Caleb"
     }
   ],
   "matchups": [
@@ -2779,6 +2788,15 @@
       "scoreA": 128.08,
       "managerB": "Mason",
       "scoreB": 109.82,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 7,
+      "managerA": "Kyle",
+      "scoreA": 119.7,
+      "managerB": "Caleb",
+      "scoreB": 124.36,
       "winner": "Caleb"
     }
   ],
@@ -11130,7 +11148,7 @@
       "starterPoints": {
         "pointsFor": 827.48,
         "pointsAgainst": 712.62,
-        "pointsProjected": 110.92
+        "pointsProjected": 137.79999999999998
       }
     },
     {
@@ -11415,7 +11433,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 0,
+        "score": 6,
         "letter": "F",
         "reasons": []
       },
@@ -11429,7 +11447,7 @@
       "starterPoints": {
         "pointsFor": 789.46,
         "pointsAgainst": 658.36,
-        "pointsProjected": 126.38999999999999
+        "pointsProjected": 138.57000000000002
       }
     },
     {
@@ -11714,7 +11732,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 53,
+        "score": 34,
         "letter": "F",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -11730,7 +11748,7 @@
       "starterPoints": {
         "pointsFor": 805.78,
         "pointsAgainst": 775.76,
-        "pointsProjected": 133.86999999999998
+        "pointsProjected": 127.7
       }
     },
     {
@@ -12031,7 +12049,7 @@
       "starterPoints": {
         "pointsFor": 757.94,
         "pointsAgainst": 714.5,
-        "pointsProjected": 119.62
+        "pointsProjected": 130.29000000000002
       }
     }
   ],
