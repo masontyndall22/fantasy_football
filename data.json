@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T07:43:01.271Z",
+  "generatedAt": "2026-10-28T08:43:02.549Z",
   "managers": [
     {
       "name": "Ben",
@@ -11029,7 +11029,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 74.8,
-          "projectedPoints": 272.05,
+          "projectedPoints": 272.04,
           "isStarter": true
         },
         {
@@ -11038,7 +11038,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 71.1,
-          "projectedPoints": 179.99,
+          "projectedPoints": 180.07,
           "isStarter": true
         },
         {
@@ -11256,8 +11256,8 @@
           "position": "K",
           "name": "Ka'imi Fairbairn",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 7
         },
         {
           "round": 14,
@@ -11292,7 +11292,7 @@
           "tag": "trade",
           "tagWeek": 6,
           "points": 24,
-          "projectedPoints": 171.48,
+          "projectedPoints": 171.45,
           "isStarter": true
         },
         {
@@ -11310,7 +11310,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 122.7,
-          "projectedPoints": 285.13,
+          "projectedPoints": 285.12,
           "isStarter": true
         },
         {
@@ -11328,7 +11328,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 87.8,
-          "projectedPoints": 178.82,
+          "projectedPoints": 178.81,
           "isStarter": true
         },
         {
@@ -11373,7 +11373,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 76.5,
-          "projectedPoints": 187.75,
+          "projectedPoints": 187.86,
           "isStarter": true
         },
         {
@@ -11382,7 +11382,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 97.1,
-          "projectedPoints": 294.63,
+          "projectedPoints": 294.64,
           "isStarter": true
         },
         {
@@ -11400,7 +11400,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 69.9,
-          "projectedPoints": 177.87,
+          "projectedPoints": 177.86,
           "isStarter": true
         },
         {
@@ -11409,25 +11409,25 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 70.3,
-          "projectedPoints": 211.76,
+          "projectedPoints": 211.77,
           "isStarter": true
         },
         {
           "position": "DEF",
-          "name": "New York Jets",
+          "name": "New England Patriots",
           "tag": "waiver",
-          "tagWeek": 6,
-          "points": 1,
-          "projectedPoints": 60.08,
+          "tagWeek": 7,
+          "points": 0,
+          "projectedPoints": 70.85,
           "isStarter": true
         },
         {
           "position": "K",
-          "name": "Ka'imi Fairbairn",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 37,
-          "projectedPoints": 121.26,
+          "name": "Chase McLaughlin",
+          "tag": "waiver",
+          "tagWeek": 7,
+          "points": 0,
+          "projectedPoints": 81.81,
           "isStarter": true
         }
       ],
@@ -11438,11 +11438,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 34,
+      "faabSpent": 39,
       "transactions": {
-        "adds": 19,
+        "adds": 21,
         "trades": 1,
-        "total": 20
+        "total": 22
       },
       "starterPoints": {
         "pointsFor": 913.82,
@@ -11605,15 +11605,6 @@
         },
         {
           "position": "RB",
-          "name": "Kaelon Black",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 30.7,
-          "projectedPoints": 84.81,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
@@ -11672,7 +11663,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.3,
-          "projectedPoints": 215.44,
+          "projectedPoints": 215.45,
           "isStarter": true
         },
         {
@@ -11682,6 +11673,15 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 103.74,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Jakobi Meyers",
+          "tag": "waiver",
+          "tagWeek": 7,
+          "points": 0,
+          "projectedPoints": 119.29,
           "isStarter": true
         },
         {
@@ -11739,11 +11739,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 50,
+      "faabSpent": 51,
       "transactions": {
-        "adds": 12,
+        "adds": 13,
         "trades": 0,
-        "total": 12
+        "total": 13
       },
       "starterPoints": {
         "pointsFor": 925.48,
@@ -11991,7 +11991,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 97,
-          "projectedPoints": 211.35,
+          "projectedPoints": 211.34,
           "isStarter": true
         },
         {
