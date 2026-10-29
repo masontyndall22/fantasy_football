@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T06:43:04.822Z",
+  "generatedAt": "2026-10-29T07:43:02.673Z",
   "managers": [
     {
       "name": "Ben",
@@ -11011,7 +11011,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 108.1,
-          "projectedPoints": 265.44,
+          "projectedPoints": 265.39,
           "isStarter": true
         },
         {
@@ -11074,7 +11074,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 129.5,
-          "projectedPoints": 280.59,
+          "projectedPoints": 280.51,
           "isStarter": true
         },
         {
@@ -11115,11 +11115,11 @@
         },
         {
           "position": "DEF",
-          "name": "Kansas City Chiefs",
+          "name": "Jacksonville Jaguars",
           "tag": "waiver",
-          "tagWeek": 6,
-          "points": 19,
-          "projectedPoints": 92.53,
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 80.02,
           "isStarter": true
         },
         {
@@ -11139,11 +11139,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 36,
+      "faabSpent": 39,
       "transactions": {
-        "adds": 9,
+        "adds": 10,
         "trades": 0,
-        "total": 9
+        "total": 10
       },
       "starterPoints": {
         "pointsFor": 941.4,
@@ -11283,7 +11283,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 39.2,
-          "projectedPoints": 219.33,
+          "projectedPoints": 219.23,
           "isStarter": true
         },
         {
