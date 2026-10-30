@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T00:43:07.368Z",
+  "generatedAt": "2026-10-30T01:43:02.979Z",
   "managers": [
     {
       "name": "Ben",
@@ -11010,7 +11010,7 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 108.1,
+          "points": 121.6,
           "projectedPoints": 276.66,
           "isStarter": true
         },
@@ -11073,8 +11073,8 @@
           "name": "Christian Watson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 129.5,
-          "projectedPoints": 279.81,
+          "points": 135.8,
+          "projectedPoints": 279.79,
           "isStarter": true
         },
         {
@@ -11282,8 +11282,8 @@
           "name": "Jordan Love",
           "tag": "waiver",
           "tagWeek": 5,
-          "points": 39.2,
-          "projectedPoints": 218.25,
+          "points": 45.88,
+          "projectedPoints": 218.21,
           "isStarter": true
         },
         {
