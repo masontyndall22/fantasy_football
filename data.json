@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T00:43:09.651Z",
+  "generatedAt": "2026-10-31T01:43:00.321Z",
   "managers": [
     {
       "name": "Ben",
@@ -11346,7 +11346,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 0,
-          "projectedPoints": 134.75,
+          "projectedPoints": 134.72,
           "isStarter": true
         },
         {
@@ -11564,7 +11564,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 85.66,
-          "projectedPoints": 268.33,
+          "projectedPoints": 268.25,
           "isStarter": true
         },
         {
@@ -11610,15 +11610,6 @@
           "tagWeek": null,
           "points": 30.9,
           "projectedPoints": 139.16,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Tyler Allgeier",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 13.7,
-          "projectedPoints": 94.67,
           "isStarter": true
         },
         {
