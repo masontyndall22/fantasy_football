@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T06:43:00.468Z",
+  "generatedAt": "2026-10-31T07:43:07.233Z",
   "managers": [
     {
       "name": "Ben",
@@ -11596,20 +11596,20 @@
         },
         {
           "position": "RB",
-          "name": "J.K. Dobbins",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 8.3,
-          "projectedPoints": 75.01,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
           "name": "Travis Etienne",
           "tag": "kept",
           "tagWeek": null,
           "points": 30.9,
           "projectedPoints": 139.16,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Rachaad White",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 4.7,
+          "projectedPoints": 106.42,
           "isStarter": true
         },
         {
@@ -11655,6 +11655,15 @@
           "tagWeek": 7,
           "points": 0,
           "projectedPoints": 118.2,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Wan'Dale Robinson",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 114.67,
           "isStarter": true
         },
         {
@@ -11712,11 +11721,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 51,
+      "faabSpent": 60,
       "transactions": {
-        "adds": 13,
+        "adds": 15,
         "trades": 0,
-        "total": 13
+        "total": 15
       },
       "starterPoints": {
         "pointsFor": 925.48,
