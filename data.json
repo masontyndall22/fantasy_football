@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T01:43:03.095Z",
+  "generatedAt": "2026-11-02T02:43:05.408Z",
   "managers": [
     {
       "name": "Ben",
@@ -11563,7 +11563,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 85.66,
+          "points": 86.7,
           "projectedPoints": 268.19,
           "isStarter": true
         },
@@ -11608,7 +11608,7 @@
           "name": "Rachaad White",
           "tag": "waiver",
           "tagWeek": 8,
-          "points": 4.7,
+          "points": 7.4,
           "projectedPoints": 106.44,
           "isStarter": true
         },
@@ -11653,7 +11653,7 @@
           "name": "Makai Lemon",
           "tag": "waiver",
           "tagWeek": 8,
-          "points": 0,
+          "points": 3,
           "projectedPoints": 57.47,
           "isStarter": true
         },
