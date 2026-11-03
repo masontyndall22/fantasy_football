@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-03T03:43:04.287Z",
+  "generatedAt": "2026-11-03T04:43:01.401Z",
   "managers": [
     {
       "name": "Ben",
       "totalStandingsPoints": 17.5,
       "sleeperPprSeasonPoints": 941.4,
-      "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 58,
-      "fdWins": 0,
-      "fdTop5Total": 571.92,
-      "fdTop10Total": 765.48,
-      "fdSeasonTotal": 765.48,
+      "sleeperFinalPlacement": 2,
+      "pickemTotalCorrect": 64,
+      "fdWins": 1,
+      "fdTop5Total": 590.16,
+      "fdTop10Total": 885.74,
+      "fdSeasonTotal": 885.74,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -22,19 +22,19 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 18,
+      "totalStandingsPoints": 19,
       "sleeperPprSeasonPoints": 913.82,
-      "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 52,
+      "sleeperFinalPlacement": 1,
+      "pickemTotalCorrect": 59,
       "fdWins": 2,
-      "fdTop5Total": 656.8399999999999,
-      "fdTop10Total": 851.96,
-      "fdSeasonTotal": 851.96,
+      "fdTop5Total": 664.22,
+      "fdTop10Total": 968.46,
+      "fdSeasonTotal": 968.46,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 6,
+        "score": 19,
         "letter": "F",
         "reasons": []
       }
@@ -44,20 +44,18 @@
       "totalStandingsPoints": 19,
       "sleeperPprSeasonPoints": 925.48,
       "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 50,
+      "pickemTotalCorrect": 58,
       "fdWins": 2,
       "fdTop5Total": 710.74,
-      "fdTop10Total": 921.5799999999999,
-      "fdSeasonTotal": 921.5799999999999,
+      "fdTop10Total": 1000.1399999999999,
+      "fdSeasonTotal": 1000.1399999999999,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 34,
+        "score": 19,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       }
     },
     {
@@ -65,11 +63,11 @@
       "totalStandingsPoints": 25.5,
       "sleeperPprSeasonPoints": 881.16,
       "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 62,
+      "pickemTotalCorrect": 68,
       "fdWins": 3,
       "fdTop5Total": 729.4000000000001,
-      "fdTop10Total": 942.3799999999999,
-      "fdSeasonTotal": 942.3799999999999,
+      "fdTop10Total": 1040.7399999999998,
+      "fdSeasonTotal": 1040.7399999999998,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -94,7 +92,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "55-60",
+      "allTimeRecord": "55-61",
       "careerStats": [
         {
           "label": "League High",
@@ -139,7 +137,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "66-49",
+      "allTimeRecord": "67-49",
       "careerStats": [
         {
           "label": "League High",
@@ -712,7 +710,7 @@
       127.38,
       102.88,
       102.02,
-      0,
+      120.26,
       0,
       0,
       0,
@@ -732,7 +730,7 @@
       150.12,
       109.12,
       127.32,
-      0,
+      116.5,
       0,
       0,
       0,
@@ -752,7 +750,7 @@
       174.66,
       144.88,
       114.26,
-      0,
+      78.56,
       0,
       0,
       0,
@@ -772,7 +770,7 @@
       142.96,
       151.32,
       105.06,
-      0,
+      98.36,
       0,
       0,
       0,
@@ -849,22 +847,31 @@
           "Kyle": 114.26,
           "Mason": 105.06
         }
+      },
+      {
+        "week": 8,
+        "scores": {
+          "Ben": 120.26,
+          "Caleb": 116.5,
+          "Kyle": 78.56,
+          "Mason": 98.36
+        }
       }
     ],
     "fdTop5": {
       "Ben": [
         128.86,
         127.38,
+        120.26,
         110.78,
-        102.88,
-        102.02
+        102.88
       ],
       "Caleb": [
         150.12,
         148.4,
         127.32,
         121.88,
-        109.12
+        116.5
       ],
       "Kyle": [
         174.66,
@@ -885,6 +892,7 @@
       "Ben": [
         128.86,
         127.38,
+        120.26,
         110.78,
         102.88,
         102.02,
@@ -896,6 +904,7 @@
         148.4,
         127.32,
         121.88,
+        116.5,
         109.12,
         100.68,
         94.44
@@ -907,7 +916,8 @@
         134.9,
         114.26,
         112.88,
-        97.96
+        97.96,
+        78.56
       ],
       "Mason": [
         192.5,
@@ -916,13 +926,15 @@
         124.68,
         117.94,
         107.92,
-        105.06
+        105.06,
+        98.36
       ]
     },
     "fdAllWeeks": {
       "Ben": [
         128.86,
         127.38,
+        120.26,
         110.78,
         102.88,
         102.02,
@@ -934,6 +946,7 @@
         148.4,
         127.32,
         121.88,
+        116.5,
         109.12,
         100.68,
         94.44
@@ -945,7 +958,8 @@
         134.9,
         114.26,
         112.88,
-        97.96
+        97.96,
+        78.56
       ],
       "Mason": [
         192.5,
@@ -954,7 +968,8 @@
         124.68,
         117.94,
         107.92,
-        105.06
+        105.06,
+        98.36
       ]
     }
   },
@@ -967,7 +982,7 @@
       10,
       6,
       8,
-      0,
+      6,
       0,
       0,
       0,
@@ -987,7 +1002,7 @@
       8,
       3,
       9,
-      0,
+      7,
       0,
       0,
       0,
@@ -1007,7 +1022,7 @@
       6,
       5,
       7,
-      0,
+      8,
       0,
       0,
       0,
@@ -1027,7 +1042,7 @@
       5,
       9,
       9,
-      0,
+      6,
       0,
       0,
       0,
@@ -1968,6 +1983,15 @@
       "managerB": "Caleb",
       "scoreB": 124.36,
       "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 8,
+      "managerA": "Caleb",
+      "scoreA": 166.92,
+      "managerB": "Ben",
+      "scoreB": 119.08,
+      "winner": "Caleb"
     }
   ],
   "matchups": [
@@ -2797,6 +2821,15 @@
       "scoreA": 119.7,
       "managerB": "Caleb",
       "scoreB": 124.36,
+      "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 8,
+      "managerA": "Caleb",
+      "scoreA": 166.92,
+      "managerB": "Ben",
+      "scoreB": 119.08,
       "winner": "Caleb"
     }
   ],
@@ -11148,7 +11181,7 @@
       "starterPoints": {
         "pointsFor": 941.4,
         "pointsAgainst": 793.74,
-        "pointsProjected": 137.79999999999998
+        "pointsProjected": 127.07
       }
     },
     {
@@ -11372,7 +11405,7 @@
           "name": "Jaxon Smith-Njigba",
           "tag": "kept",
           "tagWeek": null,
-          "points": 215.36,
+          "points": 219.96,
           "projectedPoints": 398.51,
           "isStarter": true
         },
@@ -11415,7 +11448,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 6,
+        "score": 19,
         "letter": "F",
         "reasons": []
       },
@@ -11429,7 +11462,7 @@
       "starterPoints": {
         "pointsFor": 913.82,
         "pointsAgainst": 778.06,
-        "pointsProjected": 138.57000000000002
+        "pointsProjected": 137.20000000000002
       }
     },
     {
@@ -11617,7 +11650,7 @@
           "name": "Zach Charbonnet",
           "tag": "kept",
           "tagWeek": null,
-          "points": 2.7,
+          "points": 5.9,
           "projectedPoints": 98.56,
           "isStarter": true
         },
@@ -11714,13 +11747,11 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 34,
+        "score": 19,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Spent big on waivers and it paid off",
+      "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 60,
       "transactions": {
         "adds": 16,
@@ -11730,7 +11761,7 @@
       "starterPoints": {
         "pointsFor": 925.48,
         "pointsAgainst": 900.12,
-        "pointsProjected": 127.7
+        "pointsProjected": 107.69999999999999
       }
     },
     {
@@ -11864,7 +11895,7 @@
           "name": "Caleb Williams",
           "tag": "kept",
           "tagWeek": null,
-          "points": 95.72,
+          "points": 98.58,
           "projectedPoints": 253.79,
           "isStarter": true
         },
@@ -12022,7 +12053,7 @@
       "starterPoints": {
         "pointsFor": 881.16,
         "pointsAgainst": 834.72,
-        "pointsProjected": 130.29000000000002
+        "pointsProjected": 126.67999999999999
       }
     }
   ],
@@ -12031,19 +12062,7 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "D : Just asleep at the wheel these days in fanduel. The self proclaimed \"coach\" can't seem to spot talent in any way in fanduel. Must be dreaming of hotdogs at this point and praying for sleeper to hold. Won't get to play the lowest scorer every week. "
-    },
-    {
-      "manager": "Caleb",
-      "roast": "A : Finally figured out how to not get screwed across the board. First in fanduel and beat the brakees off of Kyle in sleeper. Despite a huge miss on Tony Pollard, managed to finally have something to smile about. "
-    },
-    {
-      "manager": "Kyle",
-      "roast": "D : Just hoping he manages trains better than he manages his football teams. Last in sleeper once again and swing and a miss in fanduel scoring 7.7 under projections for the week. 2-5 may be a tough hole to dig out of. "
-    },
-    {
-      "manager": "Mason",
-      "roast": "C : Barely skipping out on last place and finally figuring out how to win again. Looks like luck decided to show up for him this week despite scoring 6.9 under projections."
+      "roast": "D- : Lost to Caleb 166.92 to 119.08, a 47.84-point beating from the guy who has never won this league and has a standing excuse for everything. No bench blunder to hide behind, just a 119 that missed projection by 8 from a real-life football coach. The best FanDuel score of the week (120.26) is a nice participation trophy, and with 6 Pick’em picks he tied for last there anyway. He has the most points for of anyone and the fewest overall standings points, which is quite the way to turn the best roster into the worst résumé. Fantasy luck finally took a day off."
     }
   ]
 }
