@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T04:43:01.401Z",
+  "generatedAt": "2026-11-03T05:43:33.579Z",
   "managers": [
     {
       "name": "Ben",
@@ -92,7 +92,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "55-61",
+      "allTimeRecord": "55-60",
       "careerStats": [
         {
           "label": "League High",
@@ -137,7 +137,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "67-49",
+      "allTimeRecord": "66-49",
       "careerStats": [
         {
           "label": "League High",
@@ -12062,7 +12062,19 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "D- : Lost to Caleb 166.92 to 119.08, a 47.84-point beating from the guy who has never won this league and has a standing excuse for everything. No bench blunder to hide behind, just a 119 that missed projection by 8 from a real-life football coach. The best FanDuel score of the week (120.26) is a nice participation trophy, and with 6 Pick’em picks he tied for last there anyway. He has the most points for of anyone and the fewest overall standings points, which is quite the way to turn the best roster into the worst résumé. Fantasy luck finally took a day off."
+      "roast": "D- : Lost to Caleb 166.92 to 119.08, a 47.84-point beating from the guy who has never won this league. No bench blunder to hide behind, just a 119 that missed projection by 8 from a real-life football coach. The best FanDuel score of the week (120.26) is a nice participation trophy, and with 6 Pick’em picks he tied for last there anyway. He has the most points for of anyone and the fewest overall standings points, which is quite the way to turn the best roster into the worst résumé. Fantasy luck finally took a day off. About time to hang up the whistle and pick up the buns."
+    },
+    {
+      "manager": "Caleb",
+      "roast": "A : A league-best 166.92, 29.7 over projection, and a 48-point flattening of Ben for a 7-1 record. It’s hard to be screwed when you’re 7-1 and you’ve just made the league’s most decorated football coach look like an intern. Second in FanDuel (116.5) and a middling 7 Pick’em picks keep this from a perfect week, but he’ll find something to complain about before Wednesday."
+    },
+    {
+      "manager": "Kyle",
+      "roast": "C- : Beat a 103.46 with a 111.78, a win by 8 points. He left 10.5 on the bench by starting Jayden Daniels’ 14.98 over Patrick Mahomes’ 25.44, so the luxury QB2 he drafted is now just an expensive bench ornament. He had the best Pick’em of the week (8 correct) and the worst FanDuel score by 20 points (78.56). Hot or cold with nothing in between is the brand, and this week was lukewarm on one and ice on the other."
+    },
+    {
+      "manager": "Mason",
+      "roast": "B- : A 139.38 that beat projection by 12.7 against a 90.1, with no bench blunder. That’s a clean win over a bad opponent, so don’t get cute with the luck speech. Third in FanDuel (98.36) and a bottom-tier 6 Pick’em picks keep him from a real grade, but he still leads the overall standings by 6.5 over Caleb and Kyle. The hot dog wheel will have to find someone else this week."
     }
   ]
 }
