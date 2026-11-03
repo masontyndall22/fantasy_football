@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T11:43:06.394Z",
+  "generatedAt": "2026-11-03T12:43:37.215Z",
   "managers": [
     {
       "name": "Ben",
@@ -11111,15 +11111,6 @@
           "isStarter": true
         },
         {
-          "position": "WR",
-          "name": "Tank Dell",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 5.5,
-          "projectedPoints": 30.34,
-          "isStarter": true
-        },
-        {
           "position": "TE",
           "name": "Sam LaPorta",
           "tag": "kept",
@@ -11139,20 +11130,11 @@
         },
         {
           "position": "DEF",
-          "name": "Cleveland Browns",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 11,
-          "projectedPoints": 70.26,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
           "name": "Jacksonville Jaguars",
           "tag": "waiver",
           "tagWeek": 8,
           "points": 20,
-          "projectedPoints": 81.1,
+          "projectedPoints": 81.05,
           "isStarter": true
         },
         {
@@ -11343,7 +11325,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 136.7,
-          "projectedPoints": 279.93,
+          "projectedPoints": 280.22,
           "isStarter": true
         },
         {
@@ -11692,15 +11674,6 @@
         },
         {
           "position": "WR",
-          "name": "Wan'Dale Robinson",
-          "tag": "waiver",
-          "tagWeek": 8,
-          "points": 15.7,
-          "projectedPoints": 114.39,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
@@ -11733,15 +11706,6 @@
           "tagWeek": 2,
           "points": 72,
           "projectedPoints": 119.01,
-          "isStarter": true
-        },
-        {
-          "position": "K",
-          "name": "Chris Boswell",
-          "tag": "waiver",
-          "tagWeek": 6,
-          "points": 19,
-          "projectedPoints": 88.65,
           "isStarter": true
         }
       ],
@@ -12031,7 +11995,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 65,
-          "projectedPoints": 132.76,
+          "projectedPoints": 132.83,
           "isStarter": true
         }
       ],
