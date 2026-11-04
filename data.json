@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T08:43:03.714Z",
+  "generatedAt": "2026-11-04T09:43:01.803Z",
   "managers": [
     {
       "name": "Ben",
@@ -11026,7 +11026,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 99.44,
-          "projectedPoints": 327.3,
+          "projectedPoints": 327.43,
           "isStarter": true
         },
         {
@@ -11035,7 +11035,16 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 132.3,
-          "projectedPoints": 271.61,
+          "projectedPoints": 271.64,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
+          "name": "Mike Washington",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 55.39,
           "isStarter": true
         },
         {
@@ -11053,7 +11062,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 195.8,
-          "projectedPoints": 432.27,
+          "projectedPoints": 432.17,
           "isStarter": true
         },
         {
@@ -11098,7 +11107,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 60.4,
-          "projectedPoints": 157.28,
+          "projectedPoints": 157.36,
           "isStarter": true
         },
         {
@@ -11116,7 +11125,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 85.9,
-          "projectedPoints": 213.6,
+          "projectedPoints": 213.75,
           "isStarter": true
         },
         {
@@ -11154,11 +11163,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 39,
+      "faabSpent": 42,
       "transactions": {
-        "adds": 10,
+        "adds": 11,
         "trades": 0,
-        "total": 10
+        "total": 11
       },
       "starterPoints": {
         "pointsFor": 1060.48,
@@ -11325,7 +11334,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 136.7,
-          "projectedPoints": 278.22,
+          "projectedPoints": 278.26,
           "isStarter": true
         },
         {
@@ -11411,11 +11420,11 @@
         },
         {
           "position": "DEF",
-          "name": "New England Patriots",
+          "name": "Kansas City Chiefs",
           "tag": "waiver",
-          "tagWeek": 7,
-          "points": 8,
-          "projectedPoints": 70.32,
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 70.74,
           "isStarter": true
         },
         {
@@ -11435,11 +11444,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 39,
+      "faabSpent": 41,
       "transactions": {
-        "adds": 21,
+        "adds": 22,
         "trades": 1,
-        "total": 22
+        "total": 23
       },
       "starterPoints": {
         "pointsFor": 1080.74,
@@ -11602,11 +11611,20 @@
         },
         {
           "position": "RB",
+          "name": "Kaelon Black",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 30.7,
+          "projectedPoints": 84.8,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
           "points": 144,
-          "projectedPoints": 348.41,
+          "projectedPoints": 348.26,
           "isStarter": true
         },
         {
@@ -11707,11 +11725,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 60,
+      "faabSpent": 62,
       "transactions": {
-        "adds": 16,
+        "adds": 17,
         "trades": 0,
-        "total": 16
+        "total": 17
       },
       "starterPoints": {
         "pointsFor": 1037.26,
@@ -11832,8 +11850,8 @@
           "position": "K",
           "name": "Tyler Loop",
           "isKeeper": false,
-          "exitTag": null,
-          "exitWeek": null
+          "exitTag": "dropped",
+          "exitWeek": 8
         },
         {
           "round": 15,
@@ -11860,7 +11878,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 96.84,
-          "projectedPoints": 284.15,
+          "projectedPoints": 284.34,
           "isStarter": true
         },
         {
@@ -11955,20 +11973,20 @@
         },
         {
           "position": "TE",
-          "name": "Hunter Henry",
-          "tag": "waiver",
-          "tagWeek": 8,
-          "points": 6,
-          "projectedPoints": 92.32,
-          "isStarter": true
-        },
-        {
-          "position": "TE",
           "name": "George Kittle",
           "tag": "kept",
           "tagWeek": null,
           "points": 104.5,
-          "projectedPoints": 245.71,
+          "projectedPoints": 245.87,
+          "isStarter": true
+        },
+        {
+          "position": "DEF",
+          "name": "Chicago Bears",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 58.35,
           "isStarter": true
         },
         {
@@ -11982,11 +12000,11 @@
         },
         {
           "position": "K",
-          "name": "Tyler Loop",
-          "tag": "kept",
-          "tagWeek": null,
-          "points": 65,
-          "projectedPoints": 125.86,
+          "name": "Ka'imi Fairbairn",
+          "tag": "waiver",
+          "tagWeek": 8,
+          "points": 0,
+          "projectedPoints": 87.31,
           "isStarter": true
         }
       ],
@@ -11999,11 +12017,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 59,
+      "faabSpent": 64,
       "transactions": {
-        "adds": 8,
+        "adds": 10,
         "trades": 0,
-        "total": 8
+        "total": 10
       },
       "starterPoints": {
         "pointsFor": 1020.54,
