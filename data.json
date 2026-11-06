@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T02:43:01.803Z",
+  "generatedAt": "2026-11-06T03:43:02.987Z",
   "managers": [
     {
       "name": "Ben",
@@ -11142,7 +11142,7 @@
           "name": "Jacksonville Jaguars",
           "tag": "waiver",
           "tagWeek": 8,
-          "points": 28,
+          "points": 30,
           "projectedPoints": 82.01,
           "isStarter": true
         },
@@ -11333,7 +11333,7 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 140.98,
+          "points": 141.78,
           "projectedPoints": 279.85,
           "isStarter": true
         },
@@ -11896,7 +11896,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 96.84,
-          "projectedPoints": 289.31,
+          "projectedPoints": 289.3,
           "isStarter": true
         },
         {
