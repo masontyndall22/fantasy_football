@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T07:43:01.370Z",
+  "generatedAt": "2026-11-07T08:43:02.852Z",
   "managers": [
     {
       "name": "Ben",
@@ -11683,6 +11683,15 @@
         },
         {
           "position": "WR",
+          "name": "Keenan Allen",
+          "tag": "waiver",
+          "tagWeek": 9,
+          "points": 0,
+          "projectedPoints": 88.78,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "Chris Olave",
           "tag": "kept",
           "tagWeek": null,
@@ -11706,15 +11715,6 @@
           "tagWeek": null,
           "points": 150.4,
           "projectedPoints": 296.88,
-          "isStarter": true
-        },
-        {
-          "position": "DEF",
-          "name": "Buffalo Bills",
-          "tag": "waiver",
-          "tagWeek": 9,
-          "points": 0,
-          "projectedPoints": 67.8,
           "isStarter": true
         },
         {
@@ -11745,9 +11745,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 62,
       "transactions": {
-        "adds": 19,
+        "adds": 20,
         "trades": 0,
-        "total": 19
+        "total": 20
       },
       "starterPoints": {
         "pointsFor": 1037.26,
