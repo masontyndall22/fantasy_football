@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T22:43:07.743Z",
+  "generatedAt": "2026-11-07T23:43:02.701Z",
   "managers": [
     {
       "name": "Ben",
@@ -34,11 +34,9 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 65,
-        "letter": "D",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "score": 50,
+        "letter": "F",
+        "reasons": []
       }
     },
     {
@@ -10961,7 +10959,7 @@
           "name": "Makai Lemon",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 2
         },
         {
           "round": 10,
@@ -10969,7 +10967,7 @@
           "name": "Jaxson Dart",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         },
         {
           "round": 11,
@@ -10993,7 +10991,7 @@
           "name": "Isiah Pacheco",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 4
         },
         {
           "round": 14,
@@ -11009,7 +11007,7 @@
           "name": "Philadelphia Eagles",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         }
       ],
       "final": [
@@ -11019,14 +11017,14 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 138.64,
-          "projectedPoints": 286.95,
+          "projectedPoints": 286.94,
           "isStarter": true
         },
         {
           "position": "QB",
           "name": "Brock Purdy",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 2,
           "points": 99.44,
           "projectedPoints": 320.58,
           "isStarter": true
@@ -11037,16 +11035,16 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 132.3,
-          "projectedPoints": 268.75,
+          "projectedPoints": 268.71,
           "isStarter": true
         },
         {
           "position": "RB",
           "name": "Mike Washington",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 0,
-          "projectedPoints": 52.06,
+          "projectedPoints": 52.02,
           "isStarter": true
         },
         {
@@ -11089,9 +11087,9 @@
           "position": "WR",
           "name": "Omar Cooper",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 6,
           "points": 22.5,
-          "projectedPoints": 114.89,
+          "projectedPoints": 114.19,
           "isStarter": true
         },
         {
@@ -11134,16 +11132,16 @@
           "position": "TE",
           "name": "Juwan Johnson",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 1,
           "points": 67.5,
-          "projectedPoints": 183.71,
+          "projectedPoints": 182.9,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Jacksonville Jaguars",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 31,
           "projectedPoints": 82.01,
           "isStarter": true
@@ -11162,13 +11160,15 @@
       "seasonGrade": {
         "score": 0,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
-      "transactions": null,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 42,
+      "transactions": {
+        "adds": 11,
+        "trades": 0,
+        "total": 11
+      },
       "starterPoints": {
         "pointsFor": 1060.48,
         "pointsAgainst": 960.66,
@@ -11216,8 +11216,8 @@
           "position": "RB",
           "name": "Josh Jacobs",
           "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": null
+          "exitTag": "traded",
+          "exitWeek": 6
         },
         {
           "round": 6,
@@ -11225,7 +11225,7 @@
           "name": "Jalen Hurts",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 6
         },
         {
           "round": 7,
@@ -11273,7 +11273,7 @@
           "name": "MarShawn Lloyd",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 4
         },
         {
           "round": 13,
@@ -11281,7 +11281,7 @@
           "name": "Ka'imi Fairbairn",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 7
         },
         {
           "round": 14,
@@ -11289,7 +11289,7 @@
           "name": "Jacksonville Jaguars",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 6
         },
         {
           "round": 15,
@@ -11297,7 +11297,7 @@
           "name": "Adam Randall",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11305,7 +11305,7 @@
           "position": "QB",
           "name": "Jordan Love",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 5,
           "points": 61.72,
           "projectedPoints": 225.9,
           "isStarter": true
@@ -11313,8 +11313,8 @@
         {
           "position": "RB",
           "name": "Bucky Irving",
-          "tag": "waiver",
-          "tagWeek": null,
+          "tag": "trade",
+          "tagWeek": 6,
           "points": 45,
           "projectedPoints": 188.6,
           "isStarter": true
@@ -11341,9 +11341,9 @@
           "position": "RB",
           "name": "Alvin Kamara",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 53.5,
-          "projectedPoints": 71.82,
+          "projectedPoints": 73.9,
           "isStarter": true
         },
         {
@@ -11368,9 +11368,9 @@
           "position": "WR",
           "name": "Stefon Diggs",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 7,
           "points": 12.8,
-          "projectedPoints": 139.81,
+          "projectedPoints": 139.8,
           "isStarter": true
         },
         {
@@ -11397,7 +11397,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 219.96,
-          "projectedPoints": 402.35,
+          "projectedPoints": 402.31,
           "isStarter": true
         },
         {
@@ -11422,16 +11422,16 @@
           "position": "DEF",
           "name": "Kansas City Chiefs",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 0,
-          "projectedPoints": 70.79,
+          "projectedPoints": 70.64,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Chase McLaughlin",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 7,
           "points": 12,
           "projectedPoints": 81.73,
           "isStarter": true
@@ -11439,15 +11439,17 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 60,
-        "letter": "D-",
-        "reasons": [
-          "Drafted well, barely touched waivers"
-        ]
+        "score": 50,
+        "letter": "F",
+        "reasons": []
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
-      "transactions": null,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 41,
+      "transactions": {
+        "adds": 22,
+        "trades": 1,
+        "total": 23
+      },
       "starterPoints": {
         "pointsFor": 1080.74,
         "pointsAgainst": 897.14,
@@ -11552,7 +11554,7 @@
           "name": "Stefon Diggs",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 6
         },
         {
           "round": 13,
@@ -11560,7 +11562,7 @@
           "name": "Cam Little",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 6
         },
         {
           "round": 14,
@@ -11576,7 +11578,7 @@
           "name": "Los Angeles Chargers",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11586,7 +11588,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 100.64,
-          "projectedPoints": 287.86,
+          "projectedPoints": 287.85,
           "isStarter": true
         },
         {
@@ -11595,7 +11597,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 129.5,
-          "projectedPoints": 331.7,
+          "projectedPoints": 331.69,
           "isStarter": true
         },
         {
@@ -11611,7 +11613,7 @@
           "position": "RB",
           "name": "Kaelon Black",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 30.7,
           "projectedPoints": 86.6,
           "isStarter": true
@@ -11638,7 +11640,7 @@
           "position": "RB",
           "name": "Rachaad White",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 18.7,
           "projectedPoints": 106.51,
           "isStarter": true
@@ -11649,7 +11651,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 5.9,
-          "projectedPoints": 99.29,
+          "projectedPoints": 99.3,
           "isStarter": true
         },
         {
@@ -11658,7 +11660,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 120.5,
-          "projectedPoints": 262.56,
+          "projectedPoints": 262.4,
           "isStarter": true
         },
         {
@@ -11676,14 +11678,14 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 0,
-          "projectedPoints": 95,
+          "projectedPoints": 101.32,
           "isStarter": true
         },
         {
           "position": "WR",
           "name": "Keenan Allen",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 9,
           "points": 0,
           "projectedPoints": 88.78,
           "isStarter": true
@@ -11694,7 +11696,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 124.6,
-          "projectedPoints": 290.64,
+          "projectedPoints": 289.35,
           "isStarter": true
         },
         {
@@ -11712,14 +11714,14 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 150.4,
-          "projectedPoints": 296.9,
+          "projectedPoints": 296.88,
           "isStarter": true
         },
         {
           "position": "DEF",
           "name": "Minnesota Vikings",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 2,
           "points": 72,
           "projectedPoints": 117.76,
           "isStarter": true
@@ -11728,7 +11730,7 @@
           "position": "K",
           "name": "Tyler Bass",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 9,
           "points": 0,
           "projectedPoints": 79.9,
           "isStarter": true
@@ -11736,15 +11738,17 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 7,
+        "score": 17,
         "letter": "F",
-        "reasons": [
-          "Passive on waivers while the team struggled"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Passive on waivers while the team struggled",
-      "faabSpent": 0,
-      "transactions": null,
+      "gradeNote": "Performance matched the season's standings.",
+      "faabSpent": 62,
+      "transactions": {
+        "adds": 20,
+        "trades": 0,
+        "total": 20
+      },
       "starterPoints": {
         "pointsFor": 1037.26,
         "pointsAgainst": 1003.58,
@@ -11825,7 +11829,7 @@
           "name": "J.K. Dobbins",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 3
         },
         {
           "round": 10,
@@ -11849,7 +11853,7 @@
           "name": "Bo Nix",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 5
         },
         {
           "round": 13,
@@ -11857,7 +11861,7 @@
           "name": "Mike Washington",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 8
         },
         {
           "round": 14,
@@ -11865,7 +11869,7 @@
           "name": "Tyler Loop",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 8
         },
         {
           "round": 15,
@@ -11873,7 +11877,7 @@
           "name": "Tyreek Hill",
           "isKeeper": false,
           "exitTag": "dropped",
-          "exitWeek": null
+          "exitWeek": 1
         }
       ],
       "final": [
@@ -11890,7 +11894,7 @@
           "position": "QB",
           "name": "Jared Goff",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 96.84,
           "projectedPoints": 289.02,
           "isStarter": true
@@ -11899,9 +11903,9 @@
           "position": "RB",
           "name": "Braelon Allen",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 3,
           "points": 82.4,
-          "projectedPoints": 171.22,
+          "projectedPoints": 171.21,
           "isStarter": true
         },
         {
@@ -11917,9 +11921,9 @@
           "position": "RB",
           "name": "Seth McGowan",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 7,
           "points": 8.7,
-          "projectedPoints": 53.81,
+          "projectedPoints": 53.83,
           "isStarter": true
         },
         {
@@ -11928,7 +11932,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 160.1,
-          "projectedPoints": 347.03,
+          "projectedPoints": 347.02,
           "isStarter": true
         },
         {
@@ -11937,7 +11941,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 42.5,
-          "projectedPoints": 133.12,
+          "projectedPoints": 133.14,
           "isStarter": true
         },
         {
@@ -11946,7 +11950,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 20.7,
-          "projectedPoints": 111.29,
+          "projectedPoints": 110.9,
           "isStarter": true
         },
         {
@@ -11964,7 +11968,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 108.68,
-          "projectedPoints": 233.78,
+          "projectedPoints": 233.77,
           "isStarter": true
         },
         {
@@ -11982,7 +11986,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 86.4,
-          "projectedPoints": 282.7,
+          "projectedPoints": 282.8,
           "isStarter": true
         },
         {
@@ -11998,16 +12002,16 @@
           "position": "DEF",
           "name": "Chicago Bears",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 0,
-          "projectedPoints": 58.32,
+          "projectedPoints": 58.18,
           "isStarter": true
         },
         {
           "position": "K",
           "name": "Ka'imi Fairbairn",
           "tag": "waiver",
-          "tagWeek": null,
+          "tagWeek": 8,
           "points": 0,
           "projectedPoints": 87.15,
           "isStarter": true
@@ -12018,12 +12022,16 @@
         "score": 100,
         "letter": "A+",
         "reasons": [
-          "Drafted well, barely touched waivers"
+          "Spent big on waivers and it paid off"
         ]
       },
-      "gradeNote": "Drafted well, barely touched waivers",
-      "faabSpent": 0,
-      "transactions": null,
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 64,
+      "transactions": {
+        "adds": 10,
+        "trades": 0,
+        "total": 10
+      },
       "starterPoints": {
         "pointsFor": 1020.54,
         "pointsAgainst": 924.82,
