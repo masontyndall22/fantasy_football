@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T23:43:02.701Z",
+  "generatedAt": "2026-11-08T00:43:04.069Z",
   "managers": [
     {
       "name": "Ben",
@@ -11679,15 +11679,6 @@
           "tagWeek": null,
           "points": 0,
           "projectedPoints": 101.32,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
-          "name": "Keenan Allen",
-          "tag": "waiver",
-          "tagWeek": 9,
-          "points": 0,
-          "projectedPoints": 88.78,
           "isStarter": true
         },
         {
