@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T16:43:03.081Z",
+  "generatedAt": "2026-11-09T17:43:04.519Z",
   "managers": [
     {
       "name": "Ben",
@@ -11714,7 +11714,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 72,
-          "projectedPoints": 116.47,
+          "projectedPoints": 116.5,
           "isStarter": true
         },
         {
@@ -11723,7 +11723,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 0,
-          "projectedPoints": 79.97,
+          "projectedPoints": 80,
           "isStarter": true
         }
       ],
@@ -11941,7 +11941,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 20.7,
-          "projectedPoints": 124.47,
+          "projectedPoints": 124.49,
           "isStarter": true
         },
         {
@@ -11977,7 +11977,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 86.4,
-          "projectedPoints": 280.05,
+          "projectedPoints": 280.14,
           "isStarter": true
         },
         {
