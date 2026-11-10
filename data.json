@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:43:12.149Z",
+  "generatedAt": "2026-11-10T21:43:02.553Z",
   "managers": [
     {
       "name": "Ben",
@@ -11052,7 +11052,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.3,
-          "projectedPoints": 252.56,
+          "projectedPoints": 251.56,
           "isStarter": true
         },
         {
@@ -11061,7 +11061,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": -0.3,
-          "projectedPoints": 64.08,
+          "projectedPoints": 63.19,
           "isStarter": true
         },
         {
@@ -11133,7 +11133,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 176.9,
-          "projectedPoints": 284.17,
+          "projectedPoints": 284.43,
           "isStarter": true
         },
         {
@@ -11324,7 +11324,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 97.9,
-          "projectedPoints": 231.39,
+          "projectedPoints": 231.68,
           "isStarter": true
         },
         {
@@ -11351,7 +11351,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 142.28,
-          "projectedPoints": 269.39,
+          "projectedPoints": 269.26,
           "isStarter": true
         },
         {
@@ -11369,7 +11369,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 116.5,
-          "projectedPoints": 207.01,
+          "projectedPoints": 207.1,
           "isStarter": true
         },
         {
@@ -11378,7 +11378,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.6,
-          "projectedPoints": 192.59,
+          "projectedPoints": 192.7,
           "isStarter": true
         },
         {
@@ -11414,7 +11414,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 232.06,
-          "projectedPoints": 398.15,
+          "projectedPoints": 397.82,
           "isStarter": true
         },
         {
@@ -11423,7 +11423,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 84.1,
-          "projectedPoints": 174.83,
+          "projectedPoints": 174.96,
           "isStarter": true
         },
         {
@@ -11668,7 +11668,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 15.5,
-          "projectedPoints": 96.93,
+          "projectedPoints": 97.04,
           "isStarter": true
         },
         {
@@ -11686,7 +11686,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.3,
-          "projectedPoints": 203.3,
+          "projectedPoints": 203.16,
           "isStarter": true
         },
         {
@@ -11731,7 +11731,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 78,
-          "projectedPoints": 116.29,
+          "projectedPoints": 116.47,
           "isStarter": true
         },
         {
@@ -11922,7 +11922,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.2,
-          "projectedPoints": 178.94,
+          "projectedPoints": 178.89,
           "isStarter": true
         },
         {
@@ -11931,7 +11931,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 19.9,
-          "projectedPoints": 54.61,
+          "projectedPoints": 54.67,
           "isStarter": true
         },
         {
@@ -11958,7 +11958,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 26.9,
-          "projectedPoints": 121.54,
+          "projectedPoints": 121.79,
           "isStarter": true
         },
         {
@@ -11994,7 +11994,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.2,
-          "projectedPoints": 284.48,
+          "projectedPoints": 284.99,
           "isStarter": true
         },
         {
@@ -12021,7 +12021,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 17,
-          "projectedPoints": 87.22,
+          "projectedPoints": 87.19,
           "isStarter": true
         }
       ],
