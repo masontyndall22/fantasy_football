@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-10T13:43:02.180Z",
+  "generatedAt": "2026-11-10T14:19:00.787Z",
   "managers": [
     {
       "name": "Ben",
       "totalStandingsPoints": 16.5,
       "sleeperPprSeasonPoints": 1201.36,
       "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 64,
+      "pickemTotalCorrect": 73,
       "fdWins": 1,
       "fdTop5Total": 590.16,
-      "fdTop10Total": 885.74,
-      "fdSeasonTotal": 885.74,
+      "fdTop10Total": 965.34,
+      "fdSeasonTotal": 965.34,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -22,52 +22,52 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 21,
+      "totalStandingsPoints": 20,
       "sleeperPprSeasonPoints": 1233.9,
       "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 59,
+      "pickemTotalCorrect": 66,
       "fdWins": 2,
       "fdTop5Total": 664.22,
-      "fdTop10Total": 968.46,
-      "fdSeasonTotal": 968.46,
+      "fdTop10Total": 1073.98,
+      "fdSeasonTotal": 1073.98,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 45,
+        "score": 39,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 17,
+      "totalStandingsPoints": 19,
       "sleeperPprSeasonPoints": 1147.52,
-      "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 58,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 68,
       "fdWins": 2,
       "fdTop5Total": 710.74,
-      "fdTop10Total": 1000.1399999999999,
-      "fdSeasonTotal": 1000.1399999999999,
+      "fdTop10Total": 1099.9399999999998,
+      "fdSeasonTotal": 1099.9399999999998,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 5,
+        "score": 28,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 26.5,
+      "totalStandingsPoints": 25.5,
       "sleeperPprSeasonPoints": 1160.2,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 68,
-      "fdWins": 3,
+      "sleeperFinalPlacement": 4,
+      "pickemTotalCorrect": 74,
+      "fdWins": 4,
       "fdTop5Total": 729.4000000000001,
-      "fdTop10Total": 1040.7399999999998,
-      "fdSeasonTotal": 1040.7399999999998,
+      "fdTop10Total": 1147.5599999999997,
+      "fdSeasonTotal": 1147.5599999999997,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -711,7 +711,7 @@
       102.88,
       102.02,
       120.26,
-      0,
+      79.6,
       0,
       0,
       0,
@@ -731,7 +731,7 @@
       109.12,
       127.32,
       116.5,
-      0,
+      105.52,
       0,
       0,
       0,
@@ -751,7 +751,7 @@
       144.88,
       114.26,
       78.56,
-      0,
+      99.8,
       0,
       0,
       0,
@@ -771,7 +771,7 @@
       151.32,
       105.06,
       98.36,
-      0,
+      106.82,
       0,
       0,
       0,
@@ -856,6 +856,15 @@
           "Kyle": 78.56,
           "Mason": 98.36
         }
+      },
+      {
+        "week": 9,
+        "scores": {
+          "Ben": 79.6,
+          "Caleb": 105.52,
+          "Kyle": 99.8,
+          "Mason": 106.82
+        }
       }
     ],
     "fdTop5": {
@@ -897,7 +906,8 @@
         102.88,
         102.02,
         100.64,
-        92.92
+        92.92,
+        79.6
       ],
       "Caleb": [
         150.12,
@@ -906,6 +916,7 @@
         121.88,
         116.5,
         109.12,
+        105.52,
         100.68,
         94.44
       ],
@@ -916,6 +927,7 @@
         134.9,
         114.26,
         112.88,
+        99.8,
         97.96,
         78.56
       ],
@@ -926,6 +938,7 @@
         124.68,
         117.94,
         107.92,
+        106.82,
         105.06,
         98.36
       ]
@@ -939,7 +952,8 @@
         102.88,
         102.02,
         100.64,
-        92.92
+        92.92,
+        79.6
       ],
       "Caleb": [
         150.12,
@@ -948,6 +962,7 @@
         121.88,
         116.5,
         109.12,
+        105.52,
         100.68,
         94.44
       ],
@@ -958,6 +973,7 @@
         134.9,
         114.26,
         112.88,
+        99.8,
         97.96,
         78.56
       ],
@@ -968,6 +984,7 @@
         124.68,
         117.94,
         107.92,
+        106.82,
         105.06,
         98.36
       ]
@@ -983,7 +1000,7 @@
       6,
       8,
       6,
-      0,
+      9,
       0,
       0,
       0,
@@ -1003,7 +1020,7 @@
       3,
       9,
       7,
-      0,
+      7,
       0,
       0,
       0,
@@ -1023,7 +1040,7 @@
       5,
       7,
       8,
-      0,
+      10,
       0,
       0,
       0,
@@ -1043,7 +1060,7 @@
       9,
       9,
       6,
-      0,
+      6,
       0,
       0,
       0,
@@ -11017,7 +11034,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 150.86,
-          "projectedPoints": 276.72,
+          "projectedPoints": 276.73,
           "isStarter": true
         },
         {
@@ -11026,7 +11043,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 125.72,
-          "projectedPoints": 318.12,
+          "projectedPoints": 318.19,
           "isStarter": true
         },
         {
@@ -11035,7 +11052,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.3,
-          "projectedPoints": 252.55,
+          "projectedPoints": 252.51,
           "isStarter": true
         },
         {
@@ -11044,7 +11061,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": -0.3,
-          "projectedPoints": 63.88,
+          "projectedPoints": 63.86,
           "isStarter": true
         },
         {
@@ -11053,7 +11070,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.6,
-          "projectedPoints": 269.99,
+          "projectedPoints": 269.92,
           "isStarter": true
         },
         {
@@ -11071,7 +11088,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 101.4,
-          "projectedPoints": 261,
+          "projectedPoints": 260.96,
           "isStarter": true
         },
         {
@@ -11089,7 +11106,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 36.3,
-          "projectedPoints": 114.61,
+          "projectedPoints": 113.86,
           "isStarter": true
         },
         {
@@ -11116,7 +11133,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 176.9,
-          "projectedPoints": 284.78,
+          "projectedPoints": 284.41,
           "isStarter": true
         },
         {
@@ -11134,7 +11151,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 78.9,
-          "projectedPoints": 184.87,
+          "projectedPoints": 181.66,
           "isStarter": true
         },
         {
@@ -11172,7 +11189,7 @@
       "starterPoints": {
         "pointsFor": 1201.36,
         "pointsAgainst": 1079.32,
-        "pointsProjected": 127.07
+        "pointsProjected": 138.94
       }
     },
     {
@@ -11307,7 +11324,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 97.9,
-          "projectedPoints": 231.74,
+          "projectedPoints": 231.72,
           "isStarter": true
         },
         {
@@ -11325,7 +11342,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 94.6,
-          "projectedPoints": 139.5,
+          "projectedPoints": 139.46,
           "isStarter": true
         },
         {
@@ -11343,7 +11360,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 61.4,
-          "projectedPoints": 114.27,
+          "projectedPoints": 113.06,
           "isStarter": true
         },
         {
@@ -11352,7 +11369,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 116.5,
-          "projectedPoints": 207.08,
+          "projectedPoints": 207.1,
           "isStarter": true
         },
         {
@@ -11361,7 +11378,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.6,
-          "projectedPoints": 193.34,
+          "projectedPoints": 192.6,
           "isStarter": true
         },
         {
@@ -11370,7 +11387,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 20.9,
-          "projectedPoints": 140.28,
+          "projectedPoints": 140.25,
           "isStarter": true
         },
         {
@@ -11379,7 +11396,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.9,
-          "projectedPoints": 185.94,
+          "projectedPoints": 186.4,
           "isStarter": true
         },
         {
@@ -11388,7 +11405,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 159.7,
-          "projectedPoints": 301.44,
+          "projectedPoints": 301.33,
           "isStarter": true
         },
         {
@@ -11397,7 +11414,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 232.06,
-          "projectedPoints": 398.5,
+          "projectedPoints": 398.38,
           "isStarter": true
         },
         {
@@ -11415,7 +11432,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 99.3,
-          "projectedPoints": 213.9,
+          "projectedPoints": 213.86,
           "isStarter": true
         },
         {
@@ -11424,7 +11441,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 12,
-          "projectedPoints": 66.19,
+          "projectedPoints": 66.17,
           "isStarter": true
         },
         {
@@ -11439,7 +11456,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 45,
+        "score": 39,
         "letter": "F",
         "reasons": []
       },
@@ -11453,7 +11470,7 @@
       "starterPoints": {
         "pointsFor": 1233.9,
         "pointsAgainst": 995.02,
-        "pointsProjected": 137.20000000000002
+        "pointsProjected": 132.67
       }
     },
     {
@@ -11588,7 +11605,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 115.2,
-          "projectedPoints": 293.66,
+          "projectedPoints": 293.58,
           "isStarter": true
         },
         {
@@ -11597,7 +11614,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 145.98,
-          "projectedPoints": 331.69,
+          "projectedPoints": 331.61,
           "isStarter": true
         },
         {
@@ -11606,7 +11623,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 70.4,
-          "projectedPoints": 180.01,
+          "projectedPoints": 180.02,
           "isStarter": true
         },
         {
@@ -11615,7 +11632,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 166.7,
-          "projectedPoints": 355.21,
+          "projectedPoints": 355.29,
           "isStarter": true
         },
         {
@@ -11624,7 +11641,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 5.9,
-          "projectedPoints": 81.35,
+          "projectedPoints": 81.36,
           "isStarter": true
         },
         {
@@ -11633,7 +11650,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 30.9,
-          "projectedPoints": 119.28,
+          "projectedPoints": 128.74,
           "isStarter": true
         },
         {
@@ -11642,7 +11659,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 25.6,
-          "projectedPoints": 107.37,
+          "projectedPoints": 107.34,
           "isStarter": true
         },
         {
@@ -11651,7 +11668,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 15.5,
-          "projectedPoints": 94.42,
+          "projectedPoints": 94.39,
           "isStarter": true
         },
         {
@@ -11660,7 +11677,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 129.8,
-          "projectedPoints": 263.39,
+          "projectedPoints": 263.07,
           "isStarter": true
         },
         {
@@ -11669,7 +11686,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 77.3,
-          "projectedPoints": 204.33,
+          "projectedPoints": 203.16,
           "isStarter": true
         },
         {
@@ -11678,7 +11695,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 5,
-          "projectedPoints": 103.43,
+          "projectedPoints": 98.38,
           "isStarter": true
         },
         {
@@ -11687,7 +11704,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 141.4,
-          "projectedPoints": 288.62,
+          "projectedPoints": 286.14,
           "isStarter": true
         },
         {
@@ -11696,7 +11713,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 113.7,
-          "projectedPoints": 247.76,
+          "projectedPoints": 247.68,
           "isStarter": true
         },
         {
@@ -11705,7 +11722,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 162.8,
-          "projectedPoints": 286.77,
+          "projectedPoints": 286.98,
           "isStarter": true
         },
         {
@@ -11723,13 +11740,13 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 13,
-          "projectedPoints": 79.97,
+          "projectedPoints": 80.04,
           "isStarter": true
         }
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 5,
+        "score": 28,
         "letter": "F",
         "reasons": []
       },
@@ -11743,7 +11760,7 @@
       "starterPoints": {
         "pointsFor": 1147.52,
         "pointsAgainst": 1107.32,
-        "pointsProjected": 107.69999999999999
+        "pointsProjected": 126.43000000000002
       }
     },
     {
@@ -11896,7 +11913,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 87.8,
-          "projectedPoints": 172.64,
+          "projectedPoints": 172.56,
           "isStarter": true
         },
         {
@@ -11905,7 +11922,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.2,
-          "projectedPoints": 178.92,
+          "projectedPoints": 178.94,
           "isStarter": true
         },
         {
@@ -11923,7 +11940,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 196.4,
-          "projectedPoints": 348.1,
+          "projectedPoints": 348.06,
           "isStarter": true
         },
         {
@@ -11932,7 +11949,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 54.2,
-          "projectedPoints": 132.74,
+          "projectedPoints": 132.68,
           "isStarter": true
         },
         {
@@ -11941,7 +11958,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 26.9,
-          "projectedPoints": 122.11,
+          "projectedPoints": 122.04,
           "isStarter": true
         },
         {
@@ -11950,7 +11967,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 66.2,
-          "projectedPoints": 222.95,
+          "projectedPoints": 222.44,
           "isStarter": true
         },
         {
@@ -11977,7 +11994,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.2,
-          "projectedPoints": 284.79,
+          "projectedPoints": 284.71,
           "isStarter": true
         },
         {
@@ -11986,7 +12003,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 114.3,
-          "projectedPoints": 240.16,
+          "projectedPoints": 240.17,
           "isStarter": true
         },
         {
@@ -12004,7 +12021,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 17,
-          "projectedPoints": 87.22,
+          "projectedPoints": 87.19,
           "isStarter": true
         }
       ],
@@ -12026,7 +12043,7 @@
       "starterPoints": {
         "pointsFor": 1160.2,
         "pointsAgainst": 1069.18,
-        "pointsProjected": 126.67999999999999
+        "pointsProjected": 131.91
       }
     }
   ],
@@ -12035,19 +12052,19 @@
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "D- : Lost to Caleb 166.92 to 119.08, a 47.84-point beating from the guy who has never won this league. No bench blunder to hide behind, just a 119 that missed projection by 8 from a real-life football coach. The best FanDuel score of the week (120.26) is a nice participation trophy, and with 6 Pick’em picks he tied for last there anyway. He has the most points for of anyone and the fewest overall standings points, which is quite the way to turn the best roster into the worst résumé. Fantasy luck finally took a day off. About time to hang up the whistle and pick up the buns."
+      "roast": "D+ : He won 140.88 to 118.66 and has the sad distinction of making it look like a loss. Dead last in FanDuel by more than 20 points (79.6), and he has the fewest overall standings points of the four (16.5) despite the 7-2 record, so apparently the football coach’s talent is for winning the one thing that doesn’t count. The 140.88 only cleared projection by 1.9 and sat 12 points behind Caleb. He’s winning on a roster built to be dominant and still looks like the kind of guy who gets bailed out every week, which is exactly what he is."
     },
     {
       "manager": "Caleb",
-      "roast": "A : A league-best 166.92, 29.7 over projection, and a 48-point flattening of Ben for a 7-1 record. It’s hard to be screwed when you’re 7-1 and you’ve just made the league’s most decorated football coach look like an intern. Second in FanDuel (116.5) and a middling 7 Pick’em picks keep this from a perfect week, but he’ll find something to complain about before Wednesday."
+      "roast": "A : A league-best 153.16, 20.5 over projection, a 55-point beating of his opponent, and an 8-1 record with no bench blunder. Second in FanDuel (105.52) and an average 7 Pick’em picks, so there’s very little to nitpick. He’s 8-1 and presumably still figuring out how it’s all going wrong."
     },
     {
       "manager": "Kyle",
-      "roast": "C- : Beat a 103.46 with a 111.78, a win by 8 points. He left 10.5 on the bench by starting Jayden Daniels’ 14.98 over Patrick Mahomes’ 25.44, so the luxury QB2 he drafted is now just an expensive bench ornament. He had the best Pick’em of the week (8 correct) and the worst FanDuel score by 20 points (78.56). Hot or cold with nothing in between is the brand, and this week was lukewarm on one and ice on the other."
+      "roast": "C : Beat a 103.74 with a 110.26, a win by 6.5 that missed projection by 16.2, so the W happened more than it was earned. He got 10 Pick’em picks right, the best of the week, and a third-place FanDuel score (99.8) to go with it. He’s 4-5 now and climbing, but the pattern holds: hot on the side games, lukewarm where it counts."
     },
     {
       "manager": "Mason",
-      "roast": "B- : A 139.38 that beat projection by 12.7 against a 90.1, with no bench blunder. That’s a clean win over a bad opponent, so don’t get cute with the luck speech. Third in FanDuel (98.36) and a bottom-tier 6 Pick’em picks keep him from a real grade, but he still leads the overall standings by 6.5 over Caleb and Kyle. The hot dog wheel will have to find someone else this week."
+      "roast": "B- : Lost 144.36 to 139.66 by 4.7 points, with a score that would have beaten two-thirds of the league. That’s the exact luck he’s been preaching about, and for once he’s allowed to say it. He beat projection by 7.7 with no bench blunder, had the best FanDuel score (106.82), and still dropped to 4-5 thanks to a Pick’em week of 6 correct, last in the group. He leads the overall standings by 5.5, so the wheel will have to wait."
     }
   ]
 }
