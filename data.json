@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T02:43:07.650Z",
+  "generatedAt": "2026-11-10T03:43:01.223Z",
   "managers": [
     {
       "name": "Ben",
@@ -11713,7 +11713,7 @@
           "name": "Minnesota Vikings",
           "tag": "waiver",
           "tagWeek": 2,
-          "points": 82,
+          "points": 81,
           "projectedPoints": 116.5,
           "isStarter": true
         },
@@ -11722,7 +11722,7 @@
           "name": "Tyler Bass",
           "tag": "waiver",
           "tagWeek": 9,
-          "points": 3,
+          "points": 4,
           "projectedPoints": 79.97,
           "isStarter": true
         }
@@ -11940,7 +11940,7 @@
           "name": "Jordan Mason",
           "tag": "kept",
           "tagWeek": null,
-          "points": 21.2,
+          "points": 21.4,
           "projectedPoints": 122.22,
           "isStarter": true
         },
@@ -11976,7 +11976,7 @@
           "name": "Justin Jefferson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 86.4,
+          "points": 92.3,
           "projectedPoints": 285,
           "isStarter": true
         },
