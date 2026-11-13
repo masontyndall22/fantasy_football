@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T07:43:00.801Z",
+  "generatedAt": "2026-11-13T08:43:02.228Z",
   "managers": [
     {
       "name": "Ben",
@@ -11628,6 +11628,15 @@
         },
         {
           "position": "RB",
+          "name": "Kaelon Black",
+          "tag": "waiver",
+          "tagWeek": 10,
+          "points": 30.7,
+          "projectedPoints": 79.41,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Christian McCaffrey",
           "tag": "kept",
           "tagWeek": null,
@@ -11744,9 +11753,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 66,
       "transactions": {
-        "adds": 21,
+        "adds": 22,
         "trades": 0,
-        "total": 21
+        "total": 22
       },
       "starterPoints": {
         "pointsFor": 1147.52,
