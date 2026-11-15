@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:43:08.928Z",
+  "generatedAt": "2026-11-15T08:43:01.375Z",
   "managers": [
     {
       "name": "Ben",
@@ -34,9 +34,11 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 39,
+        "score": 54,
         "letter": "F",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       }
     },
     {
@@ -11070,7 +11072,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.6,
-          "projectedPoints": 271.95,
+          "projectedPoints": 272.03,
           "isStarter": true
         },
         {
@@ -11106,7 +11108,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 36.3,
-          "projectedPoints": 113.17,
+          "projectedPoints": 113.13,
           "isStarter": true
         },
         {
@@ -11151,7 +11153,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 78.9,
-          "projectedPoints": 167.17,
+          "projectedPoints": 167.12,
           "isStarter": true
         },
         {
@@ -11347,20 +11349,20 @@
         },
         {
           "position": "RB",
+          "name": "Emmett Johnson",
+          "tag": "waiver",
+          "tagWeek": 10,
+          "points": 0,
+          "projectedPoints": 74.55,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
           "points": 142.28,
           "projectedPoints": 268.43,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Alvin Kamara",
-          "tag": "waiver",
-          "tagWeek": 3,
-          "points": 61.4,
-          "projectedPoints": 101.46,
           "isStarter": true
         },
         {
@@ -11456,16 +11458,18 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 39,
+        "score": 54,
         "letter": "F",
-        "reasons": []
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 48,
+      "gradeNote": "Spent big on waivers and it paid off",
+      "faabSpent": 75,
       "transactions": {
-        "adds": 24,
+        "adds": 25,
         "trades": 1,
-        "total": 25
+        "total": 26
       },
       "starterPoints": {
         "pointsFor": 1233.9,
@@ -11650,7 +11654,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 30.9,
-          "projectedPoints": 127.08,
+          "projectedPoints": 126.99,
           "isStarter": true
         },
         {
@@ -11695,7 +11699,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 5,
-          "projectedPoints": 99.37,
+          "projectedPoints": 99.33,
           "isStarter": true
         },
         {
@@ -11704,7 +11708,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 141.4,
-          "projectedPoints": 285.92,
+          "projectedPoints": 285.83,
           "isStarter": true
         },
         {
@@ -11713,7 +11717,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 113.7,
-          "projectedPoints": 247.61,
+          "projectedPoints": 247.54,
           "isStarter": true
         },
         {
@@ -11740,7 +11744,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 13,
-          "projectedPoints": 80.67,
+          "projectedPoints": 80.64,
           "isStarter": true
         }
       ],
@@ -11913,7 +11917,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 87.8,
-          "projectedPoints": 151.75,
+          "projectedPoints": 151.74,
           "isStarter": true
         },
         {
@@ -11949,7 +11953,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 54.2,
-          "projectedPoints": 152.37,
+          "projectedPoints": 152.34,
           "isStarter": true
         },
         {
