@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:43:03.425Z",
+  "generatedAt": "2026-11-15T13:43:08.304Z",
   "managers": [
     {
       "name": "Ben",
@@ -11072,7 +11072,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.6,
-          "projectedPoints": 272.03,
+          "projectedPoints": 272.11,
           "isStarter": true
         },
         {
@@ -11081,7 +11081,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 209.2,
-          "projectedPoints": 430.7,
+          "projectedPoints": 430.76,
           "isStarter": true
         },
         {
@@ -11144,7 +11144,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 93.1,
-          "projectedPoints": 214.27,
+          "projectedPoints": 214.31,
           "isStarter": true
         },
         {
@@ -11171,7 +11171,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 79,
-          "projectedPoints": 140.2,
+          "projectedPoints": 140.23,
           "isStarter": true
         }
       ],
@@ -11362,7 +11362,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 142.28,
-          "projectedPoints": 268.56,
+          "projectedPoints": 268.71,
           "isStarter": true
         },
         {
@@ -11908,7 +11908,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 103.14,
-          "projectedPoints": 286.09,
+          "projectedPoints": 286.21,
           "isStarter": true
         },
         {
@@ -12003,11 +12003,20 @@
         },
         {
           "position": "WR",
+          "name": "Wan'Dale Robinson",
+          "tag": "waiver",
+          "tagWeek": 10,
+          "points": 0,
+          "projectedPoints": 92.47,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "DeMario Douglas",
           "tag": "waiver",
           "tagWeek": 9,
           "points": 0,
-          "projectedPoints": 59.55,
+          "projectedPoints": 59.59,
           "isStarter": true
         },
         {
@@ -12049,9 +12058,9 @@
       "gradeNote": "Spent big on waivers and it paid off",
       "faabSpent": 66,
       "transactions": {
-        "adds": 12,
+        "adds": 13,
         "trades": 0,
-        "total": 12
+        "total": 13
       },
       "starterPoints": {
         "pointsFor": 1160.2,
