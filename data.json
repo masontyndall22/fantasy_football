@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T16:43:03.867Z",
+  "generatedAt": "2026-11-15T17:43:02.186Z",
   "managers": [
     {
       "name": "Ben",
@@ -11054,7 +11054,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.3,
-          "projectedPoints": 243.03,
+          "projectedPoints": 243.05,
           "isStarter": true
         },
         {
@@ -11063,7 +11063,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": -0.3,
-          "projectedPoints": 56.46,
+          "projectedPoints": 56.49,
           "isStarter": true
         },
         {
@@ -11072,7 +11072,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.6,
-          "projectedPoints": 272.19,
+          "projectedPoints": 272.12,
           "isStarter": true
         },
         {
@@ -11080,7 +11080,7 @@
           "name": "Jahmyr Gibbs",
           "tag": "kept",
           "tagWeek": null,
-          "points": 236.3,
+          "points": 242.7,
           "projectedPoints": 430.91,
           "isStarter": true
         },
@@ -11108,7 +11108,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 36.3,
-          "projectedPoints": 113.13,
+          "projectedPoints": 113.1,
           "isStarter": true
         },
         {
@@ -11135,7 +11135,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 176.9,
-          "projectedPoints": 277.31,
+          "projectedPoints": 277.32,
           "isStarter": true
         },
         {
@@ -11143,7 +11143,7 @@
           "name": "Sam LaPorta",
           "tag": "kept",
           "tagWeek": null,
-          "points": 93.1,
+          "points": 95.7,
           "projectedPoints": 214.37,
           "isStarter": true
         },
@@ -11153,7 +11153,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 78.9,
-          "projectedPoints": 166.91,
+          "projectedPoints": 166.85,
           "isStarter": true
         },
         {
@@ -11170,7 +11170,7 @@
           "name": "Jake Bates",
           "tag": "kept",
           "tagWeek": null,
-          "points": 82,
+          "points": 83,
           "projectedPoints": 140.31,
           "isStarter": true
         }
@@ -11326,7 +11326,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 97.9,
-          "projectedPoints": 233.41,
+          "projectedPoints": 233.43,
           "isStarter": true
         },
         {
@@ -11353,7 +11353,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 0,
-          "projectedPoints": 74.56,
+          "projectedPoints": 74.5,
           "isStarter": true
         },
         {
@@ -11380,7 +11380,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.6,
-          "projectedPoints": 180.68,
+          "projectedPoints": 180.62,
           "isStarter": true
         },
         {
@@ -11416,7 +11416,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 232.06,
-          "projectedPoints": 396.84,
+          "projectedPoints": 396.83,
           "isStarter": true
         },
         {
@@ -11425,7 +11425,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 84.1,
-          "projectedPoints": 178.83,
+          "projectedPoints": 178.86,
           "isStarter": true
         },
         {
@@ -11434,7 +11434,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 99.3,
-          "projectedPoints": 207.2,
+          "projectedPoints": 207.21,
           "isStarter": true
         },
         {
@@ -11443,7 +11443,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 0,
-          "projectedPoints": 51.32,
+          "projectedPoints": 51.35,
           "isStarter": true
         },
         {
@@ -11618,7 +11618,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 145.98,
-          "projectedPoints": 325.63,
+          "projectedPoints": 325.49,
           "isStarter": true
         },
         {
@@ -11654,7 +11654,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 30.9,
-          "projectedPoints": 127.11,
+          "projectedPoints": 127.09,
           "isStarter": true
         },
         {
@@ -11672,7 +11672,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 15.5,
-          "projectedPoints": 114.46,
+          "projectedPoints": 114.45,
           "isStarter": true
         },
         {
@@ -11681,7 +11681,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 137.2,
-          "projectedPoints": 254.98,
+          "projectedPoints": 254.97,
           "isStarter": true
         },
         {
@@ -11699,7 +11699,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 5,
-          "projectedPoints": 99.1,
+          "projectedPoints": 99.02,
           "isStarter": true
         },
         {
@@ -11708,7 +11708,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 141.4,
-          "projectedPoints": 285.46,
+          "projectedPoints": 285.34,
           "isStarter": true
         },
         {
@@ -11717,7 +11717,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 113.7,
-          "projectedPoints": 247.54,
+          "projectedPoints": 247.49,
           "isStarter": true
         },
         {
@@ -11726,7 +11726,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 162.8,
-          "projectedPoints": 279.66,
+          "projectedPoints": 279.71,
           "isStarter": true
         },
         {
@@ -11899,7 +11899,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 115.34,
-          "projectedPoints": 260.61,
+          "projectedPoints": 260.5,
           "isStarter": true
         },
         {
@@ -11907,7 +11907,7 @@
           "name": "Jared Goff",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 118.88,
+          "points": 124.32,
           "projectedPoints": 286.39,
           "isStarter": true
         },
@@ -11917,7 +11917,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 87.8,
-          "projectedPoints": 151.74,
+          "projectedPoints": 151.72,
           "isStarter": true
         },
         {
@@ -11926,7 +11926,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 68.2,
-          "projectedPoints": 170,
+          "projectedPoints": 169.97,
           "isStarter": true
         },
         {
@@ -11935,7 +11935,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 19.9,
-          "projectedPoints": 68.18,
+          "projectedPoints": 68.21,
           "isStarter": true
         },
         {
@@ -11944,7 +11944,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 196.4,
-          "projectedPoints": 324.33,
+          "projectedPoints": 324.16,
           "isStarter": true
         },
         {
@@ -11953,7 +11953,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 54.2,
-          "projectedPoints": 152.34,
+          "projectedPoints": 152.31,
           "isStarter": true
         },
         {
@@ -11962,7 +11962,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 26.9,
-          "projectedPoints": 136.17,
+          "projectedPoints": 136.32,
           "isStarter": true
         },
         {
@@ -11989,7 +11989,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 136.3,
-          "projectedPoints": 232.76,
+          "projectedPoints": 232.69,
           "isStarter": true
         },
         {
@@ -11998,7 +11998,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.2,
-          "projectedPoints": 299.67,
+          "projectedPoints": 299.93,
           "isStarter": true
         },
         {
@@ -12016,7 +12016,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 1.4,
-          "projectedPoints": 59.62,
+          "projectedPoints": 54.86,
           "isStarter": true
         },
         {
@@ -12043,7 +12043,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 17,
-          "projectedPoints": 87.81,
+          "projectedPoints": 87.73,
           "isStarter": true
         }
       ],
