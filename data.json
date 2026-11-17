@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T05:43:02.527Z",
+  "generatedAt": "2026-11-17T06:43:04.584Z",
   "managers": [
     {
       "name": "Ben",
       "totalStandingsPoints": 16.5,
-      "sleeperPprSeasonPoints": 1201.36,
+      "sleeperPprSeasonPoints": 1382.92,
       "sleeperFinalPlacement": 2,
       "pickemTotalCorrect": 73,
       "fdWins": 1,
@@ -23,7 +23,7 @@
     {
       "name": "Caleb",
       "totalStandingsPoints": 20,
-      "sleeperPprSeasonPoints": 1233.9,
+      "sleeperPprSeasonPoints": 1420.3,
       "sleeperFinalPlacement": 1,
       "pickemTotalCorrect": 66,
       "fdWins": 2,
@@ -34,7 +34,7 @@
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 54,
+        "score": 59,
         "letter": "F",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -43,8 +43,8 @@
     },
     {
       "name": "Kyle",
-      "totalStandingsPoints": 19,
-      "sleeperPprSeasonPoints": 1147.52,
+      "totalStandingsPoints": 20,
+      "sleeperPprSeasonPoints": 1309.48,
       "sleeperFinalPlacement": 3,
       "pickemTotalCorrect": 68,
       "fdWins": 2,
@@ -53,17 +53,17 @@
       "fdSeasonTotal": 1099.9399999999998,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 3,
+      "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 28,
+        "score": 44,
         "letter": "F",
         "reasons": []
       }
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 25.5,
-      "sleeperPprSeasonPoints": 1160.2,
+      "totalStandingsPoints": 24.5,
+      "sleeperPprSeasonPoints": 1261.32,
       "sleeperFinalPlacement": 4,
       "pickemTotalCorrect": 74,
       "fdWins": 4,
@@ -94,7 +94,7 @@
       "weakness": "Caleb",
       "punishmentsDone": "2400 Pins, Ice Bath",
       "punishmentIdeas": "T-Shirt",
-      "allTimeRecord": "56-61",
+      "allTimeRecord": "57-61",
       "careerStats": [
         {
           "label": "League High",
@@ -139,7 +139,7 @@
       "weakness": "Being Screwed",
       "punishmentsDone": "1/2 Crawl, Smut Presentation",
       "punishmentIdeas": "",
-      "allTimeRecord": "68-49",
+      "allTimeRecord": "69-49",
       "careerStats": [
         {
           "label": "League High",
@@ -184,7 +184,7 @@
       "weakness": "The Regular Season",
       "punishmentsDone": "Full Crawl, T-Shirt",
       "punishmentIdeas": "Ice Bath",
-      "allTimeRecord": "65-52",
+      "allTimeRecord": "66-52",
       "careerStats": [
         {
           "label": "League High",
@@ -229,7 +229,7 @@
       "weakness": "Toll Booths",
       "punishmentsDone": "1/3 Crawl",
       "punishmentIdeas": "Smut Presentation, 2400 Pins",
-      "allTimeRecord": "77-40",
+      "allTimeRecord": "77-41",
       "careerStats": [
         {
           "label": "League High",
@@ -11189,8 +11189,8 @@
         "total": 11
       },
       "starterPoints": {
-        "pointsFor": 1201.36,
-        "pointsAgainst": 1079.32,
+        "pointsFor": 1382.92,
+        "pointsAgainst": 1177.42,
         "pointsProjected": 138.94
       }
     },
@@ -11458,7 +11458,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 54,
+        "score": 59,
         "letter": "F",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -11472,8 +11472,8 @@
         "total": 26
       },
       "starterPoints": {
-        "pointsFor": 1233.9,
-        "pointsAgainst": 995.02,
+        "pointsFor": 1420.3,
+        "pointsAgainst": 1061.48,
         "pointsProjected": 132.67
       }
     },
@@ -11750,7 +11750,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 28,
+        "score": 44,
         "letter": "F",
         "reasons": []
       },
@@ -11762,8 +11762,8 @@
         "total": 22
       },
       "starterPoints": {
-        "pointsFor": 1147.52,
-        "pointsAgainst": 1107.32,
+        "pointsFor": 1309.48,
+        "pointsAgainst": 1208.44,
         "pointsProjected": 126.43000000000002
       }
     },
@@ -12063,8 +12063,8 @@
         "total": 13
       },
       "starterPoints": {
-        "pointsFor": 1160.2,
-        "pointsAgainst": 1069.18,
+        "pointsFor": 1261.32,
+        "pointsAgainst": 1231.14,
         "pointsProjected": 131.91
       }
     }
