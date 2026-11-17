@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-17T13:43:02.461Z",
+  "generatedAt": "2026-11-17T14:34:26.981Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 16.5,
+      "totalStandingsPoints": 15.5,
       "sleeperPprSeasonPoints": 1382.92,
       "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 73,
+      "pickemTotalCorrect": 82,
       "fdWins": 1,
-      "fdTop5Total": 590.16,
-      "fdTop10Total": 965.34,
-      "fdSeasonTotal": 965.34,
+      "fdTop5Total": 638.06,
+      "fdTop10Total": 1116.1200000000001,
+      "fdSeasonTotal": 1116.1200000000001,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -22,38 +22,17 @@
     },
     {
       "name": "Caleb",
-      "totalStandingsPoints": 20,
+      "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 1420.3,
       "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 66,
+      "pickemTotalCorrect": 74,
       "fdWins": 2,
-      "fdTop5Total": 664.22,
-      "fdTop10Total": 1073.98,
-      "fdSeasonTotal": 1073.98,
+      "fdTop5Total": 706.5,
+      "fdTop10Total": 1232.76,
+      "fdSeasonTotal": 1232.76,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
-      "overallLeagueRank": 2,
-      "seasonGrade": {
-        "score": 59,
-        "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
-      }
-    },
-    {
-      "name": "Kyle",
-      "totalStandingsPoints": 20,
-      "sleeperPprSeasonPoints": 1309.48,
-      "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 68,
-      "fdWins": 2,
-      "fdTop5Total": 710.74,
-      "fdTop10Total": 1099.9399999999998,
-      "fdSeasonTotal": 1099.9399999999998,
-      "playoffBracketScore": 0,
-      "mvpBonus": 0,
-      "overallLeagueRank": 2,
+      "overallLeagueRank": 3,
       "seasonGrade": {
         "score": 44,
         "letter": "F",
@@ -61,15 +40,36 @@
       }
     },
     {
+      "name": "Kyle",
+      "totalStandingsPoints": 20.5,
+      "sleeperPprSeasonPoints": 1309.48,
+      "sleeperFinalPlacement": 3,
+      "pickemTotalCorrect": 75,
+      "fdWins": 3,
+      "fdTop5Total": 772.6600000000001,
+      "fdTop10Total": 1276.12,
+      "fdSeasonTotal": 1276.12,
+      "playoffBracketScore": 0,
+      "mvpBonus": 0,
+      "overallLeagueRank": 2,
+      "seasonGrade": {
+        "score": 71,
+        "letter": "C-",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
+      }
+    },
+    {
       "name": "Mason",
       "totalStandingsPoints": 24.5,
       "sleeperPprSeasonPoints": 1261.32,
       "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 74,
-      "fdWins": 4,
-      "fdTop5Total": 729.4000000000001,
-      "fdTop10Total": 1147.5599999999997,
-      "fdSeasonTotal": 1147.5599999999997,
+      "pickemTotalCorrect": 84,
+      "fdWins": 5,
+      "fdTop5Total": 787.6400000000001,
+      "fdTop10Total": 1323.7399999999998,
+      "fdSeasonTotal": 1323.7399999999998,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -153,8 +153,8 @@
         },
         {
           "label": "Sleeper High",
-          "value": 172.04,
-          "sub": "2025 Wk 7"
+          "value": 186.4,
+          "sub": "2026 Wk 10"
         },
         {
           "label": "Sleeper Low",
@@ -714,7 +714,7 @@
       102.02,
       120.26,
       79.6,
-      0,
+      150.78,
       0,
       0,
       0,
@@ -734,7 +734,7 @@
       127.32,
       116.5,
       105.52,
-      0,
+      158.78,
       0,
       0,
       0,
@@ -754,7 +754,7 @@
       114.26,
       78.56,
       99.8,
-      0,
+      176.18,
       0,
       0,
       0,
@@ -774,7 +774,7 @@
       105.06,
       98.36,
       106.82,
-      0,
+      176.18,
       0,
       0,
       0,
@@ -867,40 +867,50 @@
           "Kyle": 99.8,
           "Mason": 106.82
         }
+      },
+      {
+        "week": 10,
+        "scores": {
+          "Ben": 150.78,
+          "Caleb": 158.78,
+          "Kyle": 176.18,
+          "Mason": 176.18
+        }
       }
     ],
     "fdTop5": {
       "Ben": [
+        150.78,
         128.86,
         127.38,
         120.26,
-        110.78,
-        102.88
+        110.78
       ],
       "Caleb": [
+        158.78,
         150.12,
         148.4,
         127.32,
-        121.88,
-        116.5
+        121.88
       ],
       "Kyle": [
+        176.18,
         174.66,
         144.88,
         142.04,
-        134.9,
-        114.26
+        134.9
       ],
       "Mason": [
         192.5,
+        176.18,
         151.32,
         142.96,
-        124.68,
-        117.94
+        124.68
       ]
     },
     "fdTop10": {
       "Ben": [
+        150.78,
         128.86,
         127.38,
         120.26,
@@ -912,6 +922,7 @@
         79.6
       ],
       "Caleb": [
+        158.78,
         150.12,
         148.4,
         127.32,
@@ -923,6 +934,7 @@
         94.44
       ],
       "Kyle": [
+        176.18,
         174.66,
         144.88,
         142.04,
@@ -935,6 +947,7 @@
       ],
       "Mason": [
         192.5,
+        176.18,
         151.32,
         142.96,
         124.68,
@@ -947,6 +960,7 @@
     },
     "fdAllWeeks": {
       "Ben": [
+        150.78,
         128.86,
         127.38,
         120.26,
@@ -958,6 +972,7 @@
         79.6
       ],
       "Caleb": [
+        158.78,
         150.12,
         148.4,
         127.32,
@@ -969,6 +984,7 @@
         94.44
       ],
       "Kyle": [
+        176.18,
         174.66,
         144.88,
         142.04,
@@ -981,6 +997,7 @@
       ],
       "Mason": [
         192.5,
+        176.18,
         151.32,
         142.96,
         124.68,
@@ -1003,7 +1020,7 @@
       8,
       6,
       9,
-      0,
+      9,
       0,
       0,
       0,
@@ -1023,7 +1040,7 @@
       9,
       7,
       7,
-      0,
+      8,
       0,
       0,
       0,
@@ -1043,7 +1060,7 @@
       7,
       8,
       10,
-      0,
+      7,
       0,
       0,
       0,
@@ -1063,7 +1080,7 @@
       9,
       6,
       6,
-      0,
+      10,
       0,
       0,
       0,
@@ -1089,9 +1106,9 @@
     },
     "Caleb": {
       "highest": {
-        "value": 172.04,
-        "season": 2025,
-        "week": 7
+        "value": 186.4,
+        "season": 2026,
+        "week": 10
       },
       "lowest": {
         "value": 4.1,
@@ -2011,6 +2028,15 @@
       "managerB": "Ben",
       "scoreB": 119.08,
       "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 10,
+      "managerA": "Kyle",
+      "scoreA": 161.96,
+      "managerB": "Mason",
+      "scoreB": 101.12,
+      "winner": "Kyle"
     }
   ],
   "matchups": [
@@ -2850,6 +2876,15 @@
       "managerB": "Ben",
       "scoreB": 119.08,
       "winner": "Caleb"
+    },
+    {
+      "season": 2026,
+      "week": 10,
+      "managerA": "Kyle",
+      "scoreA": 161.96,
+      "managerB": "Mason",
+      "scoreB": 101.12,
+      "winner": "Kyle"
     }
   ],
   "memberHistory": [
@@ -11191,7 +11226,7 @@
       "starterPoints": {
         "pointsFor": 1382.92,
         "pointsAgainst": 1177.42,
-        "pointsProjected": 138.94
+        "pointsProjected": 136.01
       }
     },
     {
@@ -11458,13 +11493,11 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 59,
+        "score": 44,
         "letter": "F",
-        "reasons": [
-          "Spent big on waivers and it paid off"
-        ]
+        "reasons": []
       },
-      "gradeNote": "Spent big on waivers and it paid off",
+      "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 75,
       "transactions": {
         "adds": 25,
@@ -11474,7 +11507,7 @@
       "starterPoints": {
         "pointsFor": 1420.3,
         "pointsAgainst": 1061.48,
-        "pointsProjected": 132.67
+        "pointsProjected": 133.06
       }
     },
     {
@@ -11750,11 +11783,13 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 44,
-        "letter": "F",
-        "reasons": []
+        "score": 71,
+        "letter": "C-",
+        "reasons": [
+          "Spent big on waivers and it paid off"
+        ]
       },
-      "gradeNote": "Performance matched the season's standings.",
+      "gradeNote": "Spent big on waivers and it paid off",
       "faabSpent": 66,
       "transactions": {
         "adds": 22,
@@ -11764,7 +11799,7 @@
       "starterPoints": {
         "pointsFor": 1309.48,
         "pointsAgainst": 1208.44,
-        "pointsProjected": 126.43000000000002
+        "pointsProjected": 130.29000000000002
       }
     },
     {
@@ -12065,28 +12100,28 @@
       "starterPoints": {
         "pointsFor": 1261.32,
         "pointsAgainst": 1231.14,
-        "pointsProjected": 131.91
+        "pointsProjected": 117.02999999999999
       }
     }
   ],
-  "currentSummary": "Projected Final Standings (10-Team League)\n\nQuick honest caveat: this is inherently a roster-talent guess, not a hard prediction — health, waiver activity, and matchup luck will decide the real thing. But going purely off what's actually on these rosters:\n\nThe field is tougher than just \"our 4 vs. the rest\" — a couple of the other teams are legitimately stacked. **RickBinkerson** landed Jonathan Taylor plus a Lamar Jackson keeper (arguably the single best keeper value in the whole league) on top of a London/Higgins/Waddle receiver room. **JONTHETANK** somehow has both De'Von Achane and Saquon Barkley plus Joe Burrow — an absurd RB1/RB2 combo. Those two rosters are real threats to finish above all four of you.\n\nAmong the four of you, here's how I'd stack it up based on the draft:\n\n**Caleb — 11-3, 1st**\nThe keeper bonanza (JSN + Warren on top of Chase/Henry/Hurts) gives this roster the highest floor and ceiling of the four. I'd favor this team over the outside competition too.\n\n**Ben — 9-5, 3rd**\nCleanest, lowest-variance build of the bunch, but Rick's and JONTHETANK's rosters are strong enough that I can't put Ben ahead of both.\n\n**Kyle — 8-6, 4th**\nExcellent balanced team (McBride discount, Nabers, Wilson), just fewer top-5-overall-caliber assets than Caleb or Ben.\n\n**Mason — 7-7, 5th** \nReal upside if Rice returns to 2023 form, but that ACL recovery (plus banking on Dobbins/Kittle staying healthy) is genuine variance the other three teams don't carry as much of.\n\nIf Rice comes back fully healthy early, bump Mason up a couple spots — that's the single biggest swing factor on any of these four rosters.",
-  "currentWeekLabel": "Week 3 Recap",
+  "currentSummary": "Manager by manager\n\nMason, 1st overall. He’s 4-6 in the main league, last in points for, and has had one Sleeper score over 140 all year (week 1). He’s 0-2 over the last two weeks, with losses by 4.7 and 60.8. His lead is entirely FanDuel (best total and most weekly wins) and Pick’em. He also paid 26 and 27 in FAAB on Woody Marks and Braelon Allen, and Marks was cut by week 8. He keeps saying fantasy is mostly luck, and the standings are about to test that. Prediction: he stays on top, but only if FanDuel holds.\n\nKyle, 2nd overall. He started 0-4 and has gone 5-1 since, with points for now sitting 2nd of the four of you. He has had a bench-miss flag in at least five weeks, and he’s added and dropped Kaelon Black four and three times. He also paid 26 and 19 in FAAB for Dobbins and Allgeier and cut both by week 8. He’s the real threat to Mason, because his FanDuel Top 5 total is only 15 points behind. Prediction: he passes Mason on that category first, which flips the title race.\n\nCaleb, 3rd overall. He’s 9-1 with the best point differential in the group (+359) and scored 166.9, 153.2 and 186.4 in his last three. He’s also last in Pick’em, and the FanDuel-heavy scoring keeps pushing him down. He paid 24 in FAAB for Alvin Kamara in week 3 and dropped him in week 10 for a 27-FAAB pickup. Prediction: he wins the regular season and still finishes 3rd overall, so he’ll be screwed in a way that’s actually true.\n\nBen, 4th overall. At 8-2 with the second-most points, he’s last in the contest because he’s last in all four FanDuel categories, averaging about 112 a week against 123 for the next lowest. He has had no flagged bench blunders in the weeks I could see since week 4. His first loss of the year came in week 8, to Caleb by 48. Prediction: he’s the heavy favorite for last place, which would be his third in four years (2023, 2025 and now). There’s still a Sleeper title to chase, but that’s not what this contest pays.",
+  "currentWeekLabel": "Mid Season Review",
   "weeklyRoasts": [
     {
       "manager": "Ben",
-      "roast": "D+ : He won 140.88 to 118.66 and has the sad distinction of making it look like a loss. Dead last in FanDuel by more than 20 points (79.6), and he has the fewest overall standings points of the four (16.5) despite the 7-2 record, so apparently the football coach’s talent is for winning the one thing that doesn’t count. The 140.88 only cleared projection by 1.9 and sat 12 points behind Caleb. He’s winning on a roster built to be dominant and still looks like the kind of guy who gets bailed out every week, which is exactly what he is."
+      "roast": "B : A 181.56 that beat projection by 45.6 and an 83-point win for an 8-2 record, with no bench blunder to blame it on. FanDuel was a different story: 150.78, last of the four by 8 points. He has the fewest overall standings points (15.5) despite having the second-most points in the league. The football coach scored 181 and still hasn’t figured out how to get paid for it."
     },
     {
       "manager": "Caleb",
-      "roast": "A : A league-best 153.16, 20.5 over projection, a 55-point beating of his opponent, and an 8-1 record with no bench blunder. Second in FanDuel (105.52) and an average 7 Pick’em picks, so there’s very little to nitpick. He’s 8-1 and presumably still figuring out how it’s all going wrong."
+      "roast": "A+ : A league-best 186.4, 53.3 over projection, and a 120-point beating of his opponent. At 9-1 he is not screwed, and his only possible complaint is that nobody else was close. Third in FanDuel (158.78) and 8 Pick’em picks keep the week from being perfect, but that’s nitpicking a guy who just scored 120 more than his opponent."
     },
     {
       "manager": "Kyle",
-      "roast": "C : Beat a 103.74 with a 110.26, a win by 6.5 that missed projection by 16.2, so the W happened more than it was earned. He got 10 Pick’em picks right, the best of the week, and a third-place FanDuel score (99.8) to go with it. He’s 4-5 now and climbing, but the pattern holds: hot on the side games, lukewarm where it counts."
+      "roast": "B- : Beat Mason 161.96 to 101.12 and got to 5-5 with a score that cleared projection by 31.7. He still started Chris Olave’s 6 over Jordyn Tyson’s 19, leaving 13.0 on the bench, so he won big and made it look sloppy. A tied-best FanDuel score (176.18) and just 7 Pick’em picks, last of the four, is the full Kyle experience: hot in one place, cold in the other."
     },
     {
       "manager": "Mason",
-      "roast": "B- : Lost 144.36 to 139.66 by 4.7 points, with a score that would have beaten two-thirds of the league. That’s the exact luck he’s been preaching about, and for once he’s allowed to say it. He beat projection by 7.7 with no bench blunder, had the best FanDuel score (106.82), and still dropped to 4-5 thanks to a Pick’em week of 6 correct, last in the group. He leads the overall standings by 5.5, so the wheel will have to wait."
+      "roast": "D- : Lost 161.96 to 101.12 by 60.84 points, the lowest Sleeper score of the four and 15.9 under projection. He also started Jordan Mason’s 5.9 over Omarion Hampton’s 17.5, leaving 11.6 on the bench, which is the programmer starting his namesake over the better player. At 4-6 he’s drifting toward last place, and “fantasy is mostly luck” doesn’t cover a 60-point loss. A tied-best FanDuel score (176.18) and the best Pick’em of the week (10 correct) keep him first overall, but that lead is down to 4 points and the wheel is circling."
     }
   ]
 }
