@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T03:43:07.379Z",
+  "generatedAt": "2026-11-17T04:43:04.143Z",
   "managers": [
     {
       "name": "Ben",
@@ -11361,7 +11361,7 @@
           "name": "Derrick Henry",
           "tag": "kept",
           "tagWeek": null,
-          "points": 149.38,
+          "points": 161.28,
           "projectedPoints": 265.19,
           "isStarter": true
         },
@@ -11425,7 +11425,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 86.5,
-          "projectedPoints": 176.37,
+          "projectedPoints": 176.33,
           "isStarter": true
         },
         {
@@ -11443,7 +11443,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 13,
-          "projectedPoints": 50.3,
+          "projectedPoints": 50.27,
           "isStarter": true
         },
         {
@@ -11925,7 +11925,7 @@
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 80.4,
+          "points": 83.9,
           "projectedPoints": 168.79,
           "isStarter": true
         },
@@ -11935,7 +11935,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 33.6,
-          "projectedPoints": 70.01,
+          "projectedPoints": 69.97,
           "isStarter": true
         },
         {
@@ -12043,7 +12043,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 24,
-          "projectedPoints": 87.94,
+          "projectedPoints": 87.98,
           "isStarter": true
         }
       ],
