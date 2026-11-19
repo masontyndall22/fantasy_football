@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:43:04.927Z",
+  "generatedAt": "2026-11-19T08:43:02.831Z",
   "managers": [
     {
       "name": "Ben",
@@ -12056,11 +12056,11 @@
         },
         {
           "position": "DEF",
-          "name": "Green Bay Packers",
+          "name": "Pittsburgh Steelers",
           "tag": "waiver",
-          "tagWeek": 9,
-          "points": 4,
-          "projectedPoints": 53.7,
+          "tagWeek": 11,
+          "points": 84,
+          "projectedPoints": 119.27,
           "isStarter": true
         },
         {
@@ -12082,11 +12082,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 69,
+      "faabSpent": 71,
       "transactions": {
-        "adds": 14,
+        "adds": 15,
         "trades": 0,
-        "total": 14
+        "total": 15
       },
       "starterPoints": {
         "pointsFor": 1261.32,
