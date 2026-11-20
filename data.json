@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:43:11.714Z",
+  "generatedAt": "2026-11-20T02:43:09.561Z",
   "managers": [
     {
       "name": "Ben",
@@ -11089,7 +11089,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 149.7,
-          "projectedPoints": 241.23,
+          "projectedPoints": 241.15,
           "isStarter": true
         },
         {
@@ -11107,7 +11107,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 253.4,
-          "projectedPoints": 430.51,
+          "projectedPoints": 430.42,
           "isStarter": true
         },
         {
@@ -11125,7 +11125,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 78,
-          "projectedPoints": 158.19,
+          "projectedPoints": 158.23,
           "isStarter": true
         },
         {
@@ -11170,7 +11170,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 95.7,
-          "projectedPoints": 212.94,
+          "projectedPoints": 212.93,
           "isStarter": true
         },
         {
@@ -11206,7 +11206,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 84,
-          "projectedPoints": 140.92,
+          "projectedPoints": 140.88,
           "isStarter": true
         }
       ],
@@ -11361,7 +11361,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 0,
-          "projectedPoints": 142.03,
+          "projectedPoints": 142.09,
           "isStarter": true
         },
         {
@@ -11379,7 +11379,7 @@
           "tag": "trade",
           "tagWeek": 6,
           "points": 73.5,
-          "projectedPoints": 195.85,
+          "projectedPoints": 195.94,
           "isStarter": true
         },
         {
@@ -11487,7 +11487,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 0,
-          "projectedPoints": 58.35,
+          "projectedPoints": 58.38,
           "isStarter": true
         },
         {
@@ -11943,7 +11943,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 125.56,
-          "projectedPoints": 285.85,
+          "projectedPoints": 285.79,
           "isStarter": true
         },
         {
@@ -11969,7 +11969,7 @@
           "name": "Seth McGowan",
           "tag": "waiver",
           "tagWeek": 7,
-          "points": 33.6,
+          "points": 35.2,
           "projectedPoints": 69.77,
           "isStarter": true
         },
@@ -12068,7 +12068,7 @@
           "name": "Ka'imi Fairbairn",
           "tag": "waiver",
           "tagWeek": 8,
-          "points": 24,
+          "points": 25,
           "projectedPoints": 88.4,
           "isStarter": true
         }
