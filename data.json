@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T21:43:04.479Z",
+  "generatedAt": "2026-11-22T22:43:04.094Z",
   "managers": [
     {
       "name": "Ben",
@@ -11088,7 +11088,7 @@
           "name": "Ashton Jeanty",
           "tag": "kept",
           "tagWeek": null,
-          "points": 149.7,
+          "points": 152.2,
           "projectedPoints": 241.92,
           "isStarter": true
         },
@@ -11097,7 +11097,7 @@
           "name": "Chuba Hubbard",
           "tag": "kept",
           "tagWeek": null,
-          "points": 206.9,
+          "points": 206.8,
           "projectedPoints": 273.12,
           "isStarter": true
         },
@@ -11187,7 +11187,7 @@
           "name": "Jacksonville Jaguars",
           "tag": "waiver",
           "tagWeek": 8,
-          "points": 34,
+          "points": 42,
           "projectedPoints": 82.57,
           "isStarter": true
         },
@@ -11360,7 +11360,7 @@
           "name": "Bo Nix",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 0,
+          "points": 6.88,
           "projectedPoints": 142.41,
           "isStarter": true
         },
@@ -11477,7 +11477,7 @@
           "name": "Denver Broncos",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 0,
+          "points": 11,
           "projectedPoints": 58.51,
           "isStarter": true
         },
@@ -11486,7 +11486,7 @@
           "name": "Cam Little",
           "tag": "waiver",
           "tagWeek": 9,
-          "points": 19,
+          "points": 23,
           "projectedPoints": 79.47,
           "isStarter": true
         }
@@ -11659,7 +11659,7 @@
           "name": "Cam Skattebo",
           "tag": "kept",
           "tagWeek": null,
-          "points": 97.6,
+          "points": 97.9,
           "projectedPoints": 226.68,
           "isStarter": true
         },
@@ -11704,7 +11704,7 @@
           "name": "Malik Nabers",
           "tag": "kept",
           "tagWeek": null,
-          "points": 137.2,
+          "points": 140.8,
           "projectedPoints": 256.09,
           "isStarter": true
         },
@@ -11740,7 +11740,7 @@
           "name": "Garrett Wilson",
           "tag": "kept",
           "tagWeek": null,
-          "points": 129.3,
+          "points": 133.3,
           "projectedPoints": 246.23,
           "isStarter": true
         },
@@ -11933,7 +11933,7 @@
           "name": "Jared Goff",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 146.02,
+          "points": 145.92,
           "projectedPoints": 286.14,
           "isStarter": true
         },
@@ -11942,7 +11942,7 @@
           "name": "Braelon Allen",
           "tag": "waiver",
           "tagWeek": 3,
-          "points": 93.4,
+          "points": 98.4,
           "projectedPoints": 152.34,
           "isStarter": true
         },
@@ -11951,8 +11951,8 @@
           "name": "Omarion Hampton",
           "tag": "kept",
           "tagWeek": null,
-          "points": 85.7,
-          "projectedPoints": 179.08,
+          "points": 87.3,
+          "projectedPoints": 178.69,
           "isStarter": true
         },
         {
@@ -11978,7 +11978,7 @@
           "name": "Breece Hall",
           "tag": "kept",
           "tagWeek": null,
-          "points": 69,
+          "points": 79.9,
           "projectedPoints": 153.38,
           "isStarter": true
         },
