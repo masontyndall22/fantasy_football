@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-24T03:43:01.219Z",
+  "generatedAt": "2026-11-24T04:43:00.957Z",
   "managers": [
     {
       "name": "Ben",
-      "totalStandingsPoints": 15.5,
+      "totalStandingsPoints": 16.5,
       "sleeperPprSeasonPoints": 1382.92,
       "sleeperFinalPlacement": 2,
-      "pickemTotalCorrect": 82,
+      "pickemTotalCorrect": 91,
       "fdWins": 1,
-      "fdTop5Total": 638.06,
-      "fdTop10Total": 1116.1200000000001,
-      "fdSeasonTotal": 1116.1200000000001,
+      "fdTop5Total": 654.5,
+      "fdTop10Total": 1162.74,
+      "fdSeasonTotal": 1242.3400000000001,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 4,
@@ -25,16 +25,16 @@
       "totalStandingsPoints": 19.5,
       "sleeperPprSeasonPoints": 1420.3,
       "sleeperFinalPlacement": 1,
-      "pickemTotalCorrect": 74,
+      "pickemTotalCorrect": 80,
       "fdWins": 2,
-      "fdTop5Total": 706.5,
-      "fdTop10Total": 1232.76,
-      "fdSeasonTotal": 1232.76,
+      "fdTop5Total": 711.98,
+      "fdTop10Total": 1265.6799999999998,
+      "fdSeasonTotal": 1360.12,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 3,
       "seasonGrade": {
-        "score": 44,
+        "score": 43,
         "letter": "F",
         "reasons": []
       }
@@ -44,16 +44,16 @@
       "totalStandingsPoints": 20.5,
       "sleeperPprSeasonPoints": 1309.48,
       "sleeperFinalPlacement": 3,
-      "pickemTotalCorrect": 75,
+      "pickemTotalCorrect": 81,
       "fdWins": 3,
-      "fdTop5Total": 772.6600000000001,
-      "fdTop10Total": 1276.12,
-      "fdSeasonTotal": 1276.12,
+      "fdTop5Total": 781.38,
+      "fdTop10Total": 1341.1799999999998,
+      "fdSeasonTotal": 1419.7399999999998,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 2,
       "seasonGrade": {
-        "score": 71,
+        "score": 72,
         "letter": "C-",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -62,14 +62,14 @@
     },
     {
       "name": "Mason",
-      "totalStandingsPoints": 24.5,
+      "totalStandingsPoints": 23.5,
       "sleeperPprSeasonPoints": 1261.32,
       "sleeperFinalPlacement": 4,
-      "pickemTotalCorrect": 84,
-      "fdWins": 5,
-      "fdTop5Total": 787.6400000000001,
-      "fdTop10Total": 1323.7399999999998,
-      "fdSeasonTotal": 1323.7399999999998,
+      "pickemTotalCorrect": 90,
+      "fdWins": 6,
+      "fdTop5Total": 820.88,
+      "fdTop10Total": 1383.3,
+      "fdSeasonTotal": 1481.6599999999999,
       "playoffBracketScore": 0,
       "mvpBonus": 0,
       "overallLeagueRank": 1,
@@ -706,7 +706,7 @@
   "weeklyFanDuel": {
     "Ben": [
       128.86,
-      92.92,
+      91.92,
       100.64,
       110.78,
       127.38,
@@ -715,7 +715,7 @@
       120.26,
       79.6,
       150.78,
-      0,
+      127.22,
       0,
       0,
       0,
@@ -735,7 +735,7 @@
       116.5,
       105.52,
       158.78,
-      0,
+      127.36,
       0,
       0,
       0,
@@ -755,7 +755,7 @@
       78.56,
       99.8,
       176.18,
-      0,
+      143.62,
       0,
       0,
       0,
@@ -775,7 +775,7 @@
       98.36,
       106.82,
       176.18,
-      0,
+      157.92,
       0,
       0,
       0,
@@ -799,7 +799,7 @@
       {
         "week": 2,
         "scores": {
-          "Ben": 92.92,
+          "Ben": 91.92,
           "Caleb": 94.44,
           "Kyle": 112.88,
           "Mason": 124.68
@@ -876,6 +876,15 @@
           "Kyle": 176.18,
           "Mason": 176.18
         }
+      },
+      {
+        "week": 11,
+        "scores": {
+          "Ben": 127.22,
+          "Caleb": 127.36,
+          "Kyle": 143.62,
+          "Mason": 157.92
+        }
       }
     ],
     "fdTop5": {
@@ -883,29 +892,29 @@
         150.78,
         128.86,
         127.38,
-        120.26,
-        110.78
+        127.22,
+        120.26
       ],
       "Caleb": [
         158.78,
         150.12,
         148.4,
-        127.32,
-        121.88
+        127.36,
+        127.32
       ],
       "Kyle": [
         176.18,
         174.66,
         144.88,
-        142.04,
-        134.9
+        143.62,
+        142.04
       ],
       "Mason": [
         192.5,
         176.18,
+        157.92,
         151.32,
-        142.96,
-        124.68
+        142.96
       ]
     },
     "fdTop10": {
@@ -913,49 +922,49 @@
         150.78,
         128.86,
         127.38,
+        127.22,
         120.26,
         110.78,
         102.88,
         102.02,
         100.64,
-        92.92,
-        79.6
+        91.92
       ],
       "Caleb": [
         158.78,
         150.12,
         148.4,
+        127.36,
         127.32,
         121.88,
         116.5,
         109.12,
         105.52,
-        100.68,
-        94.44
+        100.68
       ],
       "Kyle": [
         176.18,
         174.66,
         144.88,
+        143.62,
         142.04,
         134.9,
         114.26,
         112.88,
         99.8,
-        97.96,
-        78.56
+        97.96
       ],
       "Mason": [
         192.5,
         176.18,
+        157.92,
         151.32,
         142.96,
         124.68,
         117.94,
         107.92,
         106.82,
-        105.06,
-        98.36
+        105.06
       ]
     },
     "fdAllWeeks": {
@@ -963,18 +972,20 @@
         150.78,
         128.86,
         127.38,
+        127.22,
         120.26,
         110.78,
         102.88,
         102.02,
         100.64,
-        92.92,
+        91.92,
         79.6
       ],
       "Caleb": [
         158.78,
         150.12,
         148.4,
+        127.36,
         127.32,
         121.88,
         116.5,
@@ -987,6 +998,7 @@
         176.18,
         174.66,
         144.88,
+        143.62,
         142.04,
         134.9,
         114.26,
@@ -998,6 +1010,7 @@
       "Mason": [
         192.5,
         176.18,
+        157.92,
         151.32,
         142.96,
         124.68,
@@ -1021,7 +1034,7 @@
       6,
       9,
       9,
-      0,
+      9,
       0,
       0,
       0,
@@ -1041,7 +1054,7 @@
       7,
       7,
       8,
-      0,
+      6,
       0,
       0,
       0,
@@ -1061,7 +1074,7 @@
       8,
       10,
       7,
-      0,
+      6,
       0,
       0,
       0,
@@ -1081,7 +1094,7 @@
       6,
       6,
       10,
-      0,
+      6,
       0,
       0,
       0,
@@ -2037,6 +2050,15 @@
       "managerB": "Mason",
       "scoreB": 101.12,
       "winner": "Kyle"
+    },
+    {
+      "season": 2026,
+      "week": 11,
+      "managerA": "Ben",
+      "scoreA": 121.3,
+      "managerB": "Mason",
+      "scoreB": 104.34,
+      "winner": "Ben"
     }
   ],
   "matchups": [
@@ -2885,6 +2907,15 @@
       "managerB": "Mason",
       "scoreB": 101.12,
       "winner": "Kyle"
+    },
+    {
+      "season": 2026,
+      "week": 11,
+      "managerA": "Ben",
+      "scoreA": 121.3,
+      "managerB": "Mason",
+      "scoreB": 104.34,
+      "winner": "Ben"
     }
   ],
   "memberHistory": [
@@ -11107,7 +11138,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 281.2,
-          "projectedPoints": 432.32,
+          "projectedPoints": 432.38,
           "isStarter": true
         },
         {
@@ -11115,7 +11146,7 @@
           "name": "Chase Brown",
           "tag": "kept",
           "tagWeek": null,
-          "points": 134.7,
+          "points": 138.3,
           "projectedPoints": 262.43,
           "isStarter": true
         },
@@ -11170,7 +11201,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 104.9,
-          "projectedPoints": 211.83,
+          "projectedPoints": 211.87,
           "isStarter": true
         },
         {
@@ -11197,7 +11228,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 27,
-          "projectedPoints": 71.41,
+          "projectedPoints": 71.43,
           "isStarter": true
         },
         {
@@ -11206,7 +11237,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 92,
-          "projectedPoints": 140.88,
+          "projectedPoints": 140.92,
           "isStarter": true
         }
       ],
@@ -11226,7 +11257,7 @@
       "starterPoints": {
         "pointsFor": 1382.92,
         "pointsAgainst": 1177.42,
-        "pointsProjected": 136.01
+        "pointsProjected": 125.22999999999999
       }
     },
     {
@@ -11397,7 +11428,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 59.4,
-          "projectedPoints": 85.86,
+          "projectedPoints": 85.88,
           "isStarter": true
         },
         {
@@ -11423,7 +11454,7 @@
           "name": "Stefon Diggs",
           "tag": "waiver",
           "tagWeek": 7,
-          "points": 43.2,
+          "points": 49.7,
           "projectedPoints": 138.78,
           "isStarter": true
         },
@@ -11441,7 +11472,7 @@
           "name": "Ja'Marr Chase",
           "tag": "kept",
           "tagWeek": null,
-          "points": 198.8,
+          "points": 201.9,
           "projectedPoints": 308.62,
           "isStarter": true
         },
@@ -11469,7 +11500,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 129.7,
-          "projectedPoints": 209.08,
+          "projectedPoints": 209.11,
           "isStarter": true
         },
         {
@@ -11493,7 +11524,7 @@
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 44,
+        "score": 43,
         "letter": "F",
         "reasons": []
       },
@@ -11507,7 +11538,7 @@
       "starterPoints": {
         "pointsFor": 1420.3,
         "pointsAgainst": 1061.48,
-        "pointsProjected": 133.06
+        "pointsProjected": 139.66
       }
     },
     {
@@ -11641,7 +11672,7 @@
           "name": "Jayden Daniels",
           "tag": "kept",
           "tagWeek": null,
-          "points": 146.76,
+          "points": 155.02,
           "projectedPoints": 293.64,
           "isStarter": true
         },
@@ -11651,7 +11682,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 206.36,
-          "projectedPoints": 333.32,
+          "projectedPoints": 333.42,
           "isStarter": true
         },
         {
@@ -11768,13 +11799,13 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 37,
-          "projectedPoints": 80.89,
+          "projectedPoints": 80.85,
           "isStarter": true
         }
       ],
       "hasBenchSplit": false,
       "seasonGrade": {
-        "score": 71,
+        "score": 72,
         "letter": "C-",
         "reasons": [
           "Spent big on waivers and it paid off"
@@ -11790,7 +11821,7 @@
       "starterPoints": {
         "pointsFor": 1309.48,
         "pointsAgainst": 1208.44,
-        "pointsProjected": 130.29000000000002
+        "pointsProjected": 133.67000000000002
       }
     },
     {
@@ -11925,7 +11956,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 130.68,
-          "projectedPoints": 258.99,
+          "projectedPoints": 259.21,
           "isStarter": true
         },
         {
@@ -11934,7 +11965,7 @@
           "tag": "waiver",
           "tagWeek": 3,
           "points": 145.92,
-          "projectedPoints": 286.23,
+          "projectedPoints": 286.35,
           "isStarter": true
         },
         {
@@ -11970,7 +12001,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 196.4,
-          "projectedPoints": 306.18,
+          "projectedPoints": 306.28,
           "isStarter": true
         },
         {
@@ -11997,7 +12028,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.7,
-          "projectedPoints": 217.33,
+          "projectedPoints": 217.36,
           "isStarter": true
         },
         {
@@ -12024,7 +12055,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 139.6,
-          "projectedPoints": 234.15,
+          "projectedPoints": 234.28,
           "isStarter": true
         },
         {
@@ -12082,7 +12113,7 @@
       "starterPoints": {
         "pointsFor": 1261.32,
         "pointsAgainst": 1231.14,
-        "pointsProjected": 117.02999999999999
+        "pointsProjected": 123.67000000000002
       }
     }
   ],
