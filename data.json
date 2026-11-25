@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:43:00.052Z",
+  "generatedAt": "2026-11-25T09:43:09.374Z",
   "managers": [
     {
       "name": "Ben",
@@ -11111,7 +11111,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 179.58,
-          "projectedPoints": 311.96,
+          "projectedPoints": 311.81,
           "isStarter": true
         },
         {
@@ -11147,7 +11147,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 138.3,
-          "projectedPoints": 252.9,
+          "projectedPoints": 252.96,
           "isStarter": true
         },
         {
@@ -11156,7 +11156,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 81.8,
-          "projectedPoints": 157.47,
+          "projectedPoints": 157.26,
           "isStarter": true
         },
         {
@@ -11165,7 +11165,7 @@
           "tag": "waiver",
           "tagWeek": 6,
           "points": 36.3,
-          "projectedPoints": 102.97,
+          "projectedPoints": 102.98,
           "isStarter": true
         },
         {
@@ -11183,7 +11183,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 94,
-          "projectedPoints": 135.07,
+          "projectedPoints": 135,
           "isStarter": true
         },
         {
@@ -11210,7 +11210,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 83.7,
-          "projectedPoints": 162.98,
+          "projectedPoints": 162.97,
           "isStarter": true
         },
         {
@@ -11228,7 +11228,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 27,
-          "projectedPoints": 71.38,
+          "projectedPoints": 71.36,
           "isStarter": true
         },
         {
@@ -11293,8 +11293,8 @@
           "position": "WR",
           "name": "Ladd McConkey",
           "isKeeper": false,
-          "exitTag": "dropped",
-          "exitWeek": 11
+          "exitTag": null,
+          "exitWeek": null
         },
         {
           "round": 5,
@@ -11388,15 +11388,6 @@
       "final": [
         {
           "position": "QB",
-          "name": "Bo Nix",
-          "tag": "waiver",
-          "tagWeek": 10,
-          "points": 12.5,
-          "projectedPoints": 140.01,
-          "isStarter": true
-        },
-        {
-          "position": "QB",
           "name": "Jordan Love",
           "tag": "waiver",
           "tagWeek": 5,
@@ -11410,7 +11401,7 @@
           "tag": "trade",
           "tagWeek": 6,
           "points": 92.5,
-          "projectedPoints": 198.52,
+          "projectedPoints": 198.66,
           "isStarter": true
         },
         {
@@ -11428,7 +11419,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 59.4,
-          "projectedPoints": 88.42,
+          "projectedPoints": 88.39,
           "isStarter": true
         },
         {
@@ -11446,7 +11437,16 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 151.4,
-          "projectedPoints": 231.58,
+          "projectedPoints": 231.79,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "tag": "kept",
+          "tagWeek": null,
+          "points": 51.6,
+          "projectedPoints": 157.41,
           "isStarter": true
         },
         {
@@ -11455,7 +11455,7 @@
           "tag": "waiver",
           "tagWeek": 7,
           "points": 49.7,
-          "projectedPoints": 138.81,
+          "projectedPoints": 138.61,
           "isStarter": true
         },
         {
@@ -11464,7 +11464,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 94.5,
-          "projectedPoints": 181.67,
+          "projectedPoints": 181.53,
           "isStarter": true
         },
         {
@@ -11473,7 +11473,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 201.9,
-          "projectedPoints": 309.03,
+          "projectedPoints": 308.81,
           "isStarter": true
         },
         {
@@ -11482,7 +11482,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 263.16,
-          "projectedPoints": 397.91,
+          "projectedPoints": 397.9,
           "isStarter": true
         },
         {
@@ -11500,7 +11500,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 129.7,
-          "projectedPoints": 207.8,
+          "projectedPoints": 207.75,
           "isStarter": true
         },
         {
@@ -11529,11 +11529,11 @@
         "reasons": []
       },
       "gradeNote": "Performance matched the season's standings.",
-      "faabSpent": 75,
+      "faabSpent": 80,
       "transactions": {
-        "adds": 27,
+        "adds": 28,
         "trades": 1,
-        "total": 28
+        "total": 29
       },
       "starterPoints": {
         "pointsFor": 1556.1,
@@ -11673,7 +11673,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 155.02,
-          "projectedPoints": 294.31,
+          "projectedPoints": 294.21,
           "isStarter": true
         },
         {
@@ -11682,7 +11682,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 206.36,
-          "projectedPoints": 332.1,
+          "projectedPoints": 331.99,
           "isStarter": true
         },
         {
@@ -11691,7 +11691,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 103.4,
-          "projectedPoints": 226.84,
+          "projectedPoints": 226.89,
           "isStarter": true
         },
         {
@@ -11700,7 +11700,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 47.8,
-          "projectedPoints": 78.93,
+          "projectedPoints": 78.97,
           "isStarter": true
         },
         {
@@ -11709,7 +11709,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 227.2,
-          "projectedPoints": 353.14,
+          "projectedPoints": 353.23,
           "isStarter": true
         },
         {
@@ -11718,7 +11718,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.9,
-          "projectedPoints": 130.21,
+          "projectedPoints": 130.22,
           "isStarter": true
         },
         {
@@ -11736,7 +11736,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 155.7,
-          "projectedPoints": 254.92,
+          "projectedPoints": 254.74,
           "isStarter": true
         },
         {
@@ -11745,7 +11745,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 91.1,
-          "projectedPoints": 176.66,
+          "projectedPoints": 176.38,
           "isStarter": true
         },
         {
@@ -11763,7 +11763,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 166.6,
-          "projectedPoints": 274.26,
+          "projectedPoints": 274.25,
           "isStarter": true
         },
         {
@@ -11772,7 +11772,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 136.2,
-          "projectedPoints": 245.28,
+          "projectedPoints": 245.29,
           "isStarter": true
         },
         {
@@ -11799,7 +11799,7 @@
           "tag": "waiver",
           "tagWeek": 9,
           "points": 37,
-          "projectedPoints": 81.24,
+          "projectedPoints": 81.21,
           "isStarter": true
         }
       ],
@@ -11956,7 +11956,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 130.68,
-          "projectedPoints": 260.46,
+          "projectedPoints": 260.23,
           "isStarter": true
         },
         {
@@ -11970,11 +11970,20 @@
         },
         {
           "position": "RB",
+          "name": "Chris Rodriguez",
+          "tag": "waiver",
+          "tagWeek": 11,
+          "points": 0,
+          "projectedPoints": 43.54,
+          "isStarter": true
+        },
+        {
+          "position": "RB",
           "name": "Braelon Allen",
           "tag": "waiver",
           "tagWeek": 3,
           "points": 102.8,
-          "projectedPoints": 152.68,
+          "projectedPoints": 152.67,
           "isStarter": true
         },
         {
@@ -11983,16 +11992,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 96,
-          "projectedPoints": 179.8,
-          "isStarter": true
-        },
-        {
-          "position": "RB",
-          "name": "Seth McGowan",
-          "tag": "waiver",
-          "tagWeek": 7,
-          "points": 35.4,
-          "projectedPoints": 63.34,
+          "projectedPoints": 179.9,
           "isStarter": true
         },
         {
@@ -12001,7 +12001,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 196.4,
-          "projectedPoints": 304.01,
+          "projectedPoints": 303.96,
           "isStarter": true
         },
         {
@@ -12028,7 +12028,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 90.7,
-          "projectedPoints": 215.86,
+          "projectedPoints": 215.81,
           "isStarter": true
         },
         {
@@ -12042,20 +12042,20 @@
         },
         {
           "position": "WR",
-          "name": "Ryan Flournoy",
-          "tag": "waiver",
-          "tagWeek": 10,
-          "points": 2.1,
-          "projectedPoints": 57.07,
-          "isStarter": true
-        },
-        {
-          "position": "WR",
           "name": "Luther Burden",
           "tag": "kept",
           "tagWeek": null,
           "points": 139.6,
-          "projectedPoints": 234.84,
+          "projectedPoints": 234.53,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
+          "name": "Antonio Williams",
+          "tag": "waiver",
+          "tagWeek": 11,
+          "points": 0,
+          "projectedPoints": 66.54,
           "isStarter": true
         },
         {
@@ -12073,7 +12073,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.1,
-          "projectedPoints": 232.23,
+          "projectedPoints": 232.07,
           "isStarter": true
         },
         {
@@ -12104,11 +12104,11 @@
         ]
       },
       "gradeNote": "Spent big on waivers and it paid off",
-      "faabSpent": 71,
+      "faabSpent": 79,
       "transactions": {
-        "adds": 15,
+        "adds": 17,
         "trades": 0,
-        "total": 15
+        "total": 17
       },
       "starterPoints": {
         "pointsFor": 1365.66,
