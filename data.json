@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T19:43:00.460Z",
+  "generatedAt": "2026-11-27T20:43:01.278Z",
   "managers": [
     {
       "name": "Ben",
@@ -11102,7 +11102,7 @@
           "tag": "waiver",
           "tagWeek": 2,
           "points": 179.58,
-          "projectedPoints": 311.18,
+          "projectedPoints": 311.28,
           "isStarter": true
         },
         {
@@ -11120,7 +11120,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 206.8,
-          "projectedPoints": 274.83,
+          "projectedPoints": 274.78,
           "isStarter": true
         },
         {
@@ -11138,7 +11138,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 138.3,
-          "projectedPoints": 252.84,
+          "projectedPoints": 252.75,
           "isStarter": true
         },
         {
@@ -11174,7 +11174,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 94,
-          "projectedPoints": 134.78,
+          "projectedPoints": 134.81,
           "isStarter": true
         },
         {
@@ -11183,7 +11183,7 @@
           "tag": "waiver",
           "tagWeek": 12,
           "points": 0,
-          "projectedPoints": 69.97,
+          "projectedPoints": 69.94,
           "isStarter": true
         },
         {
@@ -11192,7 +11192,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 200.1,
-          "projectedPoints": 276.93,
+          "projectedPoints": 276.89,
           "isStarter": true
         },
         {
@@ -11210,7 +11210,7 @@
           "tag": "waiver",
           "tagWeek": 1,
           "points": 83.7,
-          "projectedPoints": 162.75,
+          "projectedPoints": 156.73,
           "isStarter": true
         },
         {
@@ -11392,7 +11392,7 @@
           "tag": "waiver",
           "tagWeek": 5,
           "points": 120.32,
-          "projectedPoints": 231.66,
+          "projectedPoints": 231.5,
           "isStarter": true
         },
         {
@@ -11446,7 +11446,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 51.6,
-          "projectedPoints": 156.82,
+          "projectedPoints": 157.66,
           "isStarter": true
         },
         {
@@ -11463,8 +11463,8 @@
           "name": "DK Metcalf",
           "tag": "kept",
           "tagWeek": null,
-          "points": 94.5,
-          "projectedPoints": 181.05,
+          "points": 96,
+          "projectedPoints": 181.01,
           "isStarter": true
         },
         {
@@ -11473,7 +11473,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 201.9,
-          "projectedPoints": 306.46,
+          "projectedPoints": 306.31,
           "isStarter": true
         },
         {
@@ -11508,7 +11508,7 @@
           "name": "Denver Broncos",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 14,
+          "points": 24,
           "projectedPoints": 64.85,
           "isStarter": true
         },
@@ -11691,7 +11691,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 103.4,
-          "projectedPoints": 223.3,
+          "projectedPoints": 223.34,
           "isStarter": true
         },
         {
@@ -11700,7 +11700,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 47.8,
-          "projectedPoints": 78.97,
+          "projectedPoints": 78.98,
           "isStarter": true
         },
         {
@@ -11709,7 +11709,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 227.2,
-          "projectedPoints": 353.01,
+          "projectedPoints": 353.06,
           "isStarter": true
         },
         {
@@ -11718,7 +11718,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 44.9,
-          "projectedPoints": 130.14,
+          "projectedPoints": 130.32,
           "isStarter": true
         },
         {
@@ -11736,7 +11736,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 155.7,
-          "projectedPoints": 254.43,
+          "projectedPoints": 254.49,
           "isStarter": true
         },
         {
@@ -11754,7 +11754,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 26,
-          "projectedPoints": 105.29,
+          "projectedPoints": 105.28,
           "isStarter": true
         },
         {
@@ -11763,7 +11763,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 166.6,
-          "projectedPoints": 273.83,
+          "projectedPoints": 273.81,
           "isStarter": true
         },
         {
@@ -11974,7 +11974,7 @@
           "tag": "waiver",
           "tagWeek": 11,
           "points": 0,
-          "projectedPoints": 43.91,
+          "projectedPoints": 43.86,
           "isStarter": true
         },
         {
@@ -11992,7 +11992,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 96,
-          "projectedPoints": 178.97,
+          "projectedPoints": 178.94,
           "isStarter": true
         },
         {
@@ -12073,7 +12073,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 146.1,
-          "projectedPoints": 231.65,
+          "projectedPoints": 231.71,
           "isStarter": true
         },
         {
@@ -12081,8 +12081,8 @@
           "name": "Pittsburgh Steelers",
           "tag": "waiver",
           "tagWeek": 11,
-          "points": 91,
-          "projectedPoints": 119.03,
+          "points": 101,
+          "projectedPoints": 119,
           "isStarter": true
         },
         {
@@ -12091,7 +12091,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 30,
-          "projectedPoints": 88.74,
+          "projectedPoints": 88.7,
           "isStarter": true
         }
       ],
