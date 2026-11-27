@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T01:43:04.735Z",
+  "generatedAt": "2026-11-27T02:43:05.144Z",
   "managers": [
     {
       "name": "Ben",
@@ -11218,7 +11218,7 @@
           "name": "Kansas City Chiefs",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 27,
+          "points": 37,
           "projectedPoints": 71.82,
           "isStarter": true
         },
@@ -11409,7 +11409,7 @@
           "name": "Emmett Johnson",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 59.4,
+          "points": 60.5,
           "projectedPoints": 97.98,
           "isStarter": true
         },
@@ -11419,7 +11419,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 180.38,
-          "projectedPoints": 265.16,
+          "projectedPoints": 265.09,
           "isStarter": true
         },
         {
@@ -11455,7 +11455,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 94.5,
-          "projectedPoints": 181.89,
+          "projectedPoints": 181.93,
           "isStarter": true
         },
         {
@@ -11500,7 +11500,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 14,
-          "projectedPoints": 64.85,
+          "projectedPoints": 64.81,
           "isStarter": true
         },
         {
@@ -11672,7 +11672,7 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 206.36,
+          "points": 206.56,
           "projectedPoints": 332.54,
           "isStarter": true
         },
@@ -12073,7 +12073,7 @@
           "tag": "waiver",
           "tagWeek": 11,
           "points": 91,
-          "projectedPoints": 118.97,
+          "projectedPoints": 119,
           "isStarter": true
         },
         {
@@ -12082,7 +12082,7 @@
           "tag": "waiver",
           "tagWeek": 8,
           "points": 30,
-          "projectedPoints": 88.74,
+          "projectedPoints": 88.7,
           "isStarter": true
         }
       ],
