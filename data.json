@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T07:43:07.130Z",
+  "generatedAt": "2026-11-27T08:43:01.349Z",
   "managers": [
     {
       "name": "Ben",
@@ -11179,6 +11179,15 @@
         },
         {
           "position": "WR",
+          "name": "Jakobi Meyers",
+          "tag": "waiver",
+          "tagWeek": 12,
+          "points": 0,
+          "projectedPoints": 67.16,
+          "isStarter": true
+        },
+        {
+          "position": "WR",
           "name": "Christian Watson",
           "tag": "kept",
           "tagWeek": null,
@@ -11241,9 +11250,9 @@
       "gradeNote": "Performance matched the season's standings.",
       "faabSpent": 50,
       "transactions": {
-        "adds": 12,
+        "adds": 13,
         "trades": 0,
-        "total": 12
+        "total": 13
       },
       "starterPoints": {
         "pointsFor": 1504.22,
