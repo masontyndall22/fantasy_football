@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T03:43:03.668Z",
+  "generatedAt": "2026-11-27T04:43:01.242Z",
   "managers": [
     {
       "name": "Ben",
@@ -11218,7 +11218,7 @@
           "name": "Kansas City Chiefs",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 33,
+          "points": 35,
           "projectedPoints": 71.82,
           "isStarter": true
         },
@@ -11409,7 +11409,7 @@
           "name": "Emmett Johnson",
           "tag": "waiver",
           "tagWeek": 10,
-          "points": 64.2,
+          "points": 78.5,
           "projectedPoints": 97.98,
           "isStarter": true
         },
@@ -11500,7 +11500,7 @@
           "tag": "waiver",
           "tagWeek": 10,
           "points": 14,
-          "projectedPoints": 64.81,
+          "projectedPoints": 64.85,
           "isStarter": true
         },
         {
@@ -11672,7 +11672,7 @@
           "name": "Patrick Mahomes",
           "tag": "kept",
           "tagWeek": null,
-          "points": 210.44,
+          "points": 213.52,
           "projectedPoints": 332.54,
           "isStarter": true
         },
@@ -11772,7 +11772,7 @@
           "tag": "kept",
           "tagWeek": null,
           "points": 186.3,
-          "projectedPoints": 275.18,
+          "projectedPoints": 275.1,
           "isStarter": true
         },
         {
@@ -11789,7 +11789,7 @@
           "name": "Tyler Bass",
           "tag": "waiver",
           "tagWeek": 9,
-          "points": 38,
+          "points": 43,
           "projectedPoints": 81.21,
           "isStarter": true
         }
@@ -12018,7 +12018,7 @@
           "name": "Rashee Rice",
           "tag": "kept",
           "tagWeek": null,
-          "points": 92.6,
+          "points": 94.6,
           "projectedPoints": 215.53,
           "isStarter": true
         },
@@ -12073,7 +12073,7 @@
           "tag": "waiver",
           "tagWeek": 11,
           "points": 91,
-          "projectedPoints": 119,
+          "projectedPoints": 119.03,
           "isStarter": true
         },
         {
